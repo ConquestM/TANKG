@@ -1,1 +1,6 @@
+ColorRect
 CollisionShape2D
+CharacterBody2D
+Polygon2D
+Area2D
+CollisionPolygon2D

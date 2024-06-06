@@ -1,1 +1,5 @@
-res://static_body_2d.tscn
+res://BOss1.tscn
+res://SHield1.tscn
+res://OPen_Shield1.tscn
+res://Level.tscn
+res://BOss_Script.gd
