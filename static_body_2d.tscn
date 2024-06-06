@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://cou1mvn4ls013"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
+
+[node name="BOss1" type="StaticBody2D"]
+position = Vector2(588, 323)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4ioo3")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -3.0
+offset_top = 8.0
+offset_right = 3.0
+offset_bottom = 13.0
+metadata/_edit_use_anchors_ = true

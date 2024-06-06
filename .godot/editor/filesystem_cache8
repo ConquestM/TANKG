@@ -1,12 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717466761
-icon.svg::CompressedTexture2D::4410491943363438572::1717021383::1717022632::1::::<><>::
-Player.tscn::PackedScene::5798373929144512532::1717466388::0::1::::<><>::res://scripts/player.gd<>uid://dmoh7gaqorkbj::::res://assets/Slaughter.png
-README.md::TextFile::-1::1717021736::0::1::::<><>::
-Bullet.tscn::PackedScene::4954687080322788276::1717466619::0::1::::<><>::
-::res://assets/::1717466767
-frame0001.png::CompressedTexture2D::7171323991346749522::1715300281::1717466767::1::::<><>::
-Slaughter.png::CompressedTexture2D::8030911943533306683::1717023591::1717023591::1::::<><>::
-::res://scripts/::1717466388
-player.gd::GDScript::-1::1717466388::0::1::::<>CharacterBody2D<>::
-Bullet.gd::GDScript::-1::1717467372::0::1::::<>Area2D<>::
+::res://::1717716858
+BOss1.tscn::PackedScene::6735052732704041660::1717466431::0::1::::<><>::
+BOss_Script.gd::GDScript::-1::1717466041::0::1::::<>Node<>::
+icon.svg::CompressedTexture2D::4410491943363438572::1717022250::1717023299::1::::<><>::
+Level.tscn::PackedScene::7749333733984369858::1717466431::0::1::::<><>::uid://c27rlmxl5mmbk::::res://BOss1.tscn
+OPen_Shield1.tscn::PackedScene::2134076779538465792::1717466431::0::1::::<><>::
+proffe copy - Copy.png::CompressedTexture2D::6338131648663361362::1717464249::1717464321::1::::<><>::
+README.md::TextFile::-1::1717022250::0::1::::<><>::
+SHield1.tscn::PackedScene::5374099657304076301::1717466431::0::1::::<><>::
+static_body_2d.tscn::PackedScene::5798373929144512532::1717023674::0::1::::<><>::
