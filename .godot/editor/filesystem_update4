@@ -1,0 +1,4 @@
+res://Player.tscn
+res://scripts/player.gd
+res://Bullet.tscn
+res://scripts/bullet.gd

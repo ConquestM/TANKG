@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1717466761
+icon.svg::CompressedTexture2D::4410491943363438572::1717021383::1717022632::1::::<><>::
+Player.tscn::PackedScene::5798373929144512532::1717466388::0::1::::<><>::res://scripts/player.gd<>uid://dmoh7gaqorkbj::::res://assets/Slaughter.png
+README.md::TextFile::-1::1717021736::0::1::::<><>::
+Bullet.tscn::PackedScene::4954687080322788276::1717466619::0::1::::<><>::
+::res://assets/::1717466767
+frame0001.png::CompressedTexture2D::7171323991346749522::1715300281::1717466767::1::::<><>::
+Slaughter.png::CompressedTexture2D::8030911943533306683::1717023591::1717023591::1::::<><>::
+::res://scripts/::1717466388
+player.gd::GDScript::-1::1717466388::0::1::::<>CharacterBody2D<>::
+Bullet.gd::GDScript::-1::1717467372::0::1::::<>Area2D<>::
