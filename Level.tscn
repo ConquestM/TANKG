@@ -1,7 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://din3nn61eqs63"]
+[gd_scene load_steps=3 format=3 uid="uid://din3nn61eqs63"]
 
 [ext_resource type="PackedScene" uid="uid://c27rlmxl5mmbk" path="res://BOss1.tscn" id="1_bgtog"]
+[ext_resource type="PackedScene" uid="uid://djc4mtyj71sla" path="res://Player.tscn" id="2_1vd1d"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
+position = Vector2(653, 343)
 
 [node name="BOss1" parent="." instance=ExtResource("1_bgtog")]
+
+[node name="PLayer" parent="." instance=ExtResource("2_1vd1d")]
+position = Vector2(-76, -19)
