@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://djc4mtyj71sla"]
+[gd_scene load_steps=5 format=3 uid="uid://cou1mvn4ls013"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_d284k"]
 [ext_resource type="Texture2D" uid="uid://dmoh7gaqorkbj" path="res://assets/Slaughter.png" id="1_k6co7"]
-[ext_resource type="PackedScene" path="res://Bullet.tscn" id="2_6qqvt"]
+[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="2_6qqvt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u0f8j"]
 size = Vector2(12, 18)
@@ -32,7 +32,6 @@ wait_time = 0.1
 one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-1, 0)
-scale = Vector2(6.38642, 6.58537)
+zoom = Vector2(10.25, 10.25)
 
 [connection signal="timeout" from="Player/Timer" to="Player" method="_on_timer_timeout"]

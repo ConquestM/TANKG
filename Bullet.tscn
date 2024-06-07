@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccuc8cahwt677"]
+
+[ext_resource type="Script" path="res://scripts/bullet.gd" id="1_soamr"]
+[ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="2_5vkwy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
+size = Vector2(9.5, 5)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_soamr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.75, 0.5)
+shape = SubResource("RectangleShape2D_qa21a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(5.96046e-08, 1.26647e-10)
+rotation = 1.57233
+scale = Vector2(0.387335, 0.387335)
+texture = ExtResource("2_5vkwy")
