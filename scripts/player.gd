@@ -16,13 +16,19 @@ func _process(delta):
 	var vert_direction = Input.get_axis("ui_up", "ui_down")
 	if direction:
 		velocity.x = direction * speed
-		$Sprite2D.scale.x = direction
+		if direction > 0:
+			rotation_degrees = 0
+		if direction < 0:
+			rotation_degrees = 180
 		$CollisionShape2D.scale.x = direction
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 	if vert_direction:
 		velocity.y = vert_direction * speed
-		$Sprite2D.scale.y = vert_direction
+		if vert_direction < 0:
+			rotation_degrees = 270
+		if vert_direction > 0:
+			rotation_degrees = 90
 		$CollisionShape2D.scale.x = direction
 	else:
 		velocity.y = move_toward(velocity.y, 0, speed)
@@ -41,8 +47,6 @@ func _shoot():
 	add_sibling(bullet)
 	bullet.global_position = $BulletSpawn.global_position
 	bullet.rotation_degrees = rotation_degrees
-	print("func called")
 	
 func _on_timer_timeout():
-	print("timeout")
 	can_shoot = true 
