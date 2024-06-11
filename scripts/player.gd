@@ -11,7 +11,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	var direction = Input.get_axis("ui_left", "ui_right")
 	var vert_direction = Input.get_axis("ui_up", "ui_down")
 	if direction:
