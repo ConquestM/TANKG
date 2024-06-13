@@ -5,4 +5,7 @@ res://Player.tscn
 res://SHield1.tscn
 res://OPen_Shield1.tscn
 res://Level.tscn
+<<<<<<< Updated upstream
 res://scripts/player.gd
+=======
+>>>>>>> Stashed changes

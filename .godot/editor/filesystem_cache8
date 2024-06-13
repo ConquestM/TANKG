@@ -1,4 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< Updated upstream
 ::res://::1718066354
 BOss1.tscn::PackedScene::6735052732704041660::1717975025::0::1::::<><>::uid://ccuc8cahwt677::::res://Bullet.tscn
 BOss_Script.gd::GDScript::-1::1717717832::0::1::::<>Node<>::
@@ -8,12 +9,30 @@ Level.tscn::PackedScene::7749333733984369858::1717975025::0::1::::<><>::uid://c2
 OPen_Shield1.tscn::PackedScene::2134076779538465792::1717975025::0::1::::<><>::
 Player.tscn::PackedScene::7796873657118483758::1717975025::0::1::::<><>::res://scripts/player.gd<>uid://dmoh7gaqorkbj::::res://assets/Slaughter.png<>uid://ccuc8cahwt677::::res://Bullet.tscn
 proffe copy - Copy.png::CompressedTexture2D::6338131648663361362::1717717832::1717717832::1::::<><>::
+=======
+::res://::1718323110
+BOss1.tscn::PackedScene::6735052732704041660::1718323089::0::1::::<><>::uid://ccuc8cahwt677::::res://Bullet.tscn<>uid://5n06yjpop12k::::res://OPen_Shield1.tscn
+BOss_Script.gd::GDScript::-1::1718231226::0::1::::<>Node<>::
+Bullet.tscn::PackedScene::4954687080322788276::1718323089::0::1::::<><>::res://scripts/bullet.gd<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
+icon.svg::CompressedTexture2D::4410491943363438572::1717022250::1717023299::1::::<><>::
+Level.tscn::PackedScene::7749333733984369858::1718322761::0::1::::<><>::uid://c27rlmxl5mmbk::::res://BOss1.tscn<>uid://djc4mtyj71sla::::res://Player.tscn
+OPen_Shield1.gd::GDScript::-1::1718323089::0::1::::<>Area2D<>::
+OPen_Shield1.tscn::PackedScene::2134076779538465792::1718323089::0::1::::<><>::res://OPen_Shield1.gd
+Player.tscn::PackedScene::7796873657118483758::1718322760::0::1::::<><>::res://scripts/player.gd<>uid://dmoh7gaqorkbj::::res://assets/Slaughter.png<>uid://ccuc8cahwt677::::res://Bullet.tscn
+proffe copy - Copy.png::CompressedTexture2D::6338131648663361362::1718231226::1718231226::1::::<><>::
+>>>>>>> Stashed changes
 README.md::TextFile::-1::1717022250::0::1::::<><>::
 SHield1.tscn::PackedScene::5374099657304076301::1717975025::0::1::::<><>::
 static_body_2d.tscn::PackedScene::6473567149835591995::1717719358::0::1::::<><>::
 ::res://assets/::1717719301
 frame0001.png::CompressedTexture2D::7171323991346749522::1717719301::1717719301::1::::<><>::
 Slaughter.png::CompressedTexture2D::8030911943533306683::1717719301::1717719301::1::::<><>::
+<<<<<<< Updated upstream
 ::res://scripts/::1717974881
 bullet.gd::GDScript::-1::1717974881::0::1::::<>CharacterBody2D<>::
 player.gd::GDScript::-1::1717719301::0::1::::<>CharacterBody2D<>::
+=======
+::res://scripts/::1718323089
+bullet.gd::GDScript::-1::1718323089::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1718323089::0::1::::<>CharacterBody2D<>::
+>>>>>>> Stashed changes
