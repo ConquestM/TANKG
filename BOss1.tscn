@@ -1,24 +1,31 @@
-[gd_scene load_steps=4 format=3 uid="uid://c27rlmxl5mmbk"]
+[gd_scene load_steps=5 format=3 uid="uid://c27rlmxl5mmbk"]
 
 [ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="1_8u0ge"]
+[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="2_t2cd4"]
 
 [sub_resource type="GDScript" id="GDScript_ifhia"]
 resource_name = "BOss_script"
 script/source = "extends CharacterBody2D
 @export var bullet_scene: PackedScene
 func _ready():
-	$Timer.start()
+	$Firetimer.start()
 	
 func _process(_delta):
 	look_at(get_node(\"/root/Node2D2/PLayer\").global_position)
-	print(get_node(\"/root/Node2D2/PLayer\").global_position)
 	
-func _on_timer_timeout(): 
+func _on_firetimer_timeout():
 	var bullet = bullet_scene.instantiate()
 	bullet.global_position = $BOss_bullet_spawn.global_position
 	bullet.rotation = global_rotation
 	add_sibling(bullet)
-	$Timer.start()
+	$Area2D.set_visible(false)
+	$CollisionShape2D. disabled = true
+
+	$Firetimer.start()
+	$Weaktimer.start()
+
+func _on_weaktimer_timeout():
+	$Area2D.set_visible(true)
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
@@ -36,17 +43,27 @@ metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 offset_left = 9.0
-offset_top = -2.0
+offset_top = -3.0
 offset_right = 15.0
 offset_bottom = 3.0
-metadata/_edit_use_anchors_ = true
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.05
+[node name="Firetimer" type="Timer" parent="."]
+wait_time = 3.0
 
 [node name="BOss_bullet_spawn" type="Node2D" parent="."]
+position = Vector2(19, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_4ioo3")
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="Area2D" parent="." instance=ExtResource("2_t2cd4")]
+position = Vector2(17, 5.68434e-14)
+rotation = -1.5708
+scale = Vector2(1.5, 1.5)
+
+[node name="Weaktimer" type="Timer" parent="."]
+wait_time = 0.6
+one_shot = true
+
+[connection signal="timeout" from="Firetimer" to="." method="_on_firetimer_timeout"]
+[connection signal="timeout" from="Weaktimer" to="." method="_on_weaktimer_timeout"]
