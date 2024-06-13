@@ -1,7 +1,9 @@
-Timer
-Area2D
 Node2D
-Sprite2D
-CollisionShape2D
 Camera2D
 CharacterBody2D
+Timer
+ColorRect
+CollisionShape2D
+Polygon2D
+Area2D
+CollisionPolygon2D
