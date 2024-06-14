@@ -1,15 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://din3nn61eqs63"]
+[gd_scene load_steps=4 format=3 uid="uid://din3nn61eqs63"]
 
 [ext_resource type="PackedScene" uid="uid://c27rlmxl5mmbk" path="res://BOss1.tscn" id="1_bgtog"]
 [ext_resource type="PackedScene" uid="uid://djc4mtyj71sla" path="res://Player.tscn" id="2_1vd1d"]
+[ext_resource type="PackedScene" uid="uid://bjnr2ys3wc3mu" path="res://turret.tscn" id="3_oqfpo"]
 
 [node name="Node2D2" type="Node2D"]
 
 [node name="BOss1" parent="." instance=ExtResource("1_bgtog")]
-position = Vector2(525, 246)
+position = Vector2(575, 324)
 
 [node name="PLayer" parent="." instance=ExtResource("2_1vd1d")]
-position = Vector2(576, 324)
+position = Vector2(490, 329)
+
+[node name="Turret" parent="." instance=ExtResource("3_oqfpo")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 324)

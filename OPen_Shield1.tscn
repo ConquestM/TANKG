@@ -46,4 +46,4 @@ wait_time = 3.0
 position = Vector2(-0.1, -6.7)
 polygon = PackedVector2Array(-10.9, -4.3, -6.9, -4.3, -6.9, 5.7, 7.1, 5.7, 7.1, -4.3, 11.1, -4.3, 11.1, 9.7, 2.1, 9.7, -10.9, 9.7)
 
-[connection signal="area_entered" from="." to="." method="Block"]
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
