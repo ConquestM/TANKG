@@ -7,8 +7,6 @@
 size = Vector2(9.5, 5)
 
 [node name="Bullet" type="Area2D"]
-collision_layer = 0
-collision_mask = 0
 script = ExtResource("1_soamr")
 metadata/Attack = true
 
@@ -22,3 +20,5 @@ position = Vector2(5.96046e-08, 1.26647e-10)
 rotation = 1.57233
 scale = Vector2(0.387335, 0.387335)
 texture = ExtResource("2_5vkwy")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
