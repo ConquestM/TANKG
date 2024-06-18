@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://djc4mtyj71sla"]
+[gd_scene load_steps=5 format=3 uid="uid://cou1mvn4ls013"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_d284k"]
 [ext_resource type="Texture2D" uid="uid://dmoh7gaqorkbj" path="res://assets/Slaughter.png" id="1_k6co7"]
@@ -23,9 +23,3 @@ shape = SubResource("RectangleShape2D_u0f8j")
 texture_filter = 3
 position = Vector2(-0.999985, 1.00002)
 texture = ExtResource("1_k6co7")
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.1
-one_shot = true
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
