@@ -1,6 +1,8 @@
-res://BOss1.tscn
-res://scripts/bullet.gd
 res://Player.tscn
-res://OPen_Shield1.tscn
+res://scripts/bullet.gd
 res://Bullet.tscn
+res://BOss1.tscn
 res://Level.tscn
+res://scripts/player.gd
+res://scripts/turret.gd
+res://Turret.tscn

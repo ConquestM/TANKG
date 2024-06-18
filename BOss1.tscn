@@ -11,7 +11,7 @@ func _ready():
 	$Firetimer.start()
 	
 func _process(_delta):
-	look_at(get_node(\"/root/Node2D2/PLayer\").global_position)
+	look_at(get_node(\"/root/Map/PLayer\").global_position)
 	
 func _on_firetimer_timeout():
 	var bullet = bullet_scene.instantiate()
