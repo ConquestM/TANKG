@@ -11,15 +11,25 @@ size = Vector2(12, 18)
 position = Vector2(-2, 0)
 script = ExtResource("1_d284k")
 bullet_scene = ExtResource("2_6qqvt")
+metadata/Player = false
 
 [node name="BulletSpawn" type="Node2D" parent="."]
-position = Vector2(5, 0)
+position = Vector2(78, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_u0f8j")
+metadata/Player = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 3
 position = Vector2(-0.999985, 1.00002)
 texture = ExtResource("1_k6co7")
+
+[node name="Area2D" type="Area2D" parent="."]
+metadata/Player = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_u0f8j")
+metadata/Player = true
