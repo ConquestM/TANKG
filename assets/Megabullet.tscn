@@ -1,20 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://bjmfaw432i8kw"]
 
 [ext_resource type="Script" path="res://scripts/Megabullet.gd" id="1_bh4f1"]
-[ext_resource type="PackedScene" uid="uid://507dapfpwiru" path="res://assets/Megabullet2.tscn" id="2_0fi8h"]
 [ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="2_3jtjf"]
+[ext_resource type="PackedScene" uid="uid://dqqoe1p0y1ann" path="res://assets/Megabulletb.tscn" id="2_mwd4i"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1p6u"]
 size = Vector2(9.5, 5)
 
 [node name="Megabullet" type="Area2D"]
 modulate = Color(1, 0, 1, 1)
 script = ExtResource("1_bh4f1")
-megabulletb_scene = ExtResource("2_0fi8h")
+megabulletb_scene = ExtResource("2_mwd4i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.75, 0.5)
-shape = SubResource("RectangleShape2D_qa21a")
+shape = SubResource("RectangleShape2D_e1p6u")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

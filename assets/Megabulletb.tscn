@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dqqoe1p0y1ann"]
 
-[ext_resource type="Script" path="res://assets/Megabulletb.gd" id="1_lkdn5"]
+[ext_resource type="Script" path="res://scripts/Megabulletb.gd" id="1_lkdn5"]
 [ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="2_oee5m"]
-[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://assets/Megabullet.tscn" id="2_x7oxk"]
+[ext_resource type="PackedScene" uid="uid://caokjtcn5wmja" path="res://assets/Megabulletc.tscn" id="2_y6on3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
 size = Vector2(9.5, 5)
@@ -10,7 +10,7 @@ size = Vector2(9.5, 5)
 [node name="Megabulletb" type="Area2D"]
 modulate = Color(1, 0, 1, 1)
 script = ExtResource("1_lkdn5")
-megabullet_scene = ExtResource("2_x7oxk")
+megabulletc_scene = ExtResource("2_y6on3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.75, 0.5)

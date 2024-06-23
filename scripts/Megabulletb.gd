@@ -1,5 +1,5 @@
 extends Area2D
-@export var megabulletb_scene: PackedScene
+@export var megabulletc_scene: PackedScene
 @onready var global = get_node("/root/global")
 
 var speed = 200
@@ -9,20 +9,20 @@ var friendly = false
 func _ready():
 	$Meiosis.start()
 func _on_meiosis_timeout():
-	var megabulletb = megabulletb_scene	.instantiate()
-	add_sibling(megabulletb)
-	megabulletb.global_position =global_position
-	megabulletb.rotation = global_rotation
+	var megabulletc = megabulletc_scene.instantiate()
+	add_sibling(megabulletc)
+	megabulletc.global_position = global_position
+	megabulletc.rotation = global_rotation
 	
-	var megabullet2b = megabulletb_scene.instantiate()
-	add_sibling(megabullet2b)
-	megabullet2b.global_position = global_position
-	megabullet2b.rotation = global_rotation+170
+	var megabullet2c = megabulletc_scene.instantiate()
+	add_sibling(megabullet2c)
+	megabullet2c.global_position = global_position
+	megabullet2c.rotation = global_rotation+170
 	
-	var megabullet3b = megabulletb_scene.instantiate()
-	add_sibling(megabullet3b)
-	megabullet3b.global_position = global_position
-	megabullet3b.rotation = global_rotation-170
+	var megabullet3c = megabulletc_scene.instantiate()
+	add_sibling(megabullet3c)
+	megabullet3c.global_position = global_position
+	megabullet3c.rotation = global_rotation-170
 	
 	$Meiosis.start()
 
