@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_d284k"]
 [ext_resource type="Texture2D" uid="uid://dmoh7gaqorkbj" path="res://assets/Slaughter.png" id="1_k6co7"]
-[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="2_6qqvt"]
+[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://assets/Bullet.tscn" id="2_6qqvt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u0f8j"]
 size = Vector2(12, 18)

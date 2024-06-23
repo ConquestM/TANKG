@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://din3nn61eqs63"]
+
+[ext_resource type="Script" path="res://scripts/UI.gd" id="1_08bfy"]
+[ext_resource type="PackedScene" uid="uid://c27rlmxl5mmbk" path="res://assets/BOss1.tscn" id="2_l0tn8"]
+[ext_resource type="PackedScene" uid="uid://cou1mvn4ls013" path="res://assets/Player.tscn" id="3_frrkb"]
+[ext_resource type="PackedScene" uid="uid://btij6l30ipepu" path="res://assets/Turret.tscn" id="4_m4apl"]
+
+[node name="Map" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_08bfy")
+
+[node name="BossHP" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="HP" type="Label" parent="CanvasLayer"]
+offset_left = 112.0
+offset_top = 6.0
+offset_right = 152.0
+offset_bottom = 29.0
+
+[node name="BOss1" parent="." instance=ExtResource("2_l0tn8")]
+position = Vector2(525, 246)
+
+[node name="PLayer" parent="." instance=ExtResource("3_frrkb")]
+position = Vector2(576, 324)
+
+[node name="Turret" parent="." instance=ExtResource("4_m4apl")]
+position = Vector2(575, 325)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)

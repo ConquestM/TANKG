@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://btij6l30ipepu"]
 
 [ext_resource type="Script" path="res://scripts/turret.gd" id="1_jcj7l"]
-[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="2_6u6vq"]
+[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://assets/Bullet.tscn" id="2_6u6vq"]
 
 [node name="Turret" type="Node2D"]
 script = ExtResource("1_jcj7l")

@@ -1,12 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://c27rlmxl5mmbk"]
+[gd_scene load_steps=6 format=3 uid="uid://c27rlmxl5mmbk"]
 
-[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="1_8u0ge"]
-[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="2_t2cd4"]
+[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://assets/Bullet.tscn" id="1_8u0ge"]
+[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://assets/Megabullet.tscn" id="1_x7p21"]
+[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://assets/OPen_Shield1.tscn" id="2_t2cd4"]
 
 [sub_resource type="GDScript" id="GDScript_ifhia"]
 resource_name = "BOss_script"
 script/source = "extends CharacterBody2D
+@export var megabullet_scene: PackedScene
 @export var bullet_scene: PackedScene
+
+var Attack = 0
+
 func _ready():
 	$Firetimer.start()
 	
@@ -15,14 +20,35 @@ func _process(_delta):
 	
 	
 func _on_firetimer_timeout():
-	var bullet = bullet_scene.instantiate()
-	bullet.global_position = $BOss_bullet_spawn.global_position
-	bullet.rotation = global_rotation
-	add_sibling(bullet)
-	$Area2D.set_visible(false)
-	$Area2D/Hitbox.disabled = true
-	$Firetimer.start()
-	$Weaktimer.start()
+	if Attack < 1:
+		var bullet = bullet_scene.instantiate()
+		bullet.global_position = $BOss_bullet_spawn.global_position
+		bullet.rotation = global_rotation
+		add_sibling(bullet)
+		$Area2D.set_visible(false)
+		$Area2D/Hitbox.disabled = true
+		$Firetimer.start()
+		$Weaktimer.start()
+		Attack +=1
+	else:
+		var megabullet = megabullet_scene.instantiate()
+		megabullet.global_position = $BOss_bullet_spawn.global_position
+		megabullet.rotation = global_rotation
+		add_sibling(megabullet)
+		var megabullet2 = megabullet_scene.instantiate()
+		megabullet2.global_position = $BOss_bullet_spawn.global_position
+		megabullet2.rotation = global_rotation+170
+		add_sibling(megabullet2)
+		var megabullet3 = megabullet_scene.instantiate()
+		megabullet3.global_position = $BOss_bullet_spawn.global_position
+		megabullet3.rotation = global_rotation-170
+		add_sibling(megabullet3)
+
+		$Area2D.set_visible(false)
+		$Area2D/Hitbox.disabled = true
+		$Firetimer.start()
+		$Weaktimer.start()
+		Attack = 1
 func _on_weaktimer_timeout():
 	$Area2D.set_visible(true)
 	$Area2D/Hitbox.disabled = false
@@ -33,6 +59,7 @@ radius = 11.7047
 
 [node name="Bossbody" type="CharacterBody2D"]
 script = SubResource("GDScript_ifhia")
+megabullet_scene = ExtResource("1_x7p21")
 bullet_scene = ExtResource("1_8u0ge")
 metadata/Boss = false
 
