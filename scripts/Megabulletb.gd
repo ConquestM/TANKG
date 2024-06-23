@@ -25,7 +25,7 @@ func _on_meiosis_timeout():
 	megabullet3c.rotation = global_rotation-170
 	
 	$Meiosis.start()
-
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -44,4 +44,5 @@ func _on_area_entered(area):
 		global.BossHP -= 1
 		print("bd")
 		queue_free()
-
+func _on_Apoptosis_timeout():
+	queue_free()
