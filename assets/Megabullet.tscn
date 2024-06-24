@@ -29,7 +29,7 @@ one_shot = true
 autostart = true
 
 [node name="Apoptosis" type="Timer" parent="."]
-wait_time = 0.2
+wait_time = 0.101
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="timeout" from="Meiosis" to="." method="_on_meiosis_timeout"]

@@ -29,7 +29,7 @@ one_shot = true
 autostart = true
 
 [node name="Apoptosis" type="Timer" parent="."]
-wait_time = 0.2
+wait_time = 0.101
 one_shot = true
 autostart = true
 

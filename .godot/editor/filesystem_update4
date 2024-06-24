@@ -1,8 +1,4 @@
-res://assets/Level.tscn
-res://scripts/bullet.gd
-res://scripts/Megabullet.gd
-res://assets/Megabullet.tscn
-res://scripts/Megabulletb.gd
-res://assets/Megabulletb.tscn
 res://assets/Megabulletc.tscn
+res://scripts/Megabullet.gd
+res://scripts/Megabulletb.gd
 res://assets/Megabulletc.gd
