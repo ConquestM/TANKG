@@ -4,6 +4,14 @@ extends CharacterBody2D
 var screen_size
 @export var bullet_scene: PackedScene
 var can_shoot = true
+var dashing = false
+var dash_duration = 0.1
+var dash_timer = 0
+var can_dash = true
+var direction = 0
+var vert_direction = 0
+var saved_direction = 0
+var saved_vert_direction = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,9 +19,13 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-	var direction = Input.get_axis("ui_left", "ui_right")
-	var vert_direction = Input.get_axis("ui_up", "ui_down")
+func _process(delta):
+	if not dashing:
+		direction = Input.get_axis("ui_left", "ui_right")
+		vert_direction = Input.get_axis("ui_up", "ui_down")
+	if direction > 0 or direction < 0 or vert_direction > 0 or vert_direction < 0:
+		saved_direction = direction
+		saved_vert_direction = vert_direction
 	if direction:
 		velocity.x = direction * speed
 		if Input.is_action_pressed("ui_right"):
@@ -50,4 +62,28 @@ func _process(_delta):
 	 / get_parent().get_child(-1).zoom.x)
 	global_position.y = clamp(global_position.y, 0, screen_size.y
 	 / get_parent().get_child(-1).zoom.y)
+	if Input.is_action_just_pressed("dash"):
+		if can_dash:
+			_dash()
+	if dashing:
+		dash_timer += delta
+		if dash_timer >= dash_duration:
+			dashing = false
+			speed = 100
+			dash_timer = 0
 
+func _dash():
+	if dashing: return
+	if Input.is_action_pressed("dash"):
+		dashing = true
+		if direction == 0 and vert_direction == 0:
+			speed = 500
+		else:
+			speed = 1000
+		direction = saved_direction
+		vert_direction = saved_vert_direction
+		can_dash = false
+		$Timer.start()
+
+func _on_timer_timeout():
+	can_dash = true

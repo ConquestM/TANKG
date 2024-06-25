@@ -23,3 +23,8 @@ shape = SubResource("RectangleShape2D_u0f8j")
 texture_filter = 3
 position = Vector2(-0.999985, 1.00002)
 texture = ExtResource("1_k6co7")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
