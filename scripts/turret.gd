@@ -8,7 +8,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	look_at(get_viewport().get_mouse_position())
 	global_rotation = rotation
 	if Input.is_action_just_pressed("ui_left_click") and can_shoot:
@@ -19,9 +19,11 @@ func _process(delta):
 
 func _shoot():
 	var bullet = bullet_scene.instantiate()
-	get_parent().add_sibling(bullet)
 	bullet.global_position = $BulletSpawn.global_position
 	bullet.global_rotation = global_rotation
+	bullet.friendly = true
+	get_parent().add_sibling(bullet)
+	
 	
 func _on_timer_timeout():
 	can_shoot = true 

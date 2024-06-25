@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://da6hll3lnxv8n"]
+
+[ext_resource type="PackedScene" uid="uid://c27rlmxl5mmbk" path="res://assets/BOss1.tscn" id="1_44r17"]
+[ext_resource type="Script" path="res://scripts/Map.gd" id="1_ohdfg"]
+[ext_resource type="PackedScene" uid="uid://cou1mvn4ls013" path="res://assets/Player.tscn" id="2_ohlcj"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_ohdfg")
+
+[node name="BOss1" parent="." instance=ExtResource("1_44r17")]
+position = Vector2(575, 324)
+
+[node name="PLayer" parent="." instance=ExtResource("2_ohlcj")]
+position = Vector2(490, 329)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)

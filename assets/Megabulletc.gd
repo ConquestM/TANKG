@@ -1,16 +1,16 @@
 extends Area2D
-
+@export var megabullet_scene: PackedScene
 @onready var global = get_node("/root/global")
 
-var speed = 500
+var speed = 170
 var despawn = 0
-
 var friendly = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$Meiosis.start()
 
-
+func _on_Apoptosis_timeout():
+	queue_free()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	move_local_x(speed * delta)
@@ -28,3 +28,4 @@ func _on_area_entered(area):
 		global.BossHP -= 1
 		print("bd")
 		queue_free()
+
