@@ -2,7 +2,7 @@ extends Area2D
 
 @onready var global = get_node("/root/global")
 
-var speed = 800
+var speed = 500
 var despawn = 0
 
 var friendly = false
