@@ -24,7 +24,7 @@ scale = Vector2(0.387335, 0.387335)
 texture = ExtResource("2_3jtjf")
 
 [node name="Meiosis" type="Timer" parent="."]
-wait_time = 0.2
+wait_time = 0.1
 one_shot = true
 autostart = true
 

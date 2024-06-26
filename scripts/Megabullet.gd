@@ -2,7 +2,7 @@ extends Area2D
 @export var megabulletb_scene: PackedScene
 @onready var global = get_node("/root/global")
 
-var speed = 170
+var speed = 320
 var despawn = 0
 var friendly = false
 # Called when the node enters the scene tree for the first time.

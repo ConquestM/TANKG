@@ -1,10 +1,11 @@
 res://assets/Player.tscn
 res://scripts/bullet.gd
 res://scripts/Megabullet.gd
-res://scripts/player.gd
 res://assets/Level.tscn
 res://assets/Bullet.tscn
 res://assets/BOss1.tscn
 res://assets/Megabullet.tscn
 res://assets/Megabulletb.tscn
 res://assets/Megabullet2.tscn
+res://assets/Megabullet2.gd
+res://assets/Megabulletb.gd

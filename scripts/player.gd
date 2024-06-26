@@ -87,3 +87,4 @@ func _dash():
 
 func _on_timer_timeout():
 	can_dash = true
+

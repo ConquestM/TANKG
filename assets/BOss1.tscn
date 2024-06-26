@@ -82,7 +82,7 @@ offset_right = 15.0
 offset_bottom = 3.0
 
 [node name="Firetimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 1.5
 
 [node name="BOss_bullet_spawn" type="Node2D" parent="."]
 position = Vector2(27, 0)
