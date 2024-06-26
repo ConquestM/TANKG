@@ -1,0 +1,106 @@
+[gd_scene load_steps=6 format=3 uid="uid://c27rlmxl5mmbk"]
+
+[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://assets/Bullet.tscn" id="1_8u0ge"]
+[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://assets/Megabullet.tscn" id="1_x7p21"]
+[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://assets/OPen_Shield1.tscn" id="2_t2cd4"]
+
+[sub_resource type="GDScript" id="GDScript_ifhia"]
+resource_name = "BOss_script"
+script/source = "extends CharacterBody2D
+@export var megabullet_scene: PackedScene
+@export var bullet_scene: PackedScene
+
+var Attack = 0
+
+func _ready():
+	$Firetimer.start()
+	
+func _process(_delta):
+	look_at(get_node(\"/root/Map/PLayer\").global_position)
+	
+	
+func _on_firetimer_timeout():
+	if Attack < 1:
+		var bullet = bullet_scene.instantiate()
+		bullet.global_position = $BOss_bullet_spawn.global_position
+		bullet.rotation = global_rotation
+		add_sibling(bullet)
+		$Area2D.set_visible(false)
+		$Area2D/Hitbox.disabled = true
+		$Firetimer.start()
+		$Weaktimer.start()
+		Attack +=1
+	else:
+		var megabullet = megabullet_scene.instantiate()
+		megabullet.global_position = $BOss_bullet_spawn.global_position
+		megabullet.rotation = global_rotation
+		add_sibling(megabullet)
+		var megabullet2 = megabullet_scene.instantiate()
+		megabullet2.global_position = $BOss_bullet_spawn.global_position
+		megabullet2.rotation = global_rotation+170
+		add_sibling(megabullet2)
+		var megabullet3 = megabullet_scene.instantiate()
+		megabullet3.global_position = $BOss_bullet_spawn.global_position
+		megabullet3.rotation = global_rotation-170
+		add_sibling(megabullet3)
+
+		$Area2D.set_visible(false)
+		$Area2D/Hitbox.disabled = true
+		$Firetimer.start()
+		$Weaktimer.start()
+		Attack = 1
+func _on_weaktimer_timeout():
+	$Area2D.set_visible(true)
+	$Area2D/Hitbox.disabled = false
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
+radius = 11.7047
+
+[node name="Bossbody" type="CharacterBody2D"]
+script = SubResource("GDScript_ifhia")
+megabullet_scene = ExtResource("1_x7p21")
+bullet_scene = ExtResource("1_8u0ge")
+metadata/Boss = false
+
+[node name="Area2D" parent="." instance=ExtResource("2_t2cd4")]
+position = Vector2(18, 0)
+rotation = -1.5708
+scale = Vector2(1.5, 1.5)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 9.0
+offset_top = -3.0
+offset_right = 15.0
+offset_bottom = 3.0
+
+[node name="Firetimer" type="Timer" parent="."]
+wait_time = 1.5
+
+[node name="BOss_bullet_spawn" type="Node2D" parent="."]
+position = Vector2(27, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4ioo3")
+metadata/Boss = true
+
+[node name="Weaktimer" type="Timer" parent="."]
+wait_time = 0.6
+one_shot = true
+
+[node name="Area2D2" type="Area2D" parent="."]
+metadata/Boss = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource("CircleShape2D_4ioo3")
+metadata/Boss = true
+
+[connection signal="timeout" from="Firetimer" to="." method="_on_firetimer_timeout"]
+[connection signal="timeout" from="Weaktimer" to="." method="_on_weaktimer_timeout"]
