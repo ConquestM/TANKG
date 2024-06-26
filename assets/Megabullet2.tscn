@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://507dapfpwiru"]
 
-[ext_resource type="Script" path="res://assets/Megabulletb.gd" id="1_cfuce"]
+[ext_resource type="Script" path="res://assets/Megabullet2.gd" id="1_e4wlp"]
 [ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="2_jp4va"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
@@ -8,7 +8,7 @@ size = Vector2(9.5, 5)
 
 [node name="Megabulletb" type="Area2D"]
 modulate = Color(1, 0, 1, 1)
-script = ExtResource("1_cfuce")
+script = ExtResource("1_e4wlp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.75, 0.5)
