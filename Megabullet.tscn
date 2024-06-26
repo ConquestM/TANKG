@@ -1,16 +1,16 @@
 [gd_scene load_steps=5 format=3 uid="uid://bjmfaw432i8kw"]
 
-[ext_resource type="Script" path="res://scripts/Megabullet.gd" id="1_bh4f1"]
-[ext_resource type="PackedScene" uid="uid://507dapfpwiru" path="res://assets/Megabullet2.tscn" id="2_0fi8h"]
-[ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="2_3jtjf"]
+[ext_resource type="Script" path="res://scripts/Megabullet.gd" id="1_p0t58"]
+[ext_resource type="PackedScene" uid="uid://507dapfpwiru" path="res://Megabullet2.tscn" id="2_la4uu"]
+[ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="3_4q58g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
 size = Vector2(9.5, 5)
 
 [node name="Megabullet" type="Area2D"]
 modulate = Color(1, 0, 1, 1)
-script = ExtResource("1_bh4f1")
-megabulletb_scene = ExtResource("2_0fi8h")
+script = ExtResource("1_p0t58")
+megabulletb_scene = ExtResource("2_la4uu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.75, 0.5)
@@ -21,7 +21,7 @@ texture_filter = 1
 position = Vector2(5.96046e-08, 1.26647e-10)
 rotation = 1.57233
 scale = Vector2(0.387335, 0.387335)
-texture = ExtResource("2_3jtjf")
+texture = ExtResource("3_4q58g")
 
 [node name="Meiosis" type="Timer" parent="."]
 wait_time = 0.1

@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://c27rlmxl5mmbk"]
 
-[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://assets/Bullet.tscn" id="1_8u0ge"]
-[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://assets/Megabullet.tscn" id="1_x7p21"]
-[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://assets/OPen_Shield1.tscn" id="2_t2cd4"]
+[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="1_8u0ge"]
+[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Megabullet.tscn" id="1_x7p21"]
+[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="2_t2cd4"]
 
 [sub_resource type="GDScript" id="GDScript_ifhia"]
 resource_name = "BOss_script"

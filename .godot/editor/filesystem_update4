@@ -9,3 +9,12 @@ res://assets/Megabulletb.tscn
 res://assets/Megabullet2.tscn
 res://assets/Megabullet2.gd
 res://assets/Megabulletb.gd
+res://BOss1.tscn
+res://Level.tscn
+res://Player.tscn
+res://Bullet.tscn
+res://Megabullet.tscn
+res://Megabulletb.tscn
+res://Megabullet2.tscn
+res://OPen_Shield1.tscn
+res://scripts/player.gd
