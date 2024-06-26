@@ -23,7 +23,8 @@ func _process(delta):
 	if not dashing:
 		direction = Input.get_axis("ui_left", "ui_right")
 		vert_direction = Input.get_axis("ui_up", "ui_down")
-	if direction > 0 or direction < 0 or vert_direction > 0 or vert_direction < 0:
+	if direction > 0 or direction < 0 or \
+	vert_direction > 0 or vert_direction < 0:
 		saved_direction = direction
 		saved_vert_direction = vert_direction
 	if direction:

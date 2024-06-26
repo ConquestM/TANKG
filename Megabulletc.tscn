@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://caokjtcn5wmja"]
 
-[ext_resource type="Script" path="res://assets/Megabulletc.gd" id="1_1heb7"]
-[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://assets/Megabullet.tscn" id="2_k4iyg"]
+[ext_resource type="Script" path="res://Megabulletc.gd" id="1_1heb7"]
+[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Megabullet.tscn" id="2_k4iyg"]
 [ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="3_jqbtl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]

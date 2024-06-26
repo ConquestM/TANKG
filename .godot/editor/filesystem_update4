@@ -1,4 +1,9 @@
-res://assets/Megabulletc.tscn
+res://Player.tscn
+res://scripts/bullet.gd
+res://Turret.tscn
+res://Bullet.tscn
+res://BOss1.tscn
+res://Level.tscn
+res://scripts/player.gd
 res://scripts/Megabullet.gd
-res://scripts/Megabulletb.gd
-res://assets/Megabulletc.gd
+res://Boss1.tscn
