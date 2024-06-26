@@ -19,7 +19,7 @@ func _on_area_entered(area):
 	if area.has_meta("Block"):
 		queue_free()
 	if area.has_meta("Player") and not friendly:
-		global.HP -= 5
+		global.HP -= 1
 		print("pd")
 		queue_free()
 	if area.has_meta("Boss") and friendly:
