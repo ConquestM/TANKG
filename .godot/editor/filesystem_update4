@@ -3,10 +3,8 @@ res://scripts/bullet.gd
 res://scripts/Megabullet.gd
 res://Level.tscn
 res://Bullet.tscn
-res://BOss1.tscn
+res://Boss1.tscn
 res://Megabullet.tscn
 res://Megabulletb.tscn
 res://Megabullet2.tscn
-res://OPen_Shield1.tscn
-res://Boss1.tscn
 res://Open_Shield1.tscn
