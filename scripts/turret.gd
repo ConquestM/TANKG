@@ -15,7 +15,7 @@ func _process(_delta):
 		_shoot()
 		can_shoot = false
 		$Timer.start()
-	position = get_node("/root/Map/PLayer").global_position
+	position = get_node("/root/Map/Player").global_position
 
 func _shoot():
 	var bullet = bullet_scene.instantiate()

@@ -59,9 +59,9 @@ func _process(delta):
 			rotation_degrees = 135
 	move_and_slide()
 	global_position.x = clamp(global_position.x, 0, screen_size.x
-	 / get_parent().get_child(-1).zoom.x)
+	 / get_parent().get_child(0).zoom.x)
 	global_position.y = clamp(global_position.y, 0, screen_size.y
-	 / get_parent().get_child(-1).zoom.y)
+	 / get_parent().get_child(0).zoom.y)
 	if Input.is_action_just_pressed("dash"):
 		if can_dash:
 			_dash()
