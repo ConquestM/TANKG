@@ -61,7 +61,6 @@ radius = 11.7047
 script = SubResource("GDScript_ifhia")
 megabullet_scene = ExtResource("1_x7p21")
 bullet_scene = ExtResource("1_8u0ge")
-metadata/Boss = false
 
 [node name="Area2D" parent="." instance=ExtResource("2_t2cd4")]
 position = Vector2(18, 0)
