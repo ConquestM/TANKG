@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1719962312
+::res://::1719962426
 Boss1.tscn::PackedScene::6735052732704041660::1719962249::0::1::::<><>::uid://ccuc8cahwt677::::res://Bullet.tscn<>uid://bjmfaw432i8kw::::res://Megabullet.tscn<>uid://5n06yjpop12k::::res://Open_Shield1.tscn
 Bossbullethitbox.gd::GDScript::-1::1719882998::0::1::::<>Area2D<>::
 Bossbullethitbox.tscn::PackedScene::7612135393423995047::1719962249::0::1::::<><>::res://Bossbullethitbox.gd
