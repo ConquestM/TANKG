@@ -23,6 +23,9 @@ func _process(delta):
 	if not dashing:
 		direction = Input.get_axis("ui_left", "ui_right")
 		vert_direction = Input.get_axis("ui_up", "ui_down")
+		var norm_direction = Vector2(direction, vert_direction).normalized()
+		direction = norm_direction.x
+		vert_direction = norm_direction.y
 	if direction > 0 or direction < 0 or vert_direction > 0 or vert_direction < 0:
 		saved_direction = direction
 		saved_vert_direction = vert_direction
@@ -59,9 +62,9 @@ func _process(delta):
 			rotation_degrees = 135
 	move_and_slide()
 	global_position.x = clamp(global_position.x, 0, screen_size.x
-	 / get_parent().get_child(-1).zoom.x)
+	 / get_parent().get_child(0).zoom.x)
 	global_position.y = clamp(global_position.y, 0, screen_size.y
-	 / get_parent().get_child(-1).zoom.y)
+	 / get_parent().get_child(0).zoom.y)
 	if Input.is_action_just_pressed("dash"):
 		if can_dash:
 			_dash()
@@ -71,6 +74,12 @@ func _process(delta):
 			dashing = false
 			speed = 100
 			dash_timer = 0
+	if global.HP < 0 or global.HP == 0:
+		get_tree().change_scene_to_file("res://Level.tscn")
+		global.HP = 15
+	if dashing == true:
+		print("AAA")
+		$Area2D/CollisionShape2D.disabled = true
 
 func _dash():
 	if dashing: return
@@ -86,5 +95,6 @@ func _dash():
 		$Timer.start()
 
 func _on_timer_timeout():
+	$Area2D/CollisionShape2D.disabled = false
 	can_dash = true
 
