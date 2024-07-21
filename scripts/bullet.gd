@@ -1,10 +1,11 @@
 extends Area2D
 @export var explosion_scene: PackedScene
+@export var megabullet2_scene: PackedScene
 @onready var global = get_node("/root/global")
 
 var speed = 500
 var despawn = 0
-
+var megabullet
 var friendly = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -30,4 +31,14 @@ func _on_area_entered(area):
 	if area.has_meta("Boss") and friendly:
 		global.BossHP -= 1
 		queue_free()
-	#if area.has_meta("Boss") and not friendly:
+	if area.has_meta("detonate"):
+		print("det")
+		var megabullet = megabullet2_scene.instantiate()
+		megabullet.rotation = global_rotation + 1
+		add_sibling(megabullet)
+		var megabullet2 = megabullet2_scene.instantiate()
+		megabullet.rotation = global_rotation + 2
+		add_sibling(megabullet2)
+		var megabullet3 = megabullet2_scene.instantiate()
+		megabullet.rotation = global_rotation + 3
+		add_sibling(megabullet3)

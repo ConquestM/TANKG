@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccuc8cahwt677"]
+[gd_scene load_steps=6 format=3 uid="uid://ccuc8cahwt677"]
 
 [ext_resource type="Script" path="res://scripts/bullet.gd" id="1_b368j"]
 [ext_resource type="PackedScene" uid="uid://dgpm0085oscmx" path="res://Bossbullethitbox.tscn" id="2_vnou6"]
 [ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="2_x4ief"]
+[ext_resource type="PackedScene" uid="uid://507dapfpwiru" path="res://Megabullet2.tscn" id="3_82ce5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
 size = Vector2(9.5, 5)
@@ -10,6 +11,7 @@ size = Vector2(9.5, 5)
 [node name="Bullet" type="Area2D"]
 script = ExtResource("1_b368j")
 explosion_scene = ExtResource("2_vnou6")
+megabullet2_scene = ExtResource("3_82ce5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.75, 0.5)
