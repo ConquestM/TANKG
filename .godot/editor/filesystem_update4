@@ -6,9 +6,9 @@ res://Bullet.tscn
 res://Megabullet.tscn
 res://Megabulletb.tscn
 res://Megabullet2.tscn
-res://scripts/player.gd
-res://scripts/Megabullet2.gd
-res://scripts/Megabulletb.gd
-res://scripts/turret.gd
-res://Boss1.tscn
+res://Open_Shield1.tscn
 res://Turret.tscn
+res://Boss1.tscn
+res://Bossbulletdetonatehitbox.tscn
+res://static_body_2d.tscn
+res://Bossbullethitbox.gd
