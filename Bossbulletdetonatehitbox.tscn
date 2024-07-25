@@ -10,7 +10,7 @@ script = ExtResource("1_d0sy7")
 metadata/Debt = 0
 
 [node name="Delete" type="Timer" parent="."]
-wait_time = 0.7
+wait_time = 1.2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_fjwph")

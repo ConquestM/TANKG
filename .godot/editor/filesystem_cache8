@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721866135
+::res://::1721950795
 Boss1.tscn::PackedScene::6735052732704041660::1721862725::0::1::::<><>::uid://ccuc8cahwt677::::res://Bullet.tscn<>uid://bjmfaw432i8kw::::res://Megabullet.tscn<>uid://5n06yjpop12k::::res://Open_Shield1.tscn
-Bossbulletdetonatehitbox.tscn::PackedScene::8733093714793764106::1721862725::0::1::::<><>::res://Bossbullethitbox.gd
+Bossbulletdetonatehitbox.tscn::PackedScene::8733093714793764106::1721866138::0::1::::<><>::res://Bossbullethitbox.gd
 Bossbullethitbox.gd::GDScript::-1::1721862495::0::1::::<>Area2D<>::
 Bullet.tscn::PackedScene::4954687080322788276::1721862725::0::1::::<><>::res://scripts/bullet.gd<>uid://dwom1o4jxhxmo::::res://Bossbulletdetonatehitbox.tscn<>uid://daf3wndrrrwd3::::res://assets/frame0001.png<>uid://507dapfpwiru::::res://Megabullet2.tscn
 Level.tscn::PackedScene::7749333733984369858::1721696575::0::1::::<><>::res://scripts/UI.gd<>uid://c27rlmxl5mmbk::::res://Boss1.tscn<>uid://cou1mvn4ls013::::res://Player.tscn<>uid://btij6l30ipepu::::res://Turret.tscn
@@ -18,12 +18,12 @@ icon.svg::CompressedTexture2D::4410491943363438572::1719409713::1719409713::1:::
 proffe copy - Copy.png::CompressedTexture2D::6338131648663361362::1719409713::1719409713::1::::<><>::
 README.md::TextFile::-1::1719409713::0::1::::<><>::
 Slaughter.png::CompressedTexture2D::8030911943533306683::1717719301::1717719301::1::::<><>::
-::res://scripts/::1721860921
-bullet.gd::GDScript::-1::1721860921::0::1::::<>Area2D<>::
+::res://scripts/::1721866138
+bullet.gd::GDScript::-1::1721866138::0::1::::<>Area2D<>::
 global.gd::GDScript::-1::1719409713::0::1::::<>Node<>::
 Map.gd::GDScript::-1::1719409713::0::1::::<>Node2D<>::
 Megabullet2.gd::GDScript::-1::1719882061::0::1::::<>Area2D<>::
-Megabullet.gd::GDScript::-1::1721860533::0::1::::<>Area2D<>::
+Megabullet.gd::GDScript::-1::1721866138::0::1::::<>Area2D<>::
 Megabulletb.gd::GDScript::-1::1719882061::0::1::::<>Area2D<>::
 Open_Shield1.gd::GDScript::-1::1719409713::0::1::::<>Area2D<>::
 player.gd::GDScript::-1::1721602362::0::1::::<>CharacterBody2D<>::

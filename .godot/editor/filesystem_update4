@@ -1,3 +1,8 @@
 res://Bossbulletdetonatehitbox.tscn
 res://scripts/bullet.gd
 res://scripts/Megabullet.gd
+res://Bullet.tscn
+res://Megabullet.tscn
+res://Player.tscn
+res://Megabullet2.tscn
+res://Boss1.tscn
