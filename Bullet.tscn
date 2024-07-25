@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://ccuc8cahwt677"]
 
 [ext_resource type="Script" path="res://scripts/bullet.gd" id="1_b368j"]
-[ext_resource type="PackedScene" uid="uid://dgpm0085oscmx" path="res://Bossbullethitbox.tscn" id="2_vnou6"]
+[ext_resource type="PackedScene" uid="uid://dwom1o4jxhxmo" path="res://Bossbulletdetonatehitbox.tscn" id="2_pph23"]
 [ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="2_x4ief"]
 [ext_resource type="PackedScene" uid="uid://507dapfpwiru" path="res://Megabullet2.tscn" id="3_82ce5"]
 
@@ -10,12 +10,14 @@ size = Vector2(9.5, 5)
 
 [node name="Bullet" type="Area2D"]
 script = ExtResource("1_b368j")
-explosion_scene = ExtResource("2_vnou6")
+explosion_scene = ExtResource("2_pph23")
 megabullet2_scene = ExtResource("3_82ce5")
+metadata/Delete = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.75, 0.5)
 shape = SubResource("RectangleShape2D_qa21a")
+metadata/Delete = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
