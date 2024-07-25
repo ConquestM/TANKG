@@ -11,7 +11,7 @@ func _ready():
 func _on_meiosis_timeout():
 	var megabulletb = megabulletb_scene	.instantiate()
 	add_sibling(megabulletb)
-	megabulletb.global_position =global_position
+	megabulletb.global_position = global_position
 	megabulletb.rotation = global_rotation
 	
 	var megabullet2b = megabulletb_scene.instantiate()

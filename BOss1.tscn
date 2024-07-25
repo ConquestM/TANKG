@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="1_8u0ge"]
 [ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Megabullet.tscn" id="1_x7p21"]
-[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="2_t2cd4"]
+[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://Open_Shield1.tscn" id="2_t2cd4"]
 
 [sub_resource type="GDScript" id="GDScript_ifhia"]
 resource_name = "BOss_script"
@@ -48,7 +48,7 @@ func _on_firetimer_timeout():
 		$Area2D/Hitbox.disabled = true
 		$Firetimer.start()
 		$Weaktimer.start()
-		Attack = 1
+		Attack = 0
 func _on_weaktimer_timeout():
 	$Area2D.set_visible(true)
 	$Area2D/Hitbox.disabled = false
@@ -61,7 +61,6 @@ radius = 11.7047
 script = SubResource("GDScript_ifhia")
 megabullet_scene = ExtResource("1_x7p21")
 bullet_scene = ExtResource("1_8u0ge")
-metadata/Boss = false
 
 [node name="Area2D" parent="." instance=ExtResource("2_t2cd4")]
 position = Vector2(18, 0)

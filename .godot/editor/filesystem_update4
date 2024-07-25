@@ -1,14 +1,8 @@
-res://Player.tscn
+res://Bossbulletdetonatehitbox.tscn
 res://scripts/bullet.gd
 res://scripts/Megabullet.gd
-res://Level.tscn
 res://Bullet.tscn
 res://Megabullet.tscn
-res://Megabulletb.tscn
+res://Player.tscn
 res://Megabullet2.tscn
-res://scripts/player.gd
-res://scripts/Megabullet2.gd
-res://scripts/Megabulletb.gd
-res://scripts/turret.gd
 res://Boss1.tscn
-res://Turret.tscn
