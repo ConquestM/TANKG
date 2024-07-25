@@ -77,9 +77,10 @@ func _process(delta):
 	if global.HP < 0 or global.HP == 0:
 		get_tree().change_scene_to_file("res://Level.tscn")
 		global.HP = 15
-	if dashing == true:
-		print("AAA")
+	if dashing:
 		$Area2D/CollisionShape2D.disabled = true
+	if not dashing:
+		$Area2D/CollisionShape2D.disabled = false
 
 func _dash():
 	if dashing: return
