@@ -6,13 +6,16 @@
 size = Vector2(473, 3)
 
 [node name="Area2D" type="Area2D"]
+scale = Vector2(1e-05, 1e-05)
 script = ExtResource("1_d0sy7")
 metadata/Debt = 0
 
 [node name="Delete" type="Timer" parent="."]
-wait_time = 1.2
+wait_time = 0.7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -5.01433
+scale = Vector2(1e-05, 1e-05)
 shape = SubResource("RectangleShape2D_fjwph")
 metadata/Debt = true
 

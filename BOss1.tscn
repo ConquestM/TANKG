@@ -14,7 +14,7 @@ var Attack = 0
 
 func _ready():
 	$Firetimer.start()
-	
+	global.BossHP +=15
 func _process(_delta):
 	look_at(get_node(\"/root/Map/Player\").global_position)
 	
