@@ -45,6 +45,7 @@ func _process(delta):
 		if Input.is_action_pressed("ui_down"):
 			rotation_degrees = 90
 		$CollisionShape2D.scale.x = vert_direction
+		$AnimatedSprite2D.play("default")
 	else:
 		velocity.y = move_toward(velocity.y, 0, speed)
 	if direction and vert_direction:
