@@ -20,10 +20,10 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	move_local_x(speed * delta)
-	despawn += 1
-	if despawn > 300:
-		queue_free()
-		
+	if not friendly:
+		$Sprite2D.self_modulate.b -= 0.1
+		$Sprite2D.self_modulate.g -= 0.1
+	
 func _on_area_entered(area):
 	if area.has_meta("Block"):
 		queue_free()
