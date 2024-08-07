@@ -21,8 +21,7 @@ func _ready():
 func _process(delta):
 	move_local_x(speed * delta)
 	if not friendly:
-		$Sprite2D.self_modulate.b -= 0.1
-		$Sprite2D.self_modulate.g -= 0.1
+		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)
 	
 func _on_area_entered(area):
 	if area.has_meta("Block"):
