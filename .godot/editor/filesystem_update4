@@ -1,16 +1,2 @@
-res://Level.tscn
 res://scripts/bullet.gd
 res://scripts/Megabullet.gd
-res://Bullet.tscn
-res://bossbulletdetonatehitbox.tscn
-res://Player.tscn
-res://boss1.tscn
-res://MainMenu.tscn
-res://bullet.tscn
-res://level.tscn
-res://Boss1.tscn
-res://mainmenu.tscn
-res://Bossbulletdetonatehitbox.tscn
-res://Mainmenu.tscn
-res://Open_shield1.tscn
-res://scripts/player.gd

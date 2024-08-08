@@ -31,4 +31,11 @@ offset_right = 667.0
 offset_bottom = 429.0
 text = "Play"
 
+[node name="Label2" type="Label" parent="CanvasLayer"]
+offset_left = 546.0
+offset_top = 143.0
+offset_right = 850.0
+offset_bottom = 278.0
+text = "TANKG"
+
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

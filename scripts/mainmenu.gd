@@ -1,0 +1,14 @@
+extends Control
+@onready var global = get_node("/root/global")
+func _ready():
+	pass # Replace with function body.
+	
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
+	pass
+
+func _on_button_pressed():
+	global.HP = 15
+	get_tree().change_scene_to_file("res://Level.tscn")
