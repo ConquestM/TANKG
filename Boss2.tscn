@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dqx6ylqmsclrp"]
+[gd_scene load_steps=5 format=3 uid="uid://c53fd3ely7dhu"]
 
 [ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Megabullet.tscn" id="1_3g2b2"]
 [ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="2_w8kvq"]
-[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://Open_shield1.tscn" id="3_x7vvt"]
 
 [sub_resource type="GDScript" id="GDScript_ifhia"]
 resource_name = "BOss_script"
@@ -61,11 +60,6 @@ radius = 11.7047
 script = SubResource("GDScript_ifhia")
 megabullet_scene = ExtResource("1_3g2b2")
 bullet_scene = ExtResource("2_w8kvq")
-
-[node name="Area2D" parent="." instance=ExtResource("3_x7vvt")]
-position = Vector2(18, 0)
-rotation = -1.5708
-scale = Vector2(1.5, 1.5)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -10.0

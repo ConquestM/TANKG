@@ -22,7 +22,7 @@ func _process(_delta):
 func _on_firetimer_timeout():
 	if Attack < 1:
 		var bullet = bullet_scene.instantiate()
-		bullet.global_position = $BOss_bullet_spawn.global_position
+		bullet.global_position = $Boss_bullet_spawn.global_position
 		bullet.rotation = global_rotation
 		add_sibling(bullet)
 		$Area2D.set_visible(false)
@@ -32,15 +32,15 @@ func _on_firetimer_timeout():
 		Attack +=1
 	else:
 		var megabullet = megabullet_scene.instantiate()
-		megabullet.global_position = $BOss_bullet_spawn.global_position
+		megabullet.global_position = $Boss_bullet_spawn.global_position
 		megabullet.rotation = global_rotation
 		add_sibling(megabullet)
 		var megabullet2 = megabullet_scene.instantiate()
-		megabullet2.global_position = $BOss_bullet_spawn.global_position
+		megabullet2.global_position = $Boss_bullet_spawn.global_position
 		megabullet2.rotation = global_rotation+170
 		add_sibling(megabullet2)
 		var megabullet3 = megabullet_scene.instantiate()
-		megabullet3.global_position = $BOss_bullet_spawn.global_position
+		megabullet3.global_position = $Boss_bullet_spawn.global_position
 		megabullet3.rotation = global_rotation-170
 		add_sibling(megabullet3)
 
@@ -83,7 +83,7 @@ offset_bottom = 3.0
 [node name="Firetimer" type="Timer" parent="."]
 wait_time = 1.5
 
-[node name="BOss_bullet_spawn" type="Node2D" parent="."]
+[node name="Boss_bullet_spawn" type="Node2D" parent="."]
 position = Vector2(27, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

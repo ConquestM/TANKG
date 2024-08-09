@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bl07530pf7uhq"]
+[gd_scene load_steps=2 format=3 uid="uid://5axocs4823aq"]
 
-[ext_resource type="Script" path="res://scripts/mainmenu.gd" id="1_1hn2r"]
+[ext_resource type="Script" path="res://scripts/mainmenu.gd" id="1_450sm"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -9,7 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_1hn2r")
+script = ExtResource("1_450sm")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -38,24 +38,4 @@ offset_right = 850.0
 offset_bottom = 278.0
 text = "TANKG"
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.202
-anchor_top = 0.179
-anchor_right = 0.28
-anchor_bottom = 0.274
-offset_left = 308.296
-offset_top = 358.008
-offset_right = 322.44
-offset_bottom = 375.448
-
-[node name="Label" type="Label" parent="."]
-offset_left = 572.0
-offset_top = 493.0
-offset_right = 673.0
-offset_bottom = 567.0
-text = "Quit"
-
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button" to="." method="_on_button_quit"]
