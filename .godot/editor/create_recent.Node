@@ -1,7 +1,8 @@
+Timer
+ProgressBar
 Sprite2D
 ColorRect
 AnimatedSprite2D
-Timer
 CollisionShape2D
 Area2D
 Label

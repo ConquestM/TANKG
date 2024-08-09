@@ -9,3 +9,6 @@ res://scripts/player.gd
 res://Level.tscn
 res://Turret.tscn
 res://scripts/turret.gd
+res://Boss1.tscn
+res://Healthbar.tscn
+res://scripts/healthbar.gd

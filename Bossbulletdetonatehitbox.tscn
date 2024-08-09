@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dwom1o4jxhxmo"]
 
-[ext_resource type="Script" path="res://Bossbullethitbox.gd" id="1_d0sy7"]
+[ext_resource type="Script" path="res://scripts/bossbullethitbox.gd" id="1_d0sy7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fjwph"]
 size = Vector2(473, 3)
