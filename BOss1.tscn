@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c27rlmxl5mmbk"]
+[gd_scene load_steps=7 format=3 uid="uid://c27rlmxl5mmbk"]
 
 [ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="1_8u0ge"]
-[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Megabullet.tscn" id="1_rhpio"]
-[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://Open_shield1.tscn" id="3_frt3a"]
+[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Megabullet.tscn" id="1_x7p21"]
+[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="2_t2cd4"]
+[ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_cganh"]
 
 [sub_resource type="GDScript" id="GDScript_ifhia"]
 resource_name = "BOss_script"
@@ -10,96 +11,105 @@ script/source = "extends CharacterBody2D
 @export var megabullet_scene: PackedScene
 @export var bullet_scene: PackedScene
 
+@export var firetimer:Node
+
 var Attack = 0
 
 func _ready():
-	$Firetimer.start()
-	global.BossHP +=15
+	firetimer.start()
+	
 func _process(_delta):
-	look_at(get_node(\"/root/Map/Player\").global_position)
+	$CollisionShape2D.look_at(get_node(\"/root/Map/Player\").global_position)
 	
 	
 func _on_firetimer_timeout():
 	if Attack < 1:
 		var bullet = bullet_scene.instantiate()
-		bullet.global_position = $Boss_bullet_spawn.global_position
+		bullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
 		bullet.rotation = global_rotation
 		add_sibling(bullet)
-		$Area2D.set_visible(false)
-		$Area2D/Hitbox.disabled = true
-		$Firetimer.start()
-		$Weaktimer.start()
+		$CollisionShape2D/Area2D.set_visible(false)
+		$CollisionShape2D/Area2D/Hitbox.disabled = true
+		$CollisionShape2D/Firetimer.start()
+		$CollisionShape2D/Weaktimer.start()
 		Attack +=1
 	else:
 		var megabullet = megabullet_scene.instantiate()
-		megabullet.global_position = $Boss_bullet_spawn.global_position
+		megabullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
 		megabullet.rotation = global_rotation
 		add_sibling(megabullet)
 		var megabullet2 = megabullet_scene.instantiate()
-		megabullet2.global_position = $Boss_bullet_spawn.global_position
+		megabullet2.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
 		megabullet2.rotation = global_rotation+170
 		add_sibling(megabullet2)
 		var megabullet3 = megabullet_scene.instantiate()
-		megabullet3.global_position = $Boss_bullet_spawn.global_position
+		megabullet3.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
 		megabullet3.rotation = global_rotation-170
 		add_sibling(megabullet3)
 
-		$Area2D.set_visible(false)
-		$Area2D/Hitbox.disabled = true
-		$Firetimer.start()
-		$Weaktimer.start()
+		$CollisionShape2D/Area2D.set_visible(false)
+		$CollisionShape2D/Area2D/Hitbox.disabled = true
+		$CollisionShape2D/Firetimer.start()
+		$CollisionShape2D/Weaktimer.start()
 		Attack = 0
 func _on_weaktimer_timeout():
-	$Area2D.set_visible(true)
-	$Area2D/Hitbox.disabled = false
+	$CollisionShape2D/Area2D.set_visible(true)
+	$CollisionShape2D/Area2D/Hitbox.disabled = false
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047
 
-[node name="Bossbody" type="CharacterBody2D"]
+[node name="Bossbody" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
 script = SubResource("GDScript_ifhia")
-megabullet_scene = ExtResource("1_rhpio")
+megabullet_scene = ExtResource("1_x7p21")
 bullet_scene = ExtResource("1_8u0ge")
+firetimer = NodePath("CollisionShape2D/Firetimer")
 
-[node name="Area2D" parent="." instance=ExtResource("3_frt3a")]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4ioo3")
+metadata/Boss = true
+
+[node name="Area2D" parent="CollisionShape2D" instance=ExtResource("2_t2cd4")]
 position = Vector2(18, 0)
 rotation = -1.5708
 scale = Vector2(1.5, 1.5)
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]
 offset_left = -10.0
 offset_top = -10.0
 offset_right = 10.0
 offset_bottom = 10.0
 metadata/_edit_use_anchors_ = true
 
-[node name="ColorRect2" type="ColorRect" parent="."]
+[node name="ColorRect2" type="ColorRect" parent="CollisionShape2D"]
 offset_left = 9.0
 offset_top = -3.0
 offset_right = 15.0
 offset_bottom = 3.0
 
-[node name="Firetimer" type="Timer" parent="."]
+[node name="Firetimer" type="Timer" parent="CollisionShape2D"]
 wait_time = 1.5
 
-[node name="Boss_bullet_spawn" type="Node2D" parent="."]
+[node name="Boss_bullet_spawn" type="Node2D" parent="CollisionShape2D"]
 position = Vector2(27, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_4ioo3")
-metadata/Boss = true
-
-[node name="Weaktimer" type="Timer" parent="."]
+[node name="Weaktimer" type="Timer" parent="CollisionShape2D"]
 wait_time = 0.6
 one_shot = true
 
-[node name="Area2D2" type="Area2D" parent="."]
+[node name="Area2D2" type="Area2D" parent="CollisionShape2D"]
 metadata/Boss = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/Area2D2"]
 shape = SubResource("CircleShape2D_4ioo3")
 metadata/Boss = true
 
-[connection signal="timeout" from="Firetimer" to="." method="_on_firetimer_timeout"]
-[connection signal="timeout" from="Weaktimer" to="." method="_on_weaktimer_timeout"]
+[node name="Healthbar" parent="." instance=ExtResource("4_cganh")]
+offset_left = -15.0
+offset_top = -21.0
+offset_right = 15.0
+offset_bottom = -17.0
+
+[connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
+[connection signal="timeout" from="CollisionShape2D/Weaktimer" to="." method="_on_weaktimer_timeout"]

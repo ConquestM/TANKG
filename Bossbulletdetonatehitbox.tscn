@@ -1,20 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://dwom1o4jxhxmo"]
 
-[ext_resource type="Script" path="res://scripts/bossbullethitbox.gd" id="1_2cfmt"]
+[ext_resource type="Script" path="res://scripts/bossbullethitbox.gd" id="1_d0sy7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fjwph"]
 size = Vector2(473, 3)
 
 [node name="Area2D" type="Area2D"]
-scale = Vector2(1e-05, 1e-05)
-script = ExtResource("1_2cfmt")
+script = ExtResource("1_d0sy7")
 metadata/Debt = 0
 
 [node name="Delete" type="Timer" parent="."]
-wait_time = 0.7
+wait_time = 1.2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-rotation = 1.26886
 shape = SubResource("RectangleShape2D_fjwph")
 metadata/Debt = true
 
