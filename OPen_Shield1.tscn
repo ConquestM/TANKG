@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://5n06yjpop12k"]
 
-[ext_resource type="Script" path="res://scripts/Open_Shield1.gd" id="1_4naqy"]
+[ext_resource type="Script" path="res://scripts/Open_Shield1.gd" id="1_odm8q"]
 
 [node name="Area2D" type="Area2D"]
-script = ExtResource("1_4naqy")
+script = ExtResource("1_odm8q")
 metadata/Block = true
 
 [node name="Left wall" type="ColorRect" parent="."]

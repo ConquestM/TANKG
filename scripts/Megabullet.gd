@@ -9,7 +9,7 @@ var friendly = false
 func _ready():
 	$Meiosis.start()
 func _on_meiosis_timeout():
-	var megabulletb = megabulletb_scene	.instantiate()
+	var megabulletb = megabulletb_scene.instantiate()
 	add_sibling(megabulletb)
 	megabulletb.global_position = global_position
 	megabulletb.rotation = global_rotation
@@ -25,6 +25,7 @@ func _on_meiosis_timeout():
 	megabullet3b.rotation = global_rotation-170
 	
 	$Meiosis.start()
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -43,4 +44,7 @@ func _on_area_entered(area):
 		global.BossHP -= 1
 		queue_free()
 func _on_Apoptosis_timeout():
+	queue_free()
+	
+func _on_die_timeout():
 	queue_free()

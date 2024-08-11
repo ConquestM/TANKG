@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="1_8u0ge"]
 [ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Megabullet.tscn" id="1_x7p21"]
-[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="2_t2cd4"]
+[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://Open_shield1.tscn" id="2_t2cd4"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_cganh"]
 
 [sub_resource type="GDScript" id="GDScript_ifhia"]
@@ -30,7 +30,7 @@ func _on_firetimer_timeout():
 	if Attack < 1:
 		var bullet = bullet_scene.instantiate()
 		bullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
-		bullet.rotation = global_rotation
+		bullet.rotation = $CollisionShape2D.rotation
 		add_sibling(bullet)
 		$CollisionShape2D/Area2D.set_visible(false)
 		$CollisionShape2D/Area2D/Hitbox.disabled = true
