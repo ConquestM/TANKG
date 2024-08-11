@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://etpj4op83x3h"]
 
 [ext_resource type="Script" path="res://scripts/UI.gd" id="1_hfbja"]
-[ext_resource type="PackedScene" uid="uid://c27rlmxl5mmbk" path="res://Boss1.tscn" id="2_qxgxd"]
+[ext_resource type="PackedScene" uid="uid://r885hmnubc6o" path="res://Boss2.tscn" id="2_c17hp"]
 [ext_resource type="PackedScene" uid="uid://cou1mvn4ls013" path="res://Player.tscn" id="3_w0lvs"]
 [ext_resource type="PackedScene" uid="uid://btij6l30ipepu" path="res://Turret.tscn" id="4_0tx4c"]
 
@@ -26,8 +26,8 @@ offset_right = 152.0
 offset_bottom = 29.0
 metadata/_edit_use_anchors_ = true
 
-[node name="BOss1" parent="." instance=ExtResource("2_qxgxd")]
-position = Vector2(237, 85)
+[node name="Bossbody2" parent="." instance=ExtResource("2_c17hp")]
+position = Vector2(257, 80)
 
 [node name="Player" parent="." instance=ExtResource("3_w0lvs")]
 position = Vector2(288, 163)

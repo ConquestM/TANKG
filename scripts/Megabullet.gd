@@ -44,3 +44,6 @@ func _on_area_entered(area):
 		queue_free()
 func _on_Apoptosis_timeout():
 	queue_free()
+	
+func _on_die_timeout():
+	queue_free()

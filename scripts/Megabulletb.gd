@@ -8,6 +8,7 @@ var friendly = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Meiosis.start()
+	$Die.start()
 func _on_meiosis_timeout():
 	var megabullet = megabullet_scene.instantiate()
 	megabullet.global_position = $Megabullet.global_position
@@ -40,3 +41,7 @@ func _on_area_entered(area):
 		global.BossHP -= 1
 		queue_free()
 
+
+
+func _on_die_timeout():
+	queue_free()
