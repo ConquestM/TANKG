@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Boss2.gd" id="1_wwpcx"]
 [ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="2_w8kvq"]
 [ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://Open_shield1.tscn" id="3_x7vvt"]
-[ext_resource type="PackedScene" path="res://Healthbar.tscn" id="4_vsmk5"]
+[ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_vsmk5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047

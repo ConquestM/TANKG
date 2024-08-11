@@ -51,6 +51,7 @@ offset_right = 322.44
 offset_bottom = 375.448
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 0
 offset_left = 572.0
 offset_top = 493.0
 offset_right = 673.0
@@ -70,6 +71,7 @@ offset_right = 524.44
 offset_bottom = 267.448
 
 [node name="Label2" type="Label" parent="."]
+layout_mode = 0
 offset_left = 774.0
 offset_top = 385.0
 offset_right = 875.0

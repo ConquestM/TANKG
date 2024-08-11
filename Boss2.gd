@@ -26,10 +26,10 @@ func _on_firetimer_timeout():
 		Attack +=1
 	else:
 		for i in 20:
-			var megabullet = megabullet_scene	.instantiate()
+			var megabullet = megabullet_scene.instantiate()
+			megabullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
+			megabullet.rotation_degrees = $CollisionShape2D.rotation_degrees +i*18
 			add_sibling(megabullet)
-			megabullet.global_position = global_position
-			megabullet.rotation_degrees = global_rotation_degrees + i*18
 
 		$CollisionShape2D/Area2D.set_visible(false)
 		$CollisionShape2D/Area2D/Hitbox.disabled = true
