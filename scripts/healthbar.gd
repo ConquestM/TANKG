@@ -14,7 +14,7 @@ func _set_health(new_health):
 	
 	if health < prev_health:
 		timer.start()
-	else:
+	elif timer.is_stopped():
 		damagebar.value = health
 		
 	
