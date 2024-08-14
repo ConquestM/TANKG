@@ -31,9 +31,9 @@ func _on_meiosis_timeout():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	move_local_x(speed * delta)
-	despawn += 1
-	if despawn > 300:
-		queue_free()
+
+
+
 func _on_area_entered(area):
 	if area.has_meta("Block"):
 		queue_free()
@@ -47,4 +47,7 @@ func _on_Apoptosis_timeout():
 	queue_free()
 	
 func _on_die_timeout():
+	queue_free()
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()

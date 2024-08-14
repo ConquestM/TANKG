@@ -1,16 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://dqqoe1p0y1ann"]
+[gd_scene load_steps=4 format=3 uid="uid://cniy4mkyawquh"]
 
-[ext_resource type="Script" path="res://scripts/megabulletb.gd" id="1_25ee0"]
-[ext_resource type="PackedScene" uid="uid://507dapfpwiru" path="res://Megabullet2.tscn" id="2_4dodl"]
-[ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="3_3makt"]
+[ext_resource type="Script" path="res://scripts/Megabulletcircle.gd" id="1_cjhyg"]
+[ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="2_d7wcf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
 size = Vector2(9.5, 5)
 
 [node name="Megabulletb" type="Area2D"]
 modulate = Color(1, 0, 1, 1)
-script = ExtResource("1_25ee0")
-megabullet2_scene = ExtResource("2_4dodl")
+script = ExtResource("1_cjhyg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.75, 0.5)
@@ -21,19 +19,15 @@ texture_filter = 1
 position = Vector2(5.96046e-08, 1.26647e-10)
 rotation = 1.57233
 scale = Vector2(0.387335, 0.387335)
-texture = ExtResource("3_3makt")
+texture = ExtResource("2_d7wcf")
 
 [node name="Meiosis" type="Timer" parent="."]
-wait_time = 0.2
+wait_time = 0.3
 one_shot = true
+autostart = true
 
 [node name="Die" type="Timer" parent="."]
-wait_time = 3.0
-one_shot = true
-
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="timeout" from="Meiosis" to="." method="_on_meiosis_timeout"]
 [connection signal="timeout" from="Die" to="." method="_on_die_timeout"]
-[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
