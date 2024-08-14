@@ -9,7 +9,6 @@ var friendly = false
 func _ready():
 	$Meiosis.start()
 	$Die.start()
-	print("mei")
 func _on_meiosis_timeout():
 	var megabullet2 = megabullet2_scene	.instantiate()
 	add_sibling(megabullet2)
