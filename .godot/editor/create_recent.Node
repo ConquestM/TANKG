@@ -1,3 +1,4 @@
+VisibleOnScreenNotifier2D
 Timer
 ProgressBar
 Sprite2D
@@ -11,4 +12,3 @@ Node2D
 Camera2D
 CharacterBody2D
 Polygon2D
-CollisionPolygon2D
