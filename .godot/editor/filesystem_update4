@@ -16,3 +16,7 @@ res://Level2.tscn
 res://Teleport.tscn
 res://Bulletcircle.gd
 res://Bulletcircle.tscn
+res://Player.tscn
+res://scripts/bossbullethitbox.gd
+res://Bossbullethitbox.tscn
+res://Teleport.gd

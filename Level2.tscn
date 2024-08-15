@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://btij6l30ipepu" path="res://Turret.tscn" id="4_0tx4c"]
 
 [node name="Map" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [325.0]
+metadata/_edit_vertical_guides_ = [574.0]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(288, 163)

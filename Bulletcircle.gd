@@ -12,7 +12,7 @@ func _ready():
 	if not friendly:
 		set_meta("Delete", 0)
 		var hitbox = explosion_scene.instantiate()
-		hitbox.global_position = get_node("/root/Map/Player").global_position
+		hitbox.position = get_node("/root/Map/Player").position
 		hitbox.rotation = rotation+1.5
 		add_sibling(hitbox)
 
@@ -37,6 +37,6 @@ func _on_area_entered(area):
 			for i in 60:
 				var megabulletcircle = megabulletcircle_scene.instantiate()
 				add_sibling(megabulletcircle)
-				megabulletcircle.global_position = global_position
-				megabulletcircle.rotation_degrees = global_rotation_degrees + i*6
+				megabulletcircle.position = position
+				megabulletcircle.rotation_degrees = rotation_degrees + i*6
 				queue_free()
