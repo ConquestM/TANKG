@@ -12,14 +12,18 @@ var direction = 0
 var vert_direction = 0
 var saved_direction = 0
 var saved_vert_direction = 0
+@onready var healthbar = $CanvasLayer/Healthbar
+var health = global.HP : set = _set_health
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
+	healthbar.init_health(health)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	_set_health(health)
 	if not dashing:
 		direction = Input.get_axis("ui_left", "ui_right")
 		vert_direction = Input.get_axis("ui_up", "ui_down")
@@ -102,3 +106,6 @@ func _on_timer_timeout():
 	$Area2D/CollisionShape2D.disabled = false
 	can_dash = true
 
+func _set_health(value):
+	if healthbar != null:
+		healthbar.health = global.HP

@@ -1,12 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://cou1mvn4ls013"]
+[gd_scene load_steps=8 format=3 uid="uid://cou1mvn4ls013"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_d284k"]
 [ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="2_6qqvt"]
 [ext_resource type="Texture2D" uid="uid://dn817yopwtgsi" path="res://assets/tank_frame0000.png" id="3_8tt7n"]
 [ext_resource type="Texture2D" uid="uid://blov2f6ckuopd" path="res://assets/tank_frame0001.png" id="4_hhk4x"]
+[ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="5_racds"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u0f8j"]
-size = Vector2(14.25, 18)
+size = Vector2(12, 10)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xgaqs"]
 animations = [{
@@ -50,5 +51,9 @@ metadata/Player = true
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.7
 one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Healthbar" parent="CanvasLayer" instance=ExtResource("5_racds")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
