@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cou1mvn4ls013" path="res://Player.tscn" id="3_j6vdm"]
 [ext_resource type="PackedScene" uid="uid://btij6l30ipepu" path="res://Turret.tscn" id="4_4wdna"]
 
+
 [node name="Map" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]

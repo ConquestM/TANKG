@@ -13,6 +13,7 @@ script = ExtResource("1_b368j")
 explosion_scene = ExtResource("2_pph23")
 megabullet2_scene = ExtResource("3_82ce5")
 metadata/Delete = true
+metadata/player = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.75, 0.5)
@@ -26,5 +27,5 @@ rotation = 1.57233
 scale = Vector2(0.387335, 0.387335)
 texture = ExtResource("2_x4ief")
 
-[connection signal="area_entered" from="." to="." method="_on_area_enter"]
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_entered" from="." to="." method="_on_area_enter"]
