@@ -7,6 +7,7 @@ var speed = 500
 var despawn = 0
 var megabullet
 var friendly = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if not friendly:
@@ -40,3 +41,4 @@ func _on_area_entered(area):
 				megabulletb.global_position = global_position
 				megabulletb.rotation_degrees = global_rotation_degrees + i*18
 				queue_free()
+

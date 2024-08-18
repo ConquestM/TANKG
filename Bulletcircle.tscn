@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bx1m47ro2e150"]
 
-[ext_resource type="Script" path="res://Bulletcircle.gd" id="1_al8n1"]
+[ext_resource type="Script" path="res://scripts/Bulletcircle.gd" id="1_al8n1"]
 [ext_resource type="PackedScene" uid="uid://dwom1o4jxhxmo" path="res://Bossbulletdetonatehitbox.tscn" id="2_pvu33"]
 [ext_resource type="PackedScene" uid="uid://cniy4mkyawquh" path="res://Megabulletcircle.tscn" id="3_l0k5p"]
 [ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="4_04gci"]
