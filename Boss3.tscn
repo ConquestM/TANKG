@@ -1,20 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://cuqm3glsshood"]
+[gd_scene load_steps=4 format=3 uid="uid://cuqm3glsshood"]
 
-[ext_resource type="Script" path="res://scripts/Boss2.gd" id="1_ikdw7"]
-[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Megabullet.tscn" id="2_aol3b"]
-[ext_resource type="PackedScene" uid="uid://bl7l4ldama4ib" path="res://Blockertile.tscn" id="3_aih5g"]
-[ext_resource type="PackedScene" uid="uid://d4nhehjpgots4" path="res://BlockerBullet.tscn" id="4_nevfx"]
+[ext_resource type="Script" path="res://Boss3.gd" id="1_6ohnh"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="6_v7fj4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047
 
-[node name="Bossbody2" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
-script = ExtResource("1_ikdw7")
-megabullet_scene = ExtResource("2_aol3b")
-shield_bullet_scene = ExtResource("3_aih5g")
-spawner_scene = ExtResource("4_nevfx")
-firetimer = NodePath("CollisionShape2D/Firetimer")
+[node name="Bossbody3" type="CharacterBody2D"]
+script = ExtResource("1_6ohnh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_4ioo3")

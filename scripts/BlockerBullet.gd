@@ -25,7 +25,7 @@ func _process(delta):
 
 func _on_area_entered(area):
 	if area.has_meta("Debt"):
-		if not frissendly:
+		if not friendly:
 			for i in 1:
 				var megabulletb = megabullet2_scene	.instantiate()
 				add_sibling(megabulletb)
