@@ -88,6 +88,14 @@ func _process(delta):
 		$Area2D/CollisionShape2D.disabled = true
 	if not dashing:
 		$Area2D/CollisionShape2D.disabled = false
+	if global.iframes:
+		$Area2D/CollisionShape2D.disabled = true
+		print("iframes")
+	if global.iframes == false:
+		$Area2D/CollisionShape2D.disabled = false
+		print("danger")
+	
+
 
 func _dash():
 	if dashing: return
