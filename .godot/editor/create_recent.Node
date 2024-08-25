@@ -1,7 +1,7 @@
+ColorRect
 CanvasLayer
 CanvasGroup
 Timer
-ColorRect
 Area2D
 CollisionShape2D
 VisibleOnScreenNotifier2D
@@ -12,4 +12,3 @@ Label
 Node2D
 Camera2D
 CharacterBody2D
-Polygon2D

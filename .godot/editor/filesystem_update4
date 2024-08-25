@@ -1,7 +1,6 @@
 res://Level3.tscn
 res://scripts/bullet.gd
 res://scripts/Megabullet.gd
-res://scripts/BlockerBullet.gd
 res://Boss3.tscn
 res://Player.tscn
 res://BlockerBullet.tscn
@@ -9,4 +8,10 @@ res://Blockertile.tscn
 res://Bullet.tscn
 res://Boss2.tscn
 res://Boss3.gd
+res://scripts/Blockertile.gd
+res://Turret.tscn
+res://scripts/healthbar.gd
+res://Healthbar.tscn
+res://scripts/BlockerBullet.gd
+res://Spawn1.tscn
 res://scripts/Spawn1.gd

@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://r885hmnubc6o"]
+[gd_scene load_steps=8 format=3 uid="uid://r885hmnubc6o"]
 
 [ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Megabullet.tscn" id="1_3g2b2"]
 [ext_resource type="Script" path="res://scripts/Boss2.gd" id="1_wwpcx"]
 [ext_resource type="PackedScene" uid="uid://bx1m47ro2e150" path="res://Bulletcircle.tscn" id="3_kfc2h"]
-[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="3_x7vvt"]
+[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://Open_shield1.tscn" id="3_x7vvt"]
+[ext_resource type="PackedScene" uid="uid://d3nngbjfswteu" path="res://Teleport.tscn" id="4_76p4s"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_vsmk5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
@@ -13,6 +14,7 @@ radius = 11.7047
 script = ExtResource("1_wwpcx")
 megabullet_scene = ExtResource("1_3g2b2")
 bullet_scene = ExtResource("3_kfc2h")
+teleport_scene = ExtResource("4_76p4s")
 firetimer = NodePath("CollisionShape2D/Firetimer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -9,7 +9,6 @@ var megabullet
 var friendly = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if not friendly:
 		set_meta("Delete", 0)
 		var hitbox = explosion_scene.instantiate()
 		hitbox.global_position = get_node("/root/Map/Player").global_position
