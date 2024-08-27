@@ -11,7 +11,7 @@ func _ready():
 func _process(_delta):
 	look_at(get_global_mouse_position())
 	global_rotation = rotation
-	if Input.is_action_just_pressed("ui_left_click") and can_shoot:
+	if Input.is_action_pressed("ui_left_click") and can_shoot:
 		_shoot()
 		can_shoot = false
 		$Timer.start()

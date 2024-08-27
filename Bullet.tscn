@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/bullet.gd" id="1_b368j"]
 [ext_resource type="PackedScene" uid="uid://dwom1o4jxhxmo" path="res://Bossbulletdetonatehitbox.tscn" id="2_pph23"]
-[ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="2_x4ief"]
 [ext_resource type="PackedScene" uid="uid://507dapfpwiru" path="res://Megabullet2.tscn" id="3_82ce5"]
+[ext_resource type="Texture2D" uid="uid://b4xuj14kjttwd" path="res://assets/Lightningbolt.png" id="4_t1i7w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
 size = Vector2(9.5, 5)
@@ -23,9 +23,9 @@ metadata/Delete = false
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(5.96046e-08, 1.26647e-10)
-rotation = 1.57233
+rotation = 4.71239
 scale = Vector2(0.387335, 0.387335)
-texture = ExtResource("2_x4ief")
+texture = ExtResource("4_t1i7w")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_entered" from="." to="." method="_on_area_enter"]

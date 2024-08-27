@@ -11,7 +11,7 @@ func _process(_delta):
 
 func _on_button_pressed():
 	global.HP = 15
-	get_tree().change_scene_to_file("res://Level.tscn")
+	get_tree().change_scene_to_file("res://Cutscene_1.tscn")
 
 
 func _on_button_quit():
