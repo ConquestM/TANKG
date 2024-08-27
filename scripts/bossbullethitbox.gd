@@ -6,6 +6,7 @@ func _ready():
 	#get_child(0).start()
 	set_meta("Debt", 0)
 	$Delete.start()
+	print(global_position)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

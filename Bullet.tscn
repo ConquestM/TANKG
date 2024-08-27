@@ -12,6 +12,7 @@ size = Vector2(9.5, 5)
 script = ExtResource("1_b368j")
 explosion_scene = ExtResource("2_pph23")
 megabullet2_scene = ExtResource("3_82ce5")
+metadata/player = true
 metadata/Delete = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
