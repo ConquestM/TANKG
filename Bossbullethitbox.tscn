@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc7phxn8qj874"]
+
+[ext_resource type="Script" path="res://scripts/bossbullethitbox.gd" id="1_2gi1m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fjwph"]
+size = Vector2(473, 3)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_2gi1m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fjwph")

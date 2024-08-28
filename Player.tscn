@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cou1mvn4ls013"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_d284k"]
-[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Boltbullet.tscn" id="2_6qqvt"]
+[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="2_6qqvt"]
 [ext_resource type="Texture2D" uid="uid://dn817yopwtgsi" path="res://assets/tank_frame0000.png" id="3_8tt7n"]
 [ext_resource type="Texture2D" uid="uid://blov2f6ckuopd" path="res://assets/tank_frame0001.png" id="4_hhk4x"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="5_racds"]
