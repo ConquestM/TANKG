@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bopd8ltnba6ol"]
 
 [ext_resource type="Script" path="res://scripts/Spawn1.gd" id="1_aj15q"]
-[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Bullet.tscn" id="3_c8gxd"]
+[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Boltbullet.tscn" id="3_c8gxd"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_mpnp8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]

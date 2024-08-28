@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yxeav7431xuf"
-path="res://.godot/imported/Lightningbolt.png-40359ab6415f047ddcd1126a25a698e4.ctex"
+uid="uid://dgi1ildc43y02"
+path="res://.godot/imported/Spark.png-25bd5818c72a0e9bed4508a66c3bc3db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Lightningbolt.png"
-dest_files=["res://.godot/imported/Lightningbolt.png-40359ab6415f047ddcd1126a25a698e4.ctex"]
+source_file="res://assets/Spark.png"
+dest_files=["res://.godot/imported/Spark.png-25bd5818c72a0e9bed4508a66c3bc3db.ctex"]
 
 [params]
 

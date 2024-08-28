@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cuqm3glsshood"]
 
 [ext_resource type="Script" path="res://scripts/Boss3.gd" id="1_6ohnh"]
-[ext_resource type="PackedScene" uid="uid://dqqoe1p0y1ann" path="res://Megabulletb.tscn" id="2_07kyf"]
+[ext_resource type="PackedScene" uid="uid://dqqoe1p0y1ann" path="res://Spark2.tscn" id="2_07kyf"]
 [ext_resource type="PackedScene" uid="uid://bopd8ltnba6ol" path="res://Spawn1.tscn" id="4_awiot"]
 [ext_resource type="PackedScene" uid="uid://d4nhehjpgots4" path="res://BlockerBullet.tscn" id="4_hjerf"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="6_v7fj4"]

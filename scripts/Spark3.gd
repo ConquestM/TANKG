@@ -25,10 +25,5 @@ func _on_area_entered(area):
 		global.BossHP -= 1
 		queue_free()
 
-
-
-func _on_die_timeout():
-	queue_free()
-
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()
