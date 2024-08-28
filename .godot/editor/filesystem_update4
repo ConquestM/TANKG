@@ -5,6 +5,10 @@ res://Level.tscn
 res://Turret.tscn
 res://Cutscene_1.tscn
 res://Playerbullet.tscn
+res://Boss1.tscn
 res://Spark.tscn
 res://Spark3.tscn
 res://Spark2.tscn
+res://scripts/Spawn1.gd
+res://Spawn1.tscn
+res://Blockertile.tscn
