@@ -56,5 +56,6 @@ one_shot = true
 
 [node name="Healthbar" parent="CanvasLayer" instance=ExtResource("5_racds")]
 offset_right = 756.0
+offset_bottom = 15.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
