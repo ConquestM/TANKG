@@ -1,13 +1,10 @@
 res://Cutscene_1.tscn
 res://scripts/bullet2.gd
 res://scripts/Spark.gd
-res://scripts/cutscene2.gd
 res://Cutscene_2.tscn
-res://scripts/mainmenu.gd
-res://Player.tscn
 res://Level.tscn
-res://Level3.tscn
+res://Player.tscn
 res://Level2.tscn
+res://Level3.tscn
 res://Playerbullet.tscn
-res://scripts/Playerbullet.gd
 res://BOss1.tscn
