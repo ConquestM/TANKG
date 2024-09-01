@@ -3,7 +3,7 @@ extends Area2D
 @export var megabullet2_scene: PackedScene
 @onready var global = get_node("/root/global")
 
-var speed = 50
+var speed = 100
 var despawn = 0
 var megabullet
 var friendly = false
@@ -12,12 +12,12 @@ var friendly = false
 func _ready():
 	if friendly:
 		set_meta("player", 0)
-	#if not friendly:
-		#set_meta("Delete", 0)
-		#var hitbox = explosion_scene.instantiate()
-	#	hitbox.global_position = get_node("/root/Map/Player").global_position
-	#	hitbox.rotation = rotation+1.5
-	#	add_sibling(hitbox)
+	if not friendly:
+		set_meta("Delete", 0)
+		var hitbox = explosion_scene.instantiate()
+		hitbox.global_position = get_node("/root/Map/Player").global_position
+		hitbox.rotation = rotation+1.5
+		add_sibling(hitbox)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
