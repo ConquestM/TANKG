@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bx1m47ro2e150"]
 
 [ext_resource type="Script" path="res://scripts/Bulletcircle.gd" id="1_al8n1"]
-[ext_resource type="PackedScene" uid="uid://dwom1o4jxhxmo" path="res://Bossbulletdetonatehitbox.tscn" id="2_pvu33"]
+[ext_resource type="PackedScene" uid="uid://bc7phxn8qj874" path="res://Circlebossbullethitbox.tscn" id="2_thmtu"]
 [ext_resource type="PackedScene" uid="uid://cniy4mkyawquh" path="res://Megabulletcircle.tscn" id="3_l0k5p"]
 [ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="4_04gci"]
 
@@ -10,7 +10,7 @@ size = Vector2(9.5, 5)
 
 [node name="Bullet" type="Area2D"]
 script = ExtResource("1_al8n1")
-explosion_scene = ExtResource("2_pvu33")
+explosion_scene = ExtResource("2_thmtu")
 megabulletcircle_scene = ExtResource("3_l0k5p")
 metadata/Delete = true
 
