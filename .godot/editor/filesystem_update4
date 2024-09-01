@@ -6,3 +6,8 @@ res://Cutscene_2.tscn
 res://scripts/mainmenu.gd
 res://Player.tscn
 res://Level.tscn
+res://Level3.tscn
+res://Level2.tscn
+res://Playerbullet.tscn
+res://scripts/Playerbullet.gd
+res://BOss1.tscn

@@ -11,7 +11,7 @@ script/source = "extends CharacterBody2D
 @export var megabullet_scene: PackedScene
 @export var bullet_scene: PackedScene
 @export var firetimer:Node
-@onready var healthbar = $Healthbar
+@onready var healthbar = $CanvasLayer/Healthbar
 var health = global.BossHP : set = _set_health
 
 var Attack = 0
@@ -29,32 +29,28 @@ func _process(_delta):
 	
 func _on_firetimer_timeout():
 	if Attack < 1:
-		for i in 36:
-			var bullet = bullet_scene.instantiate()
-			bullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
-			bullet.rotation_degrees = $CollisionShape2D.rotation_degrees-10*i
-			add_sibling(bullet)
-		
-		
+		var bullet = bullet_scene.instantiate()
+		bullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
+		bullet.rotation = $CollisionShape2D.rotation
+		add_sibling(bullet)
 		$CollisionShape2D/Area2D.set_visible(false)
 		$CollisionShape2D/Area2D/Hitbox.disabled = true
 		$CollisionShape2D/Firetimer.start()
 		$CollisionShape2D/Weaktimer.start()
-		#Attack +=1
-		Attack =0
-	#else:
-	#	var megabullet = megabullet_scene.instantiate()
-	#	megabullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
-	#	megabullet.rotation = $CollisionShape2D.rotation
-	#	add_sibling(megabullet)
-	#	var megabullet2 = megabullet_scene.instantiate()
-	#	megabullet2.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
-	#	megabullet2.rotation = $CollisionShape2D.rotation+170
-	#	add_sibling(megabullet2)
-	#	var megabullet3 = megabullet_scene.instantiate()
-	#	megabullet3.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
-	#	megabullet3.rotation = $CollisionShape2D.rotation-170
-	#	add_sibling(megabullet3)
+		Attack +=1
+	else:
+		var megabullet = megabullet_scene.instantiate()
+		megabullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
+		megabullet.rotation = $CollisionShape2D.rotation
+		add_sibling(megabullet)
+		var megabullet2 = megabullet_scene.instantiate()
+		megabullet2.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
+		megabullet2.rotation = $CollisionShape2D.rotation+170
+		add_sibling(megabullet2)
+		var megabullet3 = megabullet_scene.instantiate()
+		megabullet3.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
+		megabullet3.rotation = $CollisionShape2D.rotation-170
+		add_sibling(megabullet3)
 
 		$CollisionShape2D/Area2D.set_visible(false)
 		$CollisionShape2D/Area2D/Hitbox.disabled = true
@@ -120,11 +116,21 @@ metadata/Boss = true
 shape = SubResource("CircleShape2D_4ioo3")
 metadata/Boss = true
 
-[node name="Healthbar" parent="." instance=ExtResource("4_cganh")]
-offset_left = -15.0
-offset_top = -21.0
-offset_right = 15.0
-offset_bottom = -17.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Healthbar" parent="CanvasLayer" instance=ExtResource("4_cganh")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -486.0
+offset_top = -24.0
+offset_right = 487.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 4
 
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
 [connection signal="timeout" from="CollisionShape2D/Weaktimer" to="." method="_on_weaktimer_timeout"]

@@ -1,6 +1,5 @@
-[gd_scene load_steps=5 format=3 uid="uid://cwrvp0oytaxc3"]
+[gd_scene load_steps=4 format=3 uid="uid://cwrvp0oytaxc3"]
 
-[ext_resource type="Script" path="res://scripts/UI.gd" id="1_sisiw"]
 [ext_resource type="PackedScene" uid="uid://cuqm3glsshood" path="res://Boss3.tscn" id="1_wsmma"]
 [ext_resource type="PackedScene" uid="uid://cou1mvn4ls013" path="res://Player.tscn" id="3_twckq"]
 [ext_resource type="PackedScene" uid="uid://btij6l30ipepu" path="res://Turret.tscn" id="4_w7ksc"]
@@ -15,21 +14,6 @@ zoom = Vector2(2, 2)
 
 [node name="Bossbody3" parent="." instance=ExtResource("1_wsmma")]
 position = Vector2(287, 72)
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-script = ExtResource("1_sisiw")
-
-[node name="BossHP" type="Label" parent="CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 23.0
-metadata/_edit_use_anchors_ = true
-
-[node name="HP" type="Label" parent="CanvasLayer"]
-offset_left = 112.0
-offset_top = 6.0
-offset_right = 152.0
-offset_bottom = 29.0
-metadata/_edit_use_anchors_ = true
 
 [node name="Player" parent="." instance=ExtResource("3_twckq")]
 position = Vector2(288, 163)
