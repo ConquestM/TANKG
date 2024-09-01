@@ -3,7 +3,7 @@ extends Area2D
 @export var megabullet2_scene: PackedScene
 @onready var global = get_node("/root/global")
 
-var speed = 50
+var speed = 100
 var despawn = 0
 var megabullet
 var friendly = false
@@ -12,12 +12,17 @@ var friendly = false
 func _ready():
 	if friendly:
 		set_meta("player", 0)
-		
+	if not friendly:
+		set_meta("Delete", 0)
+		var hitbox = explosion_scene.instantiate()
+		hitbox.global_position = get_node("/root/Map/Player").global_position
+		hitbox.rotation = rotation+1.5
+		add_sibling(hitbox)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	move_local_x(speed * delta)
-
 	if not friendly:
 		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)
 	
@@ -41,3 +46,7 @@ func _on_area_entered(area):
 				megabulletb.rotation_degrees = global_rotation_degrees + i*18
 				queue_free()
 
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	queue_free()
