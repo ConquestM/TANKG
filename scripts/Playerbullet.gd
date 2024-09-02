@@ -3,7 +3,7 @@ extends Area2D
 @export var megabullet2_scene: PackedScene
 @onready var global = get_node("/root/global")
 
-var speed = 1000
+var speed = 100
 var despawn = 0
 var megabullet
 var friendly = false
