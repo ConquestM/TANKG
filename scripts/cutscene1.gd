@@ -3,7 +3,7 @@ extends Control
 var messages = [
 	"Zeus",
 ]
-var typing_speed = 0.5
+var typing_speed = 0.25
 var read_time = 0.5
 var current_message = 0
 var display = ""
