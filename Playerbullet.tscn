@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://c7464ii0e0x76"]
 
-[ext_resource type="Script" path="res://scripts/Playerbullet.gd" id="1_0wwet"]
+[ext_resource type="Script" path="res://scripts/Playerbullet.gd" id="1_xhdvj"]
 [ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="4_1lp2u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
 size = Vector2(9.5, 5)
 
 [node name="Bullet" type="Area2D"]
-script = ExtResource("1_0wwet")
+script = ExtResource("1_xhdvj")
 metadata/Delete = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

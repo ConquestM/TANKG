@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://d3pd7hakaer4d"]
 
-[ext_resource type="Script" path="res://Boltbullet2.gd" id="1_mdfpu"]
+[ext_resource type="Script" path="res://scripts/Boltbullet2.gd" id="1_3oib2"]
 [ext_resource type="Texture2D" uid="uid://yxeav7431xuf" path="res://assets/Lightningbolt.png" id="4_13n8h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
 size = Vector2(9.5, 5)
 
 [node name="Bullet" type="Area2D"]
-script = ExtResource("1_mdfpu")
+script = ExtResource("1_3oib2")
 metadata/player = true
 metadata/Delete = true
 
