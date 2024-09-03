@@ -17,6 +17,10 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	move_local_x(speed * delta)
+	if global.back == 1:
+		speed = -50
+	if global.back == 0:
+		speed = 50
 
 	if not friendly:
 		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)

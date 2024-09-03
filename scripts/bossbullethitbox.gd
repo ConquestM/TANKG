@@ -16,3 +16,8 @@ func _process(_delta):
 
 func _on_delete_timeout():
 	queue_free()
+
+
+func _on_area_entered(area):
+	if area.has_meta("Circle"):
+		queue_free()

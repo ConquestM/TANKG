@@ -27,7 +27,10 @@ func _on_firetimer_timeout():
 			bullethell.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
 			bullethell.rotation_degrees = $CollisionShape2D.rotation_degrees-10*i
 			add_sibling(bullethell)
+		$CollisionShape2D/Area2D.set_visible(false)
 		Attack +=1
+		$CollisionShape2D/Firetimer.start()
+		global.back = 0
 	else:
 		var bullet = bullet_scene.instantiate()
 		bullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
@@ -38,17 +41,8 @@ func _on_firetimer_timeout():
 		$CollisionShape2D/Firetimer.start()
 		$CollisionShape2D/Weaktimer.start()
 		Attack =0
-		#for i in 20:
-			#var megabullet = megabullet_scene.instantiate()
-			#megabullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
-			#megabullet.rotation_degrees = $CollisionShape2D.rotation_degrees +i*18
-			#add_sibling(megabullet)
+		global.back = 1
 
-		$CollisionShape2D/Area2D.set_visible(false)
-		$CollisionShape2D/Area2D/Hitbox.disabled = true
-		$CollisionShape2D/Firetimer.start()
-		$CollisionShape2D/Weaktimer.start()
-		Attack = 0
 func _on_weaktimer_timeout():
 	$CollisionShape2D/Area2D.set_visible(true)
 	$CollisionShape2D/Area2D/Hitbox.disabled = false
