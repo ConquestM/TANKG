@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bx1m47ro2e150" path="res://Bulletcircle.tscn" id="3_kfc2h"]
 [ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="3_x7vvt"]
 [ext_resource type="PackedScene" uid="uid://d3nngbjfswteu" path="res://Teleport.tscn" id="4_76p4s"]
-[ext_resource type="PackedScene" uid="uid://d3pd7hakaer4d" path="res://Boltbullet2.tscn" id="4_ikkfd"]
+[ext_resource type="PackedScene" uid="uid://d3pd7hakaer4d" path="res://Boss2bullet.tscn" id="4_ikkfd"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_vsmk5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
