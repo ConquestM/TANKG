@@ -13,6 +13,7 @@ script = ExtResource("1_al8n1")
 explosion_scene = ExtResource("2_thmtu")
 megabulletcircle_scene = ExtResource("3_l0k5p")
 metadata/Delete = true
+metadata/Circle = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.75, 0.5)

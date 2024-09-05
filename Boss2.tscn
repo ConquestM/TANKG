@@ -1,15 +1,19 @@
-[gd_scene load_steps=9 format=3 uid="uid://r885hmnubc6o"]
+[gd_scene load_steps=10 format=3 uid="uid://r885hmnubc6o"]
 
 [ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Spark.tscn" id="1_3g2b2"]
 [ext_resource type="Script" path="res://scripts/Boss2.gd" id="1_wwpcx"]
 [ext_resource type="PackedScene" uid="uid://bx1m47ro2e150" path="res://Bulletcircle.tscn" id="3_kfc2h"]
 [ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="3_x7vvt"]
 [ext_resource type="PackedScene" uid="uid://d3nngbjfswteu" path="res://Teleport.tscn" id="4_76p4s"]
-[ext_resource type="PackedScene" uid="uid://d3pd7hakaer4d" path="res://Boltbullet2.tscn" id="4_ikkfd"]
+[ext_resource type="PackedScene" uid="uid://d3pd7hakaer4d" path="res://Boss2bullet.tscn" id="4_ikkfd"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_vsmk5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047
+
+[sub_resource type="SphereMesh" id="SphereMesh_2vg6r"]
+radius = 100.0
+height = 100.0
 
 [node name="Bossbody2" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
 script = ExtResource("1_wwpcx")
@@ -35,21 +39,13 @@ position = Vector2(18, 0)
 rotation = -1.5708
 scale = Vector2(1.5, 1.5)
 
-[node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]
-offset_left = -10.0
-offset_top = -10.0
-offset_right = 10.0
-offset_bottom = 10.0
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect2" type="ColorRect" parent="CollisionShape2D"]
-offset_left = 9.0
-offset_top = -3.0
-offset_right = 15.0
-offset_bottom = 3.0
+[node name="MeshInstance2D" type="MeshInstance2D" parent="CollisionShape2D"]
+modulate = Color(1, 0, 0, 0.262745)
+position = Vector2(0, -1.19209e-07)
+scale = Vector2(0.11448, 0.23125)
+mesh = SubResource("SphereMesh_2vg6r")
 
 [node name="Boss_bullet_spawn" type="Node2D" parent="CollisionShape2D"]
-position = Vector2(27, 0)
 
 [node name="Area2D2" type="Area2D" parent="CollisionShape2D"]
 metadata/Boss = true
