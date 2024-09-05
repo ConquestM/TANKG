@@ -1,9 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://c27rlmxl5mmbk"]
+[gd_scene load_steps=10 format=3 uid="uid://c27rlmxl5mmbk"]
 
 [ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Boltbullet.tscn" id="1_8u0ge"]
 [ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Spark.tscn" id="1_x7p21"]
 [ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="2_t2cd4"]
+[ext_resource type="PackedScene" uid="uid://bpemhh5wfb7ow" path="res://Portal.tscn" id="3_k67as"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_cganh"]
+[ext_resource type="Texture2D" uid="uid://cv5nipxf82ral" path="res://assets/Zeus.webp" id="4_q677t"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="5_jctoa"]
 
 [sub_resource type="GDScript" id="GDScript_ifhia"]
 resource_name = "BOss_script"
@@ -11,21 +14,27 @@ script/source = "extends CharacterBody2D
 @export var megabullet_scene: PackedScene
 @export var bullet_scene: PackedScene
 @export var firetimer:Node
-@onready var healthbar = $Healthbar/Healthbar
+@export var portal_scene: PackedScene
+@onready var healthbar = $CanvasLayer/Healthbar
 var health = global.BossHP : set = _set_health
 
 var Attack = 0
 
 func _ready():
+	global.level = 1 
+	$CanvasLayer/Label.hide()
 	firetimer.start()
 	global.BossHP = 50
 	healthbar.init_health(health)
 	
 func _process(_delta):
 	_set_health(health)
+	if get_node_or_null(\"CollisionShape2D\") == null: return
 	$CollisionShape2D.look_at(get_node(\"/root/Map/Player\").global_position)
 	if global.BossHP <= 0:
-		queue_free()
+		$CanvasLayer/Timer2.start()
+		$Sprite2D.queue_free()
+		$CollisionShape2D.queue_free()
 	
 func _on_firetimer_timeout():
 	if Attack < 3:
@@ -65,18 +74,32 @@ func _on_weaktimer_timeout():
 func _set_health(value):
 	if healthbar != null:
 		healthbar.health = global.BossHP
-	
 
+func _on_timer_timeout():
+	$CanvasLayer/Label.hide()
+
+
+func _on_timer_2_timeout():
+	$CanvasLayer/Label.show()
+	var portal = portal_scene.instantiate()
+	add_sibling(portal)
+	portal.global_position = get_node(\"../Camera2D\").global_position
+	$CanvasLayer/Timer.start()
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
-radius = 11.7047
+radius = 18.0
 
 [node name="Bossbody" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
 script = SubResource("GDScript_ifhia")
 megabullet_scene = ExtResource("1_x7p21")
 bullet_scene = ExtResource("1_8u0ge")
 firetimer = NodePath("CollisionShape2D/Firetimer")
+portal_scene = ExtResource("3_k67as")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0443019, 0.0443019)
+texture = ExtResource("4_q677t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_4ioo3")
@@ -87,24 +110,10 @@ position = Vector2(18, 0)
 rotation = -1.5708
 scale = Vector2(1.5, 1.5)
 
-[node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]
-offset_left = -10.0
-offset_top = -10.0
-offset_right = 10.0
-offset_bottom = 10.0
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect2" type="ColorRect" parent="CollisionShape2D"]
-offset_left = 9.0
-offset_top = -3.0
-offset_right = 15.0
-offset_bottom = 3.0
-
 [node name="Firetimer" type="Timer" parent="CollisionShape2D"]
 wait_time = 0.9
 
 [node name="Boss_bullet_spawn" type="Node2D" parent="CollisionShape2D"]
-position = Vector2(27, 0)
 
 [node name="Weaktimer" type="Timer" parent="CollisionShape2D"]
 wait_time = 0.2
@@ -132,5 +141,31 @@ offset_bottom = 0.0
 grow_horizontal = 2
 grow_vertical = 0
 
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -297.0
+offset_top = -50.0
+offset_right = 297.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_jctoa")
+theme_override_font_sizes/font_size = 100
+text = "GOD SLAIN"
+
+[node name="Timer" type="Timer" parent="CanvasLayer"]
+wait_time = 3.0
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="CanvasLayer"]
+wait_time = 3.0
+one_shot = true
+
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
 [connection signal="timeout" from="CollisionShape2D/Weaktimer" to="." method="_on_weaktimer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Timer2" to="." method="_on_timer_2_timeout"]

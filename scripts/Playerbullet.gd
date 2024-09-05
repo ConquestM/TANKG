@@ -12,13 +12,6 @@ var friendly = false
 func _ready():
 	if friendly:
 		set_meta("player", 0)
-	if not friendly:
-		set_meta("Delete", 0)
-		var hitbox = explosion_scene.instantiate()
-		hitbox.global_position = get_node("/root/Map/Player").global_position
-		hitbox.rotation = rotation+1.5
-		add_sibling(hitbox)
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -37,16 +30,6 @@ func _on_area_entered(area):
 	if area.has_meta("Boss") and friendly:
 		global.BossHP -= 1
 		queue_free()
-	if area.has_meta("Debt"):
-		if not friendly:
-			for i in 20:
-				var megabulletb = megabullet2_scene	.instantiate()
-				add_sibling(megabulletb)
-				megabulletb.global_position = global_position
-				megabulletb.rotation_degrees = global_rotation_degrees + i*18
-				queue_free()
-
-
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()

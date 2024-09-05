@@ -8,4 +8,9 @@ res://Level2.tscn
 res://Level3.tscn
 res://Playerbullet.tscn
 res://BOss1.tscn
+res://scripts/player.gd
 res://scripts/Playerbullet.gd
+res://scripts/global.gd
+res://portal.gd
+res://scripts/portal.gd
+res://Portal.tscn
