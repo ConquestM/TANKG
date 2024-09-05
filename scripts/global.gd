@@ -4,7 +4,8 @@ var HP = 15 : set = _iframes
 var BossHP = 50
 var iframes = false
 var timer
-var back = 0
+var level = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
