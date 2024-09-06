@@ -13,22 +13,15 @@ var friendly = false
 
 func _ready():
 	$Wait.start()
-	if global.BossHP <= 40:
-		self.visible = false
-		speed = -400
+	self.visible = false
+	speed = -400
 
 
 
 func _process(delta):
 	move_local_x(speed * delta)
-	if global.back == 1:
-		if wait == 1:
-			speed = -100
-		$VertHor.start()
-	if global.back == 0:
-		if wait == 1:
-			speed = 100
-
+	if wait == 1:
+		speed = 100
 	if not friendly:
 		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)
 	
