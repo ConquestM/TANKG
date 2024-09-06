@@ -1,11 +1,11 @@
-Timer
-MeshInstance2D
+Label
 TextureRect
 Control
+Timer
 CollisionShape2D
 Area2D
+MeshInstance2D
 Sprite2D
-Label
 CanvasLayer
 VisibleOnScreenNotifier2D
 ColorRect

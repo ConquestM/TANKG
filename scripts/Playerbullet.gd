@@ -28,7 +28,7 @@ func _on_area_entered(area):
 		global.HP -= 1
 		queue_free()
 	if area.has_meta("Boss") and friendly:
-		global.BossHP -= 1
+		global.BossHP -= 0.5
 		queue_free()
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
