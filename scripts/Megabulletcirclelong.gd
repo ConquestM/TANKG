@@ -17,11 +17,10 @@ func _process(delta):
 	if despawn > 3000:
 		queue_free()
 func _on_area_entered(area):
-	if area.has_meta("Player") and not friendly:
+	if area.has_meta("Player") and not friendly and not global.iframes:
 		global.HP -= 1
+		global.iframes = true
 		queue_free()
-	if area.has_meta("Boss") and friendly:
-		global.BossHP -= 1
-		queue_free()
+
 	
 
