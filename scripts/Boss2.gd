@@ -2,6 +2,7 @@ extends CharacterBody2D
 @export var megabullet_scene: PackedScene
 @export var bullet_scene: PackedScene
 @export var bullethell_scene: PackedScene
+@export var bullethell2_scene: PackedScene
 @export var teleport_scene: PackedScene
 @export var firetimer:Node
 @onready var healthbar = $Healthbar
@@ -31,6 +32,15 @@ func _on_firetimer_timeout():
 		Attack +=1
 		$CollisionShape2D/Firetimer.start()
 		global.back = 0
+		if global.BossHP <=25:
+			for i in 36:
+				var bullethell2 = bullethell2_scene.instantiate()
+				bullethell2.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
+				bullethell2.rotation_degrees = $CollisionShape2D.rotation_degrees-10*i
+				add_sibling(bullethell2)
+				$CollisionShape2D/Area2D.set_visible(false)
+				Attack +=1
+				$CollisionShape2D/Firetimer.start()
 	else:
 		var bullet = bullet_scene.instantiate()
 		bullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position

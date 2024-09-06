@@ -1,5 +1,5 @@
 extends Node
-
+var back = 0
 var HP = 15 : set = _iframes
 var BossHP = 50
 var iframes = false

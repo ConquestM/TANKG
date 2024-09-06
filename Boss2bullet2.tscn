@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://d3pd7hakaer4d"]
+[gd_scene load_steps=5 format=3 uid="uid://bj23l42rws8ai"]
 
-[ext_resource type="Script" path="res://scripts/Boltbullet2.gd" id="1_3oib2"]
-[ext_resource type="Texture2D" uid="uid://yxeav7431xuf" path="res://assets/Lightningbolt.png" id="4_13n8h"]
+[ext_resource type="Script" path="res://Boss2bullet2.gd" id="1_qe55a"]
+[ext_resource type="Texture2D" uid="uid://yxeav7431xuf" path="res://assets/Lightningbolt.png" id="2_yrrvr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
 size = Vector2(9.5, 5)
@@ -11,7 +11,7 @@ size = Vector2(9.5, 5)
 [node name="Bullet" type="Area2D"]
 light_mask = 2
 visibility_layer = 2
-script = ExtResource("1_3oib2")
+script = ExtResource("1_qe55a")
 metadata/player = true
 metadata/Delete = true
 
@@ -29,7 +29,7 @@ texture_filter = 1
 position = Vector2(-1.96764, 0.545677)
 rotation = 4.71239
 scale = Vector2(0.0363399, 0.0529613)
-texture = ExtResource("4_13n8h")
+texture = ExtResource("2_yrrvr")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 light_mask = 2
@@ -64,8 +64,11 @@ position = Vector2(3, 0)
 scale = Vector2(166.564, 193.282)
 mesh = SubResource("SphereMesh_sr1oi")
 
+[node name="Wait" type="Timer" parent="."]
+
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_entered" from="." to="." method="_on_area_enter"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
 [connection signal="timeout" from="VertHor" to="." method="_on_vert_hor_timeout"]
 [connection signal="timeout" from="Debt" to="." method="_on_debt_timeout"]
+[connection signal="timeout" from="Wait" to="." method="_on_wait_timeout"]

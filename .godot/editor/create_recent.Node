@@ -1,9 +1,9 @@
+Timer
+MeshInstance2D
 TextureRect
 Control
-Timer
 CollisionShape2D
 Area2D
-MeshInstance2D
 Sprite2D
 Label
 CanvasLayer
@@ -12,4 +12,3 @@ ColorRect
 CanvasGroup
 ProgressBar
 AnimatedSprite2D
-Node2D
