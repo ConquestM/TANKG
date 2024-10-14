@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://bj23l42rws8ai"]
+
+[ext_resource type="Script" path="res://Boss2bullet2.gd" id="1_qe55a"]
+[ext_resource type="Texture2D" uid="uid://yxeav7431xuf" path="res://assets/Lightningbolt.png" id="2_yrrvr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
+size = Vector2(9.5, 5)
+
+[sub_resource type="SphereMesh" id="SphereMesh_sr1oi"]
+
+[node name="Bullet" type="Area2D"]
+light_mask = 2
+visibility_layer = 2
+script = ExtResource("1_qe55a")
+metadata/player = true
+metadata/Delete = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(-1.75, 0.5)
+shape = SubResource("RectangleShape2D_qa21a")
+metadata/Delete = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+texture_filter = 1
+position = Vector2(-1.96764, 0.545677)
+rotation = 4.71239
+scale = Vector2(0.0363399, 0.0529613)
+texture = ExtResource("2_yrrvr")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+visible = false
+offset_left = -109.0
+offset_top = -20.0
+offset_right = 112.0
+offset_bottom = 27.0
+color = Color(0.615686, 0, 1, 0.137255)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -33.0
+offset_top = -117.0
+offset_right = 35.0
+offset_bottom = 118.0
+color = Color(0.615686, 0, 1, 0.137255)
+
+[node name="VertHor" type="Timer" parent="."]
+one_shot = true
+
+[node name="Debt" type="Timer" parent="."]
+wait_time = 30.0
+one_shot = true
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.654902, 0, 1, 0.0470588)
+position = Vector2(3, 0)
+scale = Vector2(166.564, 193.282)
+mesh = SubResource("SphereMesh_sr1oi")
+
+[node name="Wait" type="Timer" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_entered" from="." to="." method="_on_area_enter"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="timeout" from="VertHor" to="." method="_on_vert_hor_timeout"]
+[connection signal="timeout" from="Debt" to="." method="_on_debt_timeout"]
+[connection signal="timeout" from="Wait" to="." method="_on_wait_timeout"]

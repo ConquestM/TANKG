@@ -11,11 +11,15 @@ var Attack = 0
 func _ready():
 	firetimer.start()
 	healthbar.init_health(health)
+	global.spirits += 1
 	
 func _process(_delta):
 		$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
 		_set_health(health)
+		position = get_node("/root/Map/Player").global_position
+		rotation_degrees += 1
 		if HP < 0 or HP == 0:
+			global.spirits -= 1
 			queue_free()
 
 func _set_health(value):

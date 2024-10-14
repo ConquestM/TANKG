@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://cuqm3glsshood"]
+[gd_scene load_steps=9 format=3 uid="uid://cuqm3glsshood"]
 
 [ext_resource type="Script" path="res://scripts/Boss3.gd" id="1_6ohnh"]
 [ext_resource type="PackedScene" uid="uid://dqqoe1p0y1ann" path="res://Spark2.tscn" id="2_07kyf"]
 [ext_resource type="PackedScene" uid="uid://bopd8ltnba6ol" path="res://Spawn1.tscn" id="4_awiot"]
 [ext_resource type="PackedScene" uid="uid://d4nhehjpgots4" path="res://BlockerBullet.tscn" id="4_hjerf"]
-[ext_resource type="PackedScene" uid="uid://bl7l4ldama4ib" path="res://Blockertile.tscn" id="5_ryl8a"]
+[ext_resource type="PackedScene" uid="uid://c2niigo3nbyw2" path="res://Zombie1.tscn" id="5_0b6ka"]
+[ext_resource type="PackedScene" uid="uid://bl7l4ldama4ib" path="res://Gravestone.tscn" id="5_ryl8a"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="6_v7fj4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
@@ -15,6 +16,7 @@ script = ExtResource("1_6ohnh")
 megabullet_scene = ExtResource("2_07kyf")
 shield_bullet_scene = ExtResource("4_hjerf")
 spawner_scene = ExtResource("4_awiot")
+zombie_scene = ExtResource("5_0b6ka")
 wall_scene = ExtResource("5_ryl8a")
 firetimer = NodePath("CollisionShape2D/Firetimer")
 
@@ -26,7 +28,7 @@ metadata/Boss = true
 wait_time = 1.5
 
 [node name="Weaktimer" type="Timer" parent="CollisionShape2D"]
-wait_time = 0.6
+wait_time = 10.0
 one_shot = true
 
 [node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]

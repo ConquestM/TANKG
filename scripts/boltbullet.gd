@@ -26,9 +26,11 @@ func _on_area_entered(area):
 		queue_free()
 	if area.has_meta("Tile"):
 		queue_free()
-	if area.has_meta("Player") and not friendly and not global.iframes:
+	if area.has_meta("Player") and not friendly:
 		global.HP -= 1
-		global.iframes = true
+		queue_free()
+	if area.has_meta("Boss") and friendly:
+		global.BossHP -= 1
 		queue_free()
 	if area.has_meta("Debt"):
 		if not friendly:

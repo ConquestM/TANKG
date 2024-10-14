@@ -9,6 +9,8 @@
 size = Vector2(9.5, 5)
 
 [node name="Bullet" type="Area2D"]
+z_index = -1
+z_as_relative = false
 script = ExtResource("1_al8n1")
 explosion_scene = ExtResource("2_thmtu")
 megabulletcircle_scene = ExtResource("3_l0k5p")
@@ -16,11 +18,15 @@ metadata/Delete = true
 metadata/Circle = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = -1
+z_as_relative = false
 position = Vector2(-1.75, 0.5)
 shape = SubResource("RectangleShape2D_qa21a")
 metadata/Delete = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+z_as_relative = false
 texture_filter = 1
 position = Vector2(5.96046e-08, 1.26647e-10)
 rotation = 1.57233

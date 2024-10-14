@@ -10,6 +10,7 @@ var dash_timer = 0
 var can_dash = true
 var direction = 0
 var vert_direction = 0
+var slowed = 0
 var saved_direction = 0
 var saved_vert_direction = 0
 @onready var healthbar = $CanvasLayer/Healthbar
@@ -24,6 +25,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	_set_health(health)
+	
 	if not dashing:
 		direction = Input.get_axis("ui_left", "ui_right")
 		vert_direction = Input.get_axis("ui_up", "ui_down")
@@ -78,7 +80,10 @@ func _process(delta):
 		dash_timer += delta
 		if dash_timer >= dash_duration:
 			dashing = false
-			speed = 100
+			if slowed == 1:
+				speed = 50
+			if slowed == 0:
+				speed = 100
 			dash_timer = 0
 	if global.HP < 0 or global.HP == 0:
 		get_tree().change_scene_to_file("res://Mainmenu.tscn")
@@ -109,3 +114,17 @@ func _on_timer_timeout():
 func _set_health(value):
 	if healthbar != null:
 		healthbar.health = global.HP
+
+
+
+func _on_area_2d_area_entered(area):
+	if area.has_meta("slow"):
+		speed = 50
+		slowed = 1
+		$Slowtimer.start()
+
+
+func _on_slowtimer_timeout():
+	speed = 100
+	slowed = 0
+	
