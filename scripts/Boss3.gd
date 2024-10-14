@@ -37,13 +37,14 @@ func _on_firetimer_timeout():
 		$CollisionShape2D/Weaktimer.start()
 		Attack +=1
 	else: 
-		var rng = RandomNumberGenerator.new()
-		var rndX = rng.randi_range(0, 570)
-		var rndY = rng.randi_range(0, 370)
-		var spawner = spawner_scene.instantiate()
-		add_sibling(spawner)
-		spawner.position = Vector2(rndX, rndY)
-		Attack = 0
+		if global.spirits <4:
+			var rng = RandomNumberGenerator.new()
+			var rndX = rng.randi_range(0, 570)
+			var rndY = rng.randi_range(0, 370)
+			var spawner = spawner_scene.instantiate()
+			add_sibling(spawner)
+			spawner.position = Vector2(rndX, rndY)
+			Attack = 0
 		#for i in 20:
 			#var megabullet = megabullet_scene.instantiate()
 			#megabullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position

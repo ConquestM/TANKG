@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/BlockerBullet.gd" id="1_8krsb"]
 [ext_resource type="PackedScene" uid="uid://dwom1o4jxhxmo" path="res://Bossbulletdetonatehitbox.tscn" id="2_5mx54"]
-[ext_resource type="PackedScene" uid="uid://bl7l4ldama4ib" path="res://Blockertile.tscn" id="3_k7pc6"]
+[ext_resource type="PackedScene" uid="uid://bl7l4ldama4ib" path="res://Gravestone.tscn" id="3_k7pc6"]
 [ext_resource type="Texture2D" uid="uid://daf3wndrrrwd3" path="res://assets/frame0001.png" id="4_tilc6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]

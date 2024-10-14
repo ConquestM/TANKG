@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://ccuc8cahwt677"]
+[gd_scene load_steps=5 format=3 uid="uid://ccuc8cahwt677"]
 
 [ext_resource type="Script" path="res://scripts/boltbullet.gd" id="1_i6vgn"]
 [ext_resource type="PackedScene" uid="uid://dwom1o4jxhxmo" path="res://Bossbulletdetonatehitbox.tscn" id="2_qi73p"]
-[ext_resource type="PackedScene" uid="uid://507dapfpwiru" path="res://Spark3.tscn" id="3_iqbqb"]
 [ext_resource type="Texture2D" uid="uid://yxeav7431xuf" path="res://assets/Lightningbolt.png" id="4_deu7n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
@@ -11,7 +10,6 @@ size = Vector2(9.5, 5)
 [node name="Bullet" type="Area2D"]
 script = ExtResource("1_i6vgn")
 explosion_scene = ExtResource("2_qi73p")
-megabullet2_scene = ExtResource("3_iqbqb")
 metadata/player = true
 metadata/Delete = true
 

@@ -30,6 +30,7 @@ radius = 6.0
 script = ExtResource("1_d284k")
 bullet_scene = ExtResource("2_6qqvt")
 metadata/Player = false
+metadata/slowed = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_8glnc")
@@ -72,4 +73,10 @@ offset_bottom = 11.5
 grow_vertical = 2
 text = "HEALTH"
 
+[node name="Slowtimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Slowtimer" to="." method="_on_slowtimer_timeout"]
+[connection signal="timeout" from="Slowtimer" to="." method="_on_timer_2_timeout"]
