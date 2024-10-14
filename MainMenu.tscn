@@ -39,8 +39,7 @@ offset_right = 850.0
 offset_bottom = 278.0
 text = "TANKG"
 
-[node name="Quit" type="Button" parent="."]
-layout_mode = 1
+[node name="Quit" type="Button" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_left = 0.202
 anchor_top = 0.179
@@ -51,16 +50,14 @@ offset_top = 358.008
 offset_right = 322.44
 offset_bottom = 375.448
 
-[node name="Exit text" type="Label" parent="."]
-layout_mode = 0
+[node name="Exit text" type="Label" parent="CanvasLayer"]
 offset_left = 572.0
 offset_top = 493.0
 offset_right = 673.0
 offset_bottom = 567.0
 text = "Quit"
 
-[node name="Level2" type="Button" parent="."]
-layout_mode = 1
+[node name="Level2" type="Button" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_left = 0.202
 anchor_top = 0.179
@@ -71,16 +68,14 @@ offset_top = 250.008
 offset_right = 524.44
 offset_bottom = 267.448
 
-[node name="Boss" type="Label" parent="."]
-layout_mode = 0
+[node name="Boss" type="Label" parent="CanvasLayer"]
 offset_left = 748.0
 offset_top = 385.0
 offset_right = 849.0
 offset_bottom = 459.0
 text = "Zonelocker"
 
-[node name="Level3" type="Button" parent="."]
-layout_mode = 1
+[node name="Level3" type="Button" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_left = 0.202
 anchor_top = 0.179
@@ -91,15 +86,21 @@ offset_top = 377.008
 offset_right = 546.44
 offset_bottom = 394.448
 
-[node name="Boss2" type="Label" parent="."]
-layout_mode = 0
+[node name="Boss2" type="Label" parent="CanvasLayer"]
 offset_left = 750.0
 offset_top = 511.0
 offset_right = 882.0
 offset_bottom = 585.0
 text = "Spawner/delayer"
 
+[node name="Settings" type="Button" parent="CanvasLayer"]
+offset_left = 160.0
+offset_top = 300.0
+offset_right = 446.0
+offset_bottom = 339.0
+
 [connection signal="pressed" from="CanvasLayer/Play1" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_button_quit"]
-[connection signal="pressed" from="Level2" to="." method="_on_level_2_pressed"]
-[connection signal="pressed" from="Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/Quit" to="." method="_on_button_quit"]
+[connection signal="pressed" from="CanvasLayer/Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/Settings" to="." method="_on_settings_pressed"]
