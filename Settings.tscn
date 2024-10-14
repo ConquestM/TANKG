@@ -38,4 +38,10 @@ offset_right = 850.0
 offset_bottom = 278.0
 text = "TANKG"
 
+[node name="HSlider" type="HSlider" parent="CanvasLayer"]
+offset_left = 81.0
+offset_top = 173.0
+offset_right = 504.0
+offset_bottom = 292.0
+
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

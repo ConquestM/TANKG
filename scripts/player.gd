@@ -89,15 +89,10 @@ func _process(delta):
 		get_tree().change_scene_to_file("res://Mainmenu.tscn")
 		
 		global.HP = 15
-	if dashing:
+	if dashing or global.iframes:
 		$Area2D/CollisionShape2D.disabled = true
-	if not dashing:
+	if not dashing and not global.iframes:
 		$Area2D/CollisionShape2D.disabled = false
-	if global.iframes:
-		$Area2D/CollisionShape2D.disabled = true
-	if global.iframes == false:
-		$Area2D/CollisionShape2D.disabled = false
-	
 
 
 func _dash():
@@ -114,7 +109,6 @@ func _dash():
 		$Timer.start()
 
 func _on_timer_timeout():
-	$Area2D/CollisionShape2D.disabled = false
 	can_dash = true
 
 func _set_health(value):

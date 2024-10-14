@@ -32,6 +32,13 @@ offset_bottom = 429.0
 text = "Play"
 metadata/_edit_group_ = true
 
+[node name="Title" type="Label" parent="CanvasLayer"]
+offset_left = 546.0
+offset_top = 143.0
+offset_right = 850.0
+offset_bottom = 278.0
+text = "TANKG"
+
 [node name="Quit" type="Button" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_left = 0.202
@@ -86,14 +93,14 @@ offset_right = 882.0
 offset_bottom = 585.0
 text = "Spawner/delayer"
 
-[node name="Title" type="Label" parent="CanvasLayer"]
-offset_left = 546.0
-offset_top = 143.0
-offset_right = 850.0
-offset_bottom = 278.0
-text = "TANKG"
+[node name="Settings" type="Button" parent="CanvasLayer"]
+offset_left = 160.0
+offset_top = 300.0
+offset_right = 446.0
+offset_bottom = 339.0
 
 [connection signal="pressed" from="CanvasLayer/Play1" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Quit" to="." method="_on_button_quit"]
 [connection signal="pressed" from="CanvasLayer/Level2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="CanvasLayer/Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/Settings" to="." method="_on_settings_pressed"]
