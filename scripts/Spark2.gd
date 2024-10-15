@@ -29,6 +29,8 @@ func _on_meiosis_timeout():
 func _process(delta):
 	move_local_x(speed * delta)
 	despawn += 1
+	if global.BossHP == 0:
+		queue_free()
 	if despawn > 300:
 		queue_free()
 func _on_area_entered(area):

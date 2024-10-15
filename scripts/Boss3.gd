@@ -35,12 +35,9 @@ func _process(_delta):
 func _on_firetimer_timeout():
 	if Attack < 1:
 		var bullet = shield_bullet_scene.instantiate()
-		var wall = wall_scene.instantiate()
 		bullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
 		bullet.rotation = $CollisionShape2D.rotation
-		wall.rotation = rotation
 		add_sibling(bullet)
-		add_sibling(wall)
 		$CollisionShape2D/Firetimer.start()
 
 		global.zombies += 10
