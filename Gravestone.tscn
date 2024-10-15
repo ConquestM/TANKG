@@ -7,19 +7,13 @@
 size = Vector2(4, 10)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cmubg"]
-radius = 36.6727
+radius = 25.4122
 
 [sub_resource type="SphereMesh" id="SphereMesh_7ebrc"]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_semo5")
 metadata/Player = false
-
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 2.0
-offset_bottom = 4.0
 
 [node name="Healthbar" parent="." instance=ExtResource("2_gtj34")]
 offset_left = -5.0
@@ -58,14 +52,25 @@ metadata/slow = true
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 modulate = Color(1, 1, 1, 0.188235)
-position = Vector2(-0.999998, 0.0625095)
-scale = Vector2(110.125, 109.875)
+position = Vector2(-0.999968, 5.72205e-06)
+scale = Vector2(76.0862, 76)
 mesh = SubResource("SphereMesh_7ebrc")
 metadata/slow = false
 
 [node name="Death" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -2.0
+offset_top = -3.0
+offset_right = -1.0
+offset_bottom = 5.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -4.0
+offset_top = -1.0
+offset_right = 1.0
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

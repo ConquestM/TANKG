@@ -10,11 +10,15 @@ var health = HP : set = _set_health
 func _ready():
 	screen_size = get_viewport_rect().size
 	healthbar.init_health(health)
+	rotation = 0
 	$Death.start()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	_set_health(health)
+	rotation = 0
+	if global.BossHP == 0:
+		queue_free()
 	if HP < 0 or HP == 0:
 		queue_free()
 

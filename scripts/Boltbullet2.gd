@@ -20,6 +20,8 @@ func _process(delta):
 		if wait == 1:
 			speed = -50
 		$VertHor.start()
+	if global.BossHP == 0:
+		queue_free()
 	if global.back == 0:
 		if wait == 1:
 			speed = 50

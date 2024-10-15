@@ -28,5 +28,5 @@ func init_health(_health):
 func _on_timer_timeout():
 	damagebar.value = health
 
-func _process(delta):
+func _process(_delta):
 	rotation = 0

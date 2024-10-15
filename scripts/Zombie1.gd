@@ -13,6 +13,8 @@ func _ready():
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if global.BossHP == 0:
+		queue_free()
 	if home == 1:
 		move_local_x(speed * delta)
 		direction = (get_node("/root/Map/Player").global_position - global_position)
