@@ -1,6 +1,6 @@
+res://Cutscene_1.tscn
 res://scripts/bullet2.gd
 res://scripts/Spark.gd
-res://Cutscene_1.tscn
 res://Cutscene_2.tscn
 res://Level.tscn
 res://Player.tscn
@@ -11,3 +11,4 @@ res://BOss1.tscn
 res://Portal.tscn
 res://MainMenu.tscn
 res://Settings.tscn
+res://scripts/Settings.gd
