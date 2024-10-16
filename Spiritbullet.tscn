@@ -1,11 +1,46 @@
-[gd_scene load_steps=4 format=3 uid="uid://q7ihls12mnkk"]
+[gd_scene load_steps=9 format=3 uid="uid://q7ihls12mnkk"]
 
 [ext_resource type="Script" path="res://scripts/Spiritbullet.gd" id="1_cmrd2"]
+[ext_resource type="Texture2D" uid="uid://bipm3segv8puk" path="res://assets/Enemy Movement Sprites.png" id="2_87gcm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qa21a"]
 size = Vector2(9.5, 5)
 
-[sub_resource type="SphereMesh" id="SphereMesh_75sha"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_eldmp"]
+atlas = ExtResource("2_87gcm")
+region = Rect2(48, 0, 16, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0mdvu"]
+atlas = ExtResource("2_87gcm")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4xf3"]
+atlas = ExtResource("2_87gcm")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4adnr"]
+atlas = ExtResource("2_87gcm")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eivrv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eldmp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0mdvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4xf3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4adnr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Bullet" type="Area2D"]
 script = ExtResource("1_cmrd2")
@@ -16,15 +51,17 @@ position = Vector2(-1.75, 0.5)
 shape = SubResource("RectangleShape2D_qa21a")
 metadata/Delete = false
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-modulate = Color(1, 1, 1, 0.243137)
-position = Vector2(-2, 1)
-scale = Vector2(8.50907, 7.5)
-mesh = SubResource("SphereMesh_75sha")
-
 [node name="HomeTimer" type="Timer" parent="."]
 wait_time = 5.0
 one_shot = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, 1)
+rotation = 3.14159
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_eivrv")
+frame = 2
+frame_progress = 0.110478
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_entered" from="." to="." method="_on_area_enter"]

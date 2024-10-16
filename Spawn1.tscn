@@ -1,41 +1,95 @@
-[gd_scene load_steps=5 format=3 uid="uid://bopd8ltnba6ol"]
+[gd_scene load_steps=16 format=3 uid="uid://bopd8ltnba6ol"]
 
 [ext_resource type="Script" path="res://scripts/Spawn1.gd" id="1_aj15q"]
 [ext_resource type="PackedScene" uid="uid://q7ihls12mnkk" path="res://Spiritbullet.tscn" id="2_x2fx5"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_mpnp8"]
+[ext_resource type="Texture2D" uid="uid://bipm3segv8puk" path="res://assets/Enemy Movement Sprites.png" id="4_wiyhr"]
+[ext_resource type="Script" path="res://turningsprite.gd" id="5_2nevo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 64.0
 
-[node name="Bossbody" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
+[sub_resource type="AtlasTexture" id="AtlasTexture_jgvp0"]
+atlas = ExtResource("4_wiyhr")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehrmm"]
+atlas = ExtResource("4_wiyhr")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vu8ry"]
+atlas = ExtResource("4_wiyhr")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxept"]
+atlas = ExtResource("4_wiyhr")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxedm"]
+atlas = ExtResource("4_wiyhr")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8wt4"]
+atlas = ExtResource("4_wiyhr")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frswy"]
+atlas = ExtResource("4_wiyhr")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0obax"]
+atlas = ExtResource("4_wiyhr")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kl50b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jgvp0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehrmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vu8ry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxept")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxedm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8wt4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frswy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0obax")
+}],
+"loop": true,
+"name": &"ghopst",
+"speed": 5.0
+}]
+
+[node name="Ghostbody" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_aj15q")
 bullet_scene = ExtResource("2_x2fx5")
 firetimer = NodePath("CollisionShape2D/Firetimer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(140, 0)
+position = Vector2(142, 2)
 scale = Vector2(0.5, 0.5)
 shape = SubResource("CircleShape2D_4ioo3")
 metadata/Spawn = true
 metadata/Tile = true
-
-[node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]
-offset_left = -10.0
-offset_top = -10.0
-offset_right = 10.0
-offset_bottom = 10.0
-color = Color(1, 1, 1, 0.6)
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect2" type="ColorRect" parent="CollisionShape2D"]
-offset_left = 9.0
-offset_top = -3.0
-offset_right = 23.0
-offset_bottom = 11.0
-scale = Vector2(0.5, 0.5)
-color = Color(1, 1, 1, 0.6)
-metadata/_edit_use_anchors_ = true
 
 [node name="Firetimer" type="Timer" parent="CollisionShape2D"]
 wait_time = 1.5
@@ -59,11 +113,21 @@ metadata/Spawn = true
 metadata/Tile = true
 
 [node name="Healthbar" parent="." instance=ExtResource("4_mpnp8")]
-offset_left = 126.0
-offset_top = -12.0
-offset_right = 156.0
-offset_bottom = -8.0
-metadata/_edit_use_anchors_ = true
+offset_left = 128.0
+offset_top = -24.0
+offset_right = 158.0
+offset_bottom = -20.0
+pivot_offset = Vector2(16, 26)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(142, 2)
+scale = Vector2(2.5625, 2.46875)
+sprite_frames = SubResource("SpriteFrames_kl50b")
+animation = &"ghopst"
+autoplay = "ghopst"
+frame_progress = 0.755308
+offset = Vector2(0.84211, -1.64103)
+script = ExtResource("5_2nevo")
 
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
 [connection signal="timeout" from="CollisionShape2D/Weaktimer" to="." method="_on_weaktimer_timeout"]

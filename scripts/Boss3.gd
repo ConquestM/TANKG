@@ -10,7 +10,7 @@ var screenSize = get_viewport_rect().size
 var rng = RandomNumberGenerator.new()
 var rndX = 390
 var rndY = 357
-var health = 50 : set = _set_health
+var health = global.Boss3HP : set = _set_health
 
 var Attack = 0
 
@@ -56,5 +56,5 @@ func _on_firetimer_timeout():
 
 func _set_health(value):
 	if healthbar != null:
-		healthbar.health = global.BossHP
+		healthbar.health = global.Boss3HP
 
