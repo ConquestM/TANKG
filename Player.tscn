@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cou1mvn4ls013"]
+[gd_scene load_steps=11 format=3 uid="uid://cou1mvn4ls013"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_d284k"]
 [ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Boltbullet.tscn" id="2_6qqvt"]
@@ -25,6 +25,12 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_77bvp"]
 radius = 6.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xx8wa"]
+size = Vector2(262, 537)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_id5el"]
+size = Vector2(272, 480)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_d284k")
@@ -76,7 +82,24 @@ text = "HEALTH"
 [node name="Slowtimer" type="Timer" parent="."]
 one_shot = true
 
+[node name="Left" type="Area2D" parent="."]
+position = Vector2(2, -6.97574e-16)
+metadata/Left = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Left"]
+position = Vector2(-133, -62.5)
+shape = SubResource("RectangleShape2D_xx8wa")
+metadata/left = true
+
+[node name="Right" type="Area2D" parent="."]
+metadata/R = true
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Right"]
+position = Vector2(136, -33)
+shape = SubResource("RectangleShape2D_id5el")
+metadata/right = true
+
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="timeout" from="Slowtimer" to="." method="_on_slowtimer_timeout"]
 [connection signal="timeout" from="Slowtimer" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="Slowtimer" to="." method="_on_slowtimer_timeout"]

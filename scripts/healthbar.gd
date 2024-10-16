@@ -29,4 +29,4 @@ func _on_timer_timeout():
 	damagebar.value = health
 
 func _process(_delta):
-	rotation = 0
+	rotation = -get_parent().rotation

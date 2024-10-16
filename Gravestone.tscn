@@ -51,7 +51,7 @@ metadata/Tile = false
 metadata/slow = true
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-modulate = Color(1, 1, 1, 0.188235)
+modulate = Color(1, 1, 1, 0.054902)
 position = Vector2(-0.999968, 5.72205e-06)
 scale = Vector2(76.0862, 76)
 mesh = SubResource("SphereMesh_7ebrc")

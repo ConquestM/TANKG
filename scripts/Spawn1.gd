@@ -12,6 +12,7 @@ func _ready():
 	firetimer.start()
 	healthbar.init_health(health)
 	global.spirits += 1
+
 	
 func _process(_delta):
 		$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
@@ -41,3 +42,9 @@ func _on_firetimer_timeout():
 func _on_area_2d_area_entered(area):
 	if area.has_meta("player"):
 		HP -= 1
+	if area.has_meta("left"):
+		print("left")
+		$AnimatedSprite2D.scale.x = abs($AnimatedSprite2D.scale.x) * -1
+	if area.has_meta("R"):
+		print("R")
+		$AnimatedSprite2D.scale.x = abs($AnimatedSprite2D.scale.x)
