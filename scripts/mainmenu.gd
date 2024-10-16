@@ -23,11 +23,12 @@ func _on_button_quit():
 
 func _on_level_2_pressed():
 	get_tree().change_scene_to_file("res://Cutscene_2.tscn")
-
+	global.level = 2
 
 func _on_level_3_pressed():
 	get_tree().change_scene_to_file("res://Level3.tscn")
-
+	global.level = 3
 
 func _on_settings_pressed():
 	get_tree().change_scene_to_file("res://Settings.tscn")
+	

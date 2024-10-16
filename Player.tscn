@@ -84,12 +84,12 @@ one_shot = true
 
 [node name="Left" type="Area2D" parent="."]
 position = Vector2(2, -6.97574e-16)
-metadata/Left = true
+metadata/L = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Left"]
 position = Vector2(-133, -62.5)
 shape = SubResource("RectangleShape2D_xx8wa")
-metadata/left = true
+metadata/L = false
 
 [node name="Right" type="Area2D" parent="."]
 metadata/R = true
