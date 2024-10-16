@@ -34,7 +34,8 @@ func _on_area_entered(area):
 			global.Boss2HP -= 1
 			queue_free()
 		if global.level == 3:
-			global.Boss3HP =- 3
+			global.Boss3HP -= 1
+			queue_free()
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()

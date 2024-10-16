@@ -31,7 +31,7 @@ func _on_firetimer_timeout():
 		Attack +=1
 		$CollisionShape2D/Firetimer.start()
 		global.back = 0
-		if global.Boss2HP <= 25 * global.BossHPMult:
+		if global.Boss2HP <= 50 * global.BossHPMult:
 			for i in 36:
 				var bullethell2 = bullethell2_scene.instantiate()
 				bullethell2.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
