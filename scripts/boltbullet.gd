@@ -17,7 +17,9 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	move_local_x(speed * delta)
-	if global.BossHP == 0:
+	if global.Level == 1 and global.BossHP == 0:
+		queue_free()
+	if global.Level == 2 and global.Boss2HP == 0:
 		queue_free()
 
 	if not friendly:
@@ -40,3 +42,5 @@ func _on_area_entered(area):
 				megabulletb.rotation_degrees = global_rotation_degrees + i*18
 				queue_free()
 
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	queue_free()

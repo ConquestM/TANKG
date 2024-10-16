@@ -42,9 +42,9 @@ func _on_firetimer_timeout():
 func _on_area_2d_area_entered(area):
 	if area.has_meta("player"):
 		HP -= 1
-	if area.has_meta("left"):
-		print("left")
+	if area.has_meta("L"):
+		print("L")
 		$AnimatedSprite2D.scale.x = abs($AnimatedSprite2D.scale.x) * -1
 	if area.has_meta("R"):
 		print("R")
-		$AnimatedSprite2D.scale.x = abs($AnimatedSprite2D.scale.x)
+		$AnimatedSprite2D.scale.x = abs($AnimatedSprite2D.scale.x) 

@@ -50,7 +50,6 @@ func _on_firetimer_timeout():
 			add_sibling(spawner)
 			spawner.position = Vector2(rndX, rndY)
 			Attack = 0
-
 		Attack = 0
 
 func _set_health(value):
