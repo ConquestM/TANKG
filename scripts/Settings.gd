@@ -10,6 +10,9 @@ func _ready():
 func _process(delta):
 	pass
 
-
 func _on_h_slider_value_changed(value):
-	pass
+	global.BossHPMult = value
+	print(value)
+
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://MainMenu.tscn")

@@ -11,4 +11,12 @@ res://BOss1.tscn
 res://Portal.tscn
 res://MainMenu.tscn
 res://Settings.tscn
+res://scripts/global.gd
 res://scripts/Settings.gd
+res://Healthbar.tscn
+res://scripts/Boss2.gd
+res://scripts/Boss3.gd
+res://scripts/mainmenu.gd
+res://Boss2.tscn
+res://scripts/boltbullet.gd
+res://scripts/Playerbullet.gd
