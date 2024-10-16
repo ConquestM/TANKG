@@ -1,12 +1,15 @@
 extends Node
 var back = 0
 var HP = 15 : set = _iframes
-var BossHP = 50
+var BossHP = 100
+var Boss2HP = 100
+var Boss3HP = 100
 var iframes = false
 var timer
 var level = 0
 var spirits = 0
 var zombies = 0
+var BossHPMult = 1
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

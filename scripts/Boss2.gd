@@ -6,19 +6,18 @@ extends CharacterBody2D
 @export var teleport_scene: PackedScene
 @export var firetimer:Node
 @onready var healthbar = $Healthbar
-var health = 50 : set = _set_health
+var health = global.Boss2HP : set = _set_health
 
 var Attack = 0
 
 func _ready():
 	firetimer.start()
-	global.BossHP = 50
 	healthbar.init_health(health)
 	
 func _process(_delta):
 	_set_health(health)
 	$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
-	if global.BossHP <= 0:
+	if global.Boss2HP <= 0:
 		queue_free()
 		
 func _on_firetimer_timeout():
@@ -32,7 +31,7 @@ func _on_firetimer_timeout():
 		Attack +=1
 		$CollisionShape2D/Firetimer.start()
 		global.back = 0
-		if global.BossHP <= 25:
+		if global.Boss2HP <= 25 * global.BossHPMult:
 			for i in 36:
 				var bullethell2 = bullethell2_scene.instantiate()
 				bullethell2.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
@@ -57,4 +56,4 @@ func _on_weaktimer_timeout():
 	
 func _set_health(value):
 	if healthbar != null:
-		healthbar.health = global.BossHP
+		healthbar.health = global.Boss2HP

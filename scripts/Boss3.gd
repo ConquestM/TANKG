@@ -16,7 +16,6 @@ var Attack = 0
 
 func _ready():
 	firetimer.start()
-	global.BossHP = 50
 	healthbar.init_health(health)
 	
 func _process(_delta):

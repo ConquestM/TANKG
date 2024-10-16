@@ -31,9 +31,6 @@ func _on_area_entered(area):
 	if area.has_meta("Player") and not friendly:
 		global.HP -= 1
 		queue_free()
-	if area.has_meta("Boss") and friendly:
-		global.BossHP -= 1
-		queue_free()
 	if area.has_meta("Debt"):
 		if not friendly:
 			for i in 20:
