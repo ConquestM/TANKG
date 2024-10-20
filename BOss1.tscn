@@ -42,6 +42,8 @@ func _on_firetimer_timeout():
 			bullet.rotation_degrees = $CollisionShape2D.rotation_degrees-10*i
 			add_sibling(bullet)
 		$CollisionShape2D/Area2D.set_visible(false)
+		$CollisionShape2D/Area2D.visible = false
+		$CollisionShape2D/Area2D.hide()
 		$CollisionShape2D/Area2D/Hitbox.disabled = true
 		$CollisionShape2D/Firetimer.start()
 		$CollisionShape2D/Weaktimer.start()
