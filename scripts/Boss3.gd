@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var zombie_scene: PackedScene
 @export var wall_scene: PackedScene
 @export var firetimer:Node
+@export var portal_scene: PackedScene
 @onready var healthbar = $Healthbar
 var screenSize = get_viewport_rect().size
 var rng = RandomNumberGenerator.new()
@@ -21,7 +22,7 @@ func _ready():
 func _process(_delta):
 	_set_health(health)
 	$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
-	if global.BossHP <= 0:
+	if global.Boss3HP <= 0:
 		queue_free()
 	if global.zombies >= 1:
 		var rng = RandomNumberGenerator.new()
@@ -31,6 +32,8 @@ func _process(_delta):
 		add_sibling(zombie)
 		zombie.position = Vector2(rndX, rndY)
 		global.zombies -= 1
+		$CollisionShape2D/AnimatedSprite2D.play("default")
+		
 func _on_firetimer_timeout():
 	if Attack < 1:
 		var bullet = shield_bullet_scene.instantiate()
@@ -55,4 +58,15 @@ func _on_firetimer_timeout():
 func _set_health(value):
 	if healthbar != null:
 		healthbar.health = global.Boss3HP
+
+func _on_timer_timeout():
+	$CanvasLayer/Label.hide()
+	var portal = portal_scene.instantiate()
+	add_sibling(portal)
+	portal.global_position = get_node("../Camera2D").global_position
+
+
+func _on_timer_2_timeout():
+	$CanvasLayer/Label.show()
+	$CanvasLayer/Timer.start()
 

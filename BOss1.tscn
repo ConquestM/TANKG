@@ -139,6 +139,7 @@ offset_bottom = 0.0
 grow_horizontal = 2
 grow_vertical = 0
 show_percentage = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Bosslabel" type="Label" parent="CanvasLayer/Healthbar"]
 layout_mode = 1
@@ -156,6 +157,7 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("5_jctoa")
 theme_override_font_sizes/font_size = 25
 text = "ZEUS"
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 anchors_preset = 8
@@ -172,6 +174,7 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("5_jctoa")
 theme_override_font_sizes/font_size = 100
 text = "GOD SLAIN"
+metadata/_edit_use_anchors_ = true
 
 [node name="Timer" type="Timer" parent="CanvasLayer"]
 wait_time = 3.0

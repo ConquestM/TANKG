@@ -5,7 +5,8 @@ extends CharacterBody2D
 @export var bullethell2_scene: PackedScene
 @export var teleport_scene: PackedScene
 @export var firetimer:Node
-@onready var healthbar = $Healthbar
+@export var portal_scene: PackedScene
+@onready var healthbar = $CanvasLayer/Healthbar
 var health = global.Boss2HP : set = _set_health
 
 var Attack = 0
@@ -13,12 +14,15 @@ var Attack = 0
 func _ready():
 	firetimer.start()
 	healthbar.init_health(health)
+	$CanvasLayer/Label.hide()
 	
 func _process(_delta):
 	_set_health(health)
+	if get_node_or_null("CollisionShape2D") == null: return
 	$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
 	if global.Boss2HP <= 0:
-		queue_free()
+		$CanvasLayer/Timer2.start()
+		$CollisionShape2D.queue_free()
 		
 func _on_firetimer_timeout():
 	if Attack < 3:
@@ -57,3 +61,13 @@ func _on_weaktimer_timeout():
 func _set_health(value):
 	if healthbar != null:
 		healthbar.health = global.Boss2HP
+
+func _on_timer_timeout():
+	$CanvasLayer/Label.hide()
+	var portal = portal_scene.instantiate()
+	add_sibling(portal)
+	portal.global_position = get_node("../Camera2D").global_position
+
+func _on_timer_2_timeout():
+	$CanvasLayer/Label.show()
+	$CanvasLayer/Timer.start()
