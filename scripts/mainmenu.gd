@@ -14,21 +14,27 @@ func _on_button_pressed():
 	global.Boss2HP = global.Boss2HP*global.BossHPMult
 	global.Boss3HP = global.Boss3HP*global.BossHPMult
 	global.HP = 15
+	global.level = 1
 	get_tree().change_scene_to_file("res://Cutscene_1.tscn")
-
 
 func _on_button_quit():
 	get_tree().quit()
 
-
 func _on_level_2_pressed():
-	get_tree().change_scene_to_file("res://Cutscene_2.tscn")
+	global.BossHP = global.BossHP*global.BossHPMult
+	global.Boss2HP = global.Boss2HP*global.BossHPMult
+	global.Boss3HP = global.Boss3HP*global.BossHPMult
+	global.HP = 15
 	global.level = 2
+	get_tree().change_scene_to_file("res://Cutscene_2.tscn")
 
 func _on_level_3_pressed():
-	get_tree().change_scene_to_file("res://Level3.tscn")
+	global.BossHP = global.BossHP*global.BossHPMult
+	global.Boss2HP = global.Boss2HP*global.BossHPMult
+	global.Boss3HP = global.Boss3HP*global.BossHPMult
+	global.HP = 15
 	global.level = 3
+	get_tree().change_scene_to_file("res://Level3.tscn")
 
 func _on_settings_pressed():
 	get_tree().change_scene_to_file("res://Settings.tscn")
-	

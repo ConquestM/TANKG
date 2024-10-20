@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cuqm3glsshood"]
+[gd_scene load_steps=15 format=3 uid="uid://cuqm3glsshood"]
 
 [ext_resource type="Script" path="res://scripts/Boss3.gd" id="1_6ohnh"]
 [ext_resource type="PackedScene" uid="uid://dqqoe1p0y1ann" path="res://Spark2.tscn" id="2_07kyf"]
@@ -7,9 +7,46 @@
 [ext_resource type="PackedScene" uid="uid://c2niigo3nbyw2" path="res://Zombie1.tscn" id="5_0b6ka"]
 [ext_resource type="PackedScene" uid="uid://bl7l4ldama4ib" path="res://Gravestone.tscn" id="5_ryl8a"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="6_v7fj4"]
+[ext_resource type="Texture2D" uid="uid://bhkcqqcc58i35" path="res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png" id="7_eohr5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbyj5"]
+atlas = ExtResource("7_eohr5")
+region = Rect2(0, 0, 59, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6y0u"]
+atlas = ExtResource("7_eohr5")
+region = Rect2(59, 0, 59, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j3hj8"]
+atlas = ExtResource("7_eohr5")
+region = Rect2(118, 0, 59, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jc8gq"]
+atlas = ExtResource("7_eohr5")
+region = Rect2(177, 0, 59, 60)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xj77m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bbyj5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6y0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j3hj8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jc8gq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Bossbody3" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
 script = ExtResource("1_6ohnh")
@@ -31,19 +68,6 @@ wait_time = 1.5
 wait_time = 10.0
 one_shot = true
 
-[node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]
-offset_left = -10.0
-offset_top = -10.0
-offset_right = 10.0
-offset_bottom = 10.0
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect2" type="ColorRect" parent="CollisionShape2D"]
-offset_left = 9.0
-offset_top = -3.0
-offset_right = 15.0
-offset_bottom = 3.0
-
 [node name="Boss_bullet_spawn" type="Node2D" parent="CollisionShape2D"]
 position = Vector2(27, 0)
 
@@ -53,6 +77,10 @@ metadata/Boss = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/Area2D2"]
 shape = SubResource("CircleShape2D_4ioo3")
 metadata/Boss = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
+sprite_frames = SubResource("SpriteFrames_xj77m")
+frame_progress = 0.105662
 
 [node name="Healthbar" parent="." instance=ExtResource("6_v7fj4")]
 offset_left = -15.0
