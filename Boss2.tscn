@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://r885hmnubc6o"]
+[gd_scene load_steps=12 format=3 uid="uid://r885hmnubc6o"]
 
 [ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Spark.tscn" id="1_3g2b2"]
 [ext_resource type="Script" path="res://scripts/Boss2.gd" id="1_wwpcx"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://d3pd7hakaer4d" path="res://Boss2bullet.tscn" id="4_ikkfd"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_vsmk5"]
 [ext_resource type="PackedScene" uid="uid://bj23l42rws8ai" path="res://Boss2bullet2.tscn" id="5_xnkg3"]
+[ext_resource type="PackedScene" uid="uid://cdsig8201yvov" path="res://Boss_2line.tscn" id="7_2dgss"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047
@@ -23,6 +24,7 @@ bullet_scene = ExtResource("3_kfc2h")
 bullethell_scene = ExtResource("4_ikkfd")
 bullethell2_scene = ExtResource("5_xnkg3")
 teleport_scene = ExtResource("4_76p4s")
+line_scene = ExtResource("7_2dgss")
 firetimer = NodePath("CollisionShape2D/Firetimer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

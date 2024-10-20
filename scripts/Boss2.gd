@@ -4,15 +4,16 @@ extends CharacterBody2D
 @export var bullethell_scene: PackedScene
 @export var bullethell2_scene: PackedScene
 @export var teleport_scene: PackedScene
+@export var line_scene: PackedScene
 @export var firetimer:Node
 @onready var healthbar = $Healthbar
 var health = global.Boss2HP : set = _set_health
-
 var Attack = 0
 
 func _ready():
 	firetimer.start()
 	healthbar.init_health(health)
+
 	
 func _process(_delta):
 	_set_health(health)
@@ -21,6 +22,12 @@ func _process(_delta):
 		queue_free()
 		
 func _on_firetimer_timeout():
+	if global.wall > 1 :
+		for i in 3:
+			var line = line_scene.instantiate()
+			line.rotation_degrees = $CollisionShape2D.rotation_degrees -(120)*(i-1)
+			add_sibling(line)
+			global.wall = 0
 	if Attack < 3:
 		for i in 36:
 			var bullethell = bullethell_scene.instantiate()
