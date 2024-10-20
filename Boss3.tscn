@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cuqm3glsshood"]
+[gd_scene load_steps=16 format=3 uid="uid://cuqm3glsshood"]
 
 [ext_resource type="Script" path="res://scripts/Boss3.gd" id="1_6ohnh"]
 [ext_resource type="PackedScene" uid="uid://dqqoe1p0y1ann" path="res://Spark2.tscn" id="2_07kyf"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bl7l4ldama4ib" path="res://Gravestone.tscn" id="5_ryl8a"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="6_v7fj4"]
 [ext_resource type="Texture2D" uid="uid://bhkcqqcc58i35" path="res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png" id="7_eohr5"]
+[ext_resource type="Script" path="res://AnimatedSprite2D.gd" id="8_ygj4j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047
@@ -81,6 +82,7 @@ metadata/Boss = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
 sprite_frames = SubResource("SpriteFrames_xj77m")
 frame_progress = 0.105662
+script = ExtResource("8_ygj4j")
 
 [node name="Healthbar" parent="." instance=ExtResource("6_v7fj4")]
 offset_left = -15.0

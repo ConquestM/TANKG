@@ -1,6 +1,8 @@
-res://Level3.tscn
+res://Boss3.tscn
 res://scripts/bullet2.gd
 res://scripts/Spark.gd
+res://AnimatedSprite2D.gd
+res://Level3.tscn
 res://Player.tscn
 res://Spawn1.tscn
 res://Level.tscn
@@ -9,5 +11,4 @@ res://Boss2.tscn
 res://Boss_2line.tscn
 res://Boss2bullet2.tscn
 res://Turret.tscn
-res://Boss_2line.gd
 res://BOss1.tscn
