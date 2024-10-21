@@ -7,8 +7,9 @@ func _ready():
 	scale.x = 0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	global_position = (get_node("/root/Map/Bossbody2").global_position)
-	rotation_degrees += 0.25
+	if get_node("/root/Map/Bossbody2") != null:
+		global_position = (get_node("/root/Map/Bossbody2").global_position)
+		rotation_degrees += 0.25
 
 
 func _on_expand_timeout():
