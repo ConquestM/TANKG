@@ -1,4 +1,6 @@
 extends Area2D
+
+
 @export var explosion_scene: PackedScene
 @export var megabullet2_scene: PackedScene
 @onready var global = get_node("/root/global")
@@ -17,12 +19,13 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+# moves the blockerbullet forward. The first if makes the player not die when the boss dies. The second if makes the 
 func _process(delta):
 	move_local_x(speed * delta)
 	if global.BossHP == 0:
 		queue_free()
 	if not friendly:
-		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)
+		$Sprite2D.set_visible(false)
 
 func _on_area_entered(area):
 	if area.has_meta("Debt"):
