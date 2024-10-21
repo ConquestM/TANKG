@@ -1,22 +1,61 @@
-[gd_scene load_steps=13 format=3 uid="uid://r885hmnubc6o"]
+[gd_scene load_steps=18 format=3 uid="uid://r885hmnubc6o"]
 
 [ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Spark.tscn" id="1_3g2b2"]
 [ext_resource type="Script" path="res://scripts/Boss2.gd" id="1_wwpcx"]
 [ext_resource type="PackedScene" uid="uid://bx1m47ro2e150" path="res://Bulletcircle.tscn" id="3_kfc2h"]
-[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="3_x7vvt"]
 [ext_resource type="PackedScene" uid="uid://d3nngbjfswteu" path="res://Teleport.tscn" id="4_76p4s"]
 [ext_resource type="PackedScene" uid="uid://d3pd7hakaer4d" path="res://Boss2bullet.tscn" id="4_ikkfd"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_vsmk5"]
 [ext_resource type="PackedScene" uid="uid://bj23l42rws8ai" path="res://Boss2bullet2.tscn" id="5_xnkg3"]
 [ext_resource type="PackedScene" uid="uid://bpemhh5wfb7ow" path="res://Portal.tscn" id="7_6ify6"]
+[ext_resource type="Texture2D" uid="uid://cpst3r5ixpdbt" path="res://assets/New_Piskel_1-ezgif.com-gif-to-sprite-converter.png" id="8_fp7n0"]
 [ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="10_qtroc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
-radius = 11.7047
+radius = 4.00125
 
-[sub_resource type="SphereMesh" id="SphereMesh_2vg6r"]
-radius = 100.0
-height = 100.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_b73sy"]
+atlas = ExtResource("8_fp7n0")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_my28l"]
+atlas = ExtResource("8_fp7n0")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36jd6"]
+atlas = ExtResource("8_fp7n0")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2msa0"]
+atlas = ExtResource("8_fp7n0")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8ps8"]
+atlas = ExtResource("8_fp7n0")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xnvva"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b73sy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_my28l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36jd6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2msa0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8ps8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Bossbody2" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
 script = ExtResource("1_wwpcx")
@@ -39,25 +78,20 @@ wait_time = 1.5
 wait_time = 0.6
 one_shot = true
 
-[node name="Area2D" parent="CollisionShape2D" instance=ExtResource("3_x7vvt")]
-position = Vector2(18, 0)
-rotation = -1.5708
-scale = Vector2(1.5, 1.5)
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="CollisionShape2D"]
-modulate = Color(1, 0, 0, 0.262745)
-position = Vector2(0, -1.19209e-07)
-scale = Vector2(0.11448, 0.23125)
-mesh = SubResource("SphereMesh_2vg6r")
-
 [node name="Boss_bullet_spawn" type="Node2D" parent="CollisionShape2D"]
 
 [node name="Area2D2" type="Area2D" parent="CollisionShape2D"]
+scale = Vector2(10, 10)
 metadata/Boss = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/Area2D2"]
 shape = SubResource("CircleShape2D_4ioo3")
 metadata/Boss = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
+position = Vector2(-1.90735e-06, -1.90735e-06)
+scale = Vector2(0.324219, 0.324219)
+sprite_frames = SubResource("SpriteFrames_xnvva")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

@@ -6,7 +6,7 @@ extends CharacterBody2D
 @export var wall_scene: PackedScene
 @export var firetimer:Node
 @export var portal_scene: PackedScene
-@onready var healthbar = $Healthbar
+@onready var healthbar = $CanvasLayer/Healthbar
 var screenSize = get_viewport_rect().size
 var rng = RandomNumberGenerator.new()
 var rndX = 390
