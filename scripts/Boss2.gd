@@ -13,6 +13,7 @@ var Attack = 0
 func _ready():
 	firetimer.start()
 	healthbar.init_health(health)
+	global.wall = 6
 
 # Makes the boss look at the player, for attack purposes.
 # Also despawns the boss when health is low and plays the animated sprite.

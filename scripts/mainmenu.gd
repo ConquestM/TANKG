@@ -3,9 +3,9 @@ extends Control
 
 
 func _ready():
-	pass # Replace with function body.
-	
-
+	global.BossHP = 100
+	global.Boss2HP = 100
+	global.Boss3HP = 100
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
