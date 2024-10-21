@@ -43,7 +43,7 @@ func _on_area_entered(area):
 	if area.has_meta("Block"):
 		queue_free()
 	if area.has_meta("Player") and not friendly and not global.iframes:
-		global.HP -= 1
+		global.hp -= 1
 		global.iframes = true
 		queue_free()
 

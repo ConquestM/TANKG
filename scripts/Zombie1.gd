@@ -14,7 +14,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # Makes the zombie home towards the player.
 func _process(delta):
-	if global.BossHP == 0:
+	if global.bosshp == 0:
 		queue_free()
 	if home == 1:
 		move_local_x(speed * delta)
@@ -28,7 +28,7 @@ func _process(delta):
 # Damage function for the player.
 func _on_area_entered(area):
 	if area.has_meta("Player") and not friendly and not global.iframes:
-		global.HP -= 1
+		global.hp -= 1
 		global.iframes = true
 
 

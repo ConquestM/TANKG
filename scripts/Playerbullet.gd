@@ -30,13 +30,13 @@ func _on_area_entered(area):
 		queue_free()
 	if area.has_meta("Boss") and friendly:
 		if global.level == 1:
-			global.BossHP -= 1
+			global.bosshp -= 1
 			queue_free()
 		if global.level == 2:
-			global.Boss2HP -= 1
+			global.boss2hp -= 1
 			queue_free()
 		if global.level == 3:
-			global.Boss3HP -= 1
+			global.boss3hp -= 1
 			queue_free()
 
 # Despawns the bullet on exiting the screen.

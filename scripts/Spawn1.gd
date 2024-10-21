@@ -3,9 +3,9 @@ extends CharacterBody2D
 @export var firetimer:Node
 @export var speed = 100
 var screen_size
-var HP = 5
+var hp = 5
 @onready var healthbar = $Healthbar
-var health = HP : set = _set_health
+var health = hp : set = _set_health
 var Attack = 0
 
 # Occurs when the scene is loaded.
@@ -28,7 +28,7 @@ func _process(_delta):
 		# Increases rotation.
 		rotation_degrees += 1
 		# kills the spawn when health is low. It also tells Boss2 that one spawn has died.
-		if HP < 0 or HP == 0:
+		if hp < 0 or hp == 0:
 			# decreases the global spirits by 1. This allows the boss to know when to spawn more.
 			global.spirits -= 1
 			# 'kills' the spawn.
@@ -37,7 +37,7 @@ func _process(_delta):
 
 func _set_health(value):
 	if healthbar != null:
-		healthbar.health = HP
+		healthbar.health = hp
 
 
 # When the firetimer timeouts, a 'ghost-bullet' is spawned, in the spawn, with the rotation inherited.
@@ -58,7 +58,6 @@ func _on_area_2d_area_entered(area):
 		print("L")
 		$AnimatedSprite2D.scale.x = abs($AnimatedSprite2D.scale.x) * -1
 	if area.has_meta("R"):
-		print("R")
 		$AnimatedSprite2D.scale.x = abs($AnimatedSprite2D.scale.x)
 	if area.has_meta("Damage"):
-		HP -= 1
+		hp -= 1

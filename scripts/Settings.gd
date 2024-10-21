@@ -12,7 +12,7 @@ func _process(delta):
 
 # Function that sets the boss health multiplier based off of the slider.
 func _on_h_slider_value_changed(value):
-	global.BossHPMult = value
+	global.bosshpmult = value
 	print(value)
 
 # Returns to the main menu.

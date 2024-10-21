@@ -15,7 +15,7 @@ var slowed = 0
 var saved_direction = 0
 var saved_vert_direction = 0
 var screen_size
-var health = global.HP : set = _set_health
+var health = global.hp : set = _set_health
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -89,10 +89,10 @@ func _process(delta):
 			if slowed == 0:
 				speed = 100
 			dash_timer = 0
-	if global.HP < 0 or global.HP == 0:
+	if global.hp < 0 or global.hp == 0:
 		get_tree().change_scene_to_file("res://Mainmenu.tscn")
 		
-		global.HP = 15
+		global.hp = 15
 	if dashing or global.iframes:
 		$Area2D/CollisionShape2D.disabled = true
 	if not dashing and not global.iframes:
@@ -119,7 +119,7 @@ func _on_timer_timeout():
 
 func _set_health(value):
 	if healthbar != null:
-		healthbar.health = global.HP
+		healthbar.health = global.hp
 
 
 # Gravestone aura effect. Slows down the player while in it and for a time once leaving it.

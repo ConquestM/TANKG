@@ -15,7 +15,7 @@ script/source = "extends CharacterBody2D
 @export var firetimer:Node
 @export var portal_scene: PackedScene
 @onready var healthbar = $CanvasLayer/Healthbar
-var health = global.BossHP : set = _set_health
+var health = global.bosshp : set = _set_health
 
 var Attack = 0
 
@@ -28,7 +28,7 @@ func _process(_delta):
 	_set_health(health)
 	if get_node_or_null(\"CollisionShape2D\") == null: return
 	$CollisionShape2D.look_at(get_node(\"/root/Map/Player\").global_position)
-	if global.BossHP <= 0:
+	if global.bosshp <= 0:
 		$CanvasLayer/Timer2.start()
 		$Sprite2D.queue_free()
 		$CollisionShape2D.queue_free()
@@ -56,12 +56,13 @@ func _on_firetimer_timeout():
 		megabullet3.rotation = $CollisionShape2D.rotation-170
 		add_sibling(megabullet3)
 		$CollisionShape2D/Firetimer.start()
-		$CollisionShape2D/Weaktimer.start()
 		Attack = 0
-	
+
+
 func _set_health(_value):
 	if healthbar != null:
-		healthbar.health = global.BossHP
+		healthbar.health = global.bosshp
+
 
 func _on_timer_timeout():
 	$CanvasLayer/Label.hide()
