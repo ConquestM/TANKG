@@ -2,9 +2,10 @@ extends CharacterBody2D
 
 @export var speed = 100
 var screen_size
-var HP = 50
+var hp = 50
 @onready var healthbar = $Healthbar
-var health = HP : set = _set_health
+var health = hp : set = _set_health
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,20 +14,23 @@ func _ready():
 	rotation = 0
 	$Death.start()
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	_set_health(health)
 	rotation = 0
-	if global.BossHP == 0:
+	if global.bosshp == 0:
 		queue_free()
-	if HP < 0 or HP == 0:
+	if hp < 0 or hp == 0:
 		queue_free()
+
 
 func _set_health(value):
 	if healthbar != null:
-		healthbar.health = HP
+		healthbar.health = hp
 
 
 func _on_death_timeout():
-	HP -= 1
+	hp -= 1
 	$Death.start()
+

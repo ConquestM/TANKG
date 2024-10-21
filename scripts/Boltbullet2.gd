@@ -2,7 +2,7 @@ extends Area2D
 @export var explosion_scene: PackedScene
 @export var megabullet2_scene: PackedScene
 @onready var global = get_node("/root/global")
-@export var Debt_scene: PackedScene
+@export var debt_scene: PackedScene
 var wait = 0
 var speed = 50
 var despawn = 0
@@ -16,7 +16,7 @@ func _process(delta):
 		if wait == 1:
 			speed = -50
 		$VertHor.start()
-	if global.Boss2HP == 0:
+	if global.boss2hp == 0:
 		queue_free()
 	if global.back == 0:
 		if wait == 1:
@@ -31,10 +31,10 @@ func _on_area_entered(area):
 		if area.has_meta("Tile"):
 			queue_free()	
 		if area.has_meta("Player") and not friendly:
-			global.HP -= 1
+			global.hp -= 1
 			queue_free()
 		if area.has_meta("Boss") and friendly:
-			global.BossHP -= 1
+			global.bosshp -= 1
 			queue_free()
 		if area.has_meta("Debt"):
 			if not friendly:

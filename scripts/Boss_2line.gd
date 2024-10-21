@@ -34,4 +34,4 @@ func _on_expand_timeout():
 # Damages the player.
 func _on_area_2d_area_entered(area):
 		if area.has_meta("Player"):
-			global.HP -= 2
+			global.hp -= 2

@@ -22,7 +22,7 @@ func _process(delta):
 # Damages the player.
 func _on_area_entered(area):
 	if area.has_meta("Player") and not friendly and not global.iframes:
-		global.HP -= 1
+		global.hp -= 1
 		global.iframes = true
 		queue_free()
 
