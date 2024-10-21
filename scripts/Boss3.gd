@@ -18,7 +18,11 @@ var Attack = 0
 func _ready():
 	firetimer.start()
 	healthbar.init_health(health)
-	
+
+# Function that,
+# 1. despawns the boss when its health is 0.
+# 2. spawns the zombies when the variable is greater than 1.
+# 3. plays the animated sprite's animaiton.
 func _process(_delta):
 	_set_health(health)
 	$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
@@ -33,7 +37,11 @@ func _process(_delta):
 		zombie.position = Vector2(rndX, rndY)
 		global.zombies -= 1
 		$CollisionShape2D/AnimatedSprite2D.play("default")
-		
+
+
+# Function that does attacks.
+# 1. Fires a bullet that spawns a gravestone and spawns 10 zombies with the previous function. 
+# 2. spawns a spirit if there are less than 4.
 func _on_firetimer_timeout():
 	if Attack < 1:
 		var bullet = shield_bullet_scene.instantiate()
@@ -41,7 +49,6 @@ func _on_firetimer_timeout():
 		bullet.rotation = $CollisionShape2D.rotation
 		add_sibling(bullet)
 		$CollisionShape2D/Firetimer.start()
-
 		global.zombies += 10
 		Attack +=1
 	else: 

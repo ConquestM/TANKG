@@ -12,6 +12,7 @@ func _ready():
 	global.zombies -=1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+# Makes the zombie home towards the player.
 func _process(delta):
 	if global.BossHP == 0:
 		queue_free()
@@ -23,12 +24,15 @@ func _process(delta):
 	else:
 		move_local_x(speed * delta * 3)
 
+
+# Damage function for the player.
 func _on_area_entered(area):
 	if area.has_meta("Player") and not friendly and not global.iframes:
 		global.HP -= 1
 		global.iframes = true
 
 
+# Once the timer finishes, the zombie will despawn and spawn a gravestone.
 func _on_die_timeout():
 	var grave = grave_scene.instantiate()
 	grave.global_position = global_position

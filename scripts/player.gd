@@ -112,15 +112,17 @@ func _dash():
 		can_dash = false
 		$Timer.start()
 
+# Colldown for the dashing of the player.
 func _on_timer_timeout():
 	can_dash = true
+
 
 func _set_health(value):
 	if healthbar != null:
 		healthbar.health = global.HP
 
 
-
+# Gravestone aura effect. Slows down the player while in it and for a time once leaving it.
 func _on_area_2d_area_entered(area):
 	if area.has_meta("slow"):
 		speed = 50
@@ -131,4 +133,3 @@ func _on_area_2d_area_entered(area):
 func _on_slowtimer_timeout():
 	speed = 100
 	slowed = 0
-	

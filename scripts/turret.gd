@@ -8,6 +8,8 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+# Locks the rotation to the mouse. Locks the turret to the player. 
+# Additionally, allows for the left click to fire a bullet.
 func _process(_delta):
 	look_at(get_global_mouse_position())
 	global_rotation = rotation
@@ -17,13 +19,14 @@ func _process(_delta):
 		$Timer.start()
 	position = get_node("/root/Map/Player").global_position
 
+# Fuction to fire the bullet.
 func _shoot():
 	var bullet = bullet_scene.instantiate()
 	bullet.global_position = $BulletSpawn.global_position
 	bullet.global_rotation = global_rotation
 	bullet.friendly = true
 	get_parent().add_sibling(bullet)
-	
-	
+
+# Cooldown for the fire.
 func _on_timer_timeout():
 	can_shoot = true 

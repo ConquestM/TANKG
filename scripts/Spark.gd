@@ -6,8 +6,12 @@ var speed = 320
 var despawn = 0
 var friendly = false
 # Called when the node enters the scene tree for the first time.
+
+# Begins the replication process. 
 func _ready():
 	$Meiosis.start()
+
+# Replicates the spark.
 func _on_meiosis_timeout():
 	var spark2 = spark2_scene.instantiate()
 	add_sibling(spark2)
@@ -29,6 +33,7 @@ func _on_meiosis_timeout():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+# Moves the spark.
 func _process(delta):
 	move_local_x(speed * delta)
 
@@ -41,8 +46,11 @@ func _on_area_entered(area):
 		global.HP -= 1
 		global.iframes = true
 		queue_free()
+
+# Kills the spark after a set time.
 func _on_Apoptosis_timeout():
 	queue_free()
 
+# # Kills the spark on exiting the screen.
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()

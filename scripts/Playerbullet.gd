@@ -14,15 +14,17 @@ func _ready():
 		set_meta("player", 0)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+# Moves the bullet and changes the colur if not friendly.
 func _process(delta):
 	move_local_x(speed * delta)
 	if not friendly:
 		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)
-	
+
+
+# Damage function. the spawns have no health so they just despawn.
 func _on_area_entered(area):
 	if area.has_meta("Spawn"):
 		queue_free()
-
 	if area.has_meta("Player") and not friendly:
 		global.HP -= 1
 		queue_free()
@@ -37,5 +39,6 @@ func _on_area_entered(area):
 			global.Boss3HP -= 1
 			queue_free()
 
+# Despawns the bullet on exiting the screen.
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()

@@ -33,8 +33,8 @@ func _process(_delta):
 			global.spirits -= 1
 			# 'kills' the spawn.
 			queue_free()
-			
-			
+
+
 func _set_health(value):
 	if healthbar != null:
 		healthbar.health = HP
@@ -60,3 +60,5 @@ func _on_area_2d_area_entered(area):
 	if area.has_meta("R"):
 		print("R")
 		$AnimatedSprite2D.scale.x = abs($AnimatedSprite2D.scale.x)
+	if area.has_meta("Damage"):
+		HP -= 1

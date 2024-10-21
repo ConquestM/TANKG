@@ -7,7 +7,9 @@ var speed = 150
 var despawn = 0
 var megabullet
 var friendly = false
+
 # Called when the node enters the scene tree for the first time.
+# Sets the delete metadata. Spawns a hitbox where the bullet will detonate.
 func _ready():
 	if not friendly:
 		set_meta("Delete", 0)
@@ -18,11 +20,14 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+# Moves the bullet and changes the colour.
 func _process(delta):
 	move_local_x(speed * delta)
 	if not friendly:
 		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)
-	
+
+
+# Damage fuction, along with the code for detonating when coming into contact with the hitbox.
 func _on_area_entered(area):
 	if area.has_meta("Block"):
 		queue_free()

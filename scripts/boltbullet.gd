@@ -12,19 +12,19 @@ var friendly = false
 func _ready():
 	if friendly:
 		set_meta("player", 0)
-		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+# Function for movement, despawning and colour change.
 func _process(delta):
 	move_local_x(speed * delta)
 	if global.level == 1 and global.BossHP == 0:
 		queue_free()
 	if global.level == 2 and global.Boss2HP == 0:
 		queue_free()
-
 	if not friendly:
 		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)
-	
+
+# Function for damage, also allows for the detonation when entering a certain area.
 func _on_area_entered(area):
 	if area.has_meta("Spawn"):
 		queue_free()
@@ -42,5 +42,6 @@ func _on_area_entered(area):
 				megabulletb.rotation_degrees = global_rotation_degrees + i*18
 				queue_free()
 
+# Despawns the bullet on exiting the screen.
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()
