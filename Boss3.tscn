@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cuqm3glsshood"]
+[gd_scene load_steps=17 format=3 uid="uid://cuqm3glsshood"]
 
 [ext_resource type="Script" path="res://scripts/Boss3.gd" id="1_6ohnh"]
 [ext_resource type="PackedScene" uid="uid://dqqoe1p0y1ann" path="res://Spark2.tscn" id="2_07kyf"]
@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="6_v7fj4"]
 [ext_resource type="Texture2D" uid="uid://bhkcqqcc58i35" path="res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png" id="7_eohr5"]
 [ext_resource type="Script" path="res://scripts/AnimatedSprite2D.gd" id="8_ygj4j"]
-
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="10_aeeoa"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047
@@ -85,14 +85,43 @@ sprite_frames = SubResource("SpriteFrames_xj77m")
 frame_progress = 0.105662
 script = ExtResource("8_ygj4j")
 
-[node name="Healthbar" parent="." instance=ExtResource("6_v7fj4")]
-offset_left = -15.0
-offset_top = -21.0
-offset_right = 15.0
-offset_bottom = -17.0
-
 [node name="Teletimer" type="Timer" parent="."]
 one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Healthbar" parent="CanvasLayer" instance=ExtResource("6_v7fj4")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -350.5
+offset_top = -16.0
+offset_right = 350.5
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+show_percentage = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Bosslabel" type="Label" parent="CanvasLayer/Healthbar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.0
+offset_top = -29.0
+offset_right = 37.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10_aeeoa")
+theme_override_font_sizes/font_size = 25
+text = "ZEUS"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
 [connection signal="timeout" from="CollisionShape2D/Weaktimer" to="." method="_on_weaktimer_timeout"]

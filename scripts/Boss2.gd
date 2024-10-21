@@ -6,7 +6,7 @@ extends CharacterBody2D
 @export var teleport_scene: PackedScene
 @export var line_scene: PackedScene
 @export var firetimer:Node
-@onready var healthbar = $Healthbar
+@onready var healthbar = $CanvasLayer/Healthbar
 var health = global.Boss2HP : set = _set_health
 var Attack = 0
 

@@ -1,21 +1,62 @@
-[gd_scene load_steps=12 format=3 uid="uid://r885hmnubc6o"]
+[gd_scene load_steps=19 format=3 uid="uid://r885hmnubc6o"]
 
 [ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Spark.tscn" id="1_3g2b2"]
 [ext_resource type="Script" path="res://scripts/Boss2.gd" id="1_wwpcx"]
 [ext_resource type="PackedScene" uid="uid://bx1m47ro2e150" path="res://Bulletcircle.tscn" id="3_kfc2h"]
-[ext_resource type="PackedScene" uid="uid://5n06yjpop12k" path="res://OPen_Shield1.tscn" id="3_x7vvt"]
 [ext_resource type="PackedScene" uid="uid://d3nngbjfswteu" path="res://Teleport.tscn" id="4_76p4s"]
 [ext_resource type="PackedScene" uid="uid://d3pd7hakaer4d" path="res://Boss2bullet.tscn" id="4_ikkfd"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_vsmk5"]
 [ext_resource type="PackedScene" uid="uid://bj23l42rws8ai" path="res://Boss2bullet2.tscn" id="5_xnkg3"]
 [ext_resource type="PackedScene" uid="uid://cdsig8201yvov" path="res://Boss_2line.tscn" id="7_2dgss"]
+[ext_resource type="Texture2D" uid="uid://cpst3r5ixpdbt" path="res://assets/New_Piskel_1-ezgif.com-gif-to-sprite-converter.png" id="8_sir2n"]
+[ext_resource type="Script" path="res://scripts/Rotationlockanimate.gd" id="9_h5dxb"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="10_3isxb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5matq"]
+atlas = ExtResource("8_sir2n")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mac75"]
+atlas = ExtResource("8_sir2n")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sj1mc"]
+atlas = ExtResource("8_sir2n")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uda7"]
+atlas = ExtResource("8_sir2n")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtubv"]
+atlas = ExtResource("8_sir2n")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b4cc5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5matq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mac75")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sj1mc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7uda7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qtubv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047
-
-[sub_resource type="SphereMesh" id="SphereMesh_2vg6r"]
-radius = 100.0
-height = 100.0
 
 [node name="Bossbody2" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
 script = ExtResource("1_wwpcx")
@@ -26,6 +67,12 @@ bullethell2_scene = ExtResource("5_xnkg3")
 teleport_scene = ExtResource("4_76p4s")
 line_scene = ExtResource("7_2dgss")
 firetimer = NodePath("CollisionShape2D/Firetimer")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_b4cc5")
+frame = 4
+frame_progress = 0.582453
+script = ExtResource("9_h5dxb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_4ioo3")
@@ -38,17 +85,6 @@ wait_time = 1.5
 wait_time = 0.6
 one_shot = true
 
-[node name="Area2D" parent="CollisionShape2D" instance=ExtResource("3_x7vvt")]
-position = Vector2(18, 0)
-rotation = -1.5708
-scale = Vector2(1.5, 1.5)
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="CollisionShape2D"]
-modulate = Color(1, 0, 0, 0.262745)
-position = Vector2(0, -1.19209e-07)
-scale = Vector2(0.11448, 0.23125)
-mesh = SubResource("SphereMesh_2vg6r")
-
 [node name="Boss_bullet_spawn" type="Node2D" parent="CollisionShape2D"]
 
 [node name="Area2D2" type="Area2D" parent="CollisionShape2D"]
@@ -58,11 +94,40 @@ metadata/Boss = true
 shape = SubResource("CircleShape2D_4ioo3")
 metadata/Boss = true
 
-[node name="Healthbar" parent="." instance=ExtResource("4_vsmk5")]
-offset_left = -15.0
-offset_top = -21.0
-offset_right = 15.0
-offset_bottom = -17.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Healthbar" parent="CanvasLayer" instance=ExtResource("4_vsmk5")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -350.5
+offset_top = -16.0
+offset_right = 350.5
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+show_percentage = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Bosslabel" type="Label" parent="CanvasLayer/Healthbar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.0
+offset_top = -29.0
+offset_right = 37.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10_3isxb")
+theme_override_font_sizes/font_size = 25
+text = "ZEUS"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
 [connection signal="timeout" from="CollisionShape2D/Weaktimer" to="." method="_on_weaktimer_timeout"]
