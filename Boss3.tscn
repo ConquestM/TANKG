@@ -8,7 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://bl7l4ldama4ib" path="res://Gravestone.tscn" id="5_ryl8a"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="6_v7fj4"]
 [ext_resource type="Texture2D" uid="uid://bhkcqqcc58i35" path="res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png" id="7_eohr5"]
-[ext_resource type="Script" path="res://AnimatedSprite2D.gd" id="8_ygj4j"]
+[ext_resource type="Script" path="res://scripts/AnimatedSprite2D.gd" id="8_ygj4j"]
+
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047

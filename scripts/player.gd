@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
+@onready var healthbar = $CanvasLayer/Healthbar
 @export var speed = 100
-var screen_size
+
 @export var bullet_scene: PackedScene
 var can_shoot = true
 var dashing = false
@@ -13,19 +14,22 @@ var vert_direction = 0
 var slowed = 0
 var saved_direction = 0
 var saved_vert_direction = 0
-@onready var healthbar = $CanvasLayer/Healthbar
+var screen_size
 var health = global.HP : set = _set_health
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+# sets the screensize and the player health.
 	screen_size = get_viewport_rect().size
 	healthbar.init_health(health)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	# The health updates every frame.
 	_set_health(health)
 	
+	# checks if you are not dashing.
 	if not dashing:
 		direction = Input.get_axis("ui_left", "ui_right")
 		vert_direction = Input.get_axis("ui_up", "ui_down")

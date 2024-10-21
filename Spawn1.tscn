@@ -110,10 +110,6 @@ wait_time = 1.5
 [node name="Boss_bullet_spawn" type="Node2D" parent="CollisionShape2D"]
 position = Vector2(43, 0)
 
-[node name="Weaktimer" type="Timer" parent="CollisionShape2D"]
-wait_time = 0.6
-one_shot = true
-
 [node name="Area2D2" type="Area2D" parent="CollisionShape2D"]
 scale = Vector2(0.5, 0.5)
 metadata/Spawn = true
@@ -143,5 +139,4 @@ offset = Vector2(0.84211, -1.64103)
 script = SubResource("GDScript_khan6")
 
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
-[connection signal="timeout" from="CollisionShape2D/Weaktimer" to="." method="_on_weaktimer_timeout"]
 [connection signal="area_entered" from="CollisionShape2D/Area2D2" to="." method="_on_area_2d_area_entered"]
