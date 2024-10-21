@@ -81,10 +81,6 @@ metadata/Boss = true
 [node name="Firetimer" type="Timer" parent="CollisionShape2D"]
 wait_time = 1.5
 
-[node name="Weaktimer" type="Timer" parent="CollisionShape2D"]
-wait_time = 0.6
-one_shot = true
-
 [node name="Boss_bullet_spawn" type="Node2D" parent="CollisionShape2D"]
 
 [node name="Area2D2" type="Area2D" parent="CollisionShape2D"]
@@ -130,4 +126,3 @@ text = "ZEUS"
 metadata/_edit_use_anchors_ = true
 
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
-[connection signal="timeout" from="CollisionShape2D/Weaktimer" to="." method="_on_weaktimer_timeout"]

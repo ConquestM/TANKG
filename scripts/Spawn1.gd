@@ -48,7 +48,6 @@ func _on_firetimer_timeout():
 		bullet.rotation = $CollisionShape2D.rotation
 		add_sibling(bullet)
 		$CollisionShape2D/Firetimer.start()
-		$CollisionShape2D/Weaktimer.start()
 		Attack +=1
 	else:
 		Attack = 0

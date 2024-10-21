@@ -10,5 +10,6 @@ res://Boss3.tscn
 res://Boss2.tscn
 res://Portal.tscn
 res://Boss2bullet.tscn
-res://scripts/Boss_2line.gd
 res://scripts/Boss2.gd
+res://Level2.tscn
+res://scripts/Spawn1.gd
