@@ -1,11 +1,11 @@
 extends Area2D
 @export var explosion_scene: PackedScene
-@export var megabullet2_scene: PackedScene
+@export var mega_bullet_2_scene: PackedScene
 @onready var global = get_node("/root/global")
 
 var speed = 500
 var despawn = 0
-var megabullet
+var mega_bullet
 var friendly = false
 
 
@@ -36,17 +36,17 @@ func _on_area_entered(area):
 	if area.has_meta("Block"):
 		queue_free()
 	if area.has_meta("Player") and not friendly:
-		global.hp -= 1
+		global.h_p -= 1
 		queue_free()
 	if area.has_meta("Boss") and friendly:
-		global.bosshp -= 1
+		global.boss_h_p -= 1
 		queue_free()
 	if area.has_meta("Debt"):
 		if not friendly:
 			for i in 20:
-				var megabulletb = megabullet2_scene	.instantiate()
-				add_sibling(megabulletb)
-				megabulletb.global_position = global_position
-				megabulletb.rotation_degrees = global_rotation_degrees + i*18
+				var mega_bullet_b = mega_bullet_2_scene	.instantiate()
+				add_sibling(mega_bullet_b)
+				mega_bullet_b.global_position = global_position
+				mega_bullet_b.rotation_degrees = global_rotation_degrees + i*18
 				queue_free()
 

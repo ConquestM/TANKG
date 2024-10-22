@@ -4,7 +4,7 @@ extends CharacterBody2D
 var direction = 0
 var speed = 50
 var despawn = 0
-var megabullet
+var mega_bullet
 var home = 1
 var friendly = false
  
@@ -14,7 +14,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # Makes the zombie home towards the player.
 func _process(delta):
-	if global.boss3hp == 0:
+	if global.boss_hp == 0:
 		queue_free()
 	if home == 1:
 		move_local_x(speed * delta)

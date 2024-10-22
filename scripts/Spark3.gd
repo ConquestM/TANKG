@@ -1,5 +1,5 @@
 extends Area2D
-@export var megabullet_scene: PackedScene
+@export var mega_bullet_scene: PackedScene
 @onready var global = get_node("/root/global")
 
 var speed = 270
@@ -14,7 +14,7 @@ var friendly = false
 func _process(delta):
 	move_local_x(speed * delta)
 	despawn += 1
-	if global.bosshp == 0:
+	if global.boss_hp == 0:
 		queue_free()
 	if despawn > 3000:
 		queue_free()

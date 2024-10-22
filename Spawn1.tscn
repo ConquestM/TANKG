@@ -91,11 +91,10 @@ func _process(_delta):
 	rotation = -get_parent().rotation
 "
 
-[node name="Ghostbody" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
+[node name="Ghostbody" type="CharacterBody2D"]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_aj15q")
 bullet_scene = ExtResource("2_x2fx5")
-firetimer = NodePath("CollisionShape2D/Firetimer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(142, 2)

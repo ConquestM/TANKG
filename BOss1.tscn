@@ -10,29 +10,31 @@
 [sub_resource type="GDScript" id="GDScript_ifhia"]
 resource_name = "BOss_script"
 script/source = "extends CharacterBody2D
-@export var megabullet_scene: PackedScene
+@export var mega_bullet_scene: PackedScene
 @export var bullet_scene: PackedScene
-@export var firetimer:Node
+@export var fire_timer:Node
 @export var portal_scene: PackedScene
-@onready var healthbar = $CanvasLayer/Healthbar
-var health = global.bosshp : set = _set_health
+@onready var health_bar = $CanvasLayer/Healthbar
+var health = global.boss_hp : set = _set_health
 
 var Attack = 0
 
 func _ready():
 	global.level = 1 
 	$CanvasLayer/Label.hide()
-	firetimer.start()
-	healthbar.init_health(health)
+	health_bar.init_health(health)
+
+
 func _process(_delta):
 	_set_health(health)
 	if get_node_or_null(\"CollisionShape2D\") == null: return
 	$CollisionShape2D.look_at(get_node(\"/root/Map/Player\").global_position)
-	if global.bosshp <= 0:
+	if global.boss_hp <= 0:
 		$CanvasLayer/Timer2.start()
 		$Sprite2D.queue_free()
 		$CollisionShape2D.queue_free()
-	
+
+
 func _on_firetimer_timeout():
 	if Attack < 3:
 		for i in 36:
@@ -43,25 +45,25 @@ func _on_firetimer_timeout():
 		$CollisionShape2D/Firetimer.start()
 		Attack +=1
 	else:
-		var megabullet = megabullet_scene.instantiate()
-		megabullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
-		megabullet.rotation = $CollisionShape2D.rotation
-		add_sibling(megabullet)
-		var megabullet2 = megabullet_scene.instantiate()
-		megabullet2.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
-		megabullet2.rotation = $CollisionShape2D.rotation+170
-		add_sibling(megabullet2)
-		var megabullet3 = megabullet_scene.instantiate()
-		megabullet3.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
-		megabullet3.rotation = $CollisionShape2D.rotation-170
-		add_sibling(megabullet3)
+		var mega_bullet = mega_bullet_scene.instantiate()
+		mega_bullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
+		mega_bullet.rotation = $CollisionShape2D.rotation
+		add_sibling(mega_bullet)
+		var mega_bullet_2 = mega_bullet_scene.instantiate()
+		mega_bullet_2.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
+		mega_bullet_2.rotation = $CollisionShape2D.rotation+170
+		add_sibling(mega_bullet_2)
+		var mega_bullet_3 = mega_bullet_scene.instantiate()
+		mega_bullet_3.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
+		mega_bullet_3.rotation = $CollisionShape2D.rotation-170
+		add_sibling(mega_bullet_3)
 		$CollisionShape2D/Firetimer.start()
 		Attack = 0
 
 
 func _set_health(_value):
-	if healthbar != null:
-		healthbar.health = global.bosshp
+	if health_bar != null:
+		health_bar.health = global.boss_hp
 
 
 func _on_timer_timeout():
@@ -79,11 +81,10 @@ func _on_timer_2_timeout():
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 18.0
 
-[node name="Bossbody" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
+[node name="Bossbody" type="CharacterBody2D"]
 script = SubResource("GDScript_ifhia")
-megabullet_scene = ExtResource("1_x7p21")
+mega_bullet_scene = ExtResource("1_x7p21")
 bullet_scene = ExtResource("1_8u0ge")
-firetimer = NodePath("CollisionShape2D/Firetimer")
 portal_scene = ExtResource("3_k67as")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -96,6 +97,8 @@ metadata/Boss = true
 
 [node name="Firetimer" type="Timer" parent="CollisionShape2D"]
 wait_time = 0.9
+one_shot = true
+autostart = true
 
 [node name="Boss_bullet_spawn" type="Node2D" parent="CollisionShape2D"]
 

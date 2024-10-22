@@ -1,5 +1,5 @@
 extends Area2D
-@export var spark2_scene: PackedScene
+@export var spark_2_scene: PackedScene
 @onready var global = get_node("/root/global")
 
 var speed = 320
@@ -13,20 +13,20 @@ func _ready():
 
 # Replicates the spark.
 func _on_meiosis_timeout():
-	var spark2 = spark2_scene.instantiate()
-	add_sibling(spark2)
-	spark2.global_position = global_position
-	spark2.rotation = global_rotation
+	var spark_2 = spark_2_scene.instantiate()
+	add_sibling(spark_2)
+	spark_2.global_position = global_position
+	spark_2.rotation = global_rotation
 	
-	var spark2b = spark2_scene.instantiate()
-	add_sibling(spark2b)
-	spark2b.global_position = global_position
-	spark2b.rotation = global_rotation+170
+	var spark_2_b = spark_2_scene.instantiate()
+	add_sibling(spark_2_b)
+	spark_2_b.global_position = global_position
+	spark_2_b.rotation = global_rotation+170
 	
-	var spark2c = spark2_scene.instantiate()
-	add_sibling(spark2c)
-	spark2c.global_position = global_position
-	spark2c.rotation = global_rotation-170
+	var spark_2_c = spark_2_scene.instantiate()
+	add_sibling(spark_2_c)
+	spark_2_c.global_position = global_position
+	spark_2_c.rotation = global_rotation-170
 	
 	$Meiosis.start()
 	

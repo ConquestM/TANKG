@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var healthbar = $CanvasLayer/Healthbar
+@onready var health_bar = $CanvasLayer/Healthbar
 @export var speed = 100
 
 @export var bullet_scene: PackedScene
@@ -21,7 +21,7 @@ var health = global.hp : set = _set_health
 func _ready():
 # sets the screensize and the player health.
 	screen_size = get_viewport_rect().size
-	healthbar.init_health(health)
+	health_bar.init_health(health)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -118,8 +118,8 @@ func _on_timer_timeout():
 
 
 func _set_health(value):
-	if healthbar != null:
-		healthbar.health = global.hp
+	if health_bar != null:
+		health_bar.health = global.hp
 
 
 # Gravestone aura effect. Slows down the player while in it and for a time once leaving it.

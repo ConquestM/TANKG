@@ -1,19 +1,19 @@
 extends CharacterBody2D
 @export var bullet_scene: PackedScene
-@export var firetimer:Node
+@export var fire_timer:Node
 @export var speed = 100
 var screen_size
 var hp = 5
-@onready var healthbar = $Healthbar
+@onready var health_bar = $Healthbar
 var health = hp : set = _set_health
 var Attack = 0
 
 # Occurs when the scene is loaded.
 func _ready():
 	# Starts the firetimer, the timer that tells the bllet to spawn.
-	firetimer.start()
+	$CollisionShape2D/Firetimer.start()
 	# Sets the healthbar to the max health.
-	healthbar.init_health(health)
+	health_bar.init_health(health)
 	# Increases the global spirits variable by 1
 	global.spirits += 1
 
@@ -36,8 +36,8 @@ func _process(_delta):
 
 
 func _set_health(value):
-	if healthbar != null:
-		healthbar.health = hp
+	if health_bar != null:
+		health_bar.health = hp
 
 
 # When the firetimer timeouts, a 'ghost-bullet' is spawned, in the spawn, with the rotation inherited.
@@ -61,3 +61,4 @@ func _on_area_2d_area_entered(area):
 		$AnimatedSprite2D.scale.x = abs($AnimatedSprite2D.scale.x)
 	if area.has_meta("Damage"):
 		hp -= 1
+
