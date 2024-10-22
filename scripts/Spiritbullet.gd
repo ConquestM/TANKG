@@ -4,7 +4,7 @@ extends Area2D
 var direction = 0
 var speed = 50
 var despawn = 0
-var megabullet
+var mega_bullet
 var home = 1
 var friendly = false
  
@@ -15,8 +15,8 @@ func _process(delta):
 	if home == 1:
 		move_local_x(speed * delta)
 		direction = (get_node("/root/Map/Player").global_position - global_position)
-		var targetRotation = direction.angle()
-		rotation = lerp_angle(rotation, targetRotation, 10 * delta)
+		var target_Rotation = direction.angle()
+		rotation = lerp_angle(rotation, target_Rotation, 10 * delta)
 	else:
 		move_local_x(speed * delta * 3)
 

@@ -1,11 +1,11 @@
 extends Area2D
 @export var explosion_scene: PackedScene
-@export var megabulletcircle_scene: PackedScene
+@export var mega_bullet_circle_scene: PackedScene
 @onready var global = get_node("/root/global")
 
 var speed = 150
 var despawn = 0
-var megabullet
+var mega_bullet
 var friendly = false
 
 # Called when the node enters the scene tree for the first time.
@@ -38,8 +38,8 @@ func _on_area_entered(area):
 	if area.has_meta("Debt2"):
 		if not friendly:
 			for i in 60:
-				var megabulletcircle = megabulletcircle_scene.instantiate()
-				add_sibling(megabulletcircle)
-				megabulletcircle.position = position
-				megabulletcircle.rotation_degrees = rotation_degrees + i*6
+				var mega_bullet_circle = mega_bullet_circle_scene.instantiate()
+				add_sibling(mega_bullet_circle)
+				mega_bullet_circle.position = position
+				mega_bullet_circle.rotation_degrees = rotation_degrees + i*6
 				queue_free()

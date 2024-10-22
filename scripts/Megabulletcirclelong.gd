@@ -1,5 +1,5 @@
 extends Area2D
-@export var megabullet_scene: PackedScene
+@export var mega_bullet_scene: PackedScene
 @onready var global = get_node("/root/global")
 
 var speed = 100

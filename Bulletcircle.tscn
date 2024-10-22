@@ -13,7 +13,7 @@ z_index = -1
 z_as_relative = false
 script = ExtResource("1_al8n1")
 explosion_scene = ExtResource("2_thmtu")
-megabulletcircle_scene = ExtResource("3_l0k5p")
+mega_bullet_circle_scene = ExtResource("3_l0k5p")
 metadata/Delete = true
 metadata/Circle = true
 

@@ -1,5 +1,5 @@
 extends Area2D
-@export var spark3_scene: PackedScene
+@export var spark_3_scene: PackedScene
 @onready var global = get_node("/root/global")
 
 var speed = 290
@@ -13,20 +13,20 @@ func _ready():
 
 # Duplication function.
 func _on_meiosis_timeout():
-	var spark3 = spark3_scene.instantiate()
-	add_sibling(spark3)
-	spark3.global_position =global_position
-	spark3.rotation = global_rotation
+	var spark_3 = spark_3_scene.instantiate()
+	add_sibling(spark_3)
+	spark_3.global_position =global_position
+	spark_3.rotation = global_rotation
 	
-	var spark3b = spark3_scene.instantiate()
-	add_sibling(spark3b)
-	spark3b.global_position = global_position
-	spark3b.rotation = global_rotation+170
+	var spark_3_b = spark_3_scene.instantiate()
+	add_sibling(spark_3_b)
+	spark_3_b.global_position = global_position
+	spark_3_b.rotation = global_rotation+170
 	
-	var spark3c = spark3_scene.instantiate()
-	add_sibling(spark3c)
-	spark3c.global_position = global_position
-	spark3c.rotation = global_rotation-170
+	var spark_3_c = spark_3_scene.instantiate()
+	add_sibling(spark_3_c)
+	spark_3_c.global_position = global_position
+	spark_3_c.rotation = global_rotation-170
 	$Meiosis.start()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -34,7 +34,7 @@ func _on_meiosis_timeout():
 func _process(delta):
 	move_local_x(speed * delta)
 	despawn += 1
-	if global.bosshp == 0:
+	if global.boss_hp == 0:
 		queue_free()
 	if despawn > 300:
 		queue_free()

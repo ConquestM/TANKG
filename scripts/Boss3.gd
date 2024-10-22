@@ -1,22 +1,19 @@
 extends CharacterBody2D
-@export var megabullet_scene: PackedScene
+@export var mega_bullet_scene: PackedScene
 @export var shield_bullet_scene: PackedScene
 @export var spawner_scene: PackedScene
 @export var zombie_scene: PackedScene
 @export var wall_scene: PackedScene
-@export var firetimer:Node
+@export var fire_timer:Node
 @export var portal_scene: PackedScene
-@onready var healthbar = $CanvasLayer/Healthbar
-var screensize = get_viewport_rect().size
-var rng = RandomNumberGenerator.new()
-var rndx = 390
-var rndy = 357
-var health = global.boss3hp : set = _set_health
+@onready var health_bar = $CanvasLayer/Healthbar
+var screen_size = get_viewport_rect().size
+var health = global.boss_3_hp : set = _set_health
 var attack = 0
 
 func _ready():
-	firetimer.start()
-	healthbar.init_health(health)
+	$CollisionShape2D/Firetimer.start()
+	health_bar.init_health(health)
 
 # Function that,
 # 1. despawns the boss when its health is 0.
@@ -25,15 +22,15 @@ func _ready():
 func _process(_delta):
 	_set_health(health)
 	$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
-	if global.boss3hp <= 0:
+	if global.boss_3_hp <= 0:
 		queue_free()
 	if global.zombies >= 1:
 		var rng = RandomNumberGenerator.new()
-		var rndx = rng.randi_range(0, 570)
-		var rndy = rng.randi_range(0, 370)
+		var rnd_x = rng.randi_range(0, 570)
+		var rnd_y = rng.randi_range(0, 370)
 		var zombie = zombie_scene.instantiate()
 		add_sibling(zombie)
-		zombie.position = Vector2(rndx, rndy)
+		zombie.position = Vector2(rnd_x, rnd_y)
 		global.zombies -= 1
 		$CollisionShape2D/AnimatedSprite2D.play("default")
 
@@ -53,17 +50,17 @@ func _on_firetimer_timeout():
 	else: 
 		if global.spirits <4:
 			var rng = RandomNumberGenerator.new()
-			var rndx = rng.randi_range(0, 570)
-			var rndy = rng.randi_range(0, 370)
+			var rnd_x = rng.randi_range(0, 570)
+			var rnd_y = rng.randi_range(0, 370)
 			var spawner = spawner_scene.instantiate()
 			add_sibling(spawner)
-			spawner.position = Vector2(rndx, rndy)
+			spawner.position = Vector2(rnd_x, rnd_y)
 			attack = 0
 		attack = 0
 
 func _set_health(value):
-	if healthbar != null:
-		healthbar.health = global.boss3hp
+	if health_bar != null:
+		health_bar.health = global.boss_3_hp
 
 func _on_timer_timeout():
 	$CanvasLayer/Label.hide()

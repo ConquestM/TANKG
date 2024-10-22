@@ -1,6 +1,5 @@
-[gd_scene load_steps=19 format=3 uid="uid://r885hmnubc6o"]
+[gd_scene load_steps=18 format=3 uid="uid://r885hmnubc6o"]
 
-[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Spark.tscn" id="1_3g2b2"]
 [ext_resource type="Script" path="res://scripts/Boss2.gd" id="1_wwpcx"]
 [ext_resource type="PackedScene" uid="uid://bx1m47ro2e150" path="res://Bulletcircle.tscn" id="3_kfc2h"]
 [ext_resource type="PackedScene" uid="uid://d3nngbjfswteu" path="res://Teleport.tscn" id="4_76p4s"]
@@ -58,15 +57,13 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047
 
-[node name="Bossbody2" type="CharacterBody2D" node_paths=PackedStringArray("firetimer")]
+[node name="Bossbody2" type="CharacterBody2D"]
 script = ExtResource("1_wwpcx")
-megabullet_scene = ExtResource("1_3g2b2")
 bullet_scene = ExtResource("3_kfc2h")
-bullethell_scene = ExtResource("4_ikkfd")
-bullethell2_scene = ExtResource("5_xnkg3")
+bullet_hell_scene = ExtResource("4_ikkfd")
+bullet_hell_2_scene = ExtResource("5_xnkg3")
 teleport_scene = ExtResource("4_76p4s")
 line_scene = ExtResource("7_2dgss")
-firetimer = NodePath("CollisionShape2D/Firetimer")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_b4cc5")

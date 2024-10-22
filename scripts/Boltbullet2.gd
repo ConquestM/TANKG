@@ -1,12 +1,12 @@
 extends Area2D
 @export var explosion_scene: PackedScene
-@export var megabullet2_scene: PackedScene
+@export var mega_bullet_2_scene: PackedScene
 @onready var global = get_node("/root/global")
 @export var debt_scene: PackedScene
 var wait = 0
 var speed = 50
 var despawn = 0
-var megabullet
+var mega_bullet
 var friendly = false
 
 # Function for movement, change in movement, colour change and despawning when there is no boss.
@@ -16,7 +16,7 @@ func _process(delta):
 		if wait == 1:
 			speed = -50
 		$VertHor.start()
-	if global.boss2hp == 0:
+	if global.boss_2_hp == 0:
 		queue_free()
 	if global.back == 0:
 		if wait == 1:
@@ -34,15 +34,15 @@ func _on_area_entered(area):
 			global.hp -= 1
 			queue_free()
 		if area.has_meta("Boss") and friendly:
-			global.bosshp -= 1
+			global.boss_hp -= 1
 			queue_free()
 		if area.has_meta("Debt"):
 			if not friendly:
 				for i in 20:
-					var megabulletb = megabullet2_scene	.instantiate()
-					add_sibling(megabulletb)
-					megabulletb.global_position = global_position
-					megabulletb.rotation_degrees = global_rotation_degrees + i*18
+					var mega_bullet_b = mega_bullet_2_scene	.instantiate()
+					add_sibling(mega_bullet_b)
+					mega_bullet_b.global_position = global_position
+					mega_bullet_b.rotation_degrees = global_rotation_degrees + i*18
 					queue_free()
 
 # Begins the despawn timer when exiting the screen.
