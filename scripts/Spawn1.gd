@@ -17,6 +17,7 @@ func _ready():
 	# Increases the global spirits variable by 1
 	global.spirits += 1
 
+
 	# Occurs every frame
 func _process(_delta):
 		# Makes the child, collisionshape 2D look at the player's global position.

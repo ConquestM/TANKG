@@ -4,16 +4,18 @@ extends CharacterBody2D
 @export var spawner_scene: PackedScene
 @export var zombie_scene: PackedScene
 @export var wall_scene: PackedScene
+@export var attack_scene: PackedScene
 @export var fire_timer:Node
-@export var portal_scene: PackedScene
 @onready var health_bar = $CanvasLayer/Healthbar
 var screen_size = get_viewport_rect().size
 var health = global.boss_3_hp : set = _set_health
 var attack = 0
+var wave_attack = 0
 
 func _ready():
 	$CollisionShape2D/Firetimer.start()
 	health_bar.init_health(health)
+
 
 # Function that,
 # 1. despawns the boss when its health is 0.
@@ -33,12 +35,16 @@ func _process(_delta):
 		zombie.position = Vector2(rnd_x, rnd_y)
 		global.zombies -= 1
 		$CollisionShape2D/AnimatedSprite2D.play("default")
+	if wave_attack == 1 and boss_3_hp <= 25:
+		
 
 
 # Function that does attacks.
 # 1. Fires a bullet that spawns a gravestone and spawns 10 zombies with the previous function. 
 # 2. spawns a spirit if there are less than 4.
 func _on_firetimer_timeout():
+	if attack <= 1:
+		wave_attack += 0.5
 	if attack < 1:
 		var bullet = shield_bullet_scene.instantiate()
 		bullet.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
@@ -58,9 +64,11 @@ func _on_firetimer_timeout():
 			attack = 0
 		attack = 0
 
+
 func _set_health(value):
 	if health_bar != null:
 		health_bar.health = global.boss_3_hp
+
 
 func _on_timer_timeout():
 	$CanvasLayer/Label.hide()

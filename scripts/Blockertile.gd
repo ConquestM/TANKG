@@ -6,6 +6,7 @@ var hp = 10
 @onready var health_bar = $Healthbar
 var health = hp : set = _set_health
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
@@ -18,9 +19,11 @@ func _process(delta):
 	if hp < 0 or hp == 0:
 		queue_free()
 
+
 func _set_health(value):
 	if health_bar != null:
 		health_bar.health = hp
+
 
 func _on_area_2d_area_entered(area):
 	if area.has_meta("player"):

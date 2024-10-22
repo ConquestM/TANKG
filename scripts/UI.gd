@@ -7,6 +7,7 @@ extends CanvasLayer
 func _ready():
 	pass
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # Sets the Health of the labels to the health variable.
 func _process(_delta):

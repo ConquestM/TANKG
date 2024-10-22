@@ -11,6 +11,8 @@ var spirits = 0
 var zombies = 0
 var boss_hp_mult = 1
 var wall = 6 
+var lightning = 0
+var light = 1
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

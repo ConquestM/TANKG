@@ -9,10 +9,12 @@ extends CharacterBody2D
 var health = global.boss_2_hp : set = _set_health
 var Attack = 0
 
+
 func _ready():
 	$CollisionShape2D/Firetimer.start()
 	health_bar.init_health(health)
 	global.wall = 6 
+
 
 # Makes the boss look at the player, for attack purposes.
 # Also despawns the boss when health is low and plays the animated sprite.
@@ -22,6 +24,7 @@ func _process(_delta):
 	if global.boss_2_hp <= 0:
 		queue_free()
 	$AnimatedSprite2D.play("default")
+
 
 # Function for the Attacks
 # 1. Spawns the lines that rotate.
@@ -59,7 +62,7 @@ func _on_firetimer_timeout():
 		Attack = 0
 		global.back = 1
 
-
+# Makes the healthbar reflect the variable.
 func _set_health(value):
 	if health_bar != null:
 		health_bar.health = global.boss_2_hp
