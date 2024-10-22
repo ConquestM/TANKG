@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://c27rlmxl5mmbk"]
+[gd_scene load_steps=10 format=3 uid="uid://c27rlmxl5mmbk"]
 
 [ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://Boltbullet.tscn" id="1_8u0ge"]
 [ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://Spark.tscn" id="1_x7p21"]
 [ext_resource type="PackedScene" uid="uid://bpemhh5wfb7ow" path="res://Portal.tscn" id="3_k67as"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="4_cganh"]
 [ext_resource type="Texture2D" uid="uid://cv5nipxf82ral" path="res://assets/Zeus.webp" id="4_q677t"]
+[ext_resource type="PackedScene" uid="uid://ba2fjsu2in8kg" path="res://LightningArea.tscn" id="4_tnp62"]
 [ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="5_jctoa"]
 
 [sub_resource type="GDScript" id="GDScript_ifhia"]
@@ -14,6 +15,7 @@ script/source = "extends CharacterBody2D
 @export var bullet_scene: PackedScene
 @export var fire_timer:Node
 @export var portal_scene: PackedScene
+@export var lightning_scene: PackedScene
 @onready var health_bar = $CanvasLayer/Healthbar
 var health = global.boss_hp : set = _set_health
 
@@ -59,6 +61,10 @@ func _on_firetimer_timeout():
 		add_sibling(mega_bullet_3)
 		$CollisionShape2D/Firetimer.start()
 		Attack = 0
+		global.lightning = 1
+		var lightning = lightning_scene.instantiate()
+		lightning.global_position = get_node(\"/root/Map/Player\").global_position
+		add_sibling(lightning)
 
 
 func _set_health(_value):
@@ -86,6 +92,7 @@ script = SubResource("GDScript_ifhia")
 mega_bullet_scene = ExtResource("1_x7p21")
 bullet_scene = ExtResource("1_8u0ge")
 portal_scene = ExtResource("3_k67as")
+lightning_scene = ExtResource("4_tnp62")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.0443019, 0.0443019)

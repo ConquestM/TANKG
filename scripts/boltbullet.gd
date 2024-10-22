@@ -8,10 +8,12 @@ var despawn = 0
 var mega_bullet
 var friendly = false
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if friendly:
 		set_meta("player", 0)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # Function for movement, despawning and colour change.
@@ -23,6 +25,7 @@ func _process(delta):
 		queue_free()
 	if not friendly:
 		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)
+
 
 # Function for damage, also allows for the detonation when entering a certain area.
 func _on_area_entered(area):
@@ -41,6 +44,7 @@ func _on_area_entered(area):
 				mega_bullet_b.global_position = global_position
 				mega_bullet_b.rotation_degrees = global_rotation_degrees + i*18
 				queue_free()
+
 
 # Despawns the bullet on exiting the screen.
 func _on_visible_on_screen_notifier_2d_screen_exited():

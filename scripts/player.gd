@@ -1,8 +1,6 @@
 extends CharacterBody2D
-
 @onready var health_bar = $CanvasLayer/Healthbar
 @export var speed = 100
-
 @export var bullet_scene: PackedScene
 var can_shoot = true
 var dashing = false
@@ -117,7 +115,7 @@ func _on_timer_timeout():
 	can_dash = true
 
 
-func _set_health(value):
+func _set_health(_value):
 	if health_bar != null:
 		health_bar.health = global.hp
 

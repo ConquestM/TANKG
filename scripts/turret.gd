@@ -19,6 +19,7 @@ func _process(_delta):
 		$Timer.start()
 	position = get_node("/root/Map/Player").global_position
 
+
 # Fuction to fire the bullet.
 func _shoot():
 	var bullet = bullet_scene.instantiate()
@@ -26,6 +27,7 @@ func _shoot():
 	bullet.global_rotation = global_rotation
 	bullet.friendly = true
 	get_parent().add_sibling(bullet)
+
 
 # Cooldown for the fire.
 func _on_timer_timeout():

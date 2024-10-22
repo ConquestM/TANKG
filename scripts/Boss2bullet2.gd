@@ -26,7 +26,8 @@ func _process(delta):
 		queue_free()
 	if not friendly:
 		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)
-	
+
+
 func _on_area_entered(area):
 	if wait == 1:
 		if area.has_meta("Spawn"):
@@ -51,6 +52,7 @@ func _on_area_entered(area):
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	$Debt.start()
+
 
 func _on_debt_timeout():
 		queue_free()

@@ -9,6 +9,7 @@ var despawn = 0
 var mega_bullet
 var friendly = false
 
+
 # Function for movement, change in movement, colour change and despawning when there is no boss.
 func _process(delta):
 	move_local_x(speed * delta)
@@ -23,6 +24,7 @@ func _process(delta):
 			speed = 50
 	if not friendly:
 		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)
+
 
 # Damage function, also codes for the detonation.
 func _on_area_entered(area):
@@ -45,9 +47,11 @@ func _on_area_entered(area):
 					mega_bullet_b.rotation_degrees = global_rotation_degrees + i*18
 					queue_free()
 
+
 # Begins the despawn timer when exiting the screen.
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	$Debt.start()
+
 
 # Despawns the bullet/subject.
 func _on_debt_timeout():
