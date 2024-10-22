@@ -3,9 +3,9 @@ extends Control
 
 
 func _ready():
-	global.bosshp = 100
-	global.boss2hp = 100
-	global.boss3hp = 100
+	global.boss_hp = 100
+	global.boss_2_hp = 100
+	global.boss_3_hp = 100
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -45,3 +45,8 @@ func _on_level_3_pressed():
 # Takes the user to the settings screen/menu
 func _on_settings_pressed():
 	get_tree().change_scene_to_file("res://Settings.tscn")
+
+
+func _on_timer_timeout():
+	$CanvasLayer/WorldEnvironment.environment.glow_strength = randf() - 0.2
+	$CanvasLayer/G.modulate.a = randf() - 0.2

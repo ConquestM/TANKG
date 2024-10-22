@@ -8,7 +8,7 @@ extends CharacterBody2D
 @export var firetimer:Node
 @onready var healthbar = $CanvasLayer/Healthbar
 @export var portal_scene: PackedScene
-var health = global.boss2hp : set = _set_health
+var health = global.boss_2_hp : set = _set_health
 var Attack = 0
 
 func _ready():
@@ -22,7 +22,7 @@ func _process(_delta):
 	_set_health(health)
 	if get_node_or_null("CollisionShape2D") == null: return
 	$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
-	if global.boss2hp <= 0:
+	if global.boss_2_hp <= 0:
 		$CanvasLayer/Timer2.start()
 		$AnimatedSprite2D.queue_free()
 		$CollisionShape2D.queue_free()
@@ -48,7 +48,7 @@ func _on_firetimer_timeout():
 		$CollisionShape2D/Firetimer.start()
 		global.back = 0
 # Spawns the reverse bullets when below a certain health value.
-		if global.boss2hp <= 51 * global.bosshpmult:
+		if global.boss_2_hp <= 51 * global.boss_hp_mult:
 			for i in 36:
 				var bullethell2 = bullethell2_scene.instantiate()
 				bullethell2.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
@@ -67,7 +67,7 @@ func _on_firetimer_timeout():
 
 func _set_health(value):
 	if healthbar != null:
-		healthbar.health = global.boss2hp
+		healthbar.health = global.boss_2_hp
 
 func _on_timer_timeout():
 	$CanvasLayer/Label.hide()
