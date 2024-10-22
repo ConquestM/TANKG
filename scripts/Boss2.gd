@@ -7,21 +7,25 @@ extends CharacterBody2D
 @export var line_scene: PackedScene
 @export var firetimer:Node
 @onready var healthbar = $CanvasLayer/Healthbar
+@export var portal_scene: PackedScene
 var health = global.boss2hp : set = _set_health
 var Attack = 0
 
 func _ready():
+	$CanvasLayer/Label.hide()
 	firetimer.start()
 	healthbar.init_health(health)
 	global.wall = 6 
-
 # Makes the boss look at the player, for attack purposes.
 # Also despawns the boss when health is low and plays the animated sprite.
 func _process(_delta):
 	_set_health(health)
+	if get_node_or_null("CollisionShape2D") == null: return
 	$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
 	if global.boss2hp <= 0:
-		queue_free()
+		$CanvasLayer/Timer2.start()
+		$AnimatedSprite2D.queue_free()
+		$CollisionShape2D.queue_free()
 	$AnimatedSprite2D.play("default")
 
 # Function for the Attacks
@@ -31,7 +35,7 @@ func _on_firetimer_timeout():
 		for i in 3:
 			var line = line_scene.instantiate()
 			line.rotation_degrees = $CollisionShape2D.rotation_degrees -(120)*(i-1)
-			add_sibling(line)aw
+			add_sibling(line)
 			global.wall = 0
 # Spawns the continous waves of bullets.
 	if Attack < 3:
@@ -64,3 +68,14 @@ func _on_firetimer_timeout():
 func _set_health(value):
 	if healthbar != null:
 		healthbar.health = global.boss2hp
+
+func _on_timer_timeout():
+	$CanvasLayer/Label.hide()
+	var portal = portal_scene.instantiate()
+	add_sibling(portal)
+	portal.global_position = get_node("../Camera2D").global_position
+
+
+func _on_timer_2_timeout():
+	$CanvasLayer/Label.show()
+	$CanvasLayer/Timer.start()

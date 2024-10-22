@@ -3,9 +3,9 @@ extends Control
 
 
 func _ready():
-	global.BossHP = 100
-	global.Boss2HP = 100
-	global.Boss3HP = 100
+	global.bosshp = 100
+	global.boss2hp = 100
+	global.boss3hp = 100
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -40,7 +40,7 @@ func _on_level_3_pressed():
 	global.boss3hp = global.boss3hp*global.bosshpmult
 	global.hp = 15
 	global.level = 3
-	get_tree().change_scene_to_file("res://Level3.tscn")
+	get_tree().change_scene_to_file("res://Cutscene_3.tscn")
 
 # Takes the user to the settings screen/menu
 func _on_settings_pressed():
