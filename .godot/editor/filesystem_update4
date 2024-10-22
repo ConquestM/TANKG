@@ -1,7 +1,6 @@
-res://MainMenu.tscn
+res://Level.tscn
 res://scripts/bullet2.gd
 res://scripts/Spark.gd
-res://Level.tscn
 res://Player.tscn
 res://Playerbullet.tscn
 res://Spawn1.tscn
@@ -13,5 +12,5 @@ res://Portal.tscn
 res://Cutscene_1.tscn
 res://Cutscene_2.tscn
 res://Cutscene_3.tscn
-res://flicker.gd
+res://MainMenu.tscn
 res://scripts/mainmenu.gd

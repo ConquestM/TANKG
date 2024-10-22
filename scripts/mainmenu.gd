@@ -50,3 +50,7 @@ func _on_settings_pressed():
 func _on_timer_timeout():
 	$CanvasLayer/WorldEnvironment.environment.glow_strength = randf() - 0.2
 	$CanvasLayer/G.modulate.a = randf() - 0.2
+
+
+func _on_play_1_mouse_entered():
+	pass # Replace with function body.
