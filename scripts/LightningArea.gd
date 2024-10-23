@@ -19,7 +19,6 @@ func _process(_delta):
 func _on_primer_timeout():
 	if priming > 0: 
 		priming -= 1
-		$ColorRect.self_modulate = Color(0,0,0,1)
 		$Primer.start()
 		visible = (true) 
 	if priming == 0:

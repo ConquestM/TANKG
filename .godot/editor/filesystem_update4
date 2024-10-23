@@ -6,11 +6,6 @@ res://Zombie1.tscn
 res://Level3.tscn
 res://Spawn1.tscn
 res://Boss3.tscn
-res://Bulletcircle.tscn
-res://Circlebossbullethitbox.tscn
-res://scripts/Boss3.gd
-res://scripts/bossbullethitbox.gd
-res://Level.tscn
-res://scripts/AnimatedSprite2D.gd
-res://scripts/Gravestone.gd
-res://scripts/Spawn1.gd
+res://Turret.tscn
+res://scripts/LightningArea.gd
+res://LightningArea.tscn
