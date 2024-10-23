@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cuqm3glsshood"]
+[gd_scene load_steps=19 format=3 uid="uid://cuqm3glsshood"]
 
 [ext_resource type="Script" path="res://scripts/Boss3.gd" id="1_6ohnh"]
 [ext_resource type="PackedScene" uid="uid://bopd8ltnba6ol" path="res://Spawn1.tscn" id="4_awiot"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://44q8uem4qu7" path="res://Wall.tscn" id="6_2lslc"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="6_v7fj4"]
 [ext_resource type="Texture2D" uid="uid://bhkcqqcc58i35" path="res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png" id="7_eohr5"]
+[ext_resource type="PackedScene" uid="uid://bpemhh5wfb7ow" path="res://Portal.tscn" id="7_q3elf"]
 [ext_resource type="Script" path="res://scripts/AnimatedSprite2D.gd" id="8_ygj4j"]
 [ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="10_aeeoa"]
 
@@ -61,6 +62,7 @@ spawner_scene = ExtResource("4_awiot")
 zombie_scene = ExtResource("5_0b6ka")
 wall_scene = ExtResource("5_ryl8a")
 wall_attack_scene = ExtResource("6_2lslc")
+portal_scene = ExtResource("7_q3elf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_4ioo3")
@@ -126,5 +128,32 @@ theme_override_font_sizes/font_size = 25
 text = "ZEUS"
 metadata/_edit_use_anchors_ = true
 
+[node name="Timer" type="Timer" parent="CanvasLayer"]
+wait_time = 3.0
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="CanvasLayer"]
+wait_time = 3.0
+one_shot = true
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -297.0
+offset_top = -50.0
+offset_right = 297.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10_aeeoa")
+theme_override_font_sizes/font_size = 100
+text = "GOD SLAIN"
+metadata/_edit_use_anchors_ = true
+
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
 [connection signal="timeout" from="Teletimer" to="." method="_on_teletimer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Timer2" to="." method="_on_timer_2_timeout"]
