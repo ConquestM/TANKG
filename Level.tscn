@@ -12,7 +12,7 @@ position = Vector2(288, 163)
 zoom = Vector2(2, 2)
 
 [node name="BOss1" parent="." instance=ExtResource("2_17prt")]
-position = Vector2(237, 85)
+position = Vector2(287, 62)
 
 [node name="Player" parent="." instance=ExtResource("3_j6vdm")]
 position = Vector2(288, 163)

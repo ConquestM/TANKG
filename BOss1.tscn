@@ -85,7 +85,7 @@ func _on_timer_2_timeout():
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
-radius = 18.0
+radius = 59.3043
 
 [node name="Bossbody" type="CharacterBody2D"]
 script = SubResource("GDScript_ifhia")
@@ -95,7 +95,8 @@ portal_scene = ExtResource("3_k67as")
 lightning_scene = ExtResource("4_tnp62")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.0443019, 0.0443019)
+position = Vector2(9.53674e-07, 1.90735e-06)
+scale = Vector2(0.135181, 0.135181)
 texture = ExtResource("4_q677t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

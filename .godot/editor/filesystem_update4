@@ -11,3 +11,4 @@ res://Settings.tscn
 res://sounds.tscn
 res://Cutscene_3.tscn
 res://cutscene_4.tscn
+res://scripts/Boss3.gd
