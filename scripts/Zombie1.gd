@@ -28,7 +28,7 @@ func _process(delta):
 
 
 # Damage function for the player.
-func _on_area_entered(area):
+func _on_area_2d_2_area_entered(area):
 	if area.has_meta("Player") and not friendly and not global.iframes:
 		global.hp -= 1
 		global.iframes = true
@@ -40,3 +40,5 @@ func _on_die_timeout():
 	grave.global_position = global_position
 	add_sibling(grave)
 	queue_free()
+
+

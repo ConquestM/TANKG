@@ -1,14 +1,14 @@
-Label
-Timer
 AnimatedSprite2D
 Control
 Node2D
 PanelContainer
 Panel
 ColorRect
+Timer
 AudioStreamPlayer
 HSlider
 Node
+Label
 CanvasModulate
 WorldEnvironment
 PointLight2D

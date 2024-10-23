@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bipm3segv8puk" path="res://assets/Enemy Movement Sprites.png" id="3_k6kav"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
-radius = 40.1995
+radius = 40.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3ot06"]
 atlas = ExtResource("3_k6kav")
@@ -96,6 +96,17 @@ scale = Vector2(0.5, 0.5)
 script = ExtResource("1_05lv5")
 grave_scene = ExtResource("2_e4vtr")
 
+[node name="Area2D2" type="Area2D" parent="."]
+scale = Vector2(0.25, 0.25)
+metadata/Spawn = true
+metadata/Tile = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+scale = Vector2(2.1, 2.1)
+shape = SubResource("CircleShape2D_4ioo3")
+metadata/Spawn = true
+metadata/Tile = true
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.5, 0.5)
 shape = SubResource("CircleShape2D_4ioo3")
@@ -124,20 +135,9 @@ wait_time = 3.0
 one_shot = true
 autostart = true
 
-[node name="Area2D2" type="Area2D" parent="CollisionShape2D"]
-scale = Vector2(0.5, 0.5)
-metadata/Spawn = true
-metadata/Tile = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/Area2D2"]
-scale = Vector2(0.5, 0.5)
-shape = SubResource("CircleShape2D_4ioo3")
-metadata/Spawn = true
-metadata/Tile = true
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mnqt7")
 animation = &"run"
 
+[connection signal="area_entered" from="Area2D2" to="." method="_on_area_2d_2_area_entered"]
 [connection signal="timeout" from="CollisionShape2D/Die" to="." method="_on_die_timeout"]
-[connection signal="area_entered" from="CollisionShape2D/Area2D2" to="." method="_on_area_2d_area_entered"]
