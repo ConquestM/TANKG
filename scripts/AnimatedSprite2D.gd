@@ -10,3 +10,4 @@ func _ready():
 # Sets the rotation of the sprite to 0, effectively making it upright.
 func _process(_delta):
 	global_rotation = 0
+		
