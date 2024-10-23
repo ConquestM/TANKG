@@ -15,6 +15,7 @@ var wave_attack = 0
 func _ready():
 	$CollisionShape2D/Firetimer.start()
 	health_bar.init_health(health)
+	global.spirits = 0
 
 
 # Function that,
@@ -35,8 +36,8 @@ func _process(_delta):
 		zombie.position = Vector2(rnd_x, rnd_y)
 		global.zombies -= 1
 		$CollisionShape2D/AnimatedSprite2D.play("default")
-	if wave_attack == 1 and boss_3_hp <= 25:
-		
+	if wave_attack == 1 and global.boss_3_hp <= 25:
+		pass
 
 
 # Function that does attacks.
@@ -54,7 +55,7 @@ func _on_firetimer_timeout():
 		global.zombies += 10
 		attack +=1
 	else: 
-		if global.spirits <4:
+		if global.spirits < 4:
 			var rng = RandomNumberGenerator.new()
 			var rnd_x = rng.randi_range(0, 570)
 			var rnd_y = rng.randi_range(0, 370)
@@ -65,16 +66,9 @@ func _on_firetimer_timeout():
 		attack = 0
 
 
-func _set_health(value):
+func _set_health(_value):
 	if health_bar != null:
 		health_bar.health = global.boss_3_hp
-
-
-func _on_timer_timeout():
-	$CanvasLayer/Label.hide()
-	var portal = portal_scene.instantiate()
-	add_sibling(portal)
-	portal.global_position = get_node("../Camera2D").global_position
 
 
 func _on_timer_2_timeout():
