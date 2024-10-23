@@ -1,6 +1,40 @@
-[gd_scene load_steps=2 format=3 uid="uid://5axocs4823aq"]
+[gd_scene load_steps=12 format=3 uid="uid://5axocs4823aq"]
 
 [ext_resource type="Script" path="res://scripts/Settings.gd" id="1_xmt3x"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="2_ob4k4"]
+[ext_resource type="FontFile" uid="uid://dc0g87d43xkdc" path="res://Trajan Pro Bold.ttf" id="3_j1lxf"]
+
+[sub_resource type="Theme" id="Theme_hxciy"]
+default_font = ExtResource("2_ob4k4")
+
+[sub_resource type="Theme" id="Theme_ybd7j"]
+default_font = ExtResource("3_j1lxf")
+
+[sub_resource type="Theme" id="Theme_cmlm0"]
+default_font = ExtResource("3_j1lxf")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c5e6e"]
+content_margin_left = 1.0
+content_margin_top = 1.0
+content_margin_right = 1.0
+content_margin_bottom = 1.0
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e4xv0"]
+bg_color = Color(4, 0.6, 4, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wtyn2"]
+bg_color = Color(4, 0.6, 4, 1)
+
+[sub_resource type="Environment" id="Environment_51yhs"]
+background_mode = 3
+background_canvas_max_layer = 1
+glow_enabled = true
+glow_strength = 0.0
+glow_blend_mode = 0
+
+[sub_resource type="Theme" id="Theme_cxfw3"]
+default_font = ExtResource("3_j1lxf")
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,43 +44,89 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xmt3x")
+_theme = SubResource("Theme_hxciy")
+default_theme = SubResource("Theme_ybd7j")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Button" type="Button" parent="CanvasLayer"]
-anchors_preset = -1
-anchor_left = 0.202
-anchor_top = 0.179
-anchor_right = 0.28
-anchor_bottom = 0.274
-offset_left = 302.296
-offset_top = 220.008
-offset_right = 316.44
-offset_bottom = 237.448
-
-[node name="Label" type="Label" parent="CanvasLayer"]
-offset_left = 566.0
-offset_top = 355.0
-offset_right = 667.0
-offset_bottom = 429.0
-text = "Play"
-
-[node name="Label2" type="Label" parent="CanvasLayer"]
-offset_left = 546.0
-offset_top = 143.0
-offset_right = 850.0
-offset_bottom = 278.0
-text = "TANKG"
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -62.0
+offset_top = -78.0
+offset_right = 62.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_cmlm0")
+theme_override_colors/font_hover_color = Color(6, 1, 6, 1)
+theme_override_font_sizes/font_size = 50
+text = "Back"
+flat = true
 
 [node name="HSlider" type="HSlider" parent="CanvasLayer"]
-offset_left = 81.0
-offset_top = 173.0
-offset_right = 504.0
-offset_bottom = 292.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -211.0
+offset_top = -34.0
+offset_right = 212.0
+offset_bottom = 85.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/slider = SubResource("StyleBoxFlat_c5e6e")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_e4xv0")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_wtyn2")
 min_value = 0.1
 max_value = 2.0
 step = 0.1
 value = 1.0
 
+[node name="G" type="Label" parent="CanvasLayer"]
+self_modulate = Color(6, 1, 6, 1)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -109.0
+offset_top = 20.0
+offset_right = 118.0
+offset_bottom = 320.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.215686, 0.215686, 0.215686, 1)
+theme_override_fonts/font = ExtResource("2_ob4k4")
+theme_override_font_sizes/font_size = 300
+text = "G
+"
+
+[node name="Timer" type="Timer" parent="CanvasLayer/G"]
+wait_time = 0.1
+autostart = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="CanvasLayer"]
+environment = SubResource("Environment_51yhs")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = 2.0
+offset_right = 38.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_cxfw3")
+text = "BOSS HP"
+
+[connection signal="mouse_entered" from="CanvasLayer/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Button" to="." method="_on_button_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="value_changed" from="CanvasLayer/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="timeout" from="CanvasLayer/G/Timer" to="." method="_on_timer_timeout"]

@@ -11,7 +11,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # Moves the line onto the boss and rotates itself.
-func _process(delta):
+func _process(_delta):
 	if get_node("/root/Map/Bossbody2") != null:
 		global_position = (get_node("/root/Map/Bossbody2").global_position)
 		rotation_degrees += 0.25

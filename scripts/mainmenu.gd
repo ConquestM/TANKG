@@ -1,6 +1,7 @@
 extends Control
 @onready var global = get_node("/root/global")
-
+@export var _theme: Theme
+@export var default_theme: Theme
 
 func _ready():
 	global.boss_hp = 100
@@ -53,4 +54,40 @@ func _on_timer_timeout():
 
 
 func _on_play_1_mouse_entered():
-	pass # Replace with function body.
+	$CanvasLayer/Play1.theme = _theme
+
+
+func _on_play_1_mouse_exited():
+	$CanvasLayer/Play1.theme = default_theme
+
+
+func _on_quit_mouse_entered():
+	$CanvasLayer/Quit.theme = _theme
+
+
+func _on_quit_mouse_exited():
+	$CanvasLayer/Quit.theme = default_theme
+
+
+func _on_level_2_mouse_entered():
+	$CanvasLayer/Level2.theme = _theme
+
+
+func _on_level_2_mouse_exited():
+	$CanvasLayer/Level2.theme = default_theme
+
+
+func _on_level_3_mouse_entered():
+	$CanvasLayer/Level3.theme = _theme
+
+
+func _on_level_3_mouse_exited():
+	$CanvasLayer/Level3.theme = default_theme
+
+
+func _on_settings_mouse_entered():
+	$CanvasLayer/Settings.theme = _theme
+
+
+func _on_settings_mouse_exited():
+	$CanvasLayer/Settings.theme = default_theme
