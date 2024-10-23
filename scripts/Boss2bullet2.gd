@@ -15,8 +15,6 @@ func _ready():
 	$Wait.start()
 	self.visible = false
 	speed = -400
-	print("lowspaen")
-
 
 
 func _process(delta):

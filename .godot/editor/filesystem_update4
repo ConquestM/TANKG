@@ -18,3 +18,8 @@ res://scripts/wallattack.gd
 res://wallattack.tscn
 res://Wall.tscn
 res://scripts/Spiritbullet.gd
+res://Boss2bullet.tscn
+res://scripts/Boss_2line.gd
+res://Boss_2line.tscn
+res://scripts/Settings.gd
+res://scripts/bossbullethitbox.gd

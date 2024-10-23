@@ -15,7 +15,7 @@ func _ready():
 	$CanvasLayer/Label.hide()
 	$CollisionShape2D/Firetimer.start()
 	health_bar.init_health(health)
-	global.wall = 6 
+	global.wall = 3
 
 
 # Makes the boss look at the player, for attack purposes.
@@ -52,7 +52,6 @@ func _on_firetimer_timeout():
 		global.back = 0
 # Spawns the reverse bullets when below a certain health value.
 		if global.boss_2_hp <= 51 * global.boss_hp_mult:
-			print("lowhealth")
 			for i in 36:
 				var bullet_hell_2 = bullet_hell_2_scene.instantiate()
 				bullet_hell_2.global_position = $CollisionShape2D/Boss_bullet_spawn.global_position
