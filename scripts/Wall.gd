@@ -11,7 +11,6 @@ func _ready():
 
 func _on_despawn_timeout():
 	global.wall_attack = 1
-	print("gone")
 	queue_free()
 
 

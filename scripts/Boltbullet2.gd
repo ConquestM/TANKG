@@ -41,7 +41,7 @@ func _on_area_entered(area):
 		if area.has_meta("Debt"):
 			if not friendly:
 				for i in 20:
-					var mega_bullet_b = mega_bullet_2_scene	.instantiate()
+					var mega_bullet_b = mega_bullet_2_scene.instantiate()
 					add_sibling(mega_bullet_b)
 					mega_bullet_b.global_position = global_position
 					mega_bullet_b.rotation_degrees = global_rotation_degrees + i*18
