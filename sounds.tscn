@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/Sounds.gd" id="1_tobk6"]
 [ext_resource type="AudioStream" uid="uid://docl11gjtavp7" path="res://The White Piano Key - Leaving Yoshi -SLOW- -Loopable-.mp3" id="2_v51pw"]
-[ext_resource type="AudioStream" uid="uid://r6jm0yvo08ca" path="res://PIGLBT.mp3" id="3_2d70t"]
+[ext_resource type="AudioStream" uid="uid://r6jm0yvo08ca" path="res://assets/PIGLBT.mp3" id="3_2d70t"]
 
 [node name="Sounds" type="Node"]
 script = ExtResource("1_tobk6")

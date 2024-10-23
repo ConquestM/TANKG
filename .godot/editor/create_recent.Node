@@ -1,3 +1,4 @@
+Label
 Timer
 AnimatedSprite2D
 Control
@@ -8,7 +9,6 @@ ColorRect
 AudioStreamPlayer
 HSlider
 Node
-Label
 CanvasModulate
 WorldEnvironment
 PointLight2D
