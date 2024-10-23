@@ -13,4 +13,15 @@ res://Cutscene_1.tscn
 res://Cutscene_2.tscn
 res://Cutscene_3.tscn
 res://MainMenu.tscn
+res://scripts/Boss3.gd
+res://scripts/Zombie1.gd
+res://scripts/Gravestone.gd
+res://scripts/AnimatedSprite2D.gd
+res://scripts/Boss2.gd
+res://scripts/Boss_2line.gd
+res://scripts/Rotationlockanimate.gd
+res://scripts/Spawn1.gd
+res://scripts/Teleport.gd
 res://scripts/mainmenu.gd
+res://Settings.tscn
+res://scripts/Settings.gd

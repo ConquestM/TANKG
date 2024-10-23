@@ -65,7 +65,7 @@ func _on_firetimer_timeout():
 		global.back = 1
 
 
-func _set_health(value):
+func _set_health(_value):
 	if healthbar != null:
 		healthbar.health = global.boss_2_hp
 

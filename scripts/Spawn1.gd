@@ -36,7 +36,7 @@ func _process(_delta):
 			queue_free()
 
 
-func _set_health(value):
+func _set_health(_value):
 	if health_bar != null:
 		health_bar.health = hp
 

@@ -16,16 +16,16 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	_set_health(health)
 	rotation = 0
-	if global.boss_hp == 0:
+	if global.boss_3_hp == 0:
 		queue_free()
 	if hp < 0 or hp == 0:
 		queue_free()
 
 
-func _set_health(value):
+func _set_health(_value):
 	if health_bar != null:
 		health_bar.health = hp
 

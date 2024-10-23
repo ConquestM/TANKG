@@ -8,5 +8,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # Sets the rotation of the sprite to 0, effectively making it upright.
-func _process(delta):
+func _process(_delta):
 	global_rotation = 0

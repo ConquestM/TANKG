@@ -16,7 +16,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # Makes the zombie home towards the player.
 func _process(delta):
-	if global.boss_hp == 0:
+	if global.boss_3_hp == 0:
 		queue_free()
 	if home == 1:
 		move_local_x(speed * delta)

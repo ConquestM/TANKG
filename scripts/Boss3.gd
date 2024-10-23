@@ -35,8 +35,8 @@ func _process(_delta):
 		zombie.position = Vector2(rnd_x, rnd_y)
 		global.zombies -= 1
 		$CollisionShape2D/AnimatedSprite2D.play("default")
-	if wave_attack == 1 and boss_3_hp <= 25:
-		
+	if wave_attack == 1 and global.boss_3_hp <= 25:
+		pass
 
 
 # Function that does attacks.
@@ -65,16 +65,9 @@ func _on_firetimer_timeout():
 		attack = 0
 
 
-func _set_health(value):
+func _set_health(_value):
 	if health_bar != null:
 		health_bar.health = global.boss_3_hp
-
-
-func _on_timer_timeout():
-	$CanvasLayer/Label.hide()
-	var portal = portal_scene.instantiate()
-	add_sibling(portal)
-	portal.global_position = get_node("../Camera2D").global_position
 
 
 func _on_timer_2_timeout():
