@@ -46,6 +46,7 @@ grow_vertical = 2
 script = ExtResource("1_xmt3x")
 _theme = SubResource("Theme_hxciy")
 default_theme = SubResource("Theme_ybd7j")
+volume_name = "Master"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -125,8 +126,43 @@ grow_vertical = 2
 theme = SubResource("Theme_cxfw3")
 text = "BOSS HP"
 
+[node name="Soundslider" type="HSlider" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -211.0
+offset_top = 60.0
+offset_right = 212.0
+offset_bottom = 179.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/slider = SubResource("StyleBoxFlat_c5e6e")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_e4xv0")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_wtyn2")
+max_value = 1.0
+step = 0.001
+value = 1.0
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = 96.0
+offset_right = 38.0
+offset_bottom = 119.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_cxfw3")
+text = "VOLUME"
+
 [connection signal="mouse_entered" from="CanvasLayer/Button" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/Button" to="." method="_on_button_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="value_changed" from="CanvasLayer/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="timeout" from="CanvasLayer/G/Timer" to="." method="_on_timer_timeout"]
+[connection signal="value_changed" from="CanvasLayer/Soundslider" to="." method="_on_soundslider_value_changed"]
