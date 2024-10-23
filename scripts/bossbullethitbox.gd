@@ -6,7 +6,6 @@ extends Area2D
 func _ready():
 	set_meta("Debt2", 0)
 	$Delete.start()
-	print(global_position)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

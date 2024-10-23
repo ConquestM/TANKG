@@ -23,10 +23,8 @@ func _process(_delta):
 func _on_expand_timeout():
 	if size >= 1 :
 		big = 0
-		print("change")
 	if size <= -1  :
 		big = 1
-		print("change2")
 	if big == 1 :
 		scale.x += 0.1
 		size += 0.1
@@ -34,6 +32,7 @@ func _on_expand_timeout():
 		scale.x -= 0.1
 		size -= 0.1
 
+			
 # Damages the player.
 func _on_area_2d_area_entered(area):
 		if area.has_meta("Player"):
