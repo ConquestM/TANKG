@@ -15,6 +15,7 @@ var wave_attack = 0
 func _ready():
 	$CollisionShape2D/Firetimer.start()
 	health_bar.init_health(health)
+	global.spirits = 0
 
 
 # Function that,
@@ -54,7 +55,7 @@ func _on_firetimer_timeout():
 		global.zombies += 10
 		attack +=1
 	else: 
-		if global.spirits <4:
+		if global.spirits < 4:
 			var rng = RandomNumberGenerator.new()
 			var rnd_x = rng.randi_range(0, 570)
 			var rnd_y = rng.randi_range(0, 370)
