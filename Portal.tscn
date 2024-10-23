@@ -1,19 +1,70 @@
-[gd_scene load_steps=4 format=3 uid="uid://bpemhh5wfb7ow"]
+[gd_scene load_steps=12 format=3 uid="uid://bpemhh5wfb7ow"]
 
 [ext_resource type="Script" path="res://scripts/portal.gd" id="1_la51q"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_qa78q"]
+[ext_resource type="Texture2D" uid="uid://cuoxby1tqm6li" path="res://assets/sprite-sheet.png" id="2_ui7us"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_c5qrl"]
-radius = 5.0
+radius = 22.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6811u"]
+atlas = ExtResource("2_ui7us")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5276q"]
+atlas = ExtResource("2_ui7us")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3sjet"]
+atlas = ExtResource("2_ui7us")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rmosn"]
+atlas = ExtResource("2_ui7us")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cwae6"]
+atlas = ExtResource("2_ui7us")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fsd5"]
+atlas = ExtResource("2_ui7us")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iurmt"]
+atlas = ExtResource("2_ui7us")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j83tp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6811u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5276q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3sjet")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rmosn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cwae6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2fsd5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iurmt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_la51q")
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-position = Vector2(9.53674e-07, 0)
-scale = Vector2(10.5113, 10.5113)
-mesh = SubResource("SphereMesh_qa78q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_c5qrl")
@@ -21,6 +72,9 @@ shape = SubResource("CircleShape2D_c5qrl")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_j83tp")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

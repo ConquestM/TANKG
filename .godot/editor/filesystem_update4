@@ -1,6 +1,8 @@
-res://Level.tscn
+res://sounds.tscn
 res://scripts/bullet2.gd
 res://scripts/Spark.gd
+res://scripts/Sounds.gd
+res://Level.tscn
 res://Player.tscn
 res://Boss3.tscn
 res://Boss2.tscn
@@ -8,5 +10,12 @@ res://BOss1.tscn
 res://Portal.tscn
 res://MainMenu.tscn
 res://Settings.tscn
-res://sounds.tscn
-res://scripts/Settings.gd
+res://scripts/mainmenu.gd
+res://scripts/player.gd
+res://scripts/portal.gd
+res://scripts/Boss2.gd
+res://Level.gd
+res://scripts/Cutscene_4.gd
+res://Cutscene_3.tscn
+res://cutscene_4.tscn
+res://scripts/Boss3.gd

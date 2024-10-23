@@ -88,6 +88,7 @@ func _process(delta):
 				speed = 100
 			dash_timer = 0
 	if global.hp < 0 or global.hp == 0:
+		sounds._battle_end()
 		get_tree().change_scene_to_file("res://Mainmenu.tscn")
 		
 		global.hp = 15

@@ -5,12 +5,14 @@ extends CharacterBody2D
 @export var teleport_scene: PackedScene
 @export var line_scene: PackedScene
 @export var fire_timer:Node
+@export var portal_scene: PackedScene
 @onready var health_bar = $CanvasLayer/Healthbar
 var health = global.boss_2_hp : set = _set_health
 var Attack = 0
 
 
 func _ready():
+	$CanvasLayer/Label.hide()
 	$CollisionShape2D/Firetimer.start()
 	health_bar.init_health(health)
 	global.wall = 6 
@@ -20,9 +22,12 @@ func _ready():
 # Also despawns the boss when health is low and plays the animated sprite.
 func _process(_delta):
 	_set_health(health)
+	if get_node_or_null("CollisionShape2D") == null: return
 	$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
 	if global.boss_2_hp <= 0:
-		queue_free()
+		$CanvasLayer/Timer2.start()
+		$AnimatedSprite2D.queue_free()
+		$CollisionShape2D.queue_free()
 	$AnimatedSprite2D.play("default")
 
 
@@ -66,3 +71,15 @@ func _on_firetimer_timeout():
 func _set_health(value):
 	if health_bar != null:
 		health_bar.health = global.boss_2_hp
+
+
+func _on_timer_timeout():
+	$CanvasLayer/Label.hide()
+	var portal = portal_scene.instantiate()
+	add_sibling(portal)
+	portal.global_position = get_node("../Camera2D").global_position
+
+
+func _on_timer_2_timeout():
+	$CanvasLayer/Label.show()
+	$CanvasLayer/Timer.start()

@@ -6,6 +6,7 @@ extends CharacterBody2D
 @export var wall_scene: PackedScene
 @export var attack_scene: PackedScene
 @export var fire_timer:Node
+@export var portal_scene: PackedScene
 @onready var health_bar = $CanvasLayer/Healthbar
 var screen_size = get_viewport_rect().size
 var health = global.boss_3_hp : set = _set_health
@@ -13,6 +14,7 @@ var attack = 0
 var wave_attack = 0
 
 func _ready():
+	$CanvasLayer/Label.hide()
 	$CollisionShape2D/Firetimer.start()
 	health_bar.init_health(health)
 	global.spirits = 0
@@ -24,9 +26,12 @@ func _ready():
 # 3. plays the animated sprite's animaiton.
 func _process(_delta):
 	_set_health(health)
+	if get_node_or_null("CollisionShape2D") == null: return
 	$CollisionShape2D.look_at(get_node("/root/Map/Player").global_position)
 	if global.boss_3_hp <= 0:
-		queue_free()
+		$CanvasLayer/Timer2.start()
+		$CollisionShape2D/AnimatedSprite2D.queue_free()
+		$CollisionShape2D.queue_free()
 	if global.zombies >= 1:
 		var rng = RandomNumberGenerator.new()
 		var rnd_x = rng.randi_range(0, 570)
@@ -71,7 +76,13 @@ func _set_health(_value):
 		health_bar.health = global.boss_3_hp
 
 
+func _on_timer_timeout():
+	$CanvasLayer/Label.hide()
+	var portal = portal_scene.instantiate()
+	add_sibling(portal)
+	portal.global_position = get_node("../Camera2D").global_position
+
+
 func _on_timer_2_timeout():
 	$CanvasLayer/Label.show()
 	$CanvasLayer/Timer.start()
-

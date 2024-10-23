@@ -20,6 +20,7 @@ func _on_button_pressed():
 	global.hp = 15
 	global.level = 1
 	sounds._main_menu_exit()
+	sounds._battle_music()
 	get_tree().change_scene_to_file("res://Cutscene_1.tscn")
 
 # Closes the game.

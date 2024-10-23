@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729668920
+::res://::1729676530
 BlockerBullet.tscn::PackedScene::9222007971766817213::1729557561::0::1::::<><>::res://scripts/BlockerBullet.gd<>uid://dwom1o4jxhxmo::::res://Bossbulletdetonatehitbox.tscn<>uid://bl7l4ldama4ib::::res://Gravestone.tscn<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
 Boltbullet.tscn::PackedScene::4954687080322788276::1729115652::0::1::::<><>::res://scripts/boltbullet.gd<>uid://dwom1o4jxhxmo::::res://Bossbulletdetonatehitbox.tscn<>uid://yxeav7431xuf::::res://assets/Lightningbolt.png
-BOss1.tscn::PackedScene::6735052732704041660::1729668623::0::1::::<><>::uid://ccuc8cahwt677::::res://Boltbullet.tscn<>uid://bjmfaw432i8kw::::res://Spark.tscn<>uid://bpemhh5wfb7ow::::res://Portal.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://cv5nipxf82ral::::res://assets/Zeus.webp<>uid://ba2fjsu2in8kg::::res://LightningArea.tscn<>uid://cfqhh4yntr6j2::::res://Facon.ttf
-Boss2.tscn::PackedScene::1263392429127497244::1729668623::0::1::::<><>::res://scripts/Boss2.gd<>uid://bx1m47ro2e150::::res://Bulletcircle.tscn<>uid://d3nngbjfswteu::::res://Teleport.tscn<>uid://d3pd7hakaer4d::::res://Boss2bullet.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://bj23l42rws8ai::::res://Boss2bullet2.tscn<>uid://cdsig8201yvov::::res://Boss_2line.tscn<>uid://cpst3r5ixpdbt::::res://assets/New_Piskel_1-ezgif.com-gif-to-sprite-converter.png<>res://scripts/Rotationlockanimate.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
+BOss1.tscn::PackedScene::6735052732704041660::1729675906::0::1::::<><>::uid://ccuc8cahwt677::::res://Boltbullet.tscn<>uid://bjmfaw432i8kw::::res://Spark.tscn<>uid://bpemhh5wfb7ow::::res://Portal.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://cv5nipxf82ral::::res://assets/Zeus.webp<>uid://ba2fjsu2in8kg::::res://LightningArea.tscn<>uid://cfqhh4yntr6j2::::res://Facon.ttf
+Boss2.tscn::PackedScene::1263392429127497244::1729675906::0::1::::<><>::res://scripts/Boss2.gd<>uid://bx1m47ro2e150::::res://Bulletcircle.tscn<>uid://d3nngbjfswteu::::res://Teleport.tscn<>uid://d3pd7hakaer4d::::res://Boss2bullet.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://bj23l42rws8ai::::res://Boss2bullet2.tscn<>uid://cdsig8201yvov::::res://Boss_2line.tscn<>uid://bpemhh5wfb7ow::::res://Portal.tscn<>uid://cpst3r5ixpdbt::::res://assets/New_Piskel_1-ezgif.com-gif-to-sprite-converter.png<>res://scripts/Rotationlockanimate.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
 Boss2bullet2.tscn::PackedScene::3075579761014841948::1729113531::0::1::::<><>::res://scripts/Boss2bullet2.gd<>uid://yxeav7431xuf::::res://assets/Lightningbolt.png
 Boss2bullet.tscn::PackedScene::9155755003756345729::1729540024::0::1::::<><>::res://scripts/Boltbullet2.gd<>uid://yxeav7431xuf::::res://assets/Lightningbolt.png
-Boss3.tscn::PackedScene::6210427223329473775::1729668623::0::1::::<><>::res://scripts/Boss3.gd<>uid://bopd8ltnba6ol::::res://Spawn1.tscn<>uid://d4nhehjpgots4::::res://BlockerBullet.tscn<>uid://c2niigo3nbyw2::::res://Zombie1.tscn<>uid://bl7l4ldama4ib::::res://Gravestone.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://bhkcqqcc58i35::::res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png<>res://scripts/AnimatedSprite2D.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
+Boss3.tscn::PackedScene::6210427223329473775::1729675905::0::1::::<><>::res://scripts/Boss3.gd<>uid://bopd8ltnba6ol::::res://Spawn1.tscn<>uid://d4nhehjpgots4::::res://BlockerBullet.tscn<>uid://c2niigo3nbyw2::::res://Zombie1.tscn<>uid://bl7l4ldama4ib::::res://Gravestone.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://bhkcqqcc58i35::::res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png<>res://scripts/AnimatedSprite2D.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
 Bossbulletdetonatehitbox.tscn::PackedScene::8733093714793764106::1725225069::0::1::::<><>::res://scripts/bossbullethitbox.gd
 Boss_2line.tscn::PackedScene::5021064924730808709::1729470927::0::1::::<><>::res://scripts/Boss_2line.gd
 Bulletcircle.tscn::PackedScene::4055220008591084621::1729557561::0::1::::<><>::res://scripts/Bulletcircle.gd<>uid://bc7phxn8qj874::::res://Circlebossbullethitbox.tscn<>uid://cniy4mkyawquh::::res://Megabulletcircle.tscn<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
@@ -19,18 +19,19 @@ Gravestone.tscn::PackedScene::3225278309192377861::1729113531::0::1::::<><>::res
 Healthbar.tscn::PackedScene::3169294476667607095::1729036046::0::1::::<><>::res://scripts/healthbar.gd
 Level2.tscn::PackedScene::320906924447080811::1729540024::0::1::::<><>::uid://r885hmnubc6o::::res://Boss2.tscn<>uid://cou1mvn4ls013::::res://Player.tscn<>uid://btij6l30ipepu::::res://Turret.tscn
 Level3.tscn::PackedScene::6353393528825482604::1729111370::0::1::::<><>::uid://cuqm3glsshood::::res://Boss3.tscn<>uid://cou1mvn4ls013::::res://Player.tscn<>uid://btij6l30ipepu::::res://Turret.tscn
-Level.tscn::PackedScene::7749333733984369858::1729668623::0::1::::<><>::uid://c27rlmxl5mmbk::::res://BOss1.tscn<>uid://cou1mvn4ls013::::res://Player.tscn<>uid://btij6l30ipepu::::res://Turret.tscn<>uid://ba2fjsu2in8kg::::res://LightningArea.tscn
+Level.tscn::PackedScene::7749333733984369858::1729675905::0::1::::<><>::uid://c27rlmxl5mmbk::::res://BOss1.tscn<>uid://cou1mvn4ls013::::res://Player.tscn<>uid://btij6l30ipepu::::res://Turret.tscn<>uid://ba2fjsu2in8kg::::res://LightningArea.tscn
 Lightning.tscn::PackedScene::7051596047917063072::1729633826::0::1::::<><>::uid://dkmxh3qbrsnhr::::res://assets/lightning_v2_1.png<>res://scripts/Lightning.gd<>uid://dgqoa7b8ptbio::::res://assets/lightning_v2_2.png<>uid://cv0r1wn0t6e80::::res://assets/lightning_v2_3.png<>uid://dknw12h3qn7ua::::res://assets/lightning_v2_4.png<>uid://cqy5m581i2pia::::res://assets/lightning_v2_5.png<>uid://weytaknn0jps::::res://assets/lightning_v2_6.png<>uid://h372wdicunt1::::res://assets/lightning_v2_7.png<>uid://fqojo0tqos25::::res://assets/lightning_v2_8.png<>uid://mogcbm7ksoqp::::res://assets/lightning_v2_9.png<>uid://bbm2h7rgc2kwm::::res://assets/lightning_v2_10.png<>uid://cw7xn55c12w1s::::res://assets/lightning_v2_11.png<>uid://bfshdo50g4iur::::res://assets/lightning_v2_12.png<>uid://ci4b332qoaey8::::res://assets/lightning_v2_13.png
 LightningArea.tscn::PackedScene::2442479517716078886::1729633826::0::1::::<><>::res://scripts/LightningArea.gd<>uid://c7p30yxxqn3e7::::res://Lightning.tscn
-MainMenu.tscn::PackedScene::3212105435112033982::1729668623::0::1::::<><>::res://scripts/mainmenu.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf<>uid://dc0g87d43xkdc::::res://Trajan Pro Bold.ttf
+MainMenu.tscn::PackedScene::3212105435112033982::1729675906::0::1::::<><>::res://scripts/mainmenu.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf<>uid://dc0g87d43xkdc::::res://Trajan Pro Bold.ttf
 Megabulletcircle.tscn::PackedScene::5703320999382318367::1729210519::0::1::::<><>::res://scripts/Megabulletcircle.gd<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
 Megabulletcirclelong.tscn::PackedScene::7624592330625375220::1724884665::0::1::::<><>::res://scripts/Megabulletcirclelong.gd<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
 OPen_Shield1.tscn::PackedScene::2134076779538465792::1724884665::0::1::::<><>::res://scripts/Open_Shield1.gd
-Player.tscn::PackedScene::5798373929144512532::1729668623::0::1::::<><>::res://scripts/player.gd<>uid://ccuc8cahwt677::::res://Boltbullet.tscn<>uid://dn817yopwtgsi::::res://assets/tank_frame0000.png<>uid://blov2f6ckuopd::::res://assets/tank_frame0001.png<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>res://scripts/Rotation_lock.gd
+PIGLBT.mp3::AudioStreamMP3::1257775285817093520::1729670759::1729670787::1::::<><>::
+Player.tscn::PackedScene::5798373929144512532::1729675905::0::1::::<><>::res://scripts/player.gd<>uid://ccuc8cahwt677::::res://Boltbullet.tscn<>uid://dn817yopwtgsi::::res://assets/tank_frame0000.png<>uid://blov2f6ckuopd::::res://assets/tank_frame0001.png<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>res://scripts/Rotation_lock.gd
 Playerbullet.tscn::PackedScene::7080685767157452003::1729657989::0::1::::<><>::res://scripts/Playerbullet.gd<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
-Portal.tscn::PackedScene::3448252368764279050::1729668623::0::1::::<><>::res://scripts/portal.gd
-Settings.tscn::PackedScene::2107086935305268488::1729668623::0::1::::<><>::res://scripts/Settings.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf<>uid://dc0g87d43xkdc::::res://Trajan Pro Bold.ttf
-sounds.tscn::PackedScene::1643348110645780387::1729668623::0::1::::<><>::res://scripts/Sounds.gd<>uid://docl11gjtavp7::::res://The White Piano Key - Leaving Yoshi -SLOW- -Loopable-.mp3
+Portal.tscn::PackedScene::3448252368764279050::1729675906::0::1::::<><>::res://scripts/portal.gd<>uid://cuoxby1tqm6li::::res://assets/sprite-sheet.png
+Settings.tscn::PackedScene::2107086935305268488::1729675906::0::1::::<><>::res://scripts/Settings.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf<>uid://dc0g87d43xkdc::::res://Trajan Pro Bold.ttf
+sounds.tscn::PackedScene::1643348110645780387::1729675906::0::1::::<><>::res://scripts/Sounds.gd<>uid://docl11gjtavp7::::res://The White Piano Key - Leaving Yoshi -SLOW- -Loopable-.mp3<>uid://r6jm0yvo08ca::::res://PIGLBT.mp3
 Spark2.tscn::PackedScene::8316172164375277815::1729557561::0::1::::<><>::res://scripts/Spark2.gd<>uid://dgi1ildc43y02::::res://assets/Spark.png<>uid://507dapfpwiru::::res://Spark3.tscn
 Spark3.tscn::PackedScene::2159223077562870390::1724976237::0::1::::<><>::res://scripts/Spark3.gd<>uid://dgi1ildc43y02::::res://assets/Spark.png
 Spark.tscn::PackedScene::3043197596069599262::1729557561::0::1::::<><>::res://scripts/Spark.gd<>uid://dqqoe1p0y1ann::::res://Spark2.tscn<>uid://dgi1ildc43y02::::res://assets/Spark.png
@@ -42,7 +43,7 @@ The White Piano Key - Leaving Yoshi -SLOW- -Loopable-.mp3::AudioStreamMP3::81467
 Trajan Pro Bold.ttf::FontFile::7351674102099900904::1590597248::1729578034::1::::<><>::
 Turret.tscn::PackedScene::3737126169552690746::1729657989::0::1::::<><>::res://scripts/turret.gd<>uid://c7464ii0e0x76::::res://Playerbullet.tscn<>uid://bx5hqmnc2y145::::res://assets/cannon_frame0000.png
 Zombie1.tscn::PackedScene::6695277416766219199::1729113531::0::1::::<><>::res://scripts/Zombie1.gd<>uid://bl7l4ldama4ib::::res://Gravestone.tscn<>uid://bi0xhn3nr6580::::res://assets/zombie movement.png<>uid://bipm3segv8puk::::res://assets/Enemy Movement Sprites.png
-::res://assets/::1729633826
+::res://assets/::1729673454
 cannon_frame0000.png::CompressedTexture2D::4063149662132068176::1724884665::1724884665::1::::<><>::
 Cloud 1.png::CompressedTexture2D::1221616166950164176::1729633826::1729633826::1::::<><>::
 Cloud 2.png::CompressedTexture2D::7364770109056105690::1729633826::1729633826::1::::<><>::
@@ -90,23 +91,1446 @@ proffe copy - Copy.png::CompressedTexture2D::6338131648663361362::1719284577::17
 README.md::TextFile::-1::1719284577::0::1::::<><>::
 Slaughter.png::CompressedTexture2D::8030911943533306683::1718147254::1718147254::1::::<><>::
 Spark.png::CompressedTexture2D::7598503645625161469::1724884665::1724884665::1::::<><>::
+sprite-sheet.png::CompressedTexture2D::6206919106941700794::1726200720::1729673206::1::::<><>::
 tank_frame0000.png::CompressedTexture2D::8141478554373931868::1724884665::1724884665::1::::<><>::
 tank_frame0001.png::CompressedTexture2D::3188722836162546681::1724884665::1724884665::1::::<><>::
 Zeus.webp::CompressedTexture2D::6309542847316989463::1725579737::1725579737::1::::<><>::
 zombie bigg 2 movement.png::CompressedTexture2D::218827977580383706::1729113531::1729113531::1::::<><>::
 zombie movement.png::CompressedTexture2D::3000950594712525467::1729113531::1729113531::1::::<><>::
-::res://scripts/::1729668623
+::res://Pixel Art Sign Pack - Animated/::1729676501
+Pixel Art Neon Signgs Pack - Read Me.txt::TextFile::-1::1702310240::0::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 1/::1729676523
+Sign 1 Glow - CLOSE.png::CompressedTexture2D::5327644956888659594::1702304462::1729676566::1::::<><>::
+Sign 1 Glow - OPEN.png::CompressedTexture2D::155731613925862358::1702296066::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 1/CLOSE/::1702304460
+Sign 1 Glow - CLOSE_000.png::CompressedTexture2D::7554963012584951042::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_001.png::CompressedTexture2D::2297363576890417568::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_002.png::CompressedTexture2D::132921837281423062::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_003.png::CompressedTexture2D::5000392550948968706::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_004.png::CompressedTexture2D::8062821612958150950::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_005.png::CompressedTexture2D::7341189195218509636::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_006.png::CompressedTexture2D::6625501400784529665::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_007.png::CompressedTexture2D::2124268455589487623::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_008.png::CompressedTexture2D::1579921171531940617::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_009.png::CompressedTexture2D::4688493918505957438::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_010.png::CompressedTexture2D::6558661760216100983::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_011.png::CompressedTexture2D::1346552560479459943::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_012.png::CompressedTexture2D::5810075443033060714::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_013.png::CompressedTexture2D::3308671050749133105::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_014.png::CompressedTexture2D::7197837398234783570::1702304460::1729676566::1::::<><>::
+Sign 1 Glow - CLOSE_015.png::CompressedTexture2D::7908214147103913387::1702304460::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 1/OPEN/::1702296064
+Sign 1 Glow - OPEN_000.png::CompressedTexture2D::1693401928491707529::1702296062::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_001.png::CompressedTexture2D::4820145205865790311::1702296062::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_002.png::CompressedTexture2D::8887717842207079306::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_003.png::CompressedTexture2D::4870786949674934631::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_004.png::CompressedTexture2D::2411625149291286968::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_005.png::CompressedTexture2D::1916429255782529673::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_006.png::CompressedTexture2D::613789705540299264::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_007.png::CompressedTexture2D::1261549715616724283::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_008.png::CompressedTexture2D::2830790314569753470::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_009.png::CompressedTexture2D::5893113779988740629::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_010.png::CompressedTexture2D::8419847502870868987::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_011.png::CompressedTexture2D::8736313327604767677::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_012.png::CompressedTexture2D::85851018845335790::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_013.png::CompressedTexture2D::3617418308068427731::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_014.png::CompressedTexture2D::1727819252477923599::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_015.png::CompressedTexture2D::5972502155337846485::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_016.png::CompressedTexture2D::8757490727091060998::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_017.png::CompressedTexture2D::8588086103030526705::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_018.png::CompressedTexture2D::5888047022920636552::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_019.png::CompressedTexture2D::6790908975766259306::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_020.png::CompressedTexture2D::1211521573838102312::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_021.png::CompressedTexture2D::3323553398386389532::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_022.png::CompressedTexture2D::3553797785543642035::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_023.png::CompressedTexture2D::3115945424802506900::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_024.png::CompressedTexture2D::7770423614721723547::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_025.png::CompressedTexture2D::9038772722471752860::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_026.png::CompressedTexture2D::3946214467140352036::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_027.png::CompressedTexture2D::3557114096848165536::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_028.png::CompressedTexture2D::5264008277362129739::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_029.png::CompressedTexture2D::8600698885904118036::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_030.png::CompressedTexture2D::5998061740951115991::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_031.png::CompressedTexture2D::1738065385147066889::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_032.png::CompressedTexture2D::5766363656685654409::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_033.png::CompressedTexture2D::5709912580792109026::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_034.png::CompressedTexture2D::3249462230813805821::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_035.png::CompressedTexture2D::949832446723511258::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_036.png::CompressedTexture2D::6972857525188509380::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_037.png::CompressedTexture2D::5389106170300378126::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_038.png::CompressedTexture2D::6599643217058136336::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_039.png::CompressedTexture2D::5288994066209198205::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_040.png::CompressedTexture2D::4444901379544992406::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_041.png::CompressedTexture2D::4673979490541973004::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_042.png::CompressedTexture2D::4771062025613571133::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_043.png::CompressedTexture2D::7528885810783810907::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_044.png::CompressedTexture2D::2852123699130692665::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_045.png::CompressedTexture2D::4933725905076582148::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_046.png::CompressedTexture2D::3888330240753258287::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_047.png::CompressedTexture2D::5744403217185207261::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_048.png::CompressedTexture2D::1547248731219663731::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_049.png::CompressedTexture2D::6009962397860137642::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_050.png::CompressedTexture2D::4755241632101726088::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_051.png::CompressedTexture2D::4714027544685986823::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_052.png::CompressedTexture2D::5262024909550968705::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_053.png::CompressedTexture2D::2509207777583897738::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_054.png::CompressedTexture2D::2547765655803879255::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_055.png::CompressedTexture2D::1830107055378635641::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_056.png::CompressedTexture2D::5806628876311688315::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_057.png::CompressedTexture2D::7393185800984937235::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_058.png::CompressedTexture2D::5834754700307446835::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_059.png::CompressedTexture2D::4743397583954351124::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_060.png::CompressedTexture2D::3297983015637996439::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_061.png::CompressedTexture2D::6543779011040337825::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_062.png::CompressedTexture2D::6151874455070415581::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_063.png::CompressedTexture2D::8447370164314348630::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_064.png::CompressedTexture2D::4868492331641125038::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_065.png::CompressedTexture2D::2098451186829238327::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_066.png::CompressedTexture2D::7467288210800231954::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_067.png::CompressedTexture2D::7884790188950324789::1702296064::1729676566::1::::<><>::
+Sign 1 Glow - OPEN_068.png::CompressedTexture2D::2730716598823737594::1702296064::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 2/::1702293868
+Sign 2 Glow - ORANGE.png::CompressedTexture2D::8008660500075382917::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - RED.png::CompressedTexture2D::5798779098448989087::1702287756::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 2/ORANGE/::1702289054
+Sign 2 Glow - ORANGE_000.png::CompressedTexture2D::2725170435019883355::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_001.png::CompressedTexture2D::5401174346448811215::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_002.png::CompressedTexture2D::649639548410071050::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_003.png::CompressedTexture2D::2129436392149597452::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_004.png::CompressedTexture2D::1125071538951121971::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_005.png::CompressedTexture2D::1515861492790466539::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_006.png::CompressedTexture2D::6508858511177805689::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_007.png::CompressedTexture2D::6178447237294275750::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_008.png::CompressedTexture2D::1743664692321658516::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_009.png::CompressedTexture2D::1438001468421473264::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_010.png::CompressedTexture2D::5216237362812378124::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_011.png::CompressedTexture2D::6017654551856549748::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_012.png::CompressedTexture2D::1896145233672688718::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_013.png::CompressedTexture2D::5721195939823428500::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_014.png::CompressedTexture2D::1638404942059066307::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_015.png::CompressedTexture2D::3629958317610685357::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_016.png::CompressedTexture2D::4206313666301533901::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_017.png::CompressedTexture2D::1079596206862746083::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_018.png::CompressedTexture2D::6472723571494681314::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_019.png::CompressedTexture2D::8783628378298888873::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_020.png::CompressedTexture2D::6045776000267201580::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_021.png::CompressedTexture2D::2419436601586855646::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_022.png::CompressedTexture2D::5423799648290689397::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_023.png::CompressedTexture2D::4274090211802838230::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_024.png::CompressedTexture2D::2522661606111645309::1702289052::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_025.png::CompressedTexture2D::5339472879213474668::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_026.png::CompressedTexture2D::3685688899596192900::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_027.png::CompressedTexture2D::4867313472944830767::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_028.png::CompressedTexture2D::740061520459962867::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_029.png::CompressedTexture2D::1475455279274345934::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_030.png::CompressedTexture2D::4393469054291072620::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_031.png::CompressedTexture2D::4749551038902553084::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_032.png::CompressedTexture2D::3453649427373926054::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_033.png::CompressedTexture2D::5820675846593712462::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_034.png::CompressedTexture2D::2983099707187651631::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_035.png::CompressedTexture2D::7563670383346421111::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_036.png::CompressedTexture2D::8194683274959923152::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_037.png::CompressedTexture2D::2849112109310106485::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_038.png::CompressedTexture2D::414748024870754739::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_039.png::CompressedTexture2D::2837443600943945914::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_040.png::CompressedTexture2D::7018374000810983262::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_041.png::CompressedTexture2D::63715160549291993::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_042.png::CompressedTexture2D::961771386357203696::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_043.png::CompressedTexture2D::4551562095748015415::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_044.png::CompressedTexture2D::2478986781097260852::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_045.png::CompressedTexture2D::5956500695830317130::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_046.png::CompressedTexture2D::3908269429881690520::1702289054::1729676566::1::::<><>::
+Sign 2 Glow - ORANGE_047.png::CompressedTexture2D::1728949082205561954::1702289054::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 2/RED/::1702287754
+Sign 2 Glow - RED_000.png::CompressedTexture2D::77769400133637002::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_001.png::CompressedTexture2D::1241845932769427823::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_002.png::CompressedTexture2D::6688879846233783534::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_003.png::CompressedTexture2D::5494944657386025224::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_004.png::CompressedTexture2D::8216178703119378483::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_005.png::CompressedTexture2D::6941504423356228080::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_006.png::CompressedTexture2D::2961560669918352068::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_007.png::CompressedTexture2D::8436662568634278755::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_008.png::CompressedTexture2D::6964339840360618321::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_009.png::CompressedTexture2D::4662479587410067500::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_010.png::CompressedTexture2D::1519774550447834960::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_011.png::CompressedTexture2D::2228868285046606464::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_012.png::CompressedTexture2D::372561041653317213::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_013.png::CompressedTexture2D::5600659689066122330::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_014.png::CompressedTexture2D::36847925006322549::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_015.png::CompressedTexture2D::3047271008101928458::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_016.png::CompressedTexture2D::5391256767608927475::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_017.png::CompressedTexture2D::6176455794486611480::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_018.png::CompressedTexture2D::1920713689848268819::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_019.png::CompressedTexture2D::5813881798691313420::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_020.png::CompressedTexture2D::5992261697019948785::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_021.png::CompressedTexture2D::8181228062134716160::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_022.png::CompressedTexture2D::7647950460272332606::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_023.png::CompressedTexture2D::8459230970260682219::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_024.png::CompressedTexture2D::4217356863967608046::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_025.png::CompressedTexture2D::2970727667853732284::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_026.png::CompressedTexture2D::4097313583109645708::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_027.png::CompressedTexture2D::2184387995471689302::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_028.png::CompressedTexture2D::6461927222824330928::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_029.png::CompressedTexture2D::8145040862280500921::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_030.png::CompressedTexture2D::8852747436287484635::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_031.png::CompressedTexture2D::1887246111101786280::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_032.png::CompressedTexture2D::6037935939291972638::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_033.png::CompressedTexture2D::1745893160860945157::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_034.png::CompressedTexture2D::7610627664003275297::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_035.png::CompressedTexture2D::4431261042415404647::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_036.png::CompressedTexture2D::5656470490087341690::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_037.png::CompressedTexture2D::516225385983814486::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_038.png::CompressedTexture2D::4870510045734652918::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_039.png::CompressedTexture2D::6955476517108555007::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_040.png::CompressedTexture2D::3695774350051420227::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_041.png::CompressedTexture2D::90014173524102800::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_042.png::CompressedTexture2D::9208195159251269700::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_043.png::CompressedTexture2D::6094004040756707060::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_044.png::CompressedTexture2D::979393073938126873::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_045.png::CompressedTexture2D::7207987944834123100::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_046.png::CompressedTexture2D::5235587132276115382::1702287754::1729676566::1::::<><>::
+Sign 2 Glow - RED_047.png::CompressedTexture2D::4357368897486539821::1702287754::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 3/::1702293864
+Sign 3  Glow - BLUE.png::CompressedTexture2D::4535427701019540195::1702289400::1729676566::1::::<><>::
+Sign 3  Glow - RED.png::CompressedTexture2D::501991171647028675::1702289418::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 3/BLUE/::1702289398
+Sign 3  Glow - BLUE_000.png::CompressedTexture2D::1898313105306509886::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_001.png::CompressedTexture2D::8156620006038728128::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_002.png::CompressedTexture2D::5861978849238857341::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_003.png::CompressedTexture2D::6067007843093619346::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_004.png::CompressedTexture2D::4219072458637795462::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_005.png::CompressedTexture2D::6083435508197221755::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_006.png::CompressedTexture2D::2547742427203223266::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_007.png::CompressedTexture2D::3641266029466354528::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_008.png::CompressedTexture2D::3621007000219694820::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_009.png::CompressedTexture2D::696016961858944774::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_010.png::CompressedTexture2D::5718638686097288865::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_011.png::CompressedTexture2D::1053593247243932899::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_012.png::CompressedTexture2D::5473945453167169018::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_013.png::CompressedTexture2D::3873240813137076864::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_014.png::CompressedTexture2D::7448873431617204268::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_015.png::CompressedTexture2D::2145437313919939306::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_016.png::CompressedTexture2D::6063994524567427723::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_017.png::CompressedTexture2D::7215160014159071457::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_018.png::CompressedTexture2D::6453276916204339139::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_019.png::CompressedTexture2D::7271847155432569909::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_020.png::CompressedTexture2D::7847843188337881418::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_021.png::CompressedTexture2D::1393920725414698427::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_022.png::CompressedTexture2D::8396711812933798332::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_023.png::CompressedTexture2D::3576050381779367366::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_024.png::CompressedTexture2D::9184049511573026371::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_025.png::CompressedTexture2D::7455176809599724958::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_026.png::CompressedTexture2D::1200812705078280384::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_027.png::CompressedTexture2D::6843241834216505120::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_028.png::CompressedTexture2D::2862370964591012674::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_029.png::CompressedTexture2D::3987997514457817513::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_030.png::CompressedTexture2D::8825297405759454348::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_031.png::CompressedTexture2D::5229578074081073816::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_032.png::CompressedTexture2D::3491431834514966485::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_033.png::CompressedTexture2D::9021138634066299643::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_034.png::CompressedTexture2D::8257943178940194141::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_035.png::CompressedTexture2D::181236123316374649::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_036.png::CompressedTexture2D::8775453632756367983::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_037.png::CompressedTexture2D::6428600081500516515::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_038.png::CompressedTexture2D::4460817043999058730::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_039.png::CompressedTexture2D::4177402274403221230::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_040.png::CompressedTexture2D::8728350153663680731::1702289398::1729676566::1::::<><>::
+Sign 3  Glow - BLUE_041.png::CompressedTexture2D::6307365682357406755::1702289398::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 3/RED/::1702289416
+Sign 3  Glow - RED_000.png::CompressedTexture2D::725995283204647538::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_001.png::CompressedTexture2D::3971871049491126292::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_002.png::CompressedTexture2D::1211081133266861024::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_003.png::CompressedTexture2D::1475114507006899328::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_004.png::CompressedTexture2D::6938152910223028941::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_005.png::CompressedTexture2D::7073330915879600954::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_006.png::CompressedTexture2D::2207057083864055912::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_007.png::CompressedTexture2D::8116293500484815322::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_008.png::CompressedTexture2D::8474559598197480635::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_009.png::CompressedTexture2D::8852198330513924787::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_010.png::CompressedTexture2D::8011179171911445367::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_011.png::CompressedTexture2D::2202166976459105317::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_012.png::CompressedTexture2D::8823994552655807098::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_013.png::CompressedTexture2D::684212715310239719::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_014.png::CompressedTexture2D::6237075958985130475::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_015.png::CompressedTexture2D::4645833604651891936::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_016.png::CompressedTexture2D::2063908201208429169::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_017.png::CompressedTexture2D::7266173116119722980::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_018.png::CompressedTexture2D::8127006255551387690::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_019.png::CompressedTexture2D::2644019386267984256::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_020.png::CompressedTexture2D::7448571745855179375::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_021.png::CompressedTexture2D::1302609182718436206::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_022.png::CompressedTexture2D::5549253750968248596::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_023.png::CompressedTexture2D::3422564307405283351::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_024.png::CompressedTexture2D::5368715126230090637::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_025.png::CompressedTexture2D::4441464983136627126::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_026.png::CompressedTexture2D::4166147271374584286::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_027.png::CompressedTexture2D::64026575195583299::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_028.png::CompressedTexture2D::5204757010684054937::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_029.png::CompressedTexture2D::1790405496225807409::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_030.png::CompressedTexture2D::4414697513780661362::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_031.png::CompressedTexture2D::3599387263303678895::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_032.png::CompressedTexture2D::40382196857000838::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_033.png::CompressedTexture2D::5470780506913030407::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_034.png::CompressedTexture2D::5240864351889191626::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_035.png::CompressedTexture2D::9190045111075275458::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_036.png::CompressedTexture2D::1751359579176306474::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_037.png::CompressedTexture2D::6203012081555003312::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_038.png::CompressedTexture2D::8148713871466759399::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_039.png::CompressedTexture2D::3925172409845112678::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_040.png::CompressedTexture2D::8542381124765456208::1702289416::1729676566::1::::<><>::
+Sign 3  Glow - RED_041.png::CompressedTexture2D::5761555444834207030::1702289416::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 4/::1702293860
+Sign 4   Glow - GREEN.png::CompressedTexture2D::1511396835001332012::1702289822::1729676567::1::::<><>::
+Sign 4   Glow - RED.png::CompressedTexture2D::9065004980853930461::1702289790::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 4/GREEN/::1702289822
+Sign 4   Glow - GREEN_000.png::CompressedTexture2D::2327245129445872408::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_001.png::CompressedTexture2D::222781898968806754::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_002.png::CompressedTexture2D::3185014253296167101::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_003.png::CompressedTexture2D::9105752409019484831::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_004.png::CompressedTexture2D::2973234924917751059::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_005.png::CompressedTexture2D::5475938695280989371::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_006.png::CompressedTexture2D::6647302725123870695::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_007.png::CompressedTexture2D::7264116343656684952::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_008.png::CompressedTexture2D::4738226716831693766::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_009.png::CompressedTexture2D::550941561897623838::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_010.png::CompressedTexture2D::299339573908035456::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_011.png::CompressedTexture2D::8175838508987757082::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_012.png::CompressedTexture2D::1707447639141848955::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_013.png::CompressedTexture2D::8748256046192359478::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_014.png::CompressedTexture2D::5913235085111494694::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_015.png::CompressedTexture2D::1791400466293322599::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_016.png::CompressedTexture2D::6323563048465936893::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_017.png::CompressedTexture2D::8387427759282628748::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_018.png::CompressedTexture2D::3259128637117696171::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_019.png::CompressedTexture2D::4919109441867095005::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_020.png::CompressedTexture2D::6216849743144537407::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_021.png::CompressedTexture2D::2293636479956338235::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_022.png::CompressedTexture2D::8098091763112016682::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_023.png::CompressedTexture2D::1239853466186128242::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_024.png::CompressedTexture2D::4211761380073422747::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_025.png::CompressedTexture2D::9104720874003426338::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_026.png::CompressedTexture2D::9176941379705618933::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_027.png::CompressedTexture2D::1559739143351112184::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_028.png::CompressedTexture2D::4545130688152815667::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_029.png::CompressedTexture2D::5145722224985772814::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_030.png::CompressedTexture2D::5163541556278591722::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_031.png::CompressedTexture2D::3312028960462243657::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_032.png::CompressedTexture2D::8325805786776754067::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_033.png::CompressedTexture2D::6452847540504922046::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_034.png::CompressedTexture2D::6795754256874312893::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_035.png::CompressedTexture2D::1090374364854787158::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_036.png::CompressedTexture2D::8172686633323998684::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_037.png::CompressedTexture2D::4340521076839544745::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_038.png::CompressedTexture2D::3971707602860443516::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_039.png::CompressedTexture2D::2667428224887997548::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_040.png::CompressedTexture2D::3951183430941660071::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_041.png::CompressedTexture2D::8169717179493612564::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_042.png::CompressedTexture2D::4525002579958892286::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_043.png::CompressedTexture2D::9115913002939270048::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_044.png::CompressedTexture2D::8438412990684684085::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_045.png::CompressedTexture2D::4108369181094983429::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_046.png::CompressedTexture2D::1368302385834775397::1702289822::1729676566::1::::<><>::
+Sign 4   Glow - GREEN_047.png::CompressedTexture2D::7791447848835254621::1702289822::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 4/RED/::1702289788
+Sign 4   Glow - RED_000.png::CompressedTexture2D::3178924887516222860::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_001.png::CompressedTexture2D::5018916308746197872::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_002.png::CompressedTexture2D::8143894737762642257::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_003.png::CompressedTexture2D::4132149892543102807::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_004.png::CompressedTexture2D::6780893923266645306::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_005.png::CompressedTexture2D::6014274590073342025::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_006.png::CompressedTexture2D::8520960211729728567::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_007.png::CompressedTexture2D::6467449737398262201::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_008.png::CompressedTexture2D::6324270667693973843::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_009.png::CompressedTexture2D::2968538724420839249::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_010.png::CompressedTexture2D::9097143063580158255::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_011.png::CompressedTexture2D::6733981122197376663::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_012.png::CompressedTexture2D::3208313157413380075::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_013.png::CompressedTexture2D::8203507085381668688::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_014.png::CompressedTexture2D::278820294515040496::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_015.png::CompressedTexture2D::530274482331111310::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_016.png::CompressedTexture2D::4478383615819719932::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_017.png::CompressedTexture2D::2289771483024186792::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_018.png::CompressedTexture2D::7070820742815239265::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_019.png::CompressedTexture2D::2478889570321651727::1702289788::1729676566::1::::<><>::
+Sign 4   Glow - RED_020.png::CompressedTexture2D::8412178423282608993::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_021.png::CompressedTexture2D::2572342351716059282::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_022.png::CompressedTexture2D::2395832124884108201::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_023.png::CompressedTexture2D::3796584143810734781::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_024.png::CompressedTexture2D::3672918532903851334::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_025.png::CompressedTexture2D::1404098194736797056::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_026.png::CompressedTexture2D::4944286206175546025::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_027.png::CompressedTexture2D::823394920105002786::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_028.png::CompressedTexture2D::3796205613902100975::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_029.png::CompressedTexture2D::4290034731867076061::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_030.png::CompressedTexture2D::4089168289414697661::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_031.png::CompressedTexture2D::1503272421669595062::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_032.png::CompressedTexture2D::257882932490189030::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_033.png::CompressedTexture2D::795812257549608112::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_034.png::CompressedTexture2D::1223239999807282901::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_035.png::CompressedTexture2D::1583614668057966417::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_036.png::CompressedTexture2D::7698531941699830073::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_037.png::CompressedTexture2D::8786377676691215745::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_038.png::CompressedTexture2D::428132558737739616::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_039.png::CompressedTexture2D::7415845236940566442::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_040.png::CompressedTexture2D::2802660621418945066::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_041.png::CompressedTexture2D::6348542815876216275::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_042.png::CompressedTexture2D::8496267507943384106::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_043.png::CompressedTexture2D::233153647942728476::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_044.png::CompressedTexture2D::7660574148846374033::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_045.png::CompressedTexture2D::7824484635498070141::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_046.png::CompressedTexture2D::209656382487893663::1702289788::1729676567::1::::<><>::
+Sign 4   Glow - RED_047.png::CompressedTexture2D::588899879728257454::1702289788::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 5/::1702293856
+Sign 5  Glow - BLUE.png::CompressedTexture2D::3210573837533589435::1702290608::1729676567::1::::<><>::
+Sign 5  Glow - RED.png::CompressedTexture2D::9138011434657618522::1702290534::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW.png::CompressedTexture2D::4565816742278963571::1702290594::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 5/BLUE/::1702290606
+Sign 5  Glow - BLUE_000.png::CompressedTexture2D::4265691888195551428::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_001.png::CompressedTexture2D::7485874828669629698::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_002.png::CompressedTexture2D::373554138496222260::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_003.png::CompressedTexture2D::1411282443806502197::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_004.png::CompressedTexture2D::6683370525569959513::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_005.png::CompressedTexture2D::2089449591708609483::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_006.png::CompressedTexture2D::1734069024562350934::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_007.png::CompressedTexture2D::8303838073470192277::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_008.png::CompressedTexture2D::8795681200895034864::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_009.png::CompressedTexture2D::4226592849689692524::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_010.png::CompressedTexture2D::3988840407158988244::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_011.png::CompressedTexture2D::6646018716703345306::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_012.png::CompressedTexture2D::8383418486505329275::1702290606::1729676567::1::::<><>::
+Sign 5  Glow - BLUE_013.png::CompressedTexture2D::1777745065755208798::1702290606::1729676566::1::::<><>::
+Sign 5  Glow - BLUE_014.png::CompressedTexture2D::7041350208194330401::1702290606::1729676566::1::::<><>::
+Sign 5  Glow - BLUE_015.png::CompressedTexture2D::597368172362761474::1702290606::1729676566::1::::<><>::
+Sign 5  Glow - BLUE_016.png::CompressedTexture2D::1885408080957567818::1702290606::1729676566::1::::<><>::
+Sign 5  Glow - BLUE_017.png::CompressedTexture2D::3365930445953854749::1702290606::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 5/RED/::1702290534
+Sign 5  Glow - RED_000.png::CompressedTexture2D::8173836899001892407::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_001.png::CompressedTexture2D::6094076449379895037::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_002.png::CompressedTexture2D::1747010383525359579::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_003.png::CompressedTexture2D::2529572418818753166::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_004.png::CompressedTexture2D::647531157970019768::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_005.png::CompressedTexture2D::2604085107918920762::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_006.png::CompressedTexture2D::3421400259836573209::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_007.png::CompressedTexture2D::3567793558531730628::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_008.png::CompressedTexture2D::1479674288117251075::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_009.png::CompressedTexture2D::7653022698229358064::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_010.png::CompressedTexture2D::1629715211737153547::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_011.png::CompressedTexture2D::728244601907761587::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_012.png::CompressedTexture2D::2528616707176330400::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_013.png::CompressedTexture2D::5435126361627329967::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_014.png::CompressedTexture2D::6606885818397104060::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_015.png::CompressedTexture2D::4505112530853372914::1702290534::1729676566::1::::<><>::
+Sign 5  Glow - RED_016.png::CompressedTexture2D::3459225101764059292::1702290534::1729676567::1::::<><>::
+Sign 5  Glow - RED_017.png::CompressedTexture2D::5226037730020425582::1702290534::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 5/YELLOW/::1702290594
+Sign 5  Glow - YELLOW_000.png::CompressedTexture2D::6450645867651681080::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_001.png::CompressedTexture2D::5842953874325545947::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_002.png::CompressedTexture2D::477658938746327597::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_003.png::CompressedTexture2D::8355576188785482316::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_004.png::CompressedTexture2D::8000727749069870845::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_005.png::CompressedTexture2D::5583313839001730005::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_006.png::CompressedTexture2D::8994417000848633484::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_007.png::CompressedTexture2D::8657413706566737242::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_008.png::CompressedTexture2D::4372812567080403827::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_009.png::CompressedTexture2D::782983204527420120::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_010.png::CompressedTexture2D::2404130647341218127::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_011.png::CompressedTexture2D::3082589785960727714::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_012.png::CompressedTexture2D::2688169714569047624::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_013.png::CompressedTexture2D::2518579404059394697::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_014.png::CompressedTexture2D::6169359847090709619::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_015.png::CompressedTexture2D::4256705954816761500::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_016.png::CompressedTexture2D::2705695642376981764::1702290594::1729676567::1::::<><>::
+Sign 5  Glow - YELLOW_017.png::CompressedTexture2D::6898116229635433156::1702290594::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 6/::1702293850
+Sign 6 Glow - GOLD.png::CompressedTexture2D::4055229127566721880::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GREEN.png::CompressedTexture2D::3264442385306164463::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE.png::CompressedTexture2D::6213885253433196426::1702290856::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 6/GOLD/::1702290846
+Sign 6 Glow - GOLD_000.png::CompressedTexture2D::5426009168389384338::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_001.png::CompressedTexture2D::6784873130890505298::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_002.png::CompressedTexture2D::142518256155410103::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_003.png::CompressedTexture2D::2206014943066659767::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_004.png::CompressedTexture2D::3286807353360537058::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_005.png::CompressedTexture2D::6262551193570597891::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_006.png::CompressedTexture2D::5424614476203301113::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_007.png::CompressedTexture2D::3948774569869663545::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_008.png::CompressedTexture2D::4914566169123143156::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_009.png::CompressedTexture2D::1197849721054045758::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_010.png::CompressedTexture2D::5489320763167820041::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_011.png::CompressedTexture2D::1216889254898103856::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_012.png::CompressedTexture2D::5745452406682237220::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_013.png::CompressedTexture2D::8598174765848940518::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_014.png::CompressedTexture2D::2798322061877956104::1702290846::1729676567::1::::<><>::
+Sign 6 Glow - GOLD_015.png::CompressedTexture2D::350572871422792629::1702290846::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 6/GREEN/::1702290836
+Sign 6 Glow - GREEN_000.png::CompressedTexture2D::2801021956176651227::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_001.png::CompressedTexture2D::3183533692153604610::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_002.png::CompressedTexture2D::3369836896212862003::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_003.png::CompressedTexture2D::4728549245374912069::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_004.png::CompressedTexture2D::7020295751226527119::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_005.png::CompressedTexture2D::431820977820736135::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_006.png::CompressedTexture2D::9143177913854460270::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_007.png::CompressedTexture2D::4455897365693376558::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_008.png::CompressedTexture2D::4278406912216997058::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_009.png::CompressedTexture2D::1140470465453332679::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_010.png::CompressedTexture2D::3786206279558643063::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_011.png::CompressedTexture2D::5581701633792447732::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_012.png::CompressedTexture2D::1748373382497846432::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_013.png::CompressedTexture2D::8498656925277771794::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_014.png::CompressedTexture2D::497742981965310737::1702290836::1729676567::1::::<><>::
+Sign 6 Glow - GREEN_015.png::CompressedTexture2D::5365150914886814440::1702290836::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 6/PURPLE/::1702290856
+Sign 6 Glow - PURPLE_000.png::CompressedTexture2D::497089533980456424::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_001.png::CompressedTexture2D::2699826360051143786::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_002.png::CompressedTexture2D::7285003240656459049::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_003.png::CompressedTexture2D::3462933343637907690::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_004.png::CompressedTexture2D::1454078593098708815::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_005.png::CompressedTexture2D::3123229981677854060::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_006.png::CompressedTexture2D::1289703685617945916::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_007.png::CompressedTexture2D::3708080875873797048::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_008.png::CompressedTexture2D::4107027798367874732::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_009.png::CompressedTexture2D::6811552266570753422::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_010.png::CompressedTexture2D::7260654553945217044::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_011.png::CompressedTexture2D::6041901089363125948::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_012.png::CompressedTexture2D::4336881008416277580::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_013.png::CompressedTexture2D::4847152867454934043::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_014.png::CompressedTexture2D::3820812675076593745::1702290856::1729676567::1::::<><>::
+Sign 6 Glow - PURPLE_015.png::CompressedTexture2D::1161350786907979264::1702290856::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 7/::1702293846
+Sign 7 Glow - GOLD.png::CompressedTexture2D::100038035113625917::1702291274::1729676566::1::::<><>::
+Sign 7 Glow - PINK.png::CompressedTexture2D::2686782178564013256::1702291376::1729676566::1::::<><>::
+Sign 7 Glow - TEAL.png::CompressedTexture2D::4700646834291567092::1702291266::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 7/GOLD/::1702291274
+Sign 7 Glow - GOLD_000.png::CompressedTexture2D::3747731580794716645::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_001.png::CompressedTexture2D::1586868338060425295::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_002.png::CompressedTexture2D::392873458649881415::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_003.png::CompressedTexture2D::6339901828159464753::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_004.png::CompressedTexture2D::8112947418837801821::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_005.png::CompressedTexture2D::8242376089672022956::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_006.png::CompressedTexture2D::8069595852627718311::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_007.png::CompressedTexture2D::6351027425002676715::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_008.png::CompressedTexture2D::1491223494054880235::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_009.png::CompressedTexture2D::1452411516767330336::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_010.png::CompressedTexture2D::7558861118406302565::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_011.png::CompressedTexture2D::6682982006465068914::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_012.png::CompressedTexture2D::999957386837968932::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_013.png::CompressedTexture2D::5919284008599931377::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_014.png::CompressedTexture2D::7921225385771935274::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_015.png::CompressedTexture2D::3534401626574914371::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_016.png::CompressedTexture2D::2760906398298316915::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_017.png::CompressedTexture2D::6118247752347921833::1702291274::1729676567::1::::<><>::
+Sign 7 Glow - GOLD_018.png::CompressedTexture2D::3108640644028498472::1702291274::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 7/PINK/::1702291374
+Sign 7 Glow - PINK_000.png::CompressedTexture2D::3109486107135273544::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_001.png::CompressedTexture2D::7930763962101887998::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_002.png::CompressedTexture2D::1597932687334392511::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_003.png::CompressedTexture2D::8164778968054420100::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_004.png::CompressedTexture2D::1182688575828117955::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_005.png::CompressedTexture2D::4176271391357694012::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_006.png::CompressedTexture2D::8525184358162353283::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_007.png::CompressedTexture2D::1228740422158789924::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_008.png::CompressedTexture2D::8352006140972051897::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_009.png::CompressedTexture2D::8764635950738809529::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_010.png::CompressedTexture2D::5837550090450098163::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_011.png::CompressedTexture2D::1382538089311302641::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_012.png::CompressedTexture2D::2003177404321640656::1702291374::1729676567::1::::<><>::
+Sign 7 Glow - PINK_013.png::CompressedTexture2D::1070775404075721548::1702291374::1729676566::1::::<><>::
+Sign 7 Glow - PINK_014.png::CompressedTexture2D::95370826710751239::1702291374::1729676566::1::::<><>::
+Sign 7 Glow - PINK_015.png::CompressedTexture2D::1685904743989901690::1702291374::1729676566::1::::<><>::
+Sign 7 Glow - PINK_016.png::CompressedTexture2D::2028810841099257417::1702291374::1729676566::1::::<><>::
+Sign 7 Glow - PINK_017.png::CompressedTexture2D::305883852067382513::1702291374::1729676566::1::::<><>::
+Sign 7 Glow - PINK_018.png::CompressedTexture2D::3069354556779224302::1702291374::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 7/TEAL/::1702291264
+Sign 7 Glow - TEAL_000.png::CompressedTexture2D::1780216977982300712::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_001.png::CompressedTexture2D::3340068985279206705::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_002.png::CompressedTexture2D::2524942910648813869::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_003.png::CompressedTexture2D::7304233182889617250::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_004.png::CompressedTexture2D::1611170880135449190::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_005.png::CompressedTexture2D::6649488555248539890::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_006.png::CompressedTexture2D::8157478812356911619::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_007.png::CompressedTexture2D::7458510484669516445::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_008.png::CompressedTexture2D::5308096189789597947::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_009.png::CompressedTexture2D::8618261370058155998::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_010.png::CompressedTexture2D::5785234130103738081::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_011.png::CompressedTexture2D::6628874278991921538::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_012.png::CompressedTexture2D::3511112005761375404::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_013.png::CompressedTexture2D::638268594490519387::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_014.png::CompressedTexture2D::7629840737528696019::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_015.png::CompressedTexture2D::881123031402176774::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_016.png::CompressedTexture2D::5494203480056075667::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_017.png::CompressedTexture2D::1402690616619442795::1702291264::1729676566::1::::<><>::
+Sign 7 Glow - TEAL_018.png::CompressedTexture2D::7707354748041606953::1702291264::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 8/::1702293842
+Sign 8 Glow - GREEN.png::CompressedTexture2D::4009301106469097388::1702291644::1729676567::1::::<><>::
+Sign 8 Glow - YELLOW.png::CompressedTexture2D::3211051097675367193::1702291634::1729676567::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 8/GREEN/::1702291644
+Sign 8 Glow - GREEN_000.png::CompressedTexture2D::8373042032114511099::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_001.png::CompressedTexture2D::9131497931699467818::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_002.png::CompressedTexture2D::1262604287477760444::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_003.png::CompressedTexture2D::6659954522827105614::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_004.png::CompressedTexture2D::4476758355822814239::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_005.png::CompressedTexture2D::5970225334211363534::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_006.png::CompressedTexture2D::1588027291222663679::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_007.png::CompressedTexture2D::628799803828398747::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_008.png::CompressedTexture2D::5940652586119458524::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_009.png::CompressedTexture2D::7715853511445356751::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_010.png::CompressedTexture2D::8567167754396711356::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_011.png::CompressedTexture2D::2793920238015234214::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_012.png::CompressedTexture2D::8598203504062493202::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_013.png::CompressedTexture2D::1313256374581870767::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_014.png::CompressedTexture2D::1916442753885016449::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_015.png::CompressedTexture2D::6600748283557001733::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_016.png::CompressedTexture2D::6648769605955837693::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_017.png::CompressedTexture2D::3889829097585872534::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_018.png::CompressedTexture2D::7895362467631233222::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_019.png::CompressedTexture2D::5876562718106936464::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_020.png::CompressedTexture2D::6465407691044883975::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_021.png::CompressedTexture2D::553741943052458516::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_022.png::CompressedTexture2D::8840484268473373281::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_023.png::CompressedTexture2D::4738926225255956440::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_024.png::CompressedTexture2D::4411133831394163136::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_025.png::CompressedTexture2D::7541857462588155862::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_026.png::CompressedTexture2D::5821034604439512050::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_027.png::CompressedTexture2D::5169093897261911667::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_028.png::CompressedTexture2D::5288184690260116921::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_029.png::CompressedTexture2D::4204062893053279323::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_030.png::CompressedTexture2D::8447219015605627917::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_031.png::CompressedTexture2D::5819804077793103927::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_032.png::CompressedTexture2D::9209641013777144540::1702291644::1729676566::1::::<><>::
+Sign 8 Glow - GREEN_033.png::CompressedTexture2D::7265743564513534648::1702291644::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 8/YELLOW/::1702291632
+Sign 8 Glow - YELLOW_000.png::CompressedTexture2D::1429950011729016109::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_001.png::CompressedTexture2D::1340480032314272962::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_002.png::CompressedTexture2D::2170630424715352158::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_003.png::CompressedTexture2D::8212107840646112004::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_004.png::CompressedTexture2D::1058191026744097728::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_005.png::CompressedTexture2D::586843733871207130::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_006.png::CompressedTexture2D::595160658336054747::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_007.png::CompressedTexture2D::8005589739093512999::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_008.png::CompressedTexture2D::7310811289746391951::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_009.png::CompressedTexture2D::5733750889396374054::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_010.png::CompressedTexture2D::3550852870384813899::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_011.png::CompressedTexture2D::1897553501199212541::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_012.png::CompressedTexture2D::8942013199435856179::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_013.png::CompressedTexture2D::2743889736554670851::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_014.png::CompressedTexture2D::7654569222597278151::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_015.png::CompressedTexture2D::5368489621221923353::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_016.png::CompressedTexture2D::1598128352434455205::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_017.png::CompressedTexture2D::3993867702210673330::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_018.png::CompressedTexture2D::287396455744287196::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_019.png::CompressedTexture2D::2197113398339577663::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_020.png::CompressedTexture2D::4754644063242993465::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_021.png::CompressedTexture2D::327260941477830198::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_022.png::CompressedTexture2D::1322720820162117608::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_023.png::CompressedTexture2D::1002181797278779924::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_024.png::CompressedTexture2D::3885429964940780162::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_025.png::CompressedTexture2D::7300868631859413746::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_026.png::CompressedTexture2D::8112780015392196742::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_027.png::CompressedTexture2D::7932296369888028705::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_028.png::CompressedTexture2D::8143889152340204764::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_029.png::CompressedTexture2D::2111664283229419484::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_030.png::CompressedTexture2D::2127393600943737788::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_031.png::CompressedTexture2D::3926286496847776709::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_032.png::CompressedTexture2D::6547306132534336802::1702291632::1729676566::1::::<><>::
+Sign 8 Glow - YELLOW_033.png::CompressedTexture2D::8681505957829922281::1702291632::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 9/::1702293838
+Sign 9 Glow - LIGHT BLUE.png::CompressedTexture2D::2688520789148367144::1702292114::1729676565::1::::<><>::
+Sign 9 Glow - YELLOW.png::CompressedTexture2D::699429317265279350::1702292100::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 9/GOLD/::1702292100
+Sign 9 Glow - YELLOW_000.png::CompressedTexture2D::8121187205935437877::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_001.png::CompressedTexture2D::616695238058010766::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_002.png::CompressedTexture2D::2635610008994565293::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_003.png::CompressedTexture2D::1906022763691931944::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_004.png::CompressedTexture2D::5360105738417534379::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_005.png::CompressedTexture2D::2597734614652209463::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_006.png::CompressedTexture2D::92937699712463472::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_007.png::CompressedTexture2D::8467271641020533840::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_008.png::CompressedTexture2D::6054547499879061341::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_009.png::CompressedTexture2D::7034169435612011281::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_010.png::CompressedTexture2D::7621812942642213220::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_011.png::CompressedTexture2D::6611566631253666951::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_012.png::CompressedTexture2D::2011895498872230275::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_013.png::CompressedTexture2D::7390815104319407925::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_014.png::CompressedTexture2D::3369246471376712784::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_015.png::CompressedTexture2D::294290020712122156::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_016.png::CompressedTexture2D::3179672428637293205::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_017.png::CompressedTexture2D::2746409714684163070::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_018.png::CompressedTexture2D::8077702423446286009::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_019.png::CompressedTexture2D::2344628606328144590::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_020.png::CompressedTexture2D::293493870187436441::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_021.png::CompressedTexture2D::2296188621008091237::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_022.png::CompressedTexture2D::8239154896169843252::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_023.png::CompressedTexture2D::6107969471547625438::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_024.png::CompressedTexture2D::8840802808500174242::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_025.png::CompressedTexture2D::6794425171289884426::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_026.png::CompressedTexture2D::7842260594755572872::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_027.png::CompressedTexture2D::4918395142707572366::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_028.png::CompressedTexture2D::5212664938022638201::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_029.png::CompressedTexture2D::2466724798332592141::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_030.png::CompressedTexture2D::6346411772064437223::1702292098::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_031.png::CompressedTexture2D::8849612697492372657::1702292100::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_032.png::CompressedTexture2D::3857781377818774592::1702292100::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_033.png::CompressedTexture2D::1979779992689254365::1702292100::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_034.png::CompressedTexture2D::7894974248892630583::1702292100::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_035.png::CompressedTexture2D::6844459092257047781::1702292100::1729676566::1::::<><>::
+Sign 9 Glow - YELLOW_036.png::CompressedTexture2D::2236152840895311449::1702292100::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 9/LIGHT BLUE/::1702292112
+Sign 9 Glow - LIGHT BLUE_000.png::CompressedTexture2D::5593593110960021444::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_001.png::CompressedTexture2D::3080224808160111618::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_002.png::CompressedTexture2D::837901975563762891::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_003.png::CompressedTexture2D::5528885397147991522::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_004.png::CompressedTexture2D::6092032010070793481::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_005.png::CompressedTexture2D::1477383513498074777::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_006.png::CompressedTexture2D::238889995046059417::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_007.png::CompressedTexture2D::5588794511169967168::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_008.png::CompressedTexture2D::8965388999518572023::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_009.png::CompressedTexture2D::3940221196983899465::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_010.png::CompressedTexture2D::5949214565286864533::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_011.png::CompressedTexture2D::4342521342334069253::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_012.png::CompressedTexture2D::1479896438898050370::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_013.png::CompressedTexture2D::3283642506268235960::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_014.png::CompressedTexture2D::5629224649511779144::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_015.png::CompressedTexture2D::61618306306280230::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_016.png::CompressedTexture2D::6448210332920650473::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_017.png::CompressedTexture2D::7344567902656562254::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_018.png::CompressedTexture2D::6276601248097000267::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_019.png::CompressedTexture2D::8486146658295207136::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_020.png::CompressedTexture2D::8477399600979061451::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_021.png::CompressedTexture2D::2045732424203580386::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_022.png::CompressedTexture2D::3268634599169400146::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_023.png::CompressedTexture2D::5308071813891788513::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_024.png::CompressedTexture2D::14281844597144700::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_025.png::CompressedTexture2D::3637879281975367300::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_026.png::CompressedTexture2D::5751592910356715187::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_027.png::CompressedTexture2D::3855309433428535625::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_028.png::CompressedTexture2D::8168562234045836745::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_029.png::CompressedTexture2D::3466308793000787744::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_030.png::CompressedTexture2D::5196088264158332271::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_031.png::CompressedTexture2D::5601825675640415320::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_032.png::CompressedTexture2D::5841473706627072009::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_033.png::CompressedTexture2D::8738269040284109027::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_034.png::CompressedTexture2D::128701481044678525::1702292112::1729676566::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_035.png::CompressedTexture2D::3747076336651283516::1702292112::1729676565::1::::<><>::
+Sign 9 Glow - LIGHT BLUE_036.png::CompressedTexture2D::8701140241449651947::1702292112::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 10/::1702293834
+Sign 10 Glow - PINK.png::CompressedTexture2D::5976987786765583280::1702293384::1729676565::1::::<><>::
+Sign 10 Glow - RED.png::CompressedTexture2D::7653442512844572597::1702293396::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 10/PINK/::1702293382
+Sign 10 Glow - PINK_000.png::CompressedTexture2D::3156298955620297722::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_001.png::CompressedTexture2D::4715363757501748432::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_002.png::CompressedTexture2D::4648746108568146149::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_003.png::CompressedTexture2D::6059999253511862233::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_004.png::CompressedTexture2D::1767426886819972502::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_005.png::CompressedTexture2D::4499519510186525023::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_006.png::CompressedTexture2D::8743782072322416994::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_007.png::CompressedTexture2D::2374617633963402357::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_008.png::CompressedTexture2D::3820861770863069257::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_009.png::CompressedTexture2D::2668445706536777636::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_010.png::CompressedTexture2D::1003033105308539701::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_011.png::CompressedTexture2D::6670534422260492928::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_012.png::CompressedTexture2D::5663271454518780866::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_013.png::CompressedTexture2D::7181636882956261930::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_014.png::CompressedTexture2D::8491235532540965243::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_015.png::CompressedTexture2D::8831849541389024971::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_016.png::CompressedTexture2D::1677970750080465489::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_017.png::CompressedTexture2D::5859903996503994106::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_018.png::CompressedTexture2D::3343427855617653442::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_019.png::CompressedTexture2D::7064915612434395674::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_020.png::CompressedTexture2D::9220612794113902003::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_021.png::CompressedTexture2D::5193045482805449000::1702293382::1729676565::1::::<><>::
+Sign 10 Glow - PINK_022.png::CompressedTexture2D::6269726317474182136::1702293382::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 10/RED/::1702293394
+Sign 10 Glow - RED_000.png::CompressedTexture2D::9030333657025656344::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_001.png::CompressedTexture2D::8840884531394985811::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_002.png::CompressedTexture2D::1194886605312411500::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_003.png::CompressedTexture2D::8579231421189099087::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_004.png::CompressedTexture2D::7169490244207697437::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_005.png::CompressedTexture2D::6906167492288658491::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_006.png::CompressedTexture2D::9013122683015315090::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_007.png::CompressedTexture2D::7497658815340413892::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_008.png::CompressedTexture2D::693913331345170132::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_009.png::CompressedTexture2D::1438714515025338821::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_010.png::CompressedTexture2D::6752831237334690585::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_011.png::CompressedTexture2D::9010275911660077916::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_012.png::CompressedTexture2D::1674739066097897400::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_013.png::CompressedTexture2D::6673427709566366643::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_014.png::CompressedTexture2D::1502638980744052591::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_015.png::CompressedTexture2D::3780924913065421516::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_016.png::CompressedTexture2D::1437581924143734424::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_017.png::CompressedTexture2D::1363524729154570936::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_018.png::CompressedTexture2D::9176516843676056559::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_019.png::CompressedTexture2D::4386994193233106862::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_020.png::CompressedTexture2D::6260972837717379920::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_021.png::CompressedTexture2D::5977789868805603853::1702293394::1729676565::1::::<><>::
+Sign 10 Glow - RED_022.png::CompressedTexture2D::6863417588023393195::1702293394::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 11/::1702294138
+Sign 11 Glow - PURPLE.png::CompressedTexture2D::2643073258287485736::1702294138::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW.png::CompressedTexture2D::940840606039832634::1702294128::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 11/PURPLE/::1702294136
+Sign 11 Glow - PURPLE_000.png::CompressedTexture2D::3785875989833373813::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_001.png::CompressedTexture2D::8894258239041702563::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_002.png::CompressedTexture2D::7585485285042207315::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_003.png::CompressedTexture2D::3480521067128604406::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_004.png::CompressedTexture2D::4795931772125940514::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_005.png::CompressedTexture2D::3283972239884917552::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_006.png::CompressedTexture2D::108169560947683921::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_007.png::CompressedTexture2D::2557851737698824135::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_008.png::CompressedTexture2D::5894257430543530985::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_009.png::CompressedTexture2D::4905129940219867042::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_010.png::CompressedTexture2D::1993508513544428754::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_011.png::CompressedTexture2D::5712162386448543972::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_012.png::CompressedTexture2D::6428391410232049465::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_013.png::CompressedTexture2D::8618235370403177719::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_014.png::CompressedTexture2D::2353166819675609957::1702294136::1729676565::1::::<><>::
+Sign 11 Glow - PURPLE_015.png::CompressedTexture2D::2221380988672509012::1702294136::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 11/YELLOW/::1702294126
+Sign 11 Glow - YELLOW_000.png::CompressedTexture2D::8201368359580235982::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_001.png::CompressedTexture2D::5337626005877681258::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_002.png::CompressedTexture2D::8213504337586629424::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_003.png::CompressedTexture2D::7549308231761472076::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_004.png::CompressedTexture2D::4350853718644427640::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_005.png::CompressedTexture2D::1117676570320809401::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_006.png::CompressedTexture2D::242532559306654768::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_007.png::CompressedTexture2D::143942763226814963::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_008.png::CompressedTexture2D::6328482112386676184::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_009.png::CompressedTexture2D::8434371217844123366::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_010.png::CompressedTexture2D::8160898845369637376::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_011.png::CompressedTexture2D::3817624571544076456::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_012.png::CompressedTexture2D::6434239453420265161::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_013.png::CompressedTexture2D::1299774323603938311::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_014.png::CompressedTexture2D::5997132432163767763::1702294126::1729676565::1::::<><>::
+Sign 11 Glow - YELLOW_015.png::CompressedTexture2D::7734264836159978559::1702294126::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 12/::1702294316
+Sign 12 Glow - PURPLE.png::CompressedTexture2D::693230534609516031::1702294316::1729676565::1::::<><>::
+Sign 12 Glow - TEAL.png::CompressedTexture2D::7110522790937055789::1702294288::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 12/PURPLE/::1702294314
+Sign 12 Glow - PURPLE_000.png::CompressedTexture2D::1641810004412406881::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_001.png::CompressedTexture2D::1672341408307777176::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_002.png::CompressedTexture2D::7427015329079218053::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_003.png::CompressedTexture2D::3636265271858715804::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_004.png::CompressedTexture2D::1367186387582273468::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_005.png::CompressedTexture2D::4857821299959962906::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_006.png::CompressedTexture2D::5221430605547778308::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_007.png::CompressedTexture2D::3087221897361594281::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_008.png::CompressedTexture2D::2343554556152049483::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_009.png::CompressedTexture2D::2486632974162955627::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_010.png::CompressedTexture2D::2922665453921416580::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_011.png::CompressedTexture2D::6119775549678843182::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_012.png::CompressedTexture2D::7593995445516794515::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_013.png::CompressedTexture2D::649267824344275260::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_014.png::CompressedTexture2D::1038356099408769788::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_015.png::CompressedTexture2D::2383808778345441605::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_016.png::CompressedTexture2D::2454281293091841220::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_017.png::CompressedTexture2D::3377286665538895076::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_018.png::CompressedTexture2D::8953098030356280996::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_019.png::CompressedTexture2D::6839661061101700136::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_020.png::CompressedTexture2D::4938782739103044838::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_021.png::CompressedTexture2D::5807203474614618026::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_022.png::CompressedTexture2D::5453997917469247235::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_023.png::CompressedTexture2D::948046487324634687::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_024.png::CompressedTexture2D::3887581577830510183::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_025.png::CompressedTexture2D::9160258794191978148::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_026.png::CompressedTexture2D::786559209113732125::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_027.png::CompressedTexture2D::7772278466784362025::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_028.png::CompressedTexture2D::8795828975876041112::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_029.png::CompressedTexture2D::4690948146908733036::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_030.png::CompressedTexture2D::5174593798321318589::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_031.png::CompressedTexture2D::3041454109367185434::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_032.png::CompressedTexture2D::4767418629676160662::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_033.png::CompressedTexture2D::2775882785736331526::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_034.png::CompressedTexture2D::3523194883001947398::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_035.png::CompressedTexture2D::6211117966108468568::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_036.png::CompressedTexture2D::6921572278871778809::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_037.png::CompressedTexture2D::3006637986159844253::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_038.png::CompressedTexture2D::5286222447409172001::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_039.png::CompressedTexture2D::7342105416944820417::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_040.png::CompressedTexture2D::6445409155554446673::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_041.png::CompressedTexture2D::5712696016725935674::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_042.png::CompressedTexture2D::4857497205135908115::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_043.png::CompressedTexture2D::819806957602225081::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_044.png::CompressedTexture2D::2435336173746329965::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_045.png::CompressedTexture2D::6275211971350984531::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_046.png::CompressedTexture2D::7542875176515086358::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_047.png::CompressedTexture2D::8193366729558757241::1702294314::1729676565::1::::<><>::
+Sign 12 Glow - PURPLE_048.png::CompressedTexture2D::7379684181845570109::1702294314::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 12/TEAL/::1702294288
+Sign 12 Glow - TEAL_000.png::CompressedTexture2D::1980514476420130257::1702294286::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_001.png::CompressedTexture2D::6231154460008737712::1702294286::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_002.png::CompressedTexture2D::532553839682808646::1702294286::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_003.png::CompressedTexture2D::2069972590006883876::1702294286::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_004.png::CompressedTexture2D::5326168793396843163::1702294286::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_005.png::CompressedTexture2D::3702166652385228509::1702294286::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_006.png::CompressedTexture2D::6958140194708758434::1702294286::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_007.png::CompressedTexture2D::3545378717776992268::1702294286::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_008.png::CompressedTexture2D::2136730789387651445::1702294286::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_009.png::CompressedTexture2D::7227333595117841708::1702294286::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_010.png::CompressedTexture2D::1803708947445545717::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_011.png::CompressedTexture2D::5071869858749534069::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_012.png::CompressedTexture2D::8602067800901839924::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_013.png::CompressedTexture2D::4621708543589211173::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_014.png::CompressedTexture2D::397638894887592897::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_015.png::CompressedTexture2D::6140954980068781143::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_016.png::CompressedTexture2D::4214730056606014995::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_017.png::CompressedTexture2D::2977190947103781369::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_018.png::CompressedTexture2D::4358036617374644164::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_019.png::CompressedTexture2D::29653572499079663::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_020.png::CompressedTexture2D::8321530577543353763::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_021.png::CompressedTexture2D::3755797814920577514::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_022.png::CompressedTexture2D::7102064437340997176::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_023.png::CompressedTexture2D::4690049863320944216::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_024.png::CompressedTexture2D::5229129554213930475::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_025.png::CompressedTexture2D::6702284604423866416::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_026.png::CompressedTexture2D::5494621293561436605::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_027.png::CompressedTexture2D::335833424780831126::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_028.png::CompressedTexture2D::8476396844613127236::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_029.png::CompressedTexture2D::8636614308172477867::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_030.png::CompressedTexture2D::1798175813426634920::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_031.png::CompressedTexture2D::2769501428316896749::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_032.png::CompressedTexture2D::7765524592373577851::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_033.png::CompressedTexture2D::8920406815410858269::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_034.png::CompressedTexture2D::4184412094481526574::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_035.png::CompressedTexture2D::6093217987375895818::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_036.png::CompressedTexture2D::3412463912321679711::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_037.png::CompressedTexture2D::1052372018430392342::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_038.png::CompressedTexture2D::2487757669893244392::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_039.png::CompressedTexture2D::1941219851455395228::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_040.png::CompressedTexture2D::6233348100014353213::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_041.png::CompressedTexture2D::8561461134175859623::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_042.png::CompressedTexture2D::94648554514442732::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_043.png::CompressedTexture2D::5819356517234590791::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_044.png::CompressedTexture2D::4182489352949952054::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_045.png::CompressedTexture2D::2003540480918743654::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_046.png::CompressedTexture2D::2710547732642839788::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_047.png::CompressedTexture2D::8557651217329014912::1702294288::1729676565::1::::<><>::
+Sign 12 Glow - TEAL_048.png::CompressedTexture2D::2144993966188017796::1702294288::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 13/::1702294404
+Sign 13 Glow - GREEN.png::CompressedTexture2D::7477175860356725149::1702294404::1729676565::1::::<><>::
+Sign 13 Glow - RED.png::CompressedTexture2D::1941486963598858534::1702294392::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 13/GREEN/::1702294402
+Sign 13 Glow - GREEN_000.png::CompressedTexture2D::4656425602148115123::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_001.png::CompressedTexture2D::1728846757185515579::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_002.png::CompressedTexture2D::5698257634265296834::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_003.png::CompressedTexture2D::6523517242087917134::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_004.png::CompressedTexture2D::1989251861894387638::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_005.png::CompressedTexture2D::5330856267958905227::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_006.png::CompressedTexture2D::8602412741452720406::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_007.png::CompressedTexture2D::2963261576694229844::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_008.png::CompressedTexture2D::5697999779253205959::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_009.png::CompressedTexture2D::8563239017985066985::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_010.png::CompressedTexture2D::8169944593636787850::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_011.png::CompressedTexture2D::4686677672099769365::1702294402::1729676565::1::::<><>::
+Sign 13 Glow - GREEN_012.png::CompressedTexture2D::1357003380879335648::1702294402::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 13/RED/::1702294392
+Sign 13 Glow - RED_000.png::CompressedTexture2D::5829957128504920503::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_001.png::CompressedTexture2D::6718001017116882436::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_002.png::CompressedTexture2D::9105538036401970890::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_003.png::CompressedTexture2D::3926952555165494643::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_004.png::CompressedTexture2D::4321791819446980845::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_005.png::CompressedTexture2D::6024567974355215514::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_006.png::CompressedTexture2D::5735625283972551202::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_007.png::CompressedTexture2D::5511486599208434188::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_008.png::CompressedTexture2D::5175468399381036272::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_009.png::CompressedTexture2D::2149431169903002794::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_010.png::CompressedTexture2D::2060157081194222406::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_011.png::CompressedTexture2D::5931163266098167375::1702294392::1729676565::1::::<><>::
+Sign 13 Glow - RED_012.png::CompressedTexture2D::6354233272726975722::1702294392::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 14/::1702294508
+Sign 14 Glow - BLUE.png::CompressedTexture2D::3511424564272744115::1702294498::1729676565::1::::<><>::
+Sign 14 Glow - PINK.png::CompressedTexture2D::6883244590622092609::1702294508::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 14/BLUE/::1702294496
+Sign 14 Glow - BLUE_000.png::CompressedTexture2D::2085448328320546676::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_001.png::CompressedTexture2D::5157135319034820637::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_002.png::CompressedTexture2D::2331671917112328732::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_003.png::CompressedTexture2D::706078426051369177::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_004.png::CompressedTexture2D::6017833515098986144::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_005.png::CompressedTexture2D::7603246081294414936::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_006.png::CompressedTexture2D::4240534399479751870::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_007.png::CompressedTexture2D::8430724910809936776::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_008.png::CompressedTexture2D::2836127674236427240::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_009.png::CompressedTexture2D::4152461988984363273::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_010.png::CompressedTexture2D::7870857197761431053::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_011.png::CompressedTexture2D::6592252477893711748::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_012.png::CompressedTexture2D::7616061683735993967::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_013.png::CompressedTexture2D::3308378083578800133::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_014.png::CompressedTexture2D::8564931762063076051::1702294496::1729676565::1::::<><>::
+Sign 14 Glow - BLUE_015.png::CompressedTexture2D::795256620180600009::1702294496::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 14/PINK/::1702294508
+Sign 14 Glow - PINK_000.png::CompressedTexture2D::8938162555189880488::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_001.png::CompressedTexture2D::7492391730197839319::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_002.png::CompressedTexture2D::3451077718548495969::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_003.png::CompressedTexture2D::7433777297694893292::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_004.png::CompressedTexture2D::7370407071276651606::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_005.png::CompressedTexture2D::3405312998581618280::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_006.png::CompressedTexture2D::7710422402370804079::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_007.png::CompressedTexture2D::8276542697830267126::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_008.png::CompressedTexture2D::2854088433121273575::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_009.png::CompressedTexture2D::5508525950274363539::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_010.png::CompressedTexture2D::1960698666864524701::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_011.png::CompressedTexture2D::7012644666745044772::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_012.png::CompressedTexture2D::2165712392382380817::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_013.png::CompressedTexture2D::2897271604471926188::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_014.png::CompressedTexture2D::5760723404072591040::1702294508::1729676565::1::::<><>::
+Sign 14 Glow - PINK_015.png::CompressedTexture2D::6150003517280593582::1702294508::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 15/::1702294598
+Sign 15 Glow - PINK.png::CompressedTexture2D::5797877850045278725::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - RED.png::CompressedTexture2D::8928752085449996886::1702294598::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 15/PINK/::1702294586
+Sign 15 Glow - PINK_000.png::CompressedTexture2D::5119359618751116209::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_001.png::CompressedTexture2D::7832842258104040780::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_002.png::CompressedTexture2D::6139874757023217983::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_003.png::CompressedTexture2D::4060566190747283648::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_004.png::CompressedTexture2D::4819886829117549654::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_005.png::CompressedTexture2D::5981696674853860979::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_006.png::CompressedTexture2D::5453615821986065621::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_007.png::CompressedTexture2D::4959586618245736495::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_008.png::CompressedTexture2D::2575305124426044081::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_009.png::CompressedTexture2D::5807560311157342868::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_010.png::CompressedTexture2D::5137262214895382547::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_011.png::CompressedTexture2D::6334338986110479151::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_012.png::CompressedTexture2D::1376277090547930833::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_013.png::CompressedTexture2D::7525496338626230952::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_014.png::CompressedTexture2D::3975836238693301063::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_015.png::CompressedTexture2D::6876309013495972873::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_016.png::CompressedTexture2D::115613233467239396::1702294586::1729676565::1::::<><>::
+Sign 15 Glow - PINK_017.png::CompressedTexture2D::8330657985502325712::1702294586::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 15/RED/::1702294598
+Sign 15 Glow - RED_000.png::CompressedTexture2D::2740345846703404104::1702294596::1729676565::1::::<><>::
+Sign 15 Glow - RED_001.png::CompressedTexture2D::8610732433095140123::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_002.png::CompressedTexture2D::4904006753686732190::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_003.png::CompressedTexture2D::2694502533918799008::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_004.png::CompressedTexture2D::456147164316039852::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_005.png::CompressedTexture2D::3417435095854179315::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_006.png::CompressedTexture2D::6736902226030937655::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_007.png::CompressedTexture2D::8420208856924979687::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_008.png::CompressedTexture2D::2450918946343636122::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_009.png::CompressedTexture2D::4918868096441938900::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_010.png::CompressedTexture2D::5474469734244313628::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_011.png::CompressedTexture2D::1740370933145780138::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_012.png::CompressedTexture2D::1484753460268041443::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_013.png::CompressedTexture2D::7010673484141891482::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_014.png::CompressedTexture2D::3308006063383332327::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_015.png::CompressedTexture2D::2679267551449790717::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_016.png::CompressedTexture2D::2267451914765535022::1702294598::1729676565::1::::<><>::
+Sign 15 Glow - RED_017.png::CompressedTexture2D::2058628744067923888::1702294598::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 16/::1702294726
+Sign 16 Glow - GREEN.png::CompressedTexture2D::8988654816166017274::1702294726::1729676566::1::::<><>::
+Sign 16 Glow - YELLOW.png::CompressedTexture2D::4828855846589517812::1702294718::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 16/GREEN/::1702294726
+Sign 16 Glow - GREEN_000.png::CompressedTexture2D::8101774426100754954::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_001.png::CompressedTexture2D::9016343563325785820::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_002.png::CompressedTexture2D::7828329757583939437::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_003.png::CompressedTexture2D::1058884827464679025::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_004.png::CompressedTexture2D::5025251641741726710::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_005.png::CompressedTexture2D::1861354207760374515::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_006.png::CompressedTexture2D::7570730590112737622::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_007.png::CompressedTexture2D::1782250789039941315::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_008.png::CompressedTexture2D::7235921560817108713::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_009.png::CompressedTexture2D::2739496655884451796::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_010.png::CompressedTexture2D::926594134092255972::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_011.png::CompressedTexture2D::3770274365944601537::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_012.png::CompressedTexture2D::1345920230410304863::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_013.png::CompressedTexture2D::1819393012033979630::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_014.png::CompressedTexture2D::310275890411362889::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_015.png::CompressedTexture2D::1744695665685722331::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_016.png::CompressedTexture2D::503061131864043961::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_017.png::CompressedTexture2D::5456791257907908946::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_018.png::CompressedTexture2D::2176912919941169504::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_019.png::CompressedTexture2D::8093611477290019624::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_020.png::CompressedTexture2D::1404291531509635898::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_021.png::CompressedTexture2D::2316170897878845962::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_022.png::CompressedTexture2D::4881018562898036000::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_023.png::CompressedTexture2D::8267120402696037218::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_024.png::CompressedTexture2D::2953730169660372944::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_025.png::CompressedTexture2D::2823345882027311226::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_026.png::CompressedTexture2D::7588068859132391184::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_027.png::CompressedTexture2D::6251224169380461447::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_028.png::CompressedTexture2D::1306245052988953500::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_029.png::CompressedTexture2D::6421894147262469441::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_030.png::CompressedTexture2D::4293747832327617528::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_031.png::CompressedTexture2D::2437949539736610095::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_032.png::CompressedTexture2D::8629833892542068338::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_033.png::CompressedTexture2D::746845525551971641::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_034.png::CompressedTexture2D::4578907288127895505::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_035.png::CompressedTexture2D::4344112534914588805::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_036.png::CompressedTexture2D::6156281131632989190::1702294726::1729676565::1::::<><>::
+Sign 16 Glow - GREEN_037.png::CompressedTexture2D::684643280781659164::1702294726::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 16/YELLOW/::1702294716
+Sign 16 Glow - YELLOW_000.png::CompressedTexture2D::7001936558221562349::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_001.png::CompressedTexture2D::8383081628444529805::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_002.png::CompressedTexture2D::2515346925569100124::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_003.png::CompressedTexture2D::2739756105342486376::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_004.png::CompressedTexture2D::2551399195758201088::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_005.png::CompressedTexture2D::1923152658643017938::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_006.png::CompressedTexture2D::4486244662168718668::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_007.png::CompressedTexture2D::7329598209996732473::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_008.png::CompressedTexture2D::7086951024655020757::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_009.png::CompressedTexture2D::435077636470109803::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_010.png::CompressedTexture2D::7574466625758730566::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_011.png::CompressedTexture2D::8869000583739625140::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_012.png::CompressedTexture2D::4492563772015095229::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_013.png::CompressedTexture2D::5422233977700623154::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_014.png::CompressedTexture2D::5735568135765535506::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_015.png::CompressedTexture2D::1614451246212160023::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_016.png::CompressedTexture2D::3083439594733620857::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_017.png::CompressedTexture2D::5245449775317949805::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_018.png::CompressedTexture2D::4015421028087384855::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_019.png::CompressedTexture2D::4316568093054992165::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_020.png::CompressedTexture2D::3788081873131616504::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_021.png::CompressedTexture2D::6505502954143020276::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_022.png::CompressedTexture2D::31804238212856743::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_023.png::CompressedTexture2D::8202884811754635828::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_024.png::CompressedTexture2D::8856976453058386564::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_025.png::CompressedTexture2D::4337549662671849975::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_026.png::CompressedTexture2D::3547368365820690267::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_027.png::CompressedTexture2D::7907289081704554954::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_028.png::CompressedTexture2D::3349942367581803315::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_029.png::CompressedTexture2D::7988383207914748967::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_030.png::CompressedTexture2D::3886300615769725515::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_031.png::CompressedTexture2D::6686251063551331106::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_032.png::CompressedTexture2D::5424692066501000933::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_033.png::CompressedTexture2D::4417490515009399401::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_034.png::CompressedTexture2D::6055206848914135127::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_035.png::CompressedTexture2D::5610744660212546187::1702294716::1729676565::1::::<><>::
+Sign 16 Glow - YELLOW_036.png::CompressedTexture2D::5395487319094009951::1702294716::1729676566::1::::<><>::
+Sign 16 Glow - YELLOW_037.png::CompressedTexture2D::948316384951613560::1702294716::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 17/::1702294832
+Sign 17 Glow - PINK.png::CompressedTexture2D::2595114106850035674::1702294822::1729676566::1::::<><>::
+Sign 17 Glow - TEAL.png::CompressedTexture2D::6149968226302097006::1702294832::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 17/PINK/::1702294822
+Sign 17 Glow - PINK_000.png::CompressedTexture2D::399553353433160592::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_001.png::CompressedTexture2D::3783515050463911414::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_002.png::CompressedTexture2D::536780750948365743::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_003.png::CompressedTexture2D::2225008634577809555::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_004.png::CompressedTexture2D::6994711283763285958::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_005.png::CompressedTexture2D::4790823519531652481::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_006.png::CompressedTexture2D::1386158944297216131::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_007.png::CompressedTexture2D::5364366362491615391::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_008.png::CompressedTexture2D::5460225105868382860::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_009.png::CompressedTexture2D::3539174601204669345::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_010.png::CompressedTexture2D::7913994551500468944::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_011.png::CompressedTexture2D::632140663950088763::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_012.png::CompressedTexture2D::5672753736468258489::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_013.png::CompressedTexture2D::3688427838434831897::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_014.png::CompressedTexture2D::4596183725187528822::1702294820::1729676566::1::::<><>::
+Sign 17 Glow - PINK_015.png::CompressedTexture2D::3363954407773580353::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_016.png::CompressedTexture2D::8594970068665943179::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_017.png::CompressedTexture2D::6488124154140474257::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_018.png::CompressedTexture2D::7370637699144339239::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_019.png::CompressedTexture2D::70135373683948272::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_020.png::CompressedTexture2D::9193261197599370350::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_021.png::CompressedTexture2D::2921715373127345040::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_022.png::CompressedTexture2D::7260870405460155946::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_023.png::CompressedTexture2D::3705473131005077596::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_024.png::CompressedTexture2D::7285774327615924048::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_025.png::CompressedTexture2D::2094474713495202802::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_026.png::CompressedTexture2D::4231373665559617450::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_027.png::CompressedTexture2D::4559824791819265191::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_028.png::CompressedTexture2D::4245460306624876253::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_029.png::CompressedTexture2D::3098039702926135625::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_030.png::CompressedTexture2D::8186401156528337912::1702294820::1729676565::1::::<><>::
+Sign 17 Glow - PINK_031.png::CompressedTexture2D::5876994222644593332::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_032.png::CompressedTexture2D::1490005112402128820::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_033.png::CompressedTexture2D::3044003834565101034::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_034.png::CompressedTexture2D::3244154704842650422::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_035.png::CompressedTexture2D::3264981423164564627::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_036.png::CompressedTexture2D::6423710784761383211::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_037.png::CompressedTexture2D::139923493958302990::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_038.png::CompressedTexture2D::4978222312600427064::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_039.png::CompressedTexture2D::384677892105571265::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_040.png::CompressedTexture2D::1861817586360299989::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_041.png::CompressedTexture2D::8945816275909778491::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_042.png::CompressedTexture2D::2487804379700955455::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_043.png::CompressedTexture2D::7752065122813546952::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_044.png::CompressedTexture2D::3698193304135963330::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_045.png::CompressedTexture2D::4440961493163823231::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_046.png::CompressedTexture2D::1403706136324370828::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_047.png::CompressedTexture2D::3804504107618249836::1702294822::1729676565::1::::<><>::
+Sign 17 Glow - PINK_048.png::CompressedTexture2D::2245999917500156479::1702294822::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 17/TEAL/::1702294832
+Sign 17 Glow - TEAL_000.png::CompressedTexture2D::3643839099649153282::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_001.png::CompressedTexture2D::4396385533543375174::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_002.png::CompressedTexture2D::2240829394213374755::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_003.png::CompressedTexture2D::4212379335824093813::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_004.png::CompressedTexture2D::8284569527713682374::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_005.png::CompressedTexture2D::2430157613618828018::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_006.png::CompressedTexture2D::8787245995285135520::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_007.png::CompressedTexture2D::4471162411791874217::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_008.png::CompressedTexture2D::3662652983450423309::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_009.png::CompressedTexture2D::4792123817559627847::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_010.png::CompressedTexture2D::3527232326687006729::1702294830::1729676565::1::::<><>::
+Sign 17 Glow - TEAL_011.png::CompressedTexture2D::2824421987636433851::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_012.png::CompressedTexture2D::3102935878433115616::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_013.png::CompressedTexture2D::7350302581383317179::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_014.png::CompressedTexture2D::7246133823142176269::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_015.png::CompressedTexture2D::1382927904383843519::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_016.png::CompressedTexture2D::4655775738566954873::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_017.png::CompressedTexture2D::4739103211731372164::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_018.png::CompressedTexture2D::7207450042615475684::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_019.png::CompressedTexture2D::3396788167468134300::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_020.png::CompressedTexture2D::3847302082348357954::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_021.png::CompressedTexture2D::5919983871931102404::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_022.png::CompressedTexture2D::5016913214450501246::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_023.png::CompressedTexture2D::3796259077719505572::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_024.png::CompressedTexture2D::9123898100658936403::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_025.png::CompressedTexture2D::7104546526091981748::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_026.png::CompressedTexture2D::4527649193636465832::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_027.png::CompressedTexture2D::2757983841124695983::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_028.png::CompressedTexture2D::2264398795354307963::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_029.png::CompressedTexture2D::2210823342246656829::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_030.png::CompressedTexture2D::493705723190173225::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_031.png::CompressedTexture2D::4763897797269762524::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_032.png::CompressedTexture2D::6719129283956404589::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_033.png::CompressedTexture2D::459273712108146676::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_034.png::CompressedTexture2D::1915552187676987440::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_035.png::CompressedTexture2D::1617343313207137947::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_036.png::CompressedTexture2D::3651217816375158569::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_037.png::CompressedTexture2D::8803486243856491546::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_038.png::CompressedTexture2D::8842879937330058986::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_039.png::CompressedTexture2D::1434138160829295768::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_040.png::CompressedTexture2D::4981250754884925981::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_041.png::CompressedTexture2D::1397385258470892371::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_042.png::CompressedTexture2D::2076690984099304641::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_043.png::CompressedTexture2D::3647447538813526030::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_044.png::CompressedTexture2D::3572564435331101578::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_045.png::CompressedTexture2D::5981870545709486393::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_046.png::CompressedTexture2D::6783417005136300702::1702294830::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_047.png::CompressedTexture2D::3810846334681033519::1702294832::1729676566::1::::<><>::
+Sign 17 Glow - TEAL_048.png::CompressedTexture2D::2914207859884860227::1702294832::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 18/::1702294958
+Sign 17 Glow - BLUE.png::CompressedTexture2D::2110777451010077690::1702294948::1729676565::1::::<><>::
+Sign 17 Glow - RED.png::CompressedTexture2D::2030180912642704521::1702294958::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 18/BLUE/::1702294948
+Sign 17 Glow - BLUE_000.png::CompressedTexture2D::820516499700234441::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_001.png::CompressedTexture2D::668349482678337292::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_002.png::CompressedTexture2D::5690218241403851402::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_003.png::CompressedTexture2D::4782748186338266670::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_004.png::CompressedTexture2D::4412418620126312233::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_005.png::CompressedTexture2D::5498594725420137617::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_006.png::CompressedTexture2D::2693793826925129372::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_007.png::CompressedTexture2D::1115715975311525772::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_008.png::CompressedTexture2D::5929610653685332181::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_009.png::CompressedTexture2D::2913101629686491375::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_010.png::CompressedTexture2D::3186475857989178627::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_011.png::CompressedTexture2D::8940026850163902268::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_012.png::CompressedTexture2D::1378592405402507134::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_013.png::CompressedTexture2D::5791617957333934409::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_014.png::CompressedTexture2D::1388321839037156612::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_015.png::CompressedTexture2D::2506330272516959169::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_016.png::CompressedTexture2D::837244262073663563::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_017.png::CompressedTexture2D::8247483815539347579::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_018.png::CompressedTexture2D::1787306452504563777::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_019.png::CompressedTexture2D::4881409103092617118::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_020.png::CompressedTexture2D::3985248987388062300::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_021.png::CompressedTexture2D::5717930284432972419::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_022.png::CompressedTexture2D::4511201563421415334::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_023.png::CompressedTexture2D::7536793846330266582::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_024.png::CompressedTexture2D::7536491158071083492::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_025.png::CompressedTexture2D::6096841891458211491::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_026.png::CompressedTexture2D::7560964414682370238::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_027.png::CompressedTexture2D::8371594912387751314::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_028.png::CompressedTexture2D::7886343027723427887::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_029.png::CompressedTexture2D::5131641532392621632::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_030.png::CompressedTexture2D::558787139075120::1702294948::1729676566::1::::<><>::
+Sign 17 Glow - BLUE_031.png::CompressedTexture2D::4028797698523991469::1702294948::1729676566::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 18/RED/::1702294958
+Sign 17 Glow - RED_000.png::CompressedTexture2D::2543603026664378415::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_001.png::CompressedTexture2D::4974220183363837470::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_002.png::CompressedTexture2D::5980751262220815950::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_003.png::CompressedTexture2D::119548996269390829::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_004.png::CompressedTexture2D::2544495705632962226::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_005.png::CompressedTexture2D::768386915681868803::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_006.png::CompressedTexture2D::2856979543237512919::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_007.png::CompressedTexture2D::3859641957484982228::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_008.png::CompressedTexture2D::5606258567222599757::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_009.png::CompressedTexture2D::1828346284073891571::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_010.png::CompressedTexture2D::1998644999221419802::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_011.png::CompressedTexture2D::8948567202972339622::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_012.png::CompressedTexture2D::8603680789111486396::1702294956::1729676566::1::::<><>::
+Sign 17 Glow - RED_013.png::CompressedTexture2D::1324646011393466279::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_014.png::CompressedTexture2D::6241592127236658602::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_015.png::CompressedTexture2D::3556028945404887397::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_016.png::CompressedTexture2D::1354197679189671763::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_017.png::CompressedTexture2D::3640806105938180264::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_018.png::CompressedTexture2D::4288318180219586283::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_019.png::CompressedTexture2D::7045294097525987807::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_020.png::CompressedTexture2D::6561459923952977693::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_021.png::CompressedTexture2D::1190006863754964016::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_022.png::CompressedTexture2D::700384587931717969::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_023.png::CompressedTexture2D::8069182059366417607::1702294956::1729676565::1::::<><>::
+Sign 17 Glow - RED_024.png::CompressedTexture2D::4791163523207956844::1702294958::1729676565::1::::<><>::
+Sign 17 Glow - RED_025.png::CompressedTexture2D::3326929067295949716::1702294958::1729676565::1::::<><>::
+Sign 17 Glow - RED_026.png::CompressedTexture2D::4064346084552596030::1702294958::1729676565::1::::<><>::
+Sign 17 Glow - RED_027.png::CompressedTexture2D::4409967089678927691::1702294958::1729676565::1::::<><>::
+Sign 17 Glow - RED_028.png::CompressedTexture2D::863348283466253786::1702294958::1729676565::1::::<><>::
+Sign 17 Glow - RED_029.png::CompressedTexture2D::8719342100009152224::1702294958::1729676565::1::::<><>::
+Sign 17 Glow - RED_030.png::CompressedTexture2D::4527296532773450244::1702294958::1729676565::1::::<><>::
+Sign 17 Glow - RED_031.png::CompressedTexture2D::3566815302194795346::1702294958::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 19/::1702295036
+Sign 19 Glow - TEAL.png::CompressedTexture2D::3421274276832560667::1702295036::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW.png::CompressedTexture2D::6638492123370365075::1702295022::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 19/TEAL/::1702295034
+Sign 19 Glow - TEAL_000.png::CompressedTexture2D::7908909879440679511::1702295032::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_001.png::CompressedTexture2D::7245217141364494070::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_002.png::CompressedTexture2D::3181246882750400911::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_003.png::CompressedTexture2D::5145562180819478101::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_004.png::CompressedTexture2D::5948174601066610883::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_005.png::CompressedTexture2D::5120525146425651080::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_006.png::CompressedTexture2D::3782522928652920337::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_007.png::CompressedTexture2D::7847549419548922124::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_008.png::CompressedTexture2D::496845200954889603::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_009.png::CompressedTexture2D::7092446525471836679::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_010.png::CompressedTexture2D::2514034823045114254::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_011.png::CompressedTexture2D::3398182679159605335::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_012.png::CompressedTexture2D::5020482861847869773::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_013.png::CompressedTexture2D::3445375489973251207::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_014.png::CompressedTexture2D::1871604474621703870::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_015.png::CompressedTexture2D::4289993805575433365::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_016.png::CompressedTexture2D::7226659554258417971::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_017.png::CompressedTexture2D::3110970435089084027::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_018.png::CompressedTexture2D::6920223556398323835::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_019.png::CompressedTexture2D::222432502126105433::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_020.png::CompressedTexture2D::3677140034061480807::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_021.png::CompressedTexture2D::8344983759295758886::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_022.png::CompressedTexture2D::8053207179329998029::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_023.png::CompressedTexture2D::5141177138763904527::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_024.png::CompressedTexture2D::5775127729101898319::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_025.png::CompressedTexture2D::843411468732050151::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_026.png::CompressedTexture2D::4467500932566702865::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_027.png::CompressedTexture2D::5540245470279968121::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_028.png::CompressedTexture2D::4937638656329646701::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_029.png::CompressedTexture2D::5692769575980555423::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_030.png::CompressedTexture2D::2724187470864436413::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_031.png::CompressedTexture2D::8125532989108052441::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_032.png::CompressedTexture2D::2802393612316647370::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_033.png::CompressedTexture2D::7764915407336239426::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_034.png::CompressedTexture2D::813826221278999694::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_035.png::CompressedTexture2D::4506662380782658301::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_036.png::CompressedTexture2D::729818488426755742::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_037.png::CompressedTexture2D::2114639132728512693::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_038.png::CompressedTexture2D::7569454306719662048::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_039.png::CompressedTexture2D::2452513194951483309::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_040.png::CompressedTexture2D::3354632711742502431::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_041.png::CompressedTexture2D::3597654130158474424::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_042.png::CompressedTexture2D::8963366673203351204::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_043.png::CompressedTexture2D::2413900235979121441::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_044.png::CompressedTexture2D::4142080051586461805::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_045.png::CompressedTexture2D::4722925077985055605::1702295034::1729676565::1::::<><>::
+Sign 19 Glow - TEAL_046.png::CompressedTexture2D::3727143740419484410::1702295034::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 19/YELLOW/::1702295020
+Sign 19 Glow - YELLOW_000.png::CompressedTexture2D::327881597362759558::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_001.png::CompressedTexture2D::2644189889494827340::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_002.png::CompressedTexture2D::3443628870740848389::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_003.png::CompressedTexture2D::7740538971536145768::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_004.png::CompressedTexture2D::6655636348883913686::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_005.png::CompressedTexture2D::4973781781333616244::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_006.png::CompressedTexture2D::4098205610792899933::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_007.png::CompressedTexture2D::3388870159027156003::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_008.png::CompressedTexture2D::4962992102151802777::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_009.png::CompressedTexture2D::648545599346047250::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_010.png::CompressedTexture2D::40878181740659317::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_011.png::CompressedTexture2D::6627531198191061752::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_012.png::CompressedTexture2D::2731514503735061530::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_013.png::CompressedTexture2D::3721426195183391393::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_014.png::CompressedTexture2D::2876993212232983180::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_015.png::CompressedTexture2D::5946683834584427863::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_016.png::CompressedTexture2D::1543288008146303562::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_017.png::CompressedTexture2D::7683656921042006997::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_018.png::CompressedTexture2D::315257430895508926::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_019.png::CompressedTexture2D::1899905633438878091::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_020.png::CompressedTexture2D::8401193572992120758::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_021.png::CompressedTexture2D::6494099091623834546::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_022.png::CompressedTexture2D::7890106096431735232::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_023.png::CompressedTexture2D::4920714854666674377::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_024.png::CompressedTexture2D::6828602857129747210::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_025.png::CompressedTexture2D::2191363492336280806::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_026.png::CompressedTexture2D::7360582146431164150::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_027.png::CompressedTexture2D::6100092038719885024::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_028.png::CompressedTexture2D::9103439261066496589::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_029.png::CompressedTexture2D::2497603131672935863::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_030.png::CompressedTexture2D::1929825080691771101::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_031.png::CompressedTexture2D::1244033482821593396::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_032.png::CompressedTexture2D::8892785109109194039::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_033.png::CompressedTexture2D::1951124806165015818::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_034.png::CompressedTexture2D::4095711879564664605::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_035.png::CompressedTexture2D::827534268653393406::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_036.png::CompressedTexture2D::8719268091294316104::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_037.png::CompressedTexture2D::1348406516573028119::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_038.png::CompressedTexture2D::7025622576840667839::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_039.png::CompressedTexture2D::8601291492048911597::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_040.png::CompressedTexture2D::821158920163017246::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_041.png::CompressedTexture2D::821608244542528205::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_042.png::CompressedTexture2D::7552588950646446278::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_043.png::CompressedTexture2D::2744673489340697659::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_044.png::CompressedTexture2D::3224570251228493378::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_045.png::CompressedTexture2D::3095662548483918008::1702295020::1729676565::1::::<><>::
+Sign 19 Glow - YELLOW_046.png::CompressedTexture2D::6611534583802976632::1702295020::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 20/::1702295164
+Sign 20 Glow - PURPLE.png::CompressedTexture2D::8328675718539572675::1702295164::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW.png::CompressedTexture2D::3039073584423674404::1702295152::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 20/PURPLE/::1702295162
+Sign 20 Glow - PURPLE_000.png::CompressedTexture2D::493183184425891965::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_001.png::CompressedTexture2D::4463903604376513269::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_002.png::CompressedTexture2D::3798992135748182754::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_003.png::CompressedTexture2D::5066996705533102041::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_004.png::CompressedTexture2D::3611563412079226804::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_005.png::CompressedTexture2D::8602610773666943580::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_006.png::CompressedTexture2D::3146986163771567137::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_007.png::CompressedTexture2D::3651616429859940760::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_008.png::CompressedTexture2D::3698834854044587049::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_009.png::CompressedTexture2D::4265251462925750829::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_010.png::CompressedTexture2D::689519955196977930::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_011.png::CompressedTexture2D::699592886683626038::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_012.png::CompressedTexture2D::1152205187659191597::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_013.png::CompressedTexture2D::390279199717337138::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_014.png::CompressedTexture2D::3150573355996889052::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_015.png::CompressedTexture2D::5434629812795777433::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_016.png::CompressedTexture2D::1297445754004021525::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_017.png::CompressedTexture2D::6981955683093494668::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_018.png::CompressedTexture2D::4659273192682437746::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_019.png::CompressedTexture2D::7679193416110887105::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_020.png::CompressedTexture2D::8441505781413911707::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_021.png::CompressedTexture2D::7133947583241941556::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_022.png::CompressedTexture2D::6149496808376692467::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_023.png::CompressedTexture2D::4038594769541205699::1702295162::1729676565::1::::<><>::
+Sign 20 Glow - PURPLE_024.png::CompressedTexture2D::1271326646286857403::1702295162::1729676565::1::::<><>::
+::res://Pixel Art Sign Pack - Animated/Sign 20/YELLOW/::1702295152
+Sign 20 Glow - YELLOW_000.png::CompressedTexture2D::9092223841554129657::1702295150::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_001.png::CompressedTexture2D::5499234331543628012::1702295150::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_002.png::CompressedTexture2D::4352282102100109003::1702295150::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_003.png::CompressedTexture2D::4584675046560976152::1702295150::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_004.png::CompressedTexture2D::8140136132079453790::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_005.png::CompressedTexture2D::1477930206875927441::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_006.png::CompressedTexture2D::4124202261377156998::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_007.png::CompressedTexture2D::3344558754312967191::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_008.png::CompressedTexture2D::8137309027252072693::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_009.png::CompressedTexture2D::7925645095470949612::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_010.png::CompressedTexture2D::560763860542647067::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_011.png::CompressedTexture2D::1743596777984975561::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_012.png::CompressedTexture2D::4834664943725237004::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_013.png::CompressedTexture2D::3776983646568666396::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_014.png::CompressedTexture2D::4053580381393723016::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_015.png::CompressedTexture2D::185434877836672696::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_016.png::CompressedTexture2D::6936144970790783517::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_017.png::CompressedTexture2D::8778868379322251613::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_018.png::CompressedTexture2D::1703391401852701485::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_019.png::CompressedTexture2D::8823210239496351483::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_020.png::CompressedTexture2D::373000790026231075::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_021.png::CompressedTexture2D::7857162683723270163::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_022.png::CompressedTexture2D::4255297072258714697::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_023.png::CompressedTexture2D::2312722142513412881::1702295152::1729676565::1::::<><>::
+Sign 20 Glow - YELLOW_024.png::CompressedTexture2D::8388726315644971480::1702295152::1729676565::1::::<><>::
+::res://scripts/::1729674205
 AnimatedSprite2D.gd::GDScript::-1::1729634972::0::1::::<>AnimatedSprite2D<>::
 BlockerBullet.gd::GDScript::-1::1729557561::0::1::::<>Area2D<>::
 Blockertile.gd::GDScript::-1::1729633826::0::1::::<>CharacterBody2D<>::
 Boltbullet2.gd::GDScript::-1::1729633826::0::1::::<>Area2D<>::
 boltbullet.gd::GDScript::-1::1729633826::0::1::::<>Area2D<>::
-Boss2.gd::GDScript::-1::1729661381::0::1::::<>CharacterBody2D<>::
+Boss2.gd::GDScript::-1::1729674205::0::1::::<>CharacterBody2D<>::
 Boss2bullet2.gd::GDScript::-1::1729633826::0::1::::<>Area2D<>::
 Boss3.gd::GDScript::-1::1729661328::0::1::::<>CharacterBody2D<>::
 bossbullethitbox.gd::GDScript::-1::1729661328::0::1::::<>Area2D<>::
 Boss_2line.gd::GDScript::-1::1729634972::0::1::::<>Node2D<>::
-bullet2.gd::GDScript::-1::1729661406::0::1::::<>Area2D<>::
+bullet2.gd::GDScript::-1::1729670910::0::1::::<>Area2D<>::
 Bulletcircle.gd::GDScript::-1::1729557561::0::1::::<>Area2D<>::
 cutscene1.gd::GDScript::-1::1725241396::0::1::::<>Control<>::
 cutscene2.gd::GDScript::-1::1725241396::0::1::::<>Control<>::
@@ -116,19 +1540,19 @@ Gravestone.gd::GDScript::-1::1729634972::0::1::::<>CharacterBody2D<>::
 healthbar.gd::GDScript::-1::1729557561::0::1::::<>ProgressBar<>::
 Lightning.gd::GDScript::-1::1729633826::0::1::::<>Area2D<>::
 LightningArea.gd::GDScript::-1::1729633826::0::1::::<>Area2D<>::
-mainmenu.gd::GDScript::-1::1729666492::0::1::::<>Control<>::
+mainmenu.gd::GDScript::-1::1729670951::0::1::::<>Control<>::
 Megabulletcircle.gd::GDScript::-1::1729553770::0::1::::<>Area2D<>::
 Megabulletcirclelong.gd::GDScript::-1::1729557561::0::1::::<>Area2D<>::
-player.gd::GDScript::-1::1729633826::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1729671195::0::1::::<>CharacterBody2D<>::
 Playerbullet.gd::GDScript::-1::1729557561::0::1::::<>Area2D<>::
-portal.gd::GDScript::-1::1729556478::0::1::::<>Area2D<>::
+portal.gd::GDScript::-1::1729672942::0::1::::<>Area2D<>::
 Rotationlockanimate.gd::GDScript::-1::1729634972::0::1::::<>AnimatedSprite2D<>::
 Rotation_lock.gd::GDScript::-1::1729633826::0::1::::<>Area2D<>::
-Settings.gd::GDScript::-1::1729668623::0::1::::<>Control<>::
-Sounds.gd::GDScript::-1::1729666650::0::1::::<>Node<>::
+Settings.gd::GDScript::-1::1729669033::0::1::::<>Control<>::
+Sounds.gd::GDScript::-1::1729671196::0::1::::<>Node<>::
 Spark2.gd::GDScript::-1::1729557561::0::1::::<>Area2D<>::
 Spark3.gd::GDScript::-1::1729557561::0::1::::<>Area2D<>::
-Spark.gd::GDScript::-1::1729661406::0::1::::<>Area2D<>::
+Spark.gd::GDScript::-1::1729670910::0::1::::<>Area2D<>::
 Spawn1.gd::GDScript::-1::1729634972::0::1::::<>CharacterBody2D<>::
 Spiritbullet.gd::GDScript::-1::1729633826::0::1::::<>Area2D<>::
 Teleport.gd::GDScript::-1::1729634972::0::1::::<>Area2D<>::
