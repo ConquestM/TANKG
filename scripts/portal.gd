@@ -17,6 +17,9 @@ func _on_area_entered(area):
 		global.level += 1
 		get_tree().change_scene_to_file("res://Cutscene_2.tscn")
 	elif global.level == 2 and area.has_meta("Player") and active == true:
+		global.boss_hp = global.boss_hp * global.boss_hp_mult
+		global.boss_2_hp = global.boss_2_hp * global.boss_hp_mult
+		global.boss_3_hp = global.boss_3_hp * global.boss_hp_mult
 		global.level += 1
 		get_tree().change_scene_to_file("res://Cutscene_3.tscn")
 	elif global.level == 3 and area.has_meta("Player") and active == true:

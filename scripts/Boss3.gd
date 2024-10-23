@@ -15,7 +15,6 @@ var attack = 0
 var wave_attack = 0
 
 func _ready():
-	$CanvasLayer/Label.hide()
 	$CollisionShape2D/Firetimer.start()
 	health_bar.init_health(health)
 	global.spirits = 0
@@ -69,13 +68,14 @@ func _on_firetimer_timeout():
 			add_sibling(spawner)
 			spawner.position = Vector2(rnd_x, rnd_y)
 			attack = 0
-			if global.wall_attack == 1:
-				var wall_attack = wall_attack_scene.instantiate()
-				wall_attack.global_position = $CollisionShape2D/AnimatedSprite2D/wallspawn.global_position
-				wall_attack.rotation = $CollisionShape2D.rotation
-				add_sibling(wall_attack)
-				global.wall_attack = 0
+	if global.wall_attack == 1:
+		var wall_attack = wall_attack_scene.instantiate()
+		wall_attack.global_position = $CollisionShape2D/AnimatedSprite2D/wallspawn.global_position
+		wall_attack.rotation = $CollisionShape2D.rotation
+		add_sibling(wall_attack)
+		global.wall_attack = 0
 		attack = 0
+	
 
 
 func _set_health(_value):

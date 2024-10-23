@@ -15,6 +15,7 @@ func _ready():
 	$Wait.start()
 	self.visible = false
 	speed = -400
+	print("lowspaen")
 
 
 
@@ -22,7 +23,7 @@ func _process(delta):
 	move_local_x(speed * delta)
 	if wait == 1:
 		speed = 100
-	if global.boss_hp == 0:
+	if global.boss_2_hp == 0:
 		queue_free()
 	if not friendly:
 		$Sprite2D.self_modulate -= Color(0,0.1,0.1,-0.1)

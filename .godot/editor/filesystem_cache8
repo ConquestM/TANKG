@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729710171
+::res://::1729718794
 BlockerBullet.tscn::PackedScene::9222007971766817213::1729557640::0::1::::<><>::res://scripts/BlockerBullet.gd<>uid://dwom1o4jxhxmo::::res://Bossbulletdetonatehitbox.tscn<>uid://bl7l4ldama4ib::::res://Gravestone.tscn<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
 Boltbullet.tscn::PackedScene::4954687080322788276::1729456256::0::1::::<><>::res://scripts/boltbullet.gd<>uid://dwom1o4jxhxmo::::res://Bossbulletdetonatehitbox.tscn<>uid://yxeav7431xuf::::res://assets/Lightningbolt.png
 BOss1.tscn::PackedScene::6735052732704041660::1729673320::0::1::::<><>::uid://ccuc8cahwt677::::res://Boltbullet.tscn<>uid://bjmfaw432i8kw::::res://Spark.tscn<>uid://bpemhh5wfb7ow::::res://Portal.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://cv5nipxf82ral::::res://assets/Zeus.webp<>uid://ba2fjsu2in8kg::::res://LightningArea.tscn<>uid://cfqhh4yntr6j2::::res://Facon.ttf
-Boss2.tscn::PackedScene::1263392429127497244::1729661321::0::1::::<><>::res://scripts/Boss2.gd<>uid://bx1m47ro2e150::::res://Bulletcircle.tscn<>uid://d3nngbjfswteu::::res://Teleport.tscn<>uid://d3pd7hakaer4d::::res://Boss2bullet.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://bj23l42rws8ai::::res://Boss2bullet2.tscn<>uid://cdsig8201yvov::::res://Boss_2line.tscn<>uid://cpst3r5ixpdbt::::res://assets/New_Piskel_1-ezgif.com-gif-to-sprite-converter.png<>res://scripts/Rotationlockanimate.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
+Boss2.tscn::PackedScene::1263392429127497244::1729718565::0::1::::<><>::res://scripts/Boss2.gd<>uid://bx1m47ro2e150::::res://Bulletcircle.tscn<>uid://d3nngbjfswteu::::res://Teleport.tscn<>uid://d3pd7hakaer4d::::res://Boss2bullet.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://bj23l42rws8ai::::res://Boss2bullet2.tscn<>uid://cdsig8201yvov::::res://Boss_2line.tscn<>uid://bpemhh5wfb7ow::::res://Portal.tscn<>uid://cpst3r5ixpdbt::::res://assets/New_Piskel_1-ezgif.com-gif-to-sprite-converter.png<>res://scripts/Rotationlockanimate.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
 Boss2bullet2.tscn::PackedScene::3075579761014841948::1729557640::0::1::::<><>::res://scripts/Boss2bullet2.gd<>uid://yxeav7431xuf::::res://assets/Lightningbolt.png
 Boss2bullet.tscn::PackedScene::9155755003756345729::1729557640::0::1::::<><>::res://scripts/Boltbullet2.gd<>uid://yxeav7431xuf::::res://assets/Lightningbolt.png
-Boss3.tscn::PackedScene::6210427223329473775::1729673320::0::1::::<><>::res://scripts/Boss3.gd<>uid://bopd8ltnba6ol::::res://Spawn1.tscn<>uid://d4nhehjpgots4::::res://BlockerBullet.tscn<>uid://c2niigo3nbyw2::::res://Zombie1.tscn<>uid://bl7l4ldama4ib::::res://Gravestone.tscn<>uid://44q8uem4qu7::::res://Wall.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://bhkcqqcc58i35::::res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png<>res://scripts/AnimatedSprite2D.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
+Boss3.tscn::PackedScene::6210427223329473775::1729718561::0::1::::<><>::res://scripts/Boss3.gd<>uid://bopd8ltnba6ol::::res://Spawn1.tscn<>uid://d4nhehjpgots4::::res://BlockerBullet.tscn<>uid://c2niigo3nbyw2::::res://Zombie1.tscn<>uid://bl7l4ldama4ib::::res://Gravestone.tscn<>uid://44q8uem4qu7::::res://Wall.tscn<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>uid://bhkcqqcc58i35::::res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png<>res://scripts/AnimatedSprite2D.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
 Bossbulletdetonatehitbox.tscn::PackedScene::8733093714793764106::1725932599::0::1::::<><>::res://scripts/bossbullethitbox.gd
 Boss_2line.tscn::PackedScene::5021064924730808709::1729627516::0::1::::<><>::res://scripts/Boss_2line.gd
 Bulletcircle.tscn::PackedScene::4055220008591084621::1729647119::0::1::::<><>::res://scripts/Bulletcircle.gd<>uid://bc7phxn8qj874::::res://Circlebossbullethitbox.tscn<>uid://cniy4mkyawquh::::res://Megabulletcircle.tscn<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
@@ -14,22 +14,24 @@ Circlebossbullethitbox.tscn::PackedScene::2593782944188563977::1729647119::0::1:
 Cutscene_1.tscn::PackedScene::2495956014617057448::1729661245::0::1::::<><>::res://scripts/cutscene1.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
 Cutscene_2.tscn::PackedScene::7123181969150375393::1725590885::0::1::::<><>::res://scripts/cutscene2.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
 Cutscene_3.tscn::PackedScene::4570640803223891993::1729557544::0::1::::<><>::res://scripts/Cutscene_3.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf
+cutscene_4.tscn::PackedScene::2843800184100115300::1729718456::0::1::::<><>::res://scripts/Cutscene_4.gd<>uid://dc0g87d43xkdc::::res://Trajan Pro Bold.ttf
 Facon.ttf::FontFile::5157254710017235361::1725494564::1725494564::1::::<><>::
 Gravestone.tscn::PackedScene::3225278309192377861::1729630423::0::1::::<><>::res://scripts/Gravestone.gd<>uid://blfh21paqm1mx::::res://Healthbar.tscn
 Healthbar.tscn::PackedScene::3169294476667607095::1729456256::0::1::::<><>::res://scripts/healthbar.gd
 Level2.tscn::PackedScene::320906924447080811::1729547200::0::1::::<><>::uid://r885hmnubc6o::::res://Boss2.tscn<>uid://cou1mvn4ls013::::res://Player.tscn<>uid://btij6l30ipepu::::res://Turret.tscn
 Level3.tscn::PackedScene::6353393528825482604::1729673320::0::1::::<><>::uid://cuqm3glsshood::::res://Boss3.tscn<>uid://cou1mvn4ls013::::res://Player.tscn<>uid://btij6l30ipepu::::res://Turret.tscn
-Level.tscn::PackedScene::7749333733984369858::1729661245::0::1::::<><>::uid://c27rlmxl5mmbk::::res://BOss1.tscn<>uid://cou1mvn4ls013::::res://Player.tscn<>uid://btij6l30ipepu::::res://Turret.tscn<>uid://ba2fjsu2in8kg::::res://LightningArea.tscn
+Level.tscn::PackedScene::7749333733984369858::1729718456::0::1::::<><>::uid://c27rlmxl5mmbk::::res://BOss1.tscn<>uid://cou1mvn4ls013::::res://Player.tscn<>uid://btij6l30ipepu::::res://Turret.tscn<>uid://ba2fjsu2in8kg::::res://LightningArea.tscn
 Lightning.tscn::PackedScene::7051596047917063072::1729630423::0::1::::<><>::uid://dkmxh3qbrsnhr::::res://assets/lightning_v2_1.png<>res://scripts/Lightning.gd<>uid://dgqoa7b8ptbio::::res://assets/lightning_v2_2.png<>uid://cv0r1wn0t6e80::::res://assets/lightning_v2_3.png<>uid://dknw12h3qn7ua::::res://assets/lightning_v2_4.png<>uid://cqy5m581i2pia::::res://assets/lightning_v2_5.png<>uid://weytaknn0jps::::res://assets/lightning_v2_6.png<>uid://h372wdicunt1::::res://assets/lightning_v2_7.png<>uid://fqojo0tqos25::::res://assets/lightning_v2_8.png<>uid://mogcbm7ksoqp::::res://assets/lightning_v2_9.png<>uid://bbm2h7rgc2kwm::::res://assets/lightning_v2_10.png<>uid://cw7xn55c12w1s::::res://assets/lightning_v2_11.png<>uid://bfshdo50g4iur::::res://assets/lightning_v2_12.png<>uid://ci4b332qoaey8::::res://assets/lightning_v2_13.png
 LightningArea.tscn::PackedScene::2442479517716078886::1729661818::0::1::::<><>::res://scripts/LightningArea.gd<>uid://c7p30yxxqn3e7::::res://Lightning.tscn
-MainMenu.tscn::PackedScene::3212105435112033982::1729661245::0::1::::<><>::res://scripts/mainmenu.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf<>uid://dc0g87d43xkdc::::res://Trajan Pro Bold.ttf
+MainMenu.tscn::PackedScene::3212105435112033982::1729718707::0::1::::<><>::res://scripts/mainmenu.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf<>uid://dc0g87d43xkdc::::res://Trajan Pro Bold.ttf
 Megabulletcircle.tscn::PackedScene::5703320999382318367::1729673321::0::1::::<><>::res://scripts/Megabulletcircle.gd<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
 Megabulletcirclelong.tscn::PackedScene::7624592330625375220::1728850398::0::1::::<><>::res://scripts/Megabulletcirclelong.gd<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
 OPen_Shield1.tscn::PackedScene::2134076779538465792::1725492608::0::1::::<><>::res://scripts/Open_Shield1.gd
-Player.tscn::PackedScene::5798373929144512532::1729673564::0::1::::<><>::res://scripts/player.gd<>uid://ccuc8cahwt677::::res://Boltbullet.tscn<>uid://dn817yopwtgsi::::res://assets/tank_frame0000.png<>uid://blov2f6ckuopd::::res://assets/tank_frame0001.png<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>res://scripts/Rotation_lock.gd
+Player.tscn::PackedScene::5798373929144512532::1729718706::0::1::::<><>::res://scripts/player.gd<>uid://ccuc8cahwt677::::res://Boltbullet.tscn<>uid://dn817yopwtgsi::::res://assets/tank_frame0000.png<>uid://blov2f6ckuopd::::res://assets/tank_frame0001.png<>uid://blfh21paqm1mx::::res://Healthbar.tscn<>res://scripts/Rotation_lock.gd
 Playerbullet.tscn::PackedScene::7080685767157452003::1729673320::0::1::::<><>::res://scripts/Playerbullet.gd<>uid://daf3wndrrrwd3::::res://assets/frame0001.png
-Portal.tscn::PackedScene::3448252368764279050::1729557544::0::1::::<><>::res://scripts/portal.gd
-Settings.tscn::PackedScene::2107086935305268488::1729661245::0::1::::<><>::res://scripts/Settings.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf<>uid://dc0g87d43xkdc::::res://Trajan Pro Bold.ttf
+Portal.tscn::PackedScene::3448252368764279050::1729718707::0::1::::<><>::res://scripts/portal.gd<>res://assets/sprite-sheet.png
+Settings.tscn::PackedScene::2107086935305268488::1729718456::0::1::::<><>::res://scripts/Settings.gd<>uid://cfqhh4yntr6j2::::res://Facon.ttf<>uid://dc0g87d43xkdc::::res://Trajan Pro Bold.ttf
+sounds.tscn::PackedScene::1643348110645780387::1729718457::0::1::::<><>::res://scripts/Sounds.gd<>uid://docl11gjtavp7::::res://The White Piano Key - Leaving Yoshi -SLOW- -Loopable-.mp3<>uid://r6jm0yvo08ca::::res://PIGLBT.mp3
 Spark2.tscn::PackedScene::8316172164375277815::1729557640::0::1::::<><>::res://scripts/Spark2.gd<>uid://dgi1ildc43y02::::res://assets/Spark.png<>uid://507dapfpwiru::::res://Spark3.tscn
 Spark3.tscn::PackedScene::2159223077562870390::1728849170::0::1::::<><>::res://scripts/Spark3.gd<>uid://dgi1ildc43y02::::res://assets/Spark.png
 Spark.tscn::PackedScene::3043197596069599262::1729557640::0::1::::<><>::res://scripts/Spark.gd<>uid://dqqoe1p0y1ann::::res://Spark2.tscn<>uid://dgi1ildc43y02::::res://assets/Spark.png
@@ -37,12 +39,13 @@ Spawn1.tscn::PackedScene::3400271850813780691::1729673320::0::1::::<><>::res://s
 Spiritbullet.tscn::PackedScene::1189580429619117154::1729673320::0::1::::<><>::res://scripts/Spiritbullet.gd<>uid://bipm3segv8puk::::res://assets/Enemy Movement Sprites.png
 Static_body_2d.tscn::PackedScene::5341006523471983057::1721700873::0::1::::<><>::
 Teleport.tscn::PackedScene::9152186686095088280::1725493876::0::1::::<><>::res://scripts/Teleport.gd<>uid://dgvn6lrhvywg7::::res://Megabulletcirclelong.tscn
+The White Piano Key - Leaving Yoshi -SLOW- -Loopable-.mp3::AudioStreamMP3::8146750310392098754::1729718456::1729718456::1::::<><>::
 Trajan Pro Bold.ttf::FontFile::7351674102099900904::1729633834::1729633834::1::::<><>::
 Turret.tscn::PackedScene::3737126169552690746::1729661818::0::1::::<><>::res://scripts/turret.gd<>uid://c7464ii0e0x76::::res://Playerbullet.tscn<>uid://bx5hqmnc2y145::::res://assets/cannon_frame0000.png
 Wall.tscn::PackedScene::61658084726019120::1729673320::0::1::::<><>::uid://d4ftlyej61ful::::res://wallattack.tscn<>res://scripts/Wall.gd
 wallattack.tscn::PackedScene::9206234939139052583::1729673320::0::1::::<><>::res://scripts/wallattack.gd<>uid://q7ihls12mnkk::::res://Spiritbullet.tscn<>uid://bipm3segv8puk::::res://assets/Enemy Movement Sprites.png
 Zombie1.tscn::PackedScene::6695277416766219199::1729673320::0::1::::<><>::res://scripts/Zombie1.gd<>uid://bl7l4ldama4ib::::res://Gravestone.tscn<>uid://bi0xhn3nr6580::::res://assets/zombie movement.png<>uid://bipm3segv8puk::::res://assets/Enemy Movement Sprites.png
-::res://assets/::1729646634
+::res://assets/::1729718767
 cannon_frame0000.png::CompressedTexture2D::4063149662132068176::1722562094::1722562094::1::::<><>::
 Cloud 1.png::CompressedTexture2D::1221616166950164176::1729577461::1729577475::1::::<><>::
 Cloud 2.png::CompressedTexture2D::7364770109056105690::1729577461::1729577475::1::::<><>::
@@ -85,49 +88,53 @@ lightning_v2_12.png::CompressedTexture2D::2774954860603506753::1729576668::17295
 lightning_v2_13.png::CompressedTexture2D::5394331303689502465::1729576668::1729576668::1::::<><>::
 mainlevbuild.png::CompressedTexture2D::3493666504753731399::1729456257::1729630452::1::::<><>::
 New_Piskel_1-ezgif.com-gif-to-sprite-converter.png::CompressedTexture2D::5864037386257560873::1729470942::1729470942::1::::<><>::
+PIGLBT.mp3::AudioStreamMP3::1257775285817093520::1729718456::1729718767::1::::<><>::
 placeholderbg.png::CompressedTexture2D::1133433513078630628::1729456257::1729456257::1::::<><>::
 proffe copy - Copy.png::CompressedTexture2D::6338131648663361362::1719413313::1719413313::1::::<><>::
 README.md::TextFile::-1::1719413313::0::1::::<><>::
 Slaughter.png::CompressedTexture2D::8030911943533306683::1717722901::1717722901::1::::<><>::
 Spark.png::CompressedTexture2D::7598503645625161469::1725494564::1725494564::1::::<><>::
+sprite-sheet.png::CompressedTexture2D::6206919106941700794::1729718456::1729718456::1::::<><>::
 tank_frame0000.png::CompressedTexture2D::8141478554373931868::1722562094::1722562094::1::::<><>::
 tank_frame0001.png::CompressedTexture2D::3188722836162546681::1722562094::1722562094::1::::<><>::
 Zeus.webp::CompressedTexture2D::6309542847316989463::1729456257::1729456257::1::::<><>::
 zombie bigg 2 movement.png::CompressedTexture2D::218827977580383706::1729456257::1729456257::1::::<><>::
 zombie movement.png::CompressedTexture2D::3000950594712525467::1729456257::1729456257::1::::<><>::
-::res://scripts/::1729673564
-AnimatedSprite2D.gd::GDScript::-1::1729647119::0::1::::<>AnimatedSprite2D<>::
+::res://scripts/::1729718707
+AnimatedSprite2D.gd::GDScript::-1::1729718178::0::1::::<>AnimatedSprite2D<>::
 BlockerBullet.gd::GDScript::-1::1729556867::0::1::::<>Area2D<>::
 Blockertile.gd::GDScript::-1::1729576160::0::1::::<>CharacterBody2D<>::
 Boltbullet2.gd::GDScript::-1::1729576160::0::1::::<>Area2D<>::
 boltbullet.gd::GDScript::-1::1729576160::0::1::::<>Area2D<>::
-Boss2.gd::GDScript::-1::1729665127::0::1::::<>CharacterBody2D<>::
+Boss2.gd::GDScript::-1::1729718560::0::1::::<>CharacterBody2D<>::
 Boss2bullet2.gd::GDScript::-1::1729576161::0::1::::<>Area2D<>::
-Boss3.gd::GDScript::-1::1729671227::0::1::::<>CharacterBody2D<>::
+Boss3.gd::GDScript::-1::1729718457::0::1::::<>CharacterBody2D<>::
 bossbullethitbox.gd::GDScript::-1::1729646806::0::1::::<>Area2D<>::
-Boss_2line.gd::GDScript::-1::1729661245::0::1::::<>Node2D<>::
-bullet2.gd::GDScript::-1::1729669699::0::1::::<>Area2D<>::
+Boss_2line.gd::GDScript::-1::1729710464::0::1::::<>Node2D<>::
+bullet2.gd::GDScript::-1::1729710464::0::1::::<>Area2D<>::
 Bulletcircle.gd::GDScript::-1::1729556448::0::1::::<>Area2D<>::
 cutscene1.gd::GDScript::-1::1725494564::0::1::::<>Control<>::
 cutscene2.gd::GDScript::-1::1725494564::0::1::::<>Control<>::
 Cutscene_3.gd::GDScript::-1::1729557544::0::1::::<>Control<>::
+Cutscene_4.gd::GDScript::-1::1729718457::0::1::::<>Control<>::
 global.gd::GDScript::-1::1729670286::0::1::::<>Node<>::
 Gravestone.gd::GDScript::-1::1729647119::0::1::::<>CharacterBody2D<>::
 healthbar.gd::GDScript::-1::1729555701::0::1::::<>ProgressBar<>::
-Lightning.gd::GDScript::-1::1729585317::0::1::::<>Area2D<>::
-LightningArea.gd::GDScript::-1::1729661544::0::1::::<>Area2D<>::
-mainmenu.gd::GDScript::-1::1729661245::0::1::::<>Control<>::
+Lightning.gd::GDScript::-1::1729710464::0::1::::<>Area2D<>::
+LightningArea.gd::GDScript::-1::1729718706::0::1::::<>Area2D<>::
+mainmenu.gd::GDScript::-1::1729718457::0::1::::<>Control<>::
 Megabulletcircle.gd::GDScript::-1::1729673415::0::1::::<>Area2D<>::
 Megabulletcirclelong.gd::GDScript::-1::1729555701::0::1::::<>Area2D<>::
-player.gd::GDScript::-1::1729673564::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1729718457::0::1::::<>CharacterBody2D<>::
 Playerbullet.gd::GDScript::-1::1729555701::0::1::::<>Area2D<>::
-portal.gd::GDScript::-1::1729557544::0::1::::<>Area2D<>::
+portal.gd::GDScript::-1::1729718707::0::1::::<>Area2D<>::
 Rotationlockanimate.gd::GDScript::-1::1729661245::0::1::::<>AnimatedSprite2D<>::
 Rotation_lock.gd::GDScript::-1::1729585318::0::1::::<>Area2D<>::
-Settings.gd::GDScript::-1::1729661245::0::1::::<>Control<>::
+Settings.gd::GDScript::-1::1729718457::0::1::::<>Control<>::
+Sounds.gd::GDScript::-1::1729718457::0::1::::<>Node<>::
 Spark2.gd::GDScript::-1::1729555701::0::1::::<>Area2D<>::
 Spark3.gd::GDScript::-1::1729555701::0::1::::<>Area2D<>::
-Spark.gd::GDScript::-1::1729669699::0::1::::<>Area2D<>::
+Spark.gd::GDScript::-1::1729710464::0::1::::<>Area2D<>::
 Spawn1.gd::GDScript::-1::1729670415::0::1::::<>CharacterBody2D<>::
 Spiritbullet.gd::GDScript::-1::1729670653::0::1::::<>Area2D<>::
 Teleport.gd::GDScript::-1::1729661245::0::1::::<>Area2D<>::
