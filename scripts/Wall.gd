@@ -16,4 +16,5 @@ func _on_despawn_timeout():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	pass
+	if global.boss_3_hp == 0:
+		queue_free()

@@ -15,6 +15,8 @@ func _ready():
 
 
 func _process(delta):
+	if global.boss_3_hp == 0:
+		queue_free()
 	if home == 1:
 		move_local_x(speed * delta)
 		direction = (get_node("/root/Map/Player").global_position - global_position)
