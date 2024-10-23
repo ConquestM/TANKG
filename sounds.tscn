@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://xobx587votvn"]
+
+[ext_resource type="Script" path="res://scripts/Sounds.gd" id="1_tobk6"]
+[ext_resource type="AudioStream" uid="uid://docl11gjtavp7" path="res://The White Piano Key - Leaving Yoshi -SLOW- -Loopable-.mp3" id="2_v51pw"]
+
+[node name="Sounds" type="Node"]
+script = ExtResource("1_tobk6")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_v51pw")

@@ -1,5 +1,4 @@
 extends Control
-@onready var global = get_node("/root/global")
 @export var _theme: Theme
 @export var default_theme: Theme
 
@@ -7,6 +6,7 @@ func _ready():
 	global.boss_hp = 100
 	global.boss_2_hp = 100
 	global.boss_3_hp = 100
+	sounds._main_menu_music()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -19,6 +19,7 @@ func _on_button_pressed():
 	global.boss_3_hp = global.boss_3_hp*global.boss_hp_mult
 	global.hp = 15
 	global.level = 1
+	sounds._main_menu_exit()
 	get_tree().change_scene_to_file("res://Cutscene_1.tscn")
 
 # Closes the game.

@@ -8,3 +8,5 @@ res://BOss1.tscn
 res://Portal.tscn
 res://MainMenu.tscn
 res://Settings.tscn
+res://sounds.tscn
+res://scripts/Settings.gd
