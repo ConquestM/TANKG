@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var zombie_scene: PackedScene
 @export var wall_scene: PackedScene
 @export var attack_scene: PackedScene
+@export var wall_attack_scene: PackedScene
 @export var fire_timer:Node
 @onready var health_bar = $CanvasLayer/Healthbar
 var screen_size = get_viewport_rect().size
@@ -63,6 +64,12 @@ func _on_firetimer_timeout():
 			add_sibling(spawner)
 			spawner.position = Vector2(rnd_x, rnd_y)
 			attack = 0
+			if global.wall_attack == 1:
+				var wall_attack = wall_attack_scene.instantiate()
+				wall_attack.global_position = $CollisionShape2D/AnimatedSprite2D/wallspawn.global_position
+				wall_attack.rotation = $CollisionShape2D.rotation
+				add_sibling(wall_attack)
+				global.wall_attack = 0
 		attack = 0
 
 

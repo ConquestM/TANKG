@@ -14,7 +14,7 @@ var friendly = false
 func _process(delta):
 	move_local_x(speed * delta)
 	despawn += 1
-	rotation_degrees += 6
+	rotation_degrees += 6 * 100 * delta
 	if despawn > 3000:
 		queue_free()
 

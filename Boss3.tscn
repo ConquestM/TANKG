@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://cuqm3glsshood"]
+[gd_scene load_steps=18 format=3 uid="uid://cuqm3glsshood"]
 
 [ext_resource type="Script" path="res://scripts/Boss3.gd" id="1_6ohnh"]
 [ext_resource type="PackedScene" uid="uid://bopd8ltnba6ol" path="res://Spawn1.tscn" id="4_awiot"]
 [ext_resource type="PackedScene" uid="uid://d4nhehjpgots4" path="res://BlockerBullet.tscn" id="4_hjerf"]
 [ext_resource type="PackedScene" uid="uid://c2niigo3nbyw2" path="res://Zombie1.tscn" id="5_0b6ka"]
 [ext_resource type="PackedScene" uid="uid://bl7l4ldama4ib" path="res://Gravestone.tscn" id="5_ryl8a"]
+[ext_resource type="PackedScene" uid="uid://44q8uem4qu7" path="res://Wall.tscn" id="6_2lslc"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="6_v7fj4"]
 [ext_resource type="Texture2D" uid="uid://bhkcqqcc58i35" path="res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png" id="7_eohr5"]
 [ext_resource type="Script" path="res://scripts/AnimatedSprite2D.gd" id="8_ygj4j"]
@@ -59,6 +60,7 @@ shield_bullet_scene = ExtResource("4_hjerf")
 spawner_scene = ExtResource("4_awiot")
 zombie_scene = ExtResource("5_0b6ka")
 wall_scene = ExtResource("5_ryl8a")
+wall_attack_scene = ExtResource("6_2lslc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_4ioo3")
@@ -82,6 +84,9 @@ metadata/Boss = true
 sprite_frames = SubResource("SpriteFrames_xj77m")
 frame_progress = 0.105662
 script = ExtResource("8_ygj4j")
+
+[node name="wallspawn" type="Node2D" parent="CollisionShape2D/AnimatedSprite2D"]
+position = Vector2(303, -70)
 
 [node name="Teletimer" type="Timer" parent="."]
 one_shot = true

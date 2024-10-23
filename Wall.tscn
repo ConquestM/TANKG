@@ -1,0 +1,482 @@
+[gd_scene load_steps=3 format=3 uid="uid://44q8uem4qu7"]
+
+[ext_resource type="PackedScene" uid="uid://d4ftlyej61ful" path="res://wallattack.tscn" id="1_2w4l4"]
+[ext_resource type="Script" path="res://scripts/Wall.gd" id="1_86dl5"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_86dl5")
+
+[node name="Despawn" type="Timer" parent="."]
+wait_time = 14.0
+one_shot = true
+autostart = true
+
+[node name="CharacterBody2D3" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(3, 0)
+
+[node name="CharacterBody2D9" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(7, 39)
+
+[node name="CharacterBody2D16" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(6, 108)
+
+[node name="CharacterBody2D15" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(1, 97)
+
+[node name="CharacterBody2D14" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(13, 85)
+
+[node name="CharacterBody2D13" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(1, 84)
+
+[node name="CharacterBody2D12" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(13, 71)
+
+[node name="CharacterBody2D11" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(0, 70)
+
+[node name="CharacterBody2D18" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(7, 57)
+
+[node name="CharacterBody2D17" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-5, 57)
+
+[node name="CharacterBody2D19" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(9, 119)
+
+[node name="CharacterBody2D27" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(8, 188)
+
+[node name="CharacterBody2D26" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(3, 177)
+
+[node name="CharacterBody2D25" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(15, 165)
+
+[node name="CharacterBody2D24" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(3, 164)
+
+[node name="CharacterBody2D23" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(15, 151)
+
+[node name="CharacterBody2D28" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(2, 150)
+
+[node name="CharacterBody2D22" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(9, 137)
+
+[node name="CharacterBody2D21" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-3, 137)
+
+[node name="CharacterBody2D29" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(12, 164)
+
+[node name="CharacterBody2D37" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(11, 233)
+
+[node name="CharacterBody2D36" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(6, 222)
+
+[node name="CharacterBody2D35" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(18, 210)
+
+[node name="CharacterBody2D34" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(6, 209)
+
+[node name="CharacterBody2D33" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(18, 196)
+
+[node name="CharacterBody2D32" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(5, 195)
+
+[node name="CharacterBody2D31" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(12, 182)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(5, 39)
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(5, 11)
+
+[node name="CharacterBody2D76" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(5, 55)
+
+[node name="CharacterBody2D88" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(0, 163)
+
+[node name="CharacterBody2D87" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-5, 152)
+
+[node name="CharacterBody2D86" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(7, 140)
+
+[node name="CharacterBody2D85" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-5, 139)
+
+[node name="CharacterBody2D84" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(7, 126)
+
+[node name="CharacterBody2D83" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-6, 125)
+
+[node name="CharacterBody2D82" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(1, 112)
+
+[node name="CharacterBody2D81" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-11, 112)
+
+[node name="CharacterBody2D89" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(4, 139)
+
+[node name="CharacterBody2D98" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(3, 208)
+
+[node name="CharacterBody2D97" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-2, 197)
+
+[node name="CharacterBody2D96" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(10, 185)
+
+[node name="CharacterBody2D95" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-2, 184)
+
+[node name="CharacterBody2D94" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(10, 171)
+
+[node name="CharacterBody2D93" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-3, 170)
+
+[node name="CharacterBody2D92" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(4, 157)
+
+[node name="CharacterBody2D91" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-8, 157)
+
+[node name="CharacterBody2D99" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(4, 183)
+
+[node name="CharacterBody2D108" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(3, 252)
+
+[node name="CharacterBody2D107" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-2, 241)
+
+[node name="CharacterBody2D106" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(10, 229)
+
+[node name="CharacterBody2D105" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-2, 228)
+
+[node name="CharacterBody2D104" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(10, 215)
+
+[node name="CharacterBody2D103" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-3, 214)
+
+[node name="CharacterBody2D102" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(4, 201)
+
+[node name="CharacterBody2D101" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-8, 201)
+
+[node name="CharacterBody2D109" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(2, 242)
+
+[node name="CharacterBody2D117" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(1, 311)
+
+[node name="CharacterBody2D116" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-4, 300)
+
+[node name="CharacterBody2D115" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(8, 288)
+
+[node name="CharacterBody2D114" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-4, 287)
+
+[node name="CharacterBody2D113" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(8, 274)
+
+[node name="CharacterBody2D112" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-5, 273)
+
+[node name="CharacterBody2D111" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(2, 260)
+
+[node name="CharacterBody2D110" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-10, 260)
+
+[node name="CharacterBody2D119" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(0, 159)
+
+[node name="CharacterBody2D128" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-1, 228)
+
+[node name="CharacterBody2D127" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-6, 217)
+
+[node name="CharacterBody2D126" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(6, 205)
+
+[node name="CharacterBody2D125" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-6, 204)
+
+[node name="CharacterBody2D124" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(6, 191)
+
+[node name="CharacterBody2D123" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-7, 190)
+
+[node name="CharacterBody2D122" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(0, 177)
+
+[node name="CharacterBody2D121" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-12, 177)
+
+[node name="CharacterBody2D129" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(6, 301)
+
+[node name="CharacterBody2D136" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(12, 347)
+
+[node name="CharacterBody2D135" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(0, 346)
+
+[node name="CharacterBody2D134" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(12, 333)
+
+[node name="CharacterBody2D133" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-1, 332)
+
+[node name="CharacterBody2D132" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(6, 319)
+
+[node name="CharacterBody2D131" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-6, 319)
+
+[node name="CharacterBody2D130" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(1, 306)
+
+[node name="CharacterBody2D120" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-5, 164)
+
+[node name="CharacterBody2D118" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-3, 247)
+
+[node name="CharacterBody2D100" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-1, 188)
+
+[node name="CharacterBody2D90" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-1, 144)
+
+[node name="CharacterBody2D77" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-4, 99)
+
+[node name="CharacterBody2D78" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-1, 14)
+
+[node name="CharacterBody2D156" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-2, 83)
+
+[node name="CharacterBody2D155" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-7, 72)
+
+[node name="CharacterBody2D154" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(5, 60)
+
+[node name="CharacterBody2D153" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-7, 59)
+
+[node name="CharacterBody2D152" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(5, 46)
+
+[node name="CharacterBody2D151" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-8, 45)
+
+[node name="CharacterBody2D150" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-1, 32)
+
+[node name="CharacterBody2D149" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-13, 32)
+
+[node name="CharacterBody2D157" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(1, 94)
+
+[node name="CharacterBody2D79" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-6, 19)
+
+[node name="CharacterBody2D158" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(0, 182)
+
+[node name="CharacterBody2D159" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(12, 208)
+
+[node name="CharacterBody2D167" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(11, 277)
+
+[node name="CharacterBody2D166" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(6, 266)
+
+[node name="CharacterBody2D165" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(18, 254)
+
+[node name="CharacterBody2D164" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(6, 253)
+
+[node name="CharacterBody2D163" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(18, 240)
+
+[node name="CharacterBody2D162" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(5, 239)
+
+[node name="CharacterBody2D161" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(12, 226)
+
+[node name="CharacterBody2D168" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(10, 267)
+
+[node name="CharacterBody2D175" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(9, 336)
+
+[node name="CharacterBody2D174" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(4, 325)
+
+[node name="CharacterBody2D173" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(16, 313)
+
+[node name="CharacterBody2D172" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(4, 312)
+
+[node name="CharacterBody2D171" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(16, 299)
+
+[node name="CharacterBody2D170" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(3, 298)
+
+[node name="CharacterBody2D169" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(10, 285)
+
+[node name="CharacterBody2D176" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-2, 285)
+
+[node name="CharacterBody2D178" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(8, 184)
+
+[node name="CharacterBody2D187" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(7, 253)
+
+[node name="CharacterBody2D186" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(2, 242)
+
+[node name="CharacterBody2D185" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(14, 230)
+
+[node name="CharacterBody2D184" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(2, 229)
+
+[node name="CharacterBody2D183" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(14, 216)
+
+[node name="CharacterBody2D182" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(1, 215)
+
+[node name="CharacterBody2D181" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(8, 202)
+
+[node name="CharacterBody2D180" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-4, 202)
+
+[node name="CharacterBody2D191" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(14, 344)
+
+[node name="CharacterBody2D190" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(2, 344)
+
+[node name="CharacterBody2D189" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(9, 331)
+
+[node name="CharacterBody2D179" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(3, 189)
+
+[node name="CharacterBody2D188" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(14, 326)
+
+[node name="CharacterBody2D177" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(5, 272)
+
+[node name="CharacterBody2D208" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(0, 226)
+
+[node name="CharacterBody2D160" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(7, 213)
+
+[node name="CharacterBody2D30" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(7, 169)
+
+[node name="CharacterBody2D20" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(4, 124)
+
+[node name="CharacterBody2D10" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(2, 44)
+
+[node name="CharacterBody2D8" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(13, 64)
+
+[node name="CharacterBody2D222" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(1, 82)
+
+[node name="CharacterBody2D7" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(16, 50)
+
+[node name="CharacterBody2D223" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(8, 69)
+
+[node name="CharacterBody2D4" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(8, 25)
+
+[node name="CharacterBody2D215" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(10, 68)
+
+[node name="CharacterBody2D214" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(3, 81)
+
+[node name="CharacterBody2D80" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(-2, 68)
+
+[node name="CharacterBody2D209" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(9, 119)
+
+[node name="CharacterBody2D210" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(4, 108)
+
+[node name="CharacterBody2D211" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(16, 96)
+
+[node name="CharacterBody2D212" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(4, 95)
+
+[node name="CharacterBody2D213" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(16, 82)
+
+[node name="CharacterBody2D216" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(12, 133)
+
+[node name="CharacterBody2D217" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(7, 122)
+
+[node name="CharacterBody2D218" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(19, 110)
+
+[node name="CharacterBody2D219" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(7, 109)
+
+[node name="CharacterBody2D220" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(19, 96)
+
+[node name="CharacterBody2D224" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(6, 95)
+
+[node name="CharacterBody2D221" parent="." instance=ExtResource("1_2w4l4")]
+position = Vector2(13, 82)
+
+[connection signal="timeout" from="Despawn" to="." method="_on_despawn_timeout"]

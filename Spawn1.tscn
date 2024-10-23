@@ -120,13 +120,6 @@ shape = SubResource("CircleShape2D_4ioo3")
 metadata/Spawn = true
 metadata/Tile = true
 
-[node name="Healthbar" parent="." instance=ExtResource("4_mpnp8")]
-offset_left = 128.0
-offset_top = -24.0
-offset_right = 158.0
-offset_bottom = -20.0
-pivot_offset = Vector2(16, 26)
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(142, 2)
 scale = Vector2(2.5625, 2.46875)
@@ -136,6 +129,14 @@ autoplay = "ghopst"
 frame_progress = 0.541357
 offset = Vector2(0.84211, -1.64103)
 script = SubResource("GDScript_khan6")
+
+[node name="Healthbar" parent="." instance=ExtResource("4_mpnp8")]
+offset_left = 128.0
+offset_top = -24.0
+offset_right = 158.0
+offset_bottom = -20.0
+pivot_offset = Vector2(16, 26)
+metadata/_edit_use_anchors_ = true
 
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
 [connection signal="area_entered" from="CollisionShape2D/Area2D2" to="." method="_on_area_2d_area_entered"]
