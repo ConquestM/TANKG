@@ -28,7 +28,7 @@ func _on_h_slider_value_changed(value):
 
 # Returns to the main menu.
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://mainmenu.tscn")
+	get_tree().change_scene_to_file("res://main_menu.tscn")
 
 
 func _on_timer_timeout():
