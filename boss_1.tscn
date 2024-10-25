@@ -1,0 +1,107 @@
+[gd_scene load_steps=10 format=3 uid="uid://c27rlmxl5mmbk"]
+
+[ext_resource type="Script" path="res://scripts/boss_1.tres.gd" id="1_kjabm"]
+[ext_resource type="PackedScene" uid="uid://bjmfaw432i8kw" path="res://spark.tscn" id="2_t326g"]
+[ext_resource type="PackedScene" uid="uid://ccuc8cahwt677" path="res://bolt_bullet.tscn" id="3_t7pd4"]
+[ext_resource type="PackedScene" uid="uid://bpemhh5wfb7ow" path="res://portal.tscn" id="4_k5na3"]
+[ext_resource type="PackedScene" uid="uid://ba2fjsu2in8kg" path="res://lightning_area.tscn" id="5_10o8p"]
+[ext_resource type="Texture2D" uid="uid://cv5nipxf82ral" path="res://assets/Zeus.webp" id="6_ks2y7"]
+[ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://health_bar.tscn" id="7_77csc"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://facon.ttf" id="8_ens4o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
+radius = 59.3043
+
+[node name="Bossbody" type="CharacterBody2D"]
+script = ExtResource("1_kjabm")
+mega_bullet_scene = ExtResource("2_t326g")
+bullet_scene = ExtResource("3_t7pd4")
+portal_scene = ExtResource("4_k5na3")
+lightning_scene = ExtResource("5_10o8p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9.53674e-07, 1.90735e-06)
+scale = Vector2(0.135181, 0.135181)
+texture = ExtResource("6_ks2y7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4ioo3")
+metadata/Boss = true
+
+[node name="Firetimer" type="Timer" parent="CollisionShape2D"]
+wait_time = 0.9
+one_shot = true
+autostart = true
+
+[node name="Boss_bullet_spawn" type="Node2D" parent="CollisionShape2D"]
+
+[node name="Area2D2" type="Area2D" parent="CollisionShape2D"]
+metadata/Boss = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/Area2D2"]
+shape = SubResource("CircleShape2D_4ioo3")
+metadata/Boss = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Healthbar" parent="CanvasLayer" instance=ExtResource("7_77csc")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -350.5
+offset_top = -16.0
+offset_right = 350.5
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+show_percentage = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Bosslabel" type="Label" parent="CanvasLayer/Healthbar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.0
+offset_top = -29.0
+offset_right = 37.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_ens4o")
+theme_override_font_sizes/font_size = 25
+text = "ZEUS"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -297.0
+offset_top = -50.0
+offset_right = 297.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_ens4o")
+theme_override_font_sizes/font_size = 100
+text = "GOD SLAIN"
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="CanvasLayer"]
+wait_time = 3.0
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="CanvasLayer"]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="CanvasLayer/Timer2" to="." method="_on_timer_2_timeout"]

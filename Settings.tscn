@@ -1,8 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://5axocs4823aq"]
 
-[ext_resource type="Script" path="res://scripts/Settings.gd" id="1_xmt3x"]
-[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="2_ob4k4"]
-[ext_resource type="FontFile" uid="uid://dc0g87d43xkdc" path="res://Trajan Pro Bold.ttf" id="3_j1lxf"]
+[ext_resource type="Script" path="res://scripts/settings.gd" id="1_xmt3x"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://facon.ttf" id="2_ob4k4"]
+[ext_resource type="FontFile" uid="uid://dc0g87d43xkdc" path="res://font.ttf" id="3_j1lxf"]
+
 
 [sub_resource type="Theme" id="Theme_hxciy"]
 default_font = ExtResource("2_ob4k4")

@@ -1,13 +1,16 @@
 extends Control
-@onready var global = get_node("/root/global")
-@onready var hslider = $CanvasLayer/HSlider
-@onready var vslider = $CanvasLayer/Soundslider
+
 @export var _theme: Theme
 @export var default_theme: Theme
 @export var volume_name: String
 var volume_index: int
+@onready var global = get_node("/root/global")
+@onready var hslider = $CanvasLayer/HSlider
+@onready var vslider = $CanvasLayer/Soundslider
+
 
 # Called when the node enters the scene tree for the first time.
+
 func _ready():
 	volume_index = AudioServer.get_bus_index(volume_name)
 	hslider.value = global.boss_hp_mult

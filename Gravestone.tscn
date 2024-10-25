@@ -1,7 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bl7l4ldama4ib"]
 
-[ext_resource type="Script" path="res://scripts/Gravestone.gd" id="1_semo5"]
-[ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://Healthbar.tscn" id="2_gtj34"]
+[ext_resource type="Script" path="res://scripts/gravestone.gd" id="1_semo5"]
+[ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://health_bar.tscn" id="2_gtj34"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u0f8j"]
 size = Vector2(4, 10)

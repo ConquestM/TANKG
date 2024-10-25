@@ -1,6 +1,8 @@
 extends Node2D
-@export var bullet_scene: PackedScene
+
 var can_shoot = true
+@export var bullet_scene: PackedScene
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

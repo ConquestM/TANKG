@@ -1,5 +1,4 @@
 extends CharacterBody2D
-@onready var health_bar = $CanvasLayer/Healthbar
 @export var speed = 100
 @export var bullet_scene: PackedScene
 var can_shoot = true
@@ -14,6 +13,8 @@ var saved_direction = 0
 var saved_vert_direction = 0
 var screen_size
 var health = global.hp : set = _set_health
+@onready var health_bar = $CanvasLayer/Healthbar
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -90,8 +91,7 @@ func _process(delta):
 	if global.hp < 0 or global.hp == 0:
 		sounds._battle_end()
 		get_tree().change_scene_to_file("res://Mainmenu.tscn")
-		
-		global.hp = 15
+		global.hp = 99
 	if dashing or global.iframes:
 		$Area2D/CollisionShape2D.disabled = true
 	if not dashing and not global.iframes:

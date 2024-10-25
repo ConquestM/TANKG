@@ -1,0 +1,143 @@
+[gd_scene load_steps=17 format=3 uid="uid://c2niigo3nbyw2"]
+
+[ext_resource type="Script" path="res://scripts/zombie_1.gd" id="1_05lv5"]
+[ext_resource type="PackedScene" uid="uid://bl7l4ldama4ib" path="res://gravestone.tscn" id="2_e4vtr"]
+[ext_resource type="Texture2D" uid="uid://bi0xhn3nr6580" path="res://assets/zombie movement.png" id="3_4vmmp"]
+[ext_resource type="Texture2D" uid="uid://bipm3segv8puk" path="res://assets/Enemy Movement Sprites.png" id="3_k6kav"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
+radius = 40.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ot06"]
+atlas = ExtResource("3_k6kav")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87mdg"]
+atlas = ExtResource("3_k6kav")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lwm6"]
+atlas = ExtResource("3_4vmmp")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84rwv"]
+atlas = ExtResource("3_4vmmp")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxj6a"]
+atlas = ExtResource("3_4vmmp")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sukh5"]
+atlas = ExtResource("3_4vmmp")
+region = Rect2(0, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1rfhi"]
+atlas = ExtResource("3_4vmmp")
+region = Rect2(48, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oyggh"]
+atlas = ExtResource("3_4vmmp")
+region = Rect2(96, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kra8a"]
+atlas = ExtResource("3_4vmmp")
+region = Rect2(0, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4t46o"]
+atlas = ExtResource("3_4vmmp")
+region = Rect2(48, 96, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mnqt7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ot06")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87mdg")
+}],
+"loop": true,
+"name": &"Run2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lwm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84rwv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yxj6a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sukh5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1rfhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oyggh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kra8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4t46o")
+}],
+"loop": true,
+"name": &"run",
+"speed": 20.0
+}]
+
+[node name="zombie" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_05lv5")
+grave_scene = ExtResource("2_e4vtr")
+
+[node name="Area2D2" type="Area2D" parent="."]
+scale = Vector2(0.25, 0.25)
+metadata/Spawn = true
+metadata/Tile = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+scale = Vector2(2.1, 2.1)
+shape = SubResource("CircleShape2D_4ioo3")
+metadata/Spawn = true
+metadata/Tile = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_4ioo3")
+metadata/Spawn = true
+metadata/Tile = true
+
+[node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(1, 1, 1, 0.6)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="CollisionShape2D"]
+offset_left = 9.0
+offset_top = -3.0
+offset_right = 23.0
+offset_bottom = 11.0
+scale = Vector2(0.5, 0.5)
+color = Color(1, 1, 1, 0.6)
+metadata/_edit_use_anchors_ = true
+
+[node name="Die" type="Timer" parent="CollisionShape2D"]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mnqt7")
+animation = &"run"
+
+[connection signal="area_entered" from="Area2D2" to="." method="_on_area_2d_2_area_entered"]
+[connection signal="timeout" from="CollisionShape2D/Die" to="." method="_on_die_timeout"]

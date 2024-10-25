@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://44q8uem4qu7"]
 
-[ext_resource type="PackedScene" uid="uid://d4ftlyej61ful" path="res://wallattack.tscn" id="1_2w4l4"]
-[ext_resource type="Script" path="res://scripts/Wall.gd" id="1_86dl5"]
+[ext_resource type="PackedScene" uid="uid://d4ftlyej61ful" path="res://wall_attack.tscn" id="1_2w4l4"]
+[ext_resource type="Script" path="res://scripts/wall.gd" id="1_86dl5"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_86dl5")

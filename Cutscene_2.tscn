@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://c8qr1b4rw3jin"]
 
-[ext_resource type="Script" path="res://scripts/cutscene2.gd" id="1_p4hal"]
-[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="2_h6px8"]
+[ext_resource type="Script" path="res://scripts/cutscene_2_1.gd" id="1_p4hal"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://facon.ttf" id="2_h6px8"]
+
 
 [node name="Cutscene2" type="Control"]
 layout_mode = 3

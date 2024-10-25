@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://bgrs8dok4spw3"]
 
-[ext_resource type="Script" path="res://scripts/Cutscene_4.gd" id="1_fpc35"]
-[ext_resource type="FontFile" uid="uid://dc0g87d43xkdc" path="res://Trajan Pro Bold.ttf" id="2_bb6jr"]
+[ext_resource type="Script" path="res://scripts/cutscene_4.gd" id="1_fpc35"]
+[ext_resource type="FontFile" uid="uid://dc0g87d43xkdc" path="res://font.ttf" id="2_bb6jr"]
+
 
 [node name="Cutscene_4" type="Control"]
 layout_mode = 3

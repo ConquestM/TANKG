@@ -1,11 +1,11 @@
 extends Area2D
-@export var spark_2_scene: PackedScene
-@onready var global = get_node("/root/global")
 
-var speed = 320
+@export var spark_2_scene: PackedScene
+const SPEED = 320
 var despawn = 0
 var friendly = false
-# Called when the node enters the scene tree for the first time.
+@onready var global = get_node("/root/global")
+
 
 # Begins the replication process. 
 func _ready():
@@ -29,16 +29,14 @@ func _on_meiosis_timeout():
 	spark_2_c.rotation = global_rotation-170
 	
 	$Meiosis.start()
-	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 # Moves the spark.
 func _process(delta):
-	move_local_x(speed * delta)
+	move_local_x(SPEED * delta)
 
-
-
+# Function for damage/despawning.
 func _on_area_entered(area):
 	if area.has_meta("Block"):
 		queue_free()
@@ -47,10 +45,13 @@ func _on_area_entered(area):
 		global.iframes = true
 		queue_free()
 
+
 # Kills the spark after a set time.
 func _on_Apoptosis_timeout():
 	queue_free()
 
+
 # # Kills the spark on exiting the screen.
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()
+
