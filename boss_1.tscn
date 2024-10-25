@@ -7,12 +7,13 @@
 [ext_resource type="PackedScene" uid="uid://ba2fjsu2in8kg" path="res://lightning_area.tscn" id="5_10o8p"]
 [ext_resource type="Texture2D" uid="uid://cv5nipxf82ral" path="res://assets/Zeus.webp" id="6_ks2y7"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://health_bar.tscn" id="7_77csc"]
-[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="8_ens4o"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://facon.ttf" id="8_ens4o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 59.3043
 
 [node name="Bossbody" type="CharacterBody2D"]
+z_index = 4096
 script = ExtResource("1_kjabm")
 mega_bullet_scene = ExtResource("2_t326g")
 bullet_scene = ExtResource("3_t7pd4")
@@ -99,7 +100,7 @@ wait_time = 3.0
 one_shot = true
 
 [node name="Timer2" type="Timer" parent="CanvasLayer"]
-wait_time = 3.0
+wait_time = 0.5
 one_shot = true
 
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]

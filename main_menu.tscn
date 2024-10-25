@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bl07530pf7uhq"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_kuba6"]
-[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="2_jetkk"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://facon.ttf" id="2_jetkk"]
 [ext_resource type="FontFile" uid="uid://dc0g87d43xkdc" path="res://font.ttf" id="3_p05qw"]
 
 [sub_resource type="Theme" id="Theme_6wdmb"]

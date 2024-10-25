@@ -12,3 +12,6 @@ res://boss_2_line.tscn
 res://blocker_bullet.tscn
 res://bolt_bullet.tscn
 res://boss_1.tscn
+res://scripts/spirit_bullet.gd
+res://boss_2.tscn
+res://level_2.tscn

@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://cou1mvn4ls013" path="res://player.tscn" id="3_w0lvs"]
 [ext_resource type="PackedScene" uid="uid://btij6l30ipepu" path="res://turret.tscn" id="4_0tx4c"]
 
-
 [node name="Map" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [325.0]
 metadata/_edit_vertical_guides_ = [574.0]

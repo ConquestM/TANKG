@@ -22,6 +22,7 @@ func _process(delta):
 		queue_free()
 	if home == 1:
 		move_local_x(speed * delta)
+		if get_node_or_null("CollisionShape2D") == null: return
 		direction = (get_node("/root/Map/Player").global_position - global_position)
 		var target_Rotation = direction.angle()
 		rotation = lerp_angle(rotation, target_Rotation, 10 * delta)

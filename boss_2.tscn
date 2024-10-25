@@ -1,10 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://r885hmnubc6o"]
+[gd_scene load_steps=18 format=3 uid="uid://r885hmnubc6o"]
 
 [ext_resource type="Script" path="res://scripts/boss_2.gd" id="1_5vbar"]
 [ext_resource type="PackedScene" uid="uid://bx1m47ro2e150" path="res://bullet_circle.tscn" id="2_7i1jr"]
 [ext_resource type="PackedScene" uid="uid://d3pd7hakaer4d" path="res://boss_2_bullet.tscn" id="3_l5n4s"]
 [ext_resource type="PackedScene" uid="uid://bj23l42rws8ai" path="res://boss_2_bullet_2.tscn" id="4_nvuwm"]
-[ext_resource type="PackedScene" uid="uid://d3nngbjfswteu" path="res://teleport.tscn" id="5_7gxdh"]
 [ext_resource type="PackedScene" uid="uid://cdsig8201yvov" path="res://boss_2_line.tscn" id="6_820n8"]
 [ext_resource type="PackedScene" uid="uid://bpemhh5wfb7ow" path="res://portal.tscn" id="7_8o4ri"]
 [ext_resource type="Texture2D" uid="uid://cpst3r5ixpdbt" path="res://assets/New_Piskel_1-ezgif.com-gif-to-sprite-converter.png" id="8_0f2ov"]
@@ -56,7 +55,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
-radius = 11.7047
+radius = 72.3671
 
 [node name="Bossbody2" type="CharacterBody2D"]
 z_index = 100
@@ -64,7 +63,6 @@ script = ExtResource("1_5vbar")
 bullet_scene = ExtResource("2_7i1jr")
 bullet_hell_scene = ExtResource("3_l5n4s")
 bullet_hell_2_scene = ExtResource("4_nvuwm")
-teleport_scene = ExtResource("5_7gxdh")
 line_scene = ExtResource("6_820n8")
 portal_scene = ExtResource("7_8o4ri")
 
@@ -147,7 +145,7 @@ wait_time = 3.0
 one_shot = true
 
 [node name="Timer2" type="Timer" parent="CanvasLayer"]
-wait_time = 3.0
+wait_time = 0.5
 one_shot = true
 
 [connection signal="timeout" from="CollisionShape2D/Firetimer" to="." method="_on_firetimer_timeout"]
