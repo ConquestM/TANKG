@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bl07530pf7uhq"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_kuba6"]
-[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://facon.ttf" id="2_jetkk"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="2_jetkk"]
 [ext_resource type="FontFile" uid="uid://dc0g87d43xkdc" path="res://font.ttf" id="3_p05qw"]
 
 [sub_resource type="Theme" id="Theme_6wdmb"]
@@ -112,38 +112,6 @@ theme_override_font_sizes/font_size = 50
 text = "Quit"
 flat = true
 
-[node name="Level2" type="Button" parent="CanvasLayer"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 253.0
-offset_top = 72.0
-offset_right = 315.0
-offset_bottom = 103.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_hover_color = Color(6, 1, 6, 1)
-text = "Level 2"
-flat = true
-
-[node name="Level3" type="Button" parent="CanvasLayer"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 316.0
-offset_top = 73.0
-offset_right = 378.0
-offset_bottom = 104.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_hover_color = Color(6, 1, 6, 1)
-text = "Level 3"
-flat = true
-
 [node name="Settings" type="Button" parent="CanvasLayer"]
 anchors_preset = 8
 anchor_left = 0.5
@@ -169,12 +137,6 @@ flat = true
 [connection signal="mouse_entered" from="CanvasLayer/Quit" to="." method="_on_quit_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/Quit" to="." method="_on_quit_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Quit" to="." method="_on_button_quit"]
-[connection signal="mouse_entered" from="CanvasLayer/Level2" to="." method="_on_level_2_mouse_entered"]
-[connection signal="mouse_exited" from="CanvasLayer/Level2" to="." method="_on_level_2_mouse_exited"]
-[connection signal="pressed" from="CanvasLayer/Level2" to="." method="_on_level_2_pressed"]
-[connection signal="mouse_entered" from="CanvasLayer/Level3" to="." method="_on_level_3_mouse_entered"]
-[connection signal="mouse_exited" from="CanvasLayer/Level3" to="." method="_on_level_3_mouse_exited"]
-[connection signal="pressed" from="CanvasLayer/Level3" to="." method="_on_level_3_pressed"]
 [connection signal="mouse_entered" from="CanvasLayer/Settings" to="." method="_on_settings_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/Settings" to="." method="_on_settings_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Settings" to="." method="_on_settings_pressed"]

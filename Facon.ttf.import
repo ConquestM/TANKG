@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cfqhh4yntr6j2"
-path="res://.godot/imported/facon.ttf-d925507e807fadfb909281c94e772cd6.fontdata"
+path="res://.godot/imported/Facon.ttf-ae5ae3e25865c3a2e631c4ee6352577a.fontdata"
 
 [deps]
 
-source_file="res://facon.ttf"
-dest_files=["res://.godot/imported/facon.ttf-d925507e807fadfb909281c94e772cd6.fontdata"]
+source_file="res://Facon.ttf"
+dest_files=["res://.godot/imported/Facon.ttf-ae5ae3e25865c3a2e631c4ee6352577a.fontdata"]
 
 [params]
 

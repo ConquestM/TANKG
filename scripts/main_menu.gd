@@ -24,24 +24,6 @@ func _on_button_pressed():
 func _on_button_quit():
 	get_tree().quit()
 
-# Takes the user to the second  level and sets the boss Health.
-func _on_level_2_pressed():
-	global.boss_hp = global.boss_hp*global.boss_hp_mult
-	global.boss_2_hp = global.boss_2_hp*global.boss_hp_mult
-	global.boss_3_hp = global.boss_3_hp*global.boss_hp_mult
-	global.hp = 15
-	global.level = 2
-	get_tree().change_scene_to_file("res://cutscene_2.tscn")
-
-# Takes the user to the third level and sets the boss Health.
-func _on_level_3_pressed():
-	global.boss_hp = global.boss_hp*global.boss_hp_mult
-	global.boss_2_hp = global.boss_2_hp*global.boss_hp_mult
-	global.boss_3_hp = global.boss_3_hp*global.boss_hp_mult
-	global.hp = 15
-	global.level = 3
-	get_tree().change_scene_to_file("res://cutscene_3.tscn")
-
 # Takes the user to the settings screen/menu
 func _on_settings_pressed():
 	get_tree().change_scene_to_file("res://settings.tscn")
@@ -68,20 +50,6 @@ func _on_quit_mouse_exited():
 	$CanvasLayer/Quit.theme = default_theme
 
 
-func _on_level_2_mouse_entered():
-	$CanvasLayer/Level2.theme = _theme
-
-
-func _on_level_2_mouse_exited():
-	$CanvasLayer/Level2.theme = default_theme
-
-
-func _on_level_3_mouse_entered():
-	$CanvasLayer/Level3.theme = _theme
-
-
-func _on_level_3_mouse_exited():
-	$CanvasLayer/Level3.theme = default_theme
 
 
 func _on_settings_mouse_entered():

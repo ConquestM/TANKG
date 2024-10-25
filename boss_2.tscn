@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cpst3r5ixpdbt" path="res://assets/New_Piskel_1-ezgif.com-gif-to-sprite-converter.png" id="8_0f2ov"]
 [ext_resource type="Script" path="res://scripts/rotation_lock_animate.gd" id="9_x6yhe"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://health_bar.tscn" id="10_hrl2x"]
-[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://facon.ttf" id="11_wsux0"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="11_wsux0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5matq"]
 atlas = ExtResource("8_0f2ov")

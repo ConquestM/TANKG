@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bhkcqqcc58i35" path="res://assets/heydeez_nuts-ezgif.com-gif-to-sprite-converter.png" id="8_b5l2d"]
 [ext_resource type="Script" path="res://scripts/animated_sprite_2D.gd" id="9_ynu0m"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://health_bar.tscn" id="10_f48j6"]
-[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://facon.ttf" id="11_x8h4y"]
+[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://Facon.ttf" id="11_x8h4y"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 11.7047
