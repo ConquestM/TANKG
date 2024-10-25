@@ -18,26 +18,29 @@ var health = global.hp : set = _set_health
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-# sets the screensize and the player health.
+# Sets the screensize and the player health.
 	screen_size = get_viewport_rect().size
 	health_bar.init_health(health)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	# The health updates every frame.
+	# The healthbar visuals updates every frame.
 	_set_health(health)
-	
-	# checks if you are not dashing.
+	# Checks if you are not dashing.
 	if not dashing:
+		# Takes plater input for movment
 		direction = Input.get_axis("ui_left", "ui_right")
 		vert_direction = Input.get_axis("ui_up", "ui_down")
+		# Normalizes direction so that diagonal movement isn't faster
 		var norm_direction = Vector2(direction, vert_direction).normalized()
 		direction = norm_direction.x
 		vert_direction = norm_direction.y
+	# Saves direction for dashing
 	if direction > 0 or direction < 0 or vert_direction > 0 or vert_direction < 0:
 		saved_direction = direction
 		saved_vert_direction = vert_direction
+	# Rotates the player
 	if direction:
 		velocity.x = direction * speed
 		if Input.is_action_pressed("ui_right"):
@@ -76,9 +79,11 @@ func _process(delta):
 	 / get_parent().get_child(0).zoom.x)
 	global_position.y = clamp(global_position.y, 0, screen_size.y
 	 / get_parent().get_child(0).zoom.y)
+	# Checks player input for dashing.
 	if Input.is_action_just_pressed("dash"):
 		if can_dash:
 			_dash()
+	# Tracks how long the player dash is
 	if dashing:
 		dash_timer += delta
 		if dash_timer >= dash_duration:
@@ -88,16 +93,19 @@ func _process(delta):
 			if slowed == 0:
 				speed = 100
 			dash_timer = 0
+	# Actions taken when the player dies.
 	if global.hp < 0 or global.hp == 0:
 		sounds._battle_end()
 		get_tree().change_scene_to_file("res://main_menu.tscn")
 		global.hp = 99
+	# Gives the player iframes.
 	if dashing or global.iframes:
 		$Area2D/CollisionShape2D.disabled = true
 	if not dashing and not global.iframes:
 		$Area2D/CollisionShape2D.disabled = false
 
 
+# The function for dashing.
 func _dash():
 	if dashing: return
 	if Input.is_action_pressed("dash"):
@@ -116,6 +124,7 @@ func _on_timer_timeout():
 	can_dash = true
 
 
+# Function for visually updating the healthbar.
 func _set_health(_value):
 	if health_bar != null:
 		health_bar.health = global.hp
@@ -129,6 +138,7 @@ func _on_area_2d_area_entered(area):
 		$Slowtimer.start()
 
 
+# Gravestone aura effect ending.
 func _on_slowtimer_timeout():
 	speed = 100
 	slowed = 0

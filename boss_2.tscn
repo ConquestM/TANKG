@@ -120,7 +120,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("11_wsux0")
 theme_override_font_sizes/font_size = 25
-text = "ZEUS"
+text = "CHAOS"
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer"]

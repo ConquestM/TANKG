@@ -1,8 +1,9 @@
 extends CharacterBody2D
 
+@onready var health_bar = $Healthbar
 var hp = 10
 var health = hp : set = _set_health
-@onready var health_bar = $Healthbar
+
 
 # Called when the node enters the scene tree for the first time.
 # Sets variables for health bars.
@@ -16,6 +17,7 @@ func _process(delta):
 	_set_health(health)
 	if hp < 0 or hp == 0:
 		queue_free()
+
 
 # Updates the health visually.
 func _set_health(value):

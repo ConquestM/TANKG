@@ -23,6 +23,7 @@ func _ready():
 	start_dialogue()
 
 
+# Sets the data for the cutscene
 func start_dialogue():
 	current_message = 0
 	display = ""
@@ -31,10 +32,12 @@ func start_dialogue():
 	$next_char.start()
 
 
+# Starts the timer to end the cutscene
 func stop_dialogue():
 	$end.start()
 
 
+# Types the character in the message
 func _on_next_char_timeout():
 	if (current_char < len(MESSAGES[current_message])):
 		var next_char = MESSAGES[current_message][current_char]
@@ -46,7 +49,9 @@ func _on_next_char_timeout():
 		$next_message.one_shot = true
 		$next_message.set_wait_time(READ_TIME)
 		$next_message.start()
-		
+
+
+# Starts the next message
 func _on_next_message_timeout():
 	if (current_message == len(MESSAGES) - 1):
 		stop_dialogue()
@@ -57,6 +62,7 @@ func _on_next_message_timeout():
 		$next_char.start()
 
 
+# Ends the cutscene
 func _on_end_timeout():
 	sounds._battle_end()
 	get_tree().change_scene_to_file("res://main_menu.tscn")

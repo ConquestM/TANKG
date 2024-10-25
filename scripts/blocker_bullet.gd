@@ -19,7 +19,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-# moves the projectile and despawns itself on boss death.
+# Moves the projectile and despawns itself on boss death.
 func _process(delta):
 	move_local_x(SPEED * delta)
 	if global.boss_3_hp == 0:

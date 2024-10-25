@@ -1,9 +1,9 @@
-res://player.tscn
+res://boss_3.tscn
 res://scripts/bullet_2.gd
+res://player.tscn
 res://portal.tscn
 res://main_menu.tscn
 res://boss_2_bullet_2.tscn
-res://boss_3.tscn
 res://zombie_1.tscn
 res://wall_attack.tscn
 res://wall.tscn
@@ -12,6 +12,13 @@ res://boss_2_line.tscn
 res://blocker_bullet.tscn
 res://bolt_bullet.tscn
 res://boss_1.tscn
-res://scripts/spirit_bullet.gd
 res://boss_2.tscn
 res://level_2.tscn
+res://scripts/blocker_bullet.gd
+res://scripts/blocker_tile.gd
+res://scripts/cutscene_1.gd
+res://scripts/cutscene_2.gd
+res://scripts/cutscene_3.gd
+res://scripts/health_bar.gd
+res://scripts/player.gd
+res://scripts/settings.gd
