@@ -20,9 +20,9 @@ func _ready():
 func _process(delta):
 	if global.boss_3_hp == 0 or global.hp == 99:
 		queue_free()
-	if home == 1:
+	if home == 1 :
 		move_local_x(speed * delta)
-		if get_node_or_null("CollisionShape2D") == null: return
+		if get_node_or_null("/root/Map/Player") == null: return
 		direction = (get_node("/root/Map/Player").global_position - global_position)
 		var target_Rotation = direction.angle()
 		rotation = lerp_angle(rotation, target_Rotation, 10 * delta)

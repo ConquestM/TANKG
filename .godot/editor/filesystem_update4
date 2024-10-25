@@ -15,3 +15,4 @@ res://boss_1.tscn
 res://boss_2.tscn
 res://level_2.tscn
 res://scripts/main_menu.gd
+res://scripts/spirit_bullet.gd
