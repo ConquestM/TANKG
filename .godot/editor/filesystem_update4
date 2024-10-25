@@ -1,9 +1,5 @@
 res://player.tscn
 res://scripts/bullet_2.gd
-res://scripts/boss_2.gd
-res://scripts/cutscene_1.gd
-res://scripts/cutscene_2.gd
-res://scripts/player.gd
 res://portal.tscn
 res://main_menu.tscn
 res://boss_2_bullet_2.tscn
@@ -16,6 +12,3 @@ res://boss_2_line.tscn
 res://blocker_bullet.tscn
 res://bolt_bullet.tscn
 res://boss_1.tscn
-res://scripts/main_menu.gd
-res://scripts/cutscene_2_1.gd
-res://scripts/cutscene_4.gd
