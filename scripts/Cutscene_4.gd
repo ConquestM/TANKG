@@ -58,5 +58,6 @@ func _on_next_message_timeout():
 
 
 func _on_end_timeout():
-	get_tree().change_scene_to_file("res://MainMenu.tscn")
+	sounds._battle_end()
+	get_tree().change_scene_to_file("res://main_menu.tscn")
 

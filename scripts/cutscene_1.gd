@@ -48,4 +48,4 @@ func _on_next_message_timeout():
 
 
 func _on_end_timeout():
-	get_tree().change_scene_to_file("res://Level.tscn")
+	get_tree().change_scene_to_file("res://level.tscn")
