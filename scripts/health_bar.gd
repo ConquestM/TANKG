@@ -1,4 +1,5 @@
 extends ProgressBar
+
 @onready var global = get_node("/root/global")
 @onready var timer = $Timer
 @onready var damage_bar = $Damagebar

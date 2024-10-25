@@ -56,3 +56,5 @@ res://scripts/ui.gd
 res://scripts/wall.gd
 res://scripts/wall_attack.gd
 res://scripts/zombie_1.gd
+res://scripts/Spark.gd
+res://scripts/health_bar.gd

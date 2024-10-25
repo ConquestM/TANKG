@@ -8,7 +8,7 @@ size = Vector2(9.5, 5)
 
 [sub_resource type="SphereMesh" id="SphereMesh_sr1oi"]
 
-[node name="Bullet" type="Area2D"]
+[node name="Bullet2" type="Area2D"]
 light_mask = 2
 visibility_layer = 2
 script = ExtResource("1_wk5nt")

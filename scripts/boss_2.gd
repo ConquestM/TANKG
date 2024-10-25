@@ -3,7 +3,6 @@ extends CharacterBody2D
 @export var bullet_scene: PackedScene
 @export var bullet_hell_scene: PackedScene
 @export var bullet_hell_2_scene: PackedScene
-@export var teleport_scene: PackedScene
 @export var line_scene: PackedScene
 @export var fire_timer:Node
 @export var portal_scene: PackedScene

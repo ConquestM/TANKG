@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://ba2fjsu2in8kg" path="res://lightning_area.tscn" id="5_10o8p"]
 [ext_resource type="Texture2D" uid="uid://cv5nipxf82ral" path="res://assets/Zeus.webp" id="6_ks2y7"]
 [ext_resource type="PackedScene" uid="uid://blfh21paqm1mx" path="res://health_bar.tscn" id="7_77csc"]
-[ext_resource type="FontFile" uid="uid://cfqhh4yntr6j2" path="res://facon.ttf" id="8_ens4o"]
+[ext_resource type="FontFile" uid="uid://3tfjqtxtiikq" path="res://facon.ttf" id="8_ens4o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ioo3"]
 radius = 59.3043

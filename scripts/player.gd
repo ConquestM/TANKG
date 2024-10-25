@@ -90,7 +90,7 @@ func _process(delta):
 			dash_timer = 0
 	if global.hp < 0 or global.hp == 0:
 		sounds._battle_end()
-		get_tree().change_scene_to_file("res://Mainmenu.tscn")
+		get_tree().change_scene_to_file("res://mainmenu.tscn")
 		global.hp = 99
 	if dashing or global.iframes:
 		$Area2D/CollisionShape2D.disabled = true
